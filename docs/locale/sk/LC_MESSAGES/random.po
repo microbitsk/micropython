@@ -1,0 +1,95 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015-2018, Multiple authors
+# This file is distributed under the same license as the BBC micro:bit
+# MicroPython package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: BBC micro:bit MicroPython 0.5.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-03-25 09:53+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.5.3\n"
+
+#: ../../random.rst:2
+msgid "Random Number Generation"
+msgstr ""
+
+#: ../../random.rst:6
+msgid ""
+"This module is based upon the ``random`` module in the Python standard "
+"library. It contains functions for generating random behaviour."
+msgstr ""
+
+#: ../../random.rst:9
+msgid "To access this module you need to::"
+msgstr ""
+
+#: ../../random.rst:13
+msgid "We assume you have done this for the examples below."
+msgstr ""
+
+#: ../../random.rst:16
+msgid "Functions"
+msgstr ""
+
+#: ../../random.rst:20
+msgid "Returns an integer with ``n`` random bits."
+msgstr ""
+
+#: ../../random.rst:24
+msgid ""
+"Because the underlying generator function returns at most 30 bits, ``n`` "
+"may only be a value between 1-30 (inclusive)."
+msgstr ""
+
+#: ../../random.rst:29
+msgid ""
+"Initialize the random number generator with a known integer ``n``. This "
+"will give you reproducibly deterministic randomness from a given starting"
+" state (``n``)."
+msgstr ""
+
+#: ../../random.rst:36
+msgid ""
+"Return a random integer ``N`` such that ``a <= N <= b``. Alias for "
+"``randrange(a, b+1)``."
+msgstr ""
+
+#: ../../random.rst:42
+msgid ""
+"Return a randomly selected integer between zero and up to (but not "
+"including) ``stop``."
+msgstr ""
+
+#: ../../random.rst:47
+msgid "Return a randomly selected integer from ``range(start, stop)``."
+msgstr ""
+
+#: ../../random.rst:51
+msgid "Return a randomly selected element from ``range(start, stop, step)``."
+msgstr ""
+
+#: ../../random.rst:56
+msgid ""
+"Return a random element from the non-empty sequence ``seq``. If ``seq`` "
+"is empty, raises ``IndexError``."
+msgstr ""
+
+#: ../../random.rst:62
+msgid "Return the next random floating point number in the range [0.0, 1.0)"
+msgstr ""
+
+#: ../../random.rst:67
+msgid ""
+"Return a random floating point number ``N`` such that ``a <= N <= b`` for"
+" ``a <= b`` and ``b <= N <= a`` for ``b < a``."
+msgstr ""
+

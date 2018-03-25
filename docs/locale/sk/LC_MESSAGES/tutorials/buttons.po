@@ -1,0 +1,263 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015-2018, Multiple authors
+# This file is distributed under the same license as the BBC micro:bit
+# MicroPython package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: BBC micro:bit MicroPython 0.5.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-03-25 09:53+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.5.3\n"
+
+#: ../../tutorials/buttons.rst:189
+msgid ""
+"The image of Matrioshka dolls is licensed CC BY-SA 3.0, "
+"https://commons.wikimedia.org/w/index.php?curid=69402"
+msgstr ""
+
+#: ../../tutorials/buttons.rst:2
+msgid "Buttons"
+msgstr ""
+
+#: ../../tutorials/buttons.rst:4
+msgid ""
+"So far we have created code that makes the device do something. This is "
+"called *output*. However, we also need the device to react to things. "
+"Such things are called *inputs*."
+msgstr ""
+
+#: ../../tutorials/buttons.rst:8
+msgid ""
+"It's easy to remember: output is what the device puts out to the world "
+"whereas input is what goes into the device for it to process."
+msgstr ""
+
+#: ../../tutorials/buttons.rst:11
+msgid ""
+"The most obvious means of input on the micro:bit are its two buttons, "
+"labelled ``A`` and ``B``. Somehow, we need MicroPython to react to button"
+" presses."
+msgstr ""
+
+#: ../../tutorials/buttons.rst:14
+msgid "This is remarkably simple::"
+msgstr ""
+
+#: ../../tutorials/buttons.rst:21
+msgid ""
+"All this script does is sleep for ten thousand milliseconds (i.e. 10 "
+"seconds) and then scrolls the number of times you pressed button ``A``. "
+"That's it!"
+msgstr ""
+
+#: ../../tutorials/buttons.rst:24
+msgid ""
+"While it's a pretty useless script, it introduces a couple of interesting"
+" new ideas:"
+msgstr ""
+
+#: ../../tutorials/buttons.rst:27
+msgid ""
+"The ``sleep`` *function* will make the micro:bit sleep for a certain "
+"number of milliseconds. If you want a pause in your program, this is how "
+"to do it. A *function* is just like a *method*, but it isn't attached by "
+"a dot to an *object*."
+msgstr ""
+
+#: ../../tutorials/buttons.rst:31
+msgid ""
+"There is an object called ``button_a`` and it allows you to get the "
+"number of times it has been pressed with the ``get_presses`` *method*."
+msgstr ""
+
+#: ../../tutorials/buttons.rst:34
+msgid ""
+"Since ``get_presses`` gives a numeric value and ``display.scroll`` only "
+"displays characters, we need to convert the numeric value into a string "
+"of characters. We do this with the ``str`` function (short for \"string\""
+" ~ it converts things into strings of characters)."
+msgstr ""
+
+#: ../../tutorials/buttons.rst:39
+msgid ""
+"The third line is a bit like an onion. If the parenthesis are the onion "
+"skins then you'll notice that ``display.scroll`` contains ``str`` that "
+"itself contains ``button_a.get_presses``. Python attempts to work out the"
+" inner-most answer first before starting on the next layer out. This is "
+"called *nesting* - the coding equivalent of a Russian Matrioshka doll."
+msgstr ""
+
+#: ../../tutorials/buttons.rst:47
+msgid ""
+"Let's pretend you've pressed the button 10 times. Here's how Python works"
+" out what's happening on the third line:"
+msgstr ""
+
+#: ../../tutorials/buttons.rst:50
+msgid "Python sees the complete line and gets the value of ``get_presses``::"
+msgstr ""
+
+#: ../../tutorials/buttons.rst:54
+msgid ""
+"Now that Python knows how many button presses there have been, it "
+"converts the numeric value into a string of characters::"
+msgstr ""
+
+#: ../../tutorials/buttons.rst:59
+msgid "Finally, Python knows what to scroll across the display::"
+msgstr ""
+
+#: ../../tutorials/buttons.rst:63
+msgid ""
+"While this might seem like a lot of work, MicroPython makes this happen "
+"extraordinarily fast."
+msgstr ""
+
+#: ../../tutorials/buttons.rst:67
+msgid "Event Loops"
+msgstr ""
+
+#: ../../tutorials/buttons.rst:69
+msgid ""
+"Often you need your program to hang around waiting for something to "
+"happen. To do this you make it loop around a piece of code that defines "
+"how to react to certain expected events such as a button press."
+msgstr ""
+
+#: ../../tutorials/buttons.rst:73
+msgid ""
+"To make loops in Python you use the ``while`` keyword. It checks if "
+"something is ``True``. If it is, it runs a *block of code* called the "
+"*body* of the loop. If it isn't, it breaks out of the loop (ignoring the "
+"body) and the rest of the program can continue."
+msgstr ""
+
+#: ../../tutorials/buttons.rst:78
+msgid ""
+"Python makes it easy to define blocks of code. Say I have a to-do list "
+"written on a piece of paper. It probably looks something like this::"
+msgstr ""
+
+#: ../../tutorials/buttons.rst:85
+msgid ""
+"If I wanted to break down my to-do list a bit further, I might write "
+"something like this::"
+msgstr ""
+
+#: ../../tutorials/buttons.rst:100
+msgid ""
+"It's obvious that the main tasks are broken down into sub-tasks that are "
+"*indented* underneath the main task to which they are related. So "
+"``Eggs``, ``Bacon`` and ``Tomatoes`` are obviously related to "
+"``Shopping``. By indenting things we make it easy to see, at a glance, "
+"how the tasks relate to each other."
+msgstr ""
+
+#: ../../tutorials/buttons.rst:105
+msgid ""
+"This is called *nesting*. We use nesting to define blocks of code like "
+"this::"
+msgstr ""
+
+#: ../../tutorials/buttons.rst:114
+msgid ""
+"The ``running_time`` function returns the number of milliseconds since "
+"the device started."
+msgstr ""
+
+#: ../../tutorials/buttons.rst:117
+msgid ""
+"The ``while running_time() < 10000:`` line checks if the running time is "
+"less than 10000 milliseconds (i.e. 10 seconds). If it is, *and this is "
+"where we can see scoping in action*, then it'll display ``Image.ASLEEP``."
+" Notice how this is indented underneath the ``while`` statement *just "
+"like in our to-do list*."
+msgstr ""
+
+#: ../../tutorials/buttons.rst:122
+msgid ""
+"Obviously, if the running time is equal to or greater than 10000 "
+"milliseconds then the display will show ``Image.SURPRISED``. Why? Because"
+" the ``while`` condition will be False (``running_time`` is no longer ``<"
+" 10000``). In that case the loop is finished and the program will "
+"continue after the ``while`` loop's block of code. It'll look like your "
+"device is asleep for 10 seconds before waking up with a surprised look on"
+" its face."
+msgstr ""
+
+#: ../../tutorials/buttons.rst:129
+msgid "Try it!"
+msgstr ""
+
+#: ../../tutorials/buttons.rst:132
+msgid "Handling an Event"
+msgstr ""
+
+#: ../../tutorials/buttons.rst:134
+msgid ""
+"If we want MicroPython to react to button press events we should put it "
+"into an infinite loop and check if the button ``is_pressed``."
+msgstr ""
+
+#: ../../tutorials/buttons.rst:137
+msgid "An infinite loop is easy::"
+msgstr ""
+
+#: ../../tutorials/buttons.rst:142
+msgid ""
+"(Remember, ``while`` checks if something is ``True`` to work out if it "
+"should run its block of code. Since ``True`` is obviously ``True`` for "
+"all time, you get an infinite loop!)"
+msgstr ""
+
+#: ../../tutorials/buttons.rst:146
+msgid ""
+"Let's make a very simple cyber-pet. It's always sad unless you're "
+"pressing button ``A``. If you press button ``B`` it dies. (I realise this"
+" isn't a very pleasant game, so perhaps you can figure out how to improve"
+" it.)::"
+msgstr ""
+
+#: ../../tutorials/buttons.rst:162
+msgid ""
+"Can you see how we check what buttons are pressed? We used ``if``, "
+"``elif`` (short for \"else if\") and ``else``. These are called "
+"*conditionals* and work like this::"
+msgstr ""
+
+#: ../../tutorials/buttons.rst:173
+msgid "This is remarkably similar to English!"
+msgstr ""
+
+#: ../../tutorials/buttons.rst:175
+msgid ""
+"The ``is_pressed`` method only produces two results: ``True`` or "
+"``False``. If you're pressing the button it returns ``True``, otherwise "
+"it returns ``False``. The code above is saying, in English, \"for ever "
+"and ever, if button A is pressed then show a happy face, else if button B"
+" is pressed break out of the loop, otherwise display a sad face.\" We "
+"break out of the loop (stop the program running for ever and ever) with "
+"the ``break`` statement."
+msgstr ""
+
+#: ../../tutorials/buttons.rst:182
+msgid "At the very end, when the cyber-pet is dead, we ``clear`` the display."
+msgstr ""
+
+#: ../../tutorials/buttons.rst:184
+msgid ""
+"Can you think of ways to make this game less tragic? How would you check "
+"if *both* buttons are pressed? (Hint: Python has ``and``, ``or`` and "
+"``not`` logical operators to help check multiple truth statements (things"
+" that produce either ``True`` or ``False`` results)."
+msgstr ""
+

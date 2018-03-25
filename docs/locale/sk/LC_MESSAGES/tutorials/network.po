@@ -1,0 +1,253 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015-2018, Multiple authors
+# This file is distributed under the same license as the BBC micro:bit
+# MicroPython package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: BBC micro:bit MicroPython 0.5.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-03-25 09:53+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.5.3\n"
+
+#: ../../tutorials/network.rst:302
+msgid ""
+"The image of Queen Elizabeth II is licensed as per the details here: "
+"https://commons.wikimedia.org/wiki/File:Queen_Elizabeth_II_March_2015.jpg"
+msgstr ""
+
+#: ../../tutorials/network.rst:2
+msgid "Network"
+msgstr ""
+
+#: ../../tutorials/network.rst:4
+msgid ""
+"It is possible to connect devices together to send and receive messages "
+"to and from each other. This is called a network. A network of "
+"interconnected networks is called an internet. The Internet is an "
+"internet of all the internets."
+msgstr ""
+
+#: ../../tutorials/network.rst:9
+msgid ""
+"Networking is hard and this is reflected in the program described below. "
+"However, the beautiful thing about this project is it contains all the "
+"common aspects of network programming you need to know about. It's also "
+"remarkably simple and fun."
+msgstr ""
+
+#: ../../tutorials/network.rst:14
+msgid "But first, let's set the scene..."
+msgstr ""
+
+#: ../../tutorials/network.rst:17
+msgid "Connection"
+msgstr ""
+
+#: ../../tutorials/network.rst:19
+msgid ""
+"Imagine a network as a series of layers. At the very bottom is the most "
+"fundamental aspect of communication: there needs to be some sort of way "
+"for a signal to get from one device to the other. Sometimes this is done "
+"via a radio connection, but in this example we're simply going to use two"
+" wires."
+msgstr ""
+
+#: ../../tutorials/network.rst:26
+msgid ""
+"It is upon this foundation that we can build all the other layers in the "
+"*network stack*."
+msgstr ""
+
+#: ../../tutorials/network.rst:29
+msgid ""
+"As the diagram shows, blue and red micro:bits are connected via crocodile"
+" leads. Both use pin 1 for output and pin 2 for input. The output from "
+"one device is connected to the input on the other. It's a bit like "
+"knowing which way round to hold a telephone handset - one end has a "
+"microphone (the input) and the other a speaker (the output). The "
+"recording of your voice via your microphone is played out of the other "
+"person's speaker. If you hold the phone the wrong way up, you'll get "
+"strange results!"
+msgstr ""
+
+#: ../../tutorials/network.rst:37
+msgid ""
+"It's exactly the same in this instance: you must connect the wires "
+"properly!"
+msgstr ""
+
+#: ../../tutorials/network.rst:40
+msgid "Signal"
+msgstr ""
+
+#: ../../tutorials/network.rst:42
+msgid ""
+"The next layer in the *network stack* is the signal. Often this will "
+"depend upon the characteristics of the connection. In our example it's "
+"simply digital on and off signals sent down the wires via the IO pins."
+msgstr ""
+
+#: ../../tutorials/network.rst:46
+msgid "If you remember, it's possible to use the IO pins like this::"
+msgstr ""
+
+#: ../../tutorials/network.rst:52
+msgid ""
+"The next step involves describing how to use and handle a signal. For "
+"that we need a..."
+msgstr ""
+
+#: ../../tutorials/network.rst:56
+msgid "Protocol"
+msgstr ""
+
+#: ../../tutorials/network.rst:58
+msgid ""
+"If you ever meet the Queen there are expectations about how you ought to "
+"behave. For example, when she arrives you may bow or curtsey, if she "
+"offers her hand politely shake it, refer to her as \"your majesty\" and "
+"thereafter as \"ma'am\" and so on. This set of rules is called the royal "
+"protocol. A protocol explains how to behave given a specific situation "
+"(such as meeting the Queen). A protocol is pre-defined to ensure everyone"
+" understands what's going on before a given situation arises."
+msgstr ""
+
+#: ../../tutorials/network.rst:68
+msgid ""
+"It is for this reason that we define and use protocols for communicating "
+"messages via a computer network. Computers need to agree before hand how "
+"to send and receive messages. Perhaps the best known protocol is the "
+"hypertext transfer protocol (HTTP) used by the world wide web."
+msgstr ""
+
+#: ../../tutorials/network.rst:73
+msgid ""
+"Another famous protocol for sending messages (that pre-dates computers) "
+"is Morse code. It defines how to send character-based messages via on/off"
+" signals of long or short durations. Often such signals are played as "
+"bleeps. Long durations are called dashes (``-``) whereas short durations "
+"are dots (``.``). By combining dashes and dots Morse defines a way to "
+"send characters. For example, here's how the standard Morse alphabet is "
+"defined::"
+msgstr ""
+
+#: ../../tutorials/network.rst:90
+msgid ""
+"Given the chart above, to send the character \"H\" the signal is switched"
+" on four times for a short duration, indicating four dots (``....``). For"
+" the letter \"L\" the signal is also switched on four times, but the "
+"second signal has a longer duration (``.-..``)."
+msgstr ""
+
+#: ../../tutorials/network.rst:95
+msgid ""
+"Obviously, the timing of the signal is important: we need to tell a dot "
+"from a dash. That's another point of a protocol, to agree such things so "
+"everyone's implementation of the protocol will work with everyone elses. "
+"In this instance we'll just say that:"
+msgstr ""
+
+#: ../../tutorials/network.rst:100
+msgid "A signal with a duration less than 250 milliseconds is a dot."
+msgstr ""
+
+#: ../../tutorials/network.rst:101
+msgid ""
+"A signal with a duration from 250 milliseconds to less than 500 "
+"milliseconds is a dash."
+msgstr ""
+
+#: ../../tutorials/network.rst:102
+msgid "Any other duration of signal is ignored."
+msgstr ""
+
+#: ../../tutorials/network.rst:103
+msgid ""
+"A pause / gap in the signal of greater than 500 milliseconds indicates "
+"the end of a character."
+msgstr ""
+
+#: ../../tutorials/network.rst:105
+msgid ""
+"In this way, the sending of a letter \"H\" is defined as four \"on\" "
+"signals that last no longer than 250 milliseconds each, followed by a "
+"pause of greater than 500 milliseconds (indicating the end of the "
+"character)."
+msgstr ""
+
+#: ../../tutorials/network.rst:110
+msgid "Message"
+msgstr ""
+
+#: ../../tutorials/network.rst:112
+msgid ""
+"We're finally at a stage where we can build a message - a message that "
+"actually means something to us humans. This is the top-most layer of our "
+"*network stack*."
+msgstr ""
+
+#: ../../tutorials/network.rst:116
+msgid ""
+"Using the protocol defined above I can send the following sequence of "
+"signals down the physical wire to the other micro:bit::"
+msgstr ""
+
+#: ../../tutorials/network.rst:121
+msgid "Can you work out what it says?"
+msgstr ""
+
+#: ../../tutorials/network.rst:124
+msgid "Application"
+msgstr ""
+
+#: ../../tutorials/network.rst:126
+msgid ""
+"It's all very well having a network stack, but you also need a way to "
+"interact with it - some form of application to send and receive messages."
+" While HTTP is interesting *most* people don't know about it and let "
+"their web-browser handle it - the underlying *network stack* of the world"
+" wide web is hidden (as it should be)."
+msgstr ""
+
+#: ../../tutorials/network.rst:132
+msgid ""
+"So, what sort of application should we write for the BBC micro:bit? How "
+"should it work, from the user's point of view?"
+msgstr ""
+
+#: ../../tutorials/network.rst:135
+msgid ""
+"Obviously, to send a message you should be able to input dots and dashes "
+"(we can use button A for that). If we want to see the message we sent or "
+"just received we should be able to trigger it to scroll across the "
+"display (we can use button B for that). Finally, this being Morse code, "
+"if a speaker is attached, we should be able to play the beeps as a form "
+"of aural feedback while the user is entering their message."
+msgstr ""
+
+#: ../../tutorials/network.rst:143
+msgid "The End Result"
+msgstr ""
+
+#: ../../tutorials/network.rst:145
+msgid ""
+"Here's the program, in all its glory and annotated with plenty of "
+"comments so you can see what's going on::"
+msgstr ""
+
+#: ../../tutorials/network.rst:298
+msgid ""
+"How would you improve it? Can you change the definition of a dot and a "
+"dash so speedy Morse code users can use it? What happens if both devices "
+"are sending at the same time? What might you do to handle this situation?"
+msgstr ""
+

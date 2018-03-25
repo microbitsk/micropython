@@ -1,0 +1,280 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015-2018, Multiple authors
+# This file is distributed under the same license as the BBC micro:bit
+# MicroPython package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: BBC micro:bit MicroPython 0.5.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-03-25 09:53+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.5.3\n"
+
+#: ../../tutorials/speech.rst:184
+msgid ""
+"The image of the DALEK is licensed as per the details here: "
+"https://commons.wikimedia.org/wiki/File:Dalek_(Dr_Who).jpg The image of "
+"DAVROS is licensed as per the details here: "
+"https://en.wikipedia.org/wiki/File:Davros_and_Daleks.jpg"
+msgstr ""
+
+#: ../../tutorials/speech.rst:2
+msgid "Speech"
+msgstr ""
+
+#: ../../tutorials/speech.rst:6
+msgid "WARNING! THIS IS ALPHA CODE."
+msgstr ""
+
+#: ../../tutorials/speech.rst:8
+msgid "We reserve the right to change this API as development continues."
+msgstr ""
+
+#: ../../tutorials/speech.rst:10
+msgid ""
+"The quality of the speech is not great, merely \"good enough\". Given the"
+" constraints of the device you may encounter memory errors and / or "
+"unexpected extra sounds during playback. It's early days and we're "
+"improving the code for the speech synthesiser all the time. Bug reports "
+"and pull requests are most welcome."
+msgstr ""
+
+#: ../../tutorials/speech.rst:16
+msgid "Computers and robots that talk feel more \"human\"."
+msgstr ""
+
+#: ../../tutorials/speech.rst:18
+msgid ""
+"So often we learn about what a computer is up to through a graphical user"
+" interface (GUI). In the case of a BBC micro:bit the GUI is a 5x5 LED "
+"matrix, which leaves a lot to be desired."
+msgstr ""
+
+#: ../../tutorials/speech.rst:22
+msgid ""
+"Getting the micro:bit talk to you is one way to express information in a "
+"fun, efficient and useful way. To this end, we have integrated a simple "
+"speech synthesiser based upon a reverse-engineered version of a "
+"synthesiser from the early 1980s. It sounds very cute, in an \"all humans"
+" must die\" sort of a way."
+msgstr ""
+
+#: ../../tutorials/speech.rst:27
+msgid "With this in mind, we're going to use the speech synthesiser to create..."
+msgstr ""
+
+#: ../../tutorials/speech.rst:30
+msgid "DALEK Poetry"
+msgstr ""
+
+#: ../../tutorials/speech.rst:34
+msgid ""
+"It's a little known fact that DALEKs enjoy poetry ~ especially limericks."
+" They go wild for anapestic meter with a strict AABBA form. Who'd have "
+"thought?"
+msgstr ""
+
+#: ../../tutorials/speech.rst:37
+msgid ""
+"(Actually, as we'll learn below, it's The Doctor's fault DALEKs like "
+"limericks, much to the annoyance of Davros.)"
+msgstr ""
+
+#: ../../tutorials/speech.rst:40
+msgid "In any case, we're going to create a DALEK poetry recital on demand."
+msgstr ""
+
+#: ../../tutorials/speech.rst:43
+msgid "Say Something"
+msgstr ""
+
+#: ../../tutorials/speech.rst:45
+msgid "Before the device can talk you need to plug in a speaker like this:"
+msgstr ""
+
+#: ../../tutorials/speech.rst:49
+msgid ""
+"The simplest way to get the device to speak is to import the ``speech`` "
+"module and use the ``say`` function like this::"
+msgstr ""
+
+#: ../../tutorials/speech.rst:56
+msgid ""
+"While this is cute it's certainly not DALEK enough for our taste, so we "
+"need to change some of the parameters that the speech synthesiser uses to"
+" produce the voice. Our speech synthesiser is quite powerful in this "
+"respect because we can change four parameters:"
+msgstr ""
+
+#: ../../tutorials/speech.rst:61
+msgid "``pitch`` - how high or low the voice sounds (0 = high, 255 = Barry White)"
+msgstr ""
+
+#: ../../tutorials/speech.rst:62
+msgid ""
+"``speed`` - how quickly the device talks (0 = impossible, 255 = bedtime "
+"story)"
+msgstr ""
+
+#: ../../tutorials/speech.rst:63
+msgid ""
+"``mouth`` - how tight-lipped or overtly enunciating the voice sounds (0 ="
+" ventriloquist's dummy, 255 = Foghorn Leghorn)"
+msgstr ""
+
+#: ../../tutorials/speech.rst:64
+msgid ""
+"``throat`` - how relaxed or tense is the tone of voice (0 = falling "
+"apart, 255 = totally chilled)"
+msgstr ""
+
+#: ../../tutorials/speech.rst:66
+msgid ""
+"Collectively, these parameters control the quality of sound - a.k.a. the "
+"timbre. To be honest, the best way to get the tone of voice you want is "
+"to experiment, use your judgement and adjust."
+msgstr ""
+
+#: ../../tutorials/speech.rst:70
+msgid ""
+"To adjust the settings you pass them in as arguments to the ``say`` "
+"function. More details can be found in the ``speech`` module's API "
+"documentation."
+msgstr ""
+
+#: ../../tutorials/speech.rst:73
+msgid ""
+"After some experimentation we've worked out this sounds quite DALEK-"
+"esque::"
+msgstr ""
+
+#: ../../tutorials/speech.rst:78
+msgid "Poetry on Demand"
+msgstr ""
+
+#: ../../tutorials/speech.rst:80
+msgid ""
+"Being Cyborgs DALEKs use their robot capabilities to compose poetry and "
+"it turns out that the algorithm they use is written in Python like this::"
+msgstr ""
+
+#: ../../tutorials/speech.rst:116
+msgid "As the comments demonstrate, it's a very simple in design:"
+msgstr ""
+
+#: ../../tutorials/speech.rst:118
+msgid ""
+"Named fragments (``location``, ``prop``, ``attitude`` etc) are randomly "
+"generated from pre-defined lists of possible values. Note the use of "
+"``random.choice`` to select a single item from a list."
+msgstr ""
+
+#: ../../tutorials/speech.rst:119
+msgid ""
+"A template of a poem is defined as a list of stanzas with \"holes\" in "
+"them (denoted by ``{}``) into which the named fragments will be put using"
+" the ``format`` method."
+msgstr ""
+
+#: ../../tutorials/speech.rst:120
+msgid ""
+"Finally, Python loops over each item in the list of filled-in poetry "
+"stanzas and uses ``speech.say`` with the settings for the DALEK voice to "
+"recite the poem. A pause of 500 milliseconds is inserted between each "
+"line because even DALEKs need to take a breath."
+msgstr ""
+
+#: ../../tutorials/speech.rst:122
+msgid ""
+"Interestingly the original poetry related routines were written by Davros"
+" in `FORTRAN <https://en.wikipedia.org/wiki/Fortran>`_ (an appropriate "
+"language for DALEKS since you type it ALL IN CAPITAL LETTERS). However, "
+"The Doctor went back in time to precisely the point between Davros's "
+"`unit tests <https://en.wikipedia.org/wiki/Unit_testing>`_ passing and "
+"the `deployment pipeline "
+"<https://en.wikipedia.org/wiki/Continuous_delivery>`_ kicking in. At this"
+" instant he was able to insert a MicroPython interpreter into the DALEK "
+"operating system and the code you see above into the DALEK memory banks "
+"as a sort of long hidden Time-Lord `Easter Egg "
+"<https://en.wikipedia.org/wiki/Easter_egg_(media)>`_ or `Rickroll "
+"<https://www.youtube.com/watch?v=dQw4w9WgXcQ>`_."
+msgstr ""
+
+#: ../../tutorials/speech.rst:136
+msgid "Phonemes"
+msgstr ""
+
+#: ../../tutorials/speech.rst:138
+msgid ""
+"You'll notice that sometimes, the ``say`` function doesn't accurately "
+"translate from English words into the correct sound. To have fine grained"
+" control of the output, use phonemes: the building-block sounds of "
+"language."
+msgstr ""
+
+#: ../../tutorials/speech.rst:142
+msgid ""
+"The advantage of using phonemes is that you don't have to know how to "
+"spell! Rather, you only have to know how to say the word in order to "
+"spell it phonetically."
+msgstr ""
+
+#: ../../tutorials/speech.rst:146
+msgid ""
+"A full list of the phonemes the speech synthesiser understands can be "
+"found in the API documentation for speech. Alternatively, save yourself a"
+" lot of time by passing in English words to the ``translate`` function. "
+"It'll return a first approximation of the phonemes it would use to "
+"generate the audio. This result can be hand-edited to improve the "
+"accuracy, inflection and emphasis (so it sounds more natural)."
+msgstr ""
+
+#: ../../tutorials/speech.rst:153
+msgid "The ``pronounce`` function is used for phoneme output like this::"
+msgstr ""
+
+#: ../../tutorials/speech.rst:157
+msgid "How could you improve on The Doctor's code to make it use phonemes?"
+msgstr ""
+
+#: ../../tutorials/speech.rst:160
+msgid "Sing A Song of Micro:bit"
+msgstr ""
+
+#: ../../tutorials/speech.rst:162
+msgid ""
+"By changing the ``pitch`` setting and calling the ``sing`` function it's "
+"possible to make the device sing (although it's not going to win "
+"Eurovision any time soon)."
+msgstr ""
+
+#: ../../tutorials/speech.rst:166
+msgid "The mapping from pitch numbers to musical notes is shown below:"
+msgstr ""
+
+#: ../../tutorials/speech.rst:170
+msgid "The ``sing`` function must take phonemes and pitch as input like this::"
+msgstr ""
+
+#: ../../tutorials/speech.rst:174
+msgid ""
+"Notice how the pitch to be sung is prepended to the phoneme with a hash "
+"(``#``). The pitch will remain the same for subsequent phonemes until a "
+"new pitch is annotated."
+msgstr ""
+
+#: ../../tutorials/speech.rst:178
+msgid ""
+"The following example demonstrates how all three generative functions "
+"(``say``, ``pronounce`` and ``sing``) can be used to produce speech like "
+"output:"
+msgstr ""
+

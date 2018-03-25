@@ -1,0 +1,291 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015-2018, Multiple authors
+# This file is distributed under the same license as the BBC micro:bit
+# MicroPython package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: BBC micro:bit MicroPython 0.5.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-03-25 09:53+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.5.3\n"
+
+#: ../../radio.rst:2
+msgid "Radio"
+msgstr ""
+
+#: ../../radio.rst:6
+msgid ""
+"The ``radio`` module allows devices to work together via simple wireless "
+"networks."
+msgstr ""
+
+#: ../../radio.rst:9
+msgid "The radio module is conceptually very simple:"
+msgstr ""
+
+#: ../../radio.rst:11
+msgid "Broadcast messages are of a certain configurable length (up to 251 bytes)."
+msgstr ""
+
+#: ../../radio.rst:12
+msgid ""
+"Messages received are read from a queue of configurable size (the larger "
+"the queue the more RAM is used). If the queue is full, new messages are "
+"ignored. Reading a message removes it from the queue."
+msgstr ""
+
+#: ../../radio.rst:13
+msgid ""
+"Messages are broadcast and received on a preselected channel (numbered "
+"0-83)."
+msgstr ""
+
+#: ../../radio.rst:14
+msgid "Broadcasts are at a certain level of power - more power means more range."
+msgstr ""
+
+#: ../../radio.rst:15
+msgid ""
+"Messages are filtered by address (like a house number) and group (like a "
+"named recipient at the specified address)."
+msgstr ""
+
+#: ../../radio.rst:16
+msgid "The rate of throughput can be one of three pre-determined settings."
+msgstr ""
+
+#: ../../radio.rst:17
+msgid "Send and receive bytes to work with arbitrary data."
+msgstr ""
+
+#: ../../radio.rst:18
+msgid ""
+"Use `receive_full` to obtain full details about an incoming message: the "
+"data, receiving signal strength, and a microsecond timestamp when the "
+"message arrived."
+msgstr ""
+
+#: ../../radio.rst:19
+msgid ""
+"As a convenience for children, it's easy to send and receive messages as "
+"strings."
+msgstr ""
+
+#: ../../radio.rst:20
+msgid ""
+"The default configuration is both sensible and compatible with other "
+"platforms that target the BBC micro:bit."
+msgstr ""
+
+#: ../../radio.rst:22
+msgid "To access this module you need to::"
+msgstr ""
+
+#: ../../radio.rst:26
+msgid "We assume you have done this for the examples below."
+msgstr ""
+
+#: ../../radio.rst:29
+msgid "Constants"
+msgstr ""
+
+#: ../../radio.rst:33
+msgid "Constant used to indicate a throughput of 256 Kbit a second."
+msgstr ""
+
+#: ../../radio.rst:37
+msgid "Constant used to indicate a throughput of 1 MBit a second."
+msgstr ""
+
+#: ../../radio.rst:41
+msgid "Constant used to indicate a throughput of 2 MBit a second."
+msgstr ""
+
+#: ../../radio.rst:45
+msgid "Functions"
+msgstr ""
+
+#: ../../radio.rst:49
+msgid ""
+"Turns the radio on. This needs to be explicitly called since the radio "
+"draws power and takes up memory that you may otherwise need."
+msgstr ""
+
+#: ../../radio.rst:54
+msgid "Turns off the radio, thus saving power and memory."
+msgstr ""
+
+#: ../../radio.rst:58
+msgid ""
+"Configures various keyword based settings relating to the radio. The "
+"available settings and their sensible default values are listed below."
+msgstr ""
+
+#: ../../radio.rst:61
+msgid ""
+"The ``length`` (default=32) defines the maximum length, in bytes, of a "
+"message sent via the radio. It can be up to 251 bytes long (254 - 3 bytes"
+" for S0, LENGTH and S1 preamble)."
+msgstr ""
+
+#: ../../radio.rst:65
+msgid ""
+"The ``queue`` (default=3) specifies the number of messages that can be "
+"stored on the incoming message queue. If there are no spaces left on the "
+"queue for incoming messages, then the incoming message is dropped."
+msgstr ""
+
+#: ../../radio.rst:69
+msgid ""
+"The ``channel`` (default=7) can be an integer value from 0 to 83 "
+"(inclusive) that defines an arbitrary \"channel\" to which the radio is "
+"tuned. Messages will be sent via this channel and only messages received "
+"via this channel will be put onto the incoming message queue. Each step "
+"is 1MHz wide, based at 2400MHz."
+msgstr ""
+
+#: ../../radio.rst:75
+msgid ""
+"The ``power`` (default=6) is an integer value from 0 to 7 (inclusive) to "
+"indicate the strength of signal used when broadcasting a message. The "
+"higher the value the stronger the signal, but the more power is consumed "
+"by the device. The numbering translates to positions in the following "
+"list of dBm (decibel milliwatt) values: -30, -20, -16, -12, -8, -4, 0, 4."
+msgstr ""
+
+#: ../../radio.rst:81
+msgid ""
+"The ``address`` (default=0x75626974) is an arbitrary name, expressed as a"
+" 32-bit address, that's used to filter incoming packets at the hardware "
+"level, keeping only those that match the address you set. The default "
+"used by other micro:bit related platforms is the default setting used "
+"here."
+msgstr ""
+
+#: ../../radio.rst:86
+msgid ""
+"The ``group`` (default=0) is an 8-bit value (0-255) used with the "
+"``address`` when filtering messages. Conceptually, \"address\" is like a "
+"house/office address and \"group\" is like the person at that address to "
+"which you want to send your message."
+msgstr ""
+
+#: ../../radio.rst:91
+msgid ""
+"The ``data_rate`` (default=radio.RATE_1MBIT) indicates the speed at which"
+" data throughput takes place. Can be one of the following contants "
+"defined in the ``radio`` module : ``RATE_250KBIT``, ``RATE_1MBIT`` or "
+"``RATE_2MBIT``."
+msgstr ""
+
+#: ../../radio.rst:96
+msgid "If ``config`` is not called then the defaults described above are assumed."
+msgstr ""
+
+#: ../../radio.rst:100
+msgid ""
+"Reset the settings to their default values (as listed in the "
+"documentation for the ``config`` function above)."
+msgstr ""
+
+#: ../../radio.rst:105
+msgid ""
+"None of the following send or receive methods will work until the radio "
+"is turned on."
+msgstr ""
+
+#: ../../radio.rst:110
+msgid "Sends a message containing bytes."
+msgstr ""
+
+#: ../../radio.rst:114
+msgid ""
+"Receive the next incoming message on the message queue. Returns ``None`` "
+"if there are no pending messages. Messages are returned as bytes."
+msgstr ""
+
+#: ../../radio.rst:119
+msgid ""
+"Receive the next incoming message on the message queue. Copies the "
+"message into ``buffer``, trimming the end of the message if necessary. "
+"Returns ``None`` if there are no pending messages, otherwise it returns "
+"the length of the message (which might be more than the length of the "
+"buffer)."
+msgstr ""
+
+#: ../../radio.rst:126
+msgid ""
+"Sends a message string. This is the equivalent of "
+"``send_bytes(bytes(message, 'utf8'))`` but with ``b'\\x01\\x00\\x01'`` "
+"prepended to the front (to make it compatible with other platforms that "
+"target the micro:bit)."
+msgstr ""
+
+#: ../../radio.rst:133
+msgid ""
+"Works in exactly the same way as ``receive_bytes`` but returns whatever "
+"was sent."
+msgstr ""
+
+#: ../../radio.rst:136
+msgid ""
+"Currently, it's equivalent to ``str(receive_bytes(), 'utf8')`` but with a"
+" check that the the first three bytes are ``b'\\x01\\x00\\x01'`` (to make"
+" it compatible with other platforms that may target the micro:bit). It "
+"strips the prepended bytes before converting to a string."
+msgstr ""
+
+#: ../../radio.rst:141
+msgid "A ``ValueError`` exception is raised if conversion to string fails."
+msgstr ""
+
+#: ../../radio.rst:145
+msgid ""
+"Returns a tuple containing three values representing the next incoming "
+"message on the message queue. If there are no pending messages then "
+"``None`` is returned."
+msgstr ""
+
+#: ../../radio.rst:149
+msgid "The three values in the tuple represent:"
+msgstr ""
+
+#: ../../radio.rst:151
+msgid "the next incoming message on the message queue as bytes."
+msgstr ""
+
+#: ../../radio.rst:152
+msgid ""
+"the RSSI (signal strength): a value between 0 (strongest) and -255 "
+"(weakest) as measured in dBm."
+msgstr ""
+
+#: ../../radio.rst:153
+msgid ""
+"a microsecond timestamp: the value returned by ``time.ticks_us()`` when "
+"the message was received."
+msgstr ""
+
+#: ../../radio.rst:155
+msgid "For example::"
+msgstr ""
+
+#: ../../radio.rst:161
+msgid ""
+"This function is useful for providing information needed for "
+"triangulation and/or triliteration with other micro:bit devices."
+msgstr ""
+
+#: ../../radio.rst:166
+msgid "Examples"
+msgstr ""
+

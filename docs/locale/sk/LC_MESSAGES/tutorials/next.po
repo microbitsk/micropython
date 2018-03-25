@@ -1,0 +1,83 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015-2018, Multiple authors
+# This file is distributed under the same license as the BBC micro:bit
+# MicroPython package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: BBC micro:bit MicroPython 0.5.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-03-25 09:53+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.5.3\n"
+
+#: ../../tutorials/next.rst:2
+msgid "Next Steps"
+msgstr ""
+
+#: ../../tutorials/next.rst:4
+msgid ""
+"These tutorials are only the first steps in using MicroPython with the "
+"BBC micro:bit. A musical analogy: you've got a basic understanding of a "
+"very simple instrument and confidently play \"Three Blind Mice\"."
+msgstr ""
+
+#: ../../tutorials/next.rst:8
+msgid "This is an achievement to build upon."
+msgstr ""
+
+#: ../../tutorials/next.rst:10
+msgid "Ahead of you is an exciting journey to becoming a virtuoso coder."
+msgstr ""
+
+#: ../../tutorials/next.rst:12
+msgid ""
+"You will encounter frustration, failure and foolishness. When you do "
+"please remember that you're not alone. Python has a secret weapon: the "
+"most amazing community of programmers on the planet. Connect with this "
+"community and you will make friends, find mentors, support each other and"
+" share resources."
+msgstr ""
+
+#: ../../tutorials/next.rst:17
+msgid ""
+"The examples in the tutorials are simple to explain but may not be the "
+"simplest or most efficient implementations. We've left out lots of "
+"*really fun stuff* so we could concentrate on arming you with the basics."
+" If you *really* want to know how to make MicroPython fly on the BBC "
+"micro:bit then read the API reference documentation. It contains "
+"information about *all* the capabilities available to you."
+msgstr ""
+
+#: ../../tutorials/next.rst:24
+msgid ""
+"Explore, experiment and be fearless trying things out ~ for these are the"
+" attributes of a virtuoso coder. To encourage you we have hidden a number"
+" of Easter eggs in MicroPython and the code editors (both TouchDevelop "
+"and Mu). They're fun rewards for looking \"under the hood\" and \"poking "
+"with a stick\"."
+msgstr ""
+
+#: ../../tutorials/next.rst:29
+msgid ""
+"Such skill in Python is valuable: it's one of the world's most popular "
+"professional programming languages."
+msgstr ""
+
+#: ../../tutorials/next.rst:32
+msgid ""
+"Amaze us with your code! Make things that delight us! Most of all, have "
+"fun!"
+msgstr ""
+
+#: ../../tutorials/next.rst:34
+msgid "Happy hacking!"
+msgstr ""
+

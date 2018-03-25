@@ -53,7 +53,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'BBC micro:bit MicroPython'
-copyright = u'2015-2016, Multiple authors'
+copyright = u'2015-2018, Multiple authors'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -352,3 +352,7 @@ if not on_rtd:  # only import and set the theme if we're building docs locally
     html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
 
 # otherwise, readthedocs.org uses their theme by default, so no need to specify it
+
+# Internalization
+locale_dirs = ['locale/']
+gettext_compact = False

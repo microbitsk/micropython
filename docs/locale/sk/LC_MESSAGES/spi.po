@@ -1,0 +1,131 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015-2018, Multiple authors
+# This file is distributed under the same license as the BBC micro:bit
+# MicroPython package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: BBC micro:bit MicroPython 0.5.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-03-25 09:53+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.5.3\n"
+
+#: ../../spi.rst:2
+msgid "SPI"
+msgstr ""
+
+#: ../../spi.rst:6
+msgid ""
+"The ``spi`` module lets you talk to a device connected to your board "
+"using a serial peripheral interface (SPI) bus. SPI uses a so-called "
+"master-slave architecture with a single master. You will need to specify "
+"the connections for three signals:"
+msgstr ""
+
+#: ../../spi.rst:11
+msgid "SCLK : Serial Clock (output from master)."
+msgstr ""
+
+#: ../../spi.rst:12
+msgid "MOSI : Master Output, Slave Input (output from master)."
+msgstr ""
+
+#: ../../spi.rst:13
+msgid "MISO : Master Input, Slave Output (output from slave)."
+msgstr ""
+
+#: ../../spi.rst:17
+msgid "Functions"
+msgstr ""
+
+#: ../../spi.rst:21
+msgid ""
+"Initialize SPI communication with the specified parameters on the "
+"specified ``pins``. Note that for correct communication, the parameters "
+"have to be the same on both communicating devices."
+msgstr ""
+
+#: ../../spi.rst:25
+msgid "The ``baudrate`` defines the speed of communication."
+msgstr ""
+
+#: ../../spi.rst:27
+msgid ""
+"The ``bits`` defines the size of bytes being transmitted. Currently only "
+"``bits=8`` is supported. However, this may change in the future."
+msgstr ""
+
+#: ../../spi.rst:30
+msgid ""
+"The ``mode`` determines the combination of clock polarity and phase "
+"according to the following convention, with polarity as the high order "
+"bit and phase as the low order bit:"
+msgstr ""
+
+#: ../../spi.rst:35
+msgid "SPI Mode"
+msgstr ""
+
+#: ../../spi.rst:35
+msgid "Polarity (CPOL)"
+msgstr ""
+
+#: ../../spi.rst:35
+msgid "Phase (CPHA)"
+msgstr ""
+
+#: ../../spi.rst:37 ../../spi.rst:39 ../../spi.rst:41
+msgid "0"
+msgstr ""
+
+#: ../../spi.rst:39 ../../spi.rst:41 ../../spi.rst:43
+msgid "1"
+msgstr ""
+
+#: ../../spi.rst:41
+msgid "2"
+msgstr ""
+
+#: ../../spi.rst:43
+msgid "3"
+msgstr ""
+
+#: ../../spi.rst:46
+msgid ""
+"Polarity (aka CPOL) 0 means that the clock is at logic value 0 when idle "
+"and goes high (logic value 1) when active; polarity 1 means the clock is "
+"at logic value 1 when idle and goes low (logic value 0) when active. "
+"Phase (aka CPHA) 0 means that data is sampled on the leading edge of the "
+"clock, and 1 means on the trailing edge (viz. "
+"https://en.wikipedia.org/wiki/Signal_edge)."
+msgstr ""
+
+#: ../../spi.rst:53
+msgid ""
+"The ``sclk``, ``mosi`` and ``miso`` arguments specify the pins to use for"
+" each type of signal."
+msgstr ""
+
+#: ../../spi.rst:58
+msgid "Read at most ``nbytes``. Returns what was read."
+msgstr ""
+
+#: ../../spi.rst:62
+msgid "Write the ``buffer`` of bytes to the bus."
+msgstr ""
+
+#: ../../spi.rst:66
+msgid ""
+"Write the ``out`` buffer to the bus and read any response into the ``in``"
+" buffer. The length of the buffers should be the same. The buffers can be"
+" the same object."
+msgstr ""
+
