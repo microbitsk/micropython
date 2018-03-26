@@ -20,7 +20,7 @@ msgstr ""
 
 #: ../../tutorials/introduction.rst:2
 msgid "Introduction"
-msgstr ""
+msgstr "Úvod"
 
 #: ../../tutorials/introduction.rst:4
 msgid ""
@@ -29,16 +29,22 @@ msgid ""
 "installing Mu are on its website. You may need to install a driver, "
 "depending on your platform (instruction are on the website)."
 msgstr ""
+"Na prácu s týmtio návodmi ti odporúčame stiahnuť si a používať "
+"`mu editor <http://codewith.mu/>`_ . Inštrukcie na stiahnutie a "
+"inštaláciu Mu sú na ich web stránke. Možno budeš musieť nainštalovať driver,"
+" záleží, aký máš operačný systém (inštrukcie sú na web stránke)."
 
 #: ../../tutorials/introduction.rst:9
 msgid "Mu works with Windows, OSX and Linux."
-msgstr ""
+msgstr "Mu pracuje pod Windowsom, OSX aj Linuxom."
 
 #: ../../tutorials/introduction.rst:11
 msgid ""
 "Once Mu is installed connect your micro:bit to your computer via a USB "
 "lead."
 msgstr ""
+"Ak už máš nainštalovaný Mu, pripoj svoj micro:bit k počítaču "
+"cez USB kábel."
 
 #: ../../tutorials/introduction.rst:13
 msgid ""
@@ -46,10 +52,13 @@ msgid ""
 "transfer it to the micro:bit. If it doesn't work, make sure your "
 "micro:bit appears as a USB storage device in your file system explorer."
 msgstr ""
+"V editore napíš svoj skript a klikni na tlačítko \"Flash\", ktorým"
+"ho odošleš na micro:bit. Ak to nefunguje, uisti sa, že tvoj micro:bit "
+"sa zobrazuje v tvojom systéme ako USB zariadenie."
 
 #: ../../tutorials/introduction.rst:17
 msgid "Tutorials"
-msgstr ""
+msgstr "Návody"
 
 #: ../../tutorials/introduction.rst:36
 msgid ""
@@ -61,6 +70,14 @@ msgid ""
 "America, Disney, CERN, YouTube, Mozilla, The Guardian - the list goes on "
 "and covers all sectors of the economy, science and the arts."
 msgstr ""
+"Python je jeden z `najobľúbenejších "
+"<http://www.tiobe.com/index.php/content/paperinfo/tpci/index.html>`_ "
+"programovacích jazykov na svete. Každý deň, bez toho, aby si si to "
+"uvedomil(a), pravdepodobne používaš softvér napísaný v Pythone. "
+"Python používajú rôzne spoločnosti a organizácie na množstvo rozličných "
+"úloh a aplikácií. Google, NASA, Bank of "
+"America, Disney, CERN, YouTube, Mozilla, The Guardian - a mnoho ďalších, "
+"ktorí pokrývajú všetky segmenty ekonomiky, vedy a umenia."
 
 #: ../../tutorials/introduction.rst:42
 msgid ""
@@ -70,12 +87,18 @@ msgid ""
 "were controlled `with Python "
 "<https://www.reddit.com/r/IAmA/comments/45g8qu/we_are_the_ligo_scientific_collaboration_and_we/czxnlux>`_."
 msgstr ""
+"Napríklad, pamätáš si na oznámenie `objavu gravitačných vĺn"
+"<http://www.bbc.co.uk/news/science-environment-35552207>`_? Nástroj, ktorým "
+"sa vykonávali tieto merania bol napísaný v `Pythone "
+"<https://www.reddit.com/r/IAmA/comments/45g8qu/we_are_the_ligo_scientific_collaboration_and_we/czxnlux>`_."
 
 #: ../../tutorials/introduction.rst:44
 msgid ""
 "Put simply, if you teach or learn Python, you are developing a highly "
 "valuable skill that applies to all areas of human endeavour."
 msgstr ""
+"Jednoducho povedané, ak sa učíš alebo dokonca vyučuješ Python, vytváraš veľmi"
+" cennú zručnosť, ktorá sa dá využiť vo všetkých oblastiach."
 
 #: ../../tutorials/introduction.rst:47
 msgid ""
@@ -85,6 +108,11 @@ msgid ""
 "move onto other things (such as programming Python on a Raspberry Pi) "
 "you'll use exactly the same language."
 msgstr ""
+"Jednou z takých oblastí je úžasné zariadenie BBC micro:bit. Beží na ňom "
+"špeciálna verzia Pythonu, ktorá sa volá MicroPython vytvorená presne "
+"pre to, aby bežala na malých zariadeniach ako je napríklad BBC micro:bit."
+"Je to úplná implementácia Pythonu 3, takže keď sa presunieš na programovanie "
+"s inými zariadeniami (napríklad Raspberry Pi), budeš používať rovnaký jazyk."
 
 #: ../../tutorials/introduction.rst:53
 msgid ""
@@ -92,6 +120,9 @@ msgid ""
 "with \"regular\" Python. However, we have created a special ``microbit`` "
 "module in MicroPython that lets you control the device."
 msgstr ""
+"MicroPython neobsahuje všetky štandardné knižnice, ktoré sú v "
+"\"normálnom\" Pythone. Ale v Micropythone sme vytvorili špeciálny modul "
+"``microbit``, ktorý ti umožní ovládať toto zariadenie."
 
 #: ../../tutorials/introduction.rst:57
 msgid ""
@@ -103,6 +134,13 @@ msgid ""
 "the BBC micro:bit have been created by an international team of "
 "volunteers working in their free time."
 msgstr ""
+"Python and MicroPython sú voľné softvéry. Neznamená to len to, že za "
+"používanie Pythonu neplatíš, ale dokonca môžeš prispievať Python komunite."
+"Či už vo forme kódu, dokumentácie, reportovaniu chýb, prevádzkovaniu"
+"komunitnej skupiny alebo písaním návodov, ako je napríklad tento. "
+"Vlastne všetky zdroje pre micro:bit súvisiace s Pythonom boli vytvorené "
+"medzinárodným tímom dobrovoľníkov, ktorí na nich pracovali vo svojom voľnom "
+"čase."
 
 #: ../../tutorials/introduction.rst:64
 msgid ""
@@ -110,12 +148,17 @@ msgid ""
 "follow steps. Feel free to adopt and adapt them for classroom based "
 "lessons, or perhaps just follow them on your own at home."
 msgstr ""
+"Tieto lekcie predstavujú MicroPython a BBC micro:bit pomocou jednoduchých"
+"krokov. Pokojne si ich prispôsobte pre svojich žiakov, alebo podľa nich "
+"postupujte doma samostatne."
 
 #: ../../tutorials/introduction.rst:68
 msgid ""
 "You'll have most success if you explore, experiment and play. You can't "
 "break a BBC micro:bit by writing incorrect code. Just dive in!"
 msgstr ""
+"Najviac úspechov dosiahneš pri skúmaní, experimentovaní a hraní sa. "
+"BBC micro:bit zlým kódom nepokazíš. Takže smelo do toho!"
 
 #: ../../tutorials/introduction.rst:71
 msgid ""
@@ -124,12 +167,16 @@ msgid ""
 "as software developers have a lot of fun tracking down bugs and avoiding "
 "the repetition of mistakes."
 msgstr ""
+"Malá výstraha: *veľa krát zlyháš*, a to je úplne v poriadku. "
+"**Zlyhanie je spôsob, akým sa programátori učia**. Tí z nás, ktorí pracujú "
+"ako programátori sa často zabávajú tým, že hľadajú chyby a snažia "
+"sa im v budúcnosti vyhnúť."
 
 #: ../../tutorials/introduction.rst:76
 msgid "If in doubt, remember the Zen of MicroPython::"
-msgstr ""
+msgstr "V prípade pochybností, spomeň si na Zen MicroPythonu:"
 
 #: ../../tutorials/introduction.rst:89
 msgid "Best of luck!"
-msgstr ""
+msgstr "Veľa šťastia!"
 

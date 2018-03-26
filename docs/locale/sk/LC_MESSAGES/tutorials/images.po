@@ -20,7 +20,7 @@ msgstr ""
 
 #: ../../tutorials/images.rst:2
 msgid "Images"
-msgstr ""
+msgstr "Obrázky"
 
 #: ../../tutorials/images.rst:4
 msgid ""
@@ -30,12 +30,18 @@ msgid ""
 "of control over the display so you can create all sorts of interesting "
 "effects."
 msgstr ""
+"Čo sa týka umenia, MicroPython ja asi rovnako dobrý ako ty, pokiaľ by si "
+"mal(a) k dispozícii iba sieť 5x5 červených LED diód (to sú tie svetielka "
+"na prednej strane zariadenia). MicroPython ti dáva pomerne veľa možností, "
+"ako ovládať displej, takže môžeš vytvoriť všelijaké zaujímavé efekty."
 
 #: ../../tutorials/images.rst:9
 msgid ""
 "MicroPython comes with lots of built-in pictures to show on the display. "
 "For example, to make the device appear happy you type::"
 msgstr ""
+"MicroPython má množstvo zabudovaných obrázkov, ktoré vie zobraziť na "
+"displeji. Napríklad, ak chceš, aby micro:bit vyzeral šťastne, napíš::"
 
 #: ../../tutorials/images.rst:15
 msgid ""
@@ -45,66 +51,72 @@ msgid ""
 "We tell ``show`` to use it by putting it between the parenthesis (``(`` "
 "and ``)``)."
 msgstr ""
+"Predpokladám, že si pamätáš, čo robí prvý riadok. Druhý riadok hovorí "
+"objektu ``display`` (=\"displej\"), že má ``show`` (=\"zobraziť\") vstavaný "
+"obrázok. Šťastný obrázok, ktorý chceme zobraziť je súčasťou objektu "
+"``Image`` (\"obrázok\") a volá sa ``HAPPY`` (=\"ŠŤASTNÝ\"). "
+"Metóde ``show`` ((=\"zobraziť\") povieme, že má použiť práve ten tak, že "
+"zadáme jeho názov do zátvoriek (``(`` a ``)``)."
 
 #: ../../tutorials/images.rst:22
 msgid "Here's a list of the built-in images:"
-msgstr ""
+msgstr "Tu je zoznam vstavaných obrázkov:"
 
 #: ../../tutorials/images.rst:24
 msgid "``Image.HEART``"
-msgstr ""
+msgstr "``Image.HEART``  (obrázok SRDCE)"
 
 #: ../../tutorials/images.rst:25
 msgid "``Image.HEART_SMALL``"
-msgstr ""
+msgstr "``Image.HEART_SMALL``  (obrázok MALÉ SRDCE)"
 
 #: ../../tutorials/images.rst:26
 msgid "``Image.HAPPY``"
-msgstr ""
+msgstr "``Image.HAPPY``  (obrázok ŠŤASTNÝ)"
 
 #: ../../tutorials/images.rst:27
 msgid "``Image.SMILE``"
-msgstr ""
+msgstr "``Image.SMILE``  (obrázok ÚSMEV)"
 
 #: ../../tutorials/images.rst:28
 msgid "``Image.SAD``"
-msgstr ""
+msgstr "``Image.SAD``  (obrázok SMUTNÝ)"
 
 #: ../../tutorials/images.rst:29
 msgid "``Image.CONFUSED``"
-msgstr ""
+msgstr "``Image.CONFUSED``  (obrázok ZMÄTENÝ)"
 
 #: ../../tutorials/images.rst:30
 msgid "``Image.ANGRY``"
-msgstr ""
+msgstr "``Image.ANGRY``  (obrázok NAHNEVANÝ)"
 
 #: ../../tutorials/images.rst:31
 msgid "``Image.ASLEEP``"
-msgstr ""
+msgstr "``Image.ASLEEP``  (obrázok SPIACI)"
 
 #: ../../tutorials/images.rst:32
 msgid "``Image.SURPRISED``"
-msgstr ""
+msgstr "``Image.SURPRISED``  (obrázok PREKVAPENÝ)"
 
 #: ../../tutorials/images.rst:33
 msgid "``Image.SILLY``"
-msgstr ""
+msgstr "``Image.SILLY``  (obrázok HLÚPY)"
 
 #: ../../tutorials/images.rst:34
 msgid "``Image.FABULOUS``"
-msgstr ""
+msgstr "``Image.FABULOUS``  (obrázok ÚŽASNÝ)"
 
 #: ../../tutorials/images.rst:35
 msgid "``Image.MEH``"
-msgstr ""
+msgstr "``Image.MEH``  (obrázok MEH)"
 
 #: ../../tutorials/images.rst:36
 msgid "``Image.YES``"
-msgstr ""
+msgstr "``Image.YES``  (obrázok ÁNO)"
 
 #: ../../tutorials/images.rst:37
 msgid "``Image.NO``"
-msgstr ""
+msgstr "``Image.NO``  (obrázok NIE)"
 
 #: ../../tutorials/images.rst:38
 msgid ""
@@ -113,6 +125,10 @@ msgid ""
 "``Image.CLOCK5``, ``Image.CLOCK4``, ``Image.CLOCK3``, ``Image.CLOCK2``, "
 "``Image.CLOCK1``"
 msgstr ""
+"``Image.CLOCK12``, ``Image.CLOCK11``, ``Image.CLOCK10``, "
+"``Image.CLOCK9``, ``Image.CLOCK8``, ``Image.CLOCK7``, ``Image.CLOCK6``, "
+"``Image.CLOCK5``, ``Image.CLOCK4``, ``Image.CLOCK3``, ``Image.CLOCK2``, "
+"``Image.CLOCK1`` (obrázky HODÍN o 12.-1. hodine)"
 
 #: ../../tutorials/images.rst:41
 msgid ""
@@ -120,122 +136,127 @@ msgid ""
 "``Image.ARROW_SE``, ``Image.ARROW_S``, ``Image.ARROW_SW``, "
 "``Image.ARROW_W``, ``Image.ARROW_NW``"
 msgstr ""
+"``Image.ARROW_N``, ``Image.ARROW_NE``, ``Image.ARROW_E``, "
+"``Image.ARROW_SE``, ``Image.ARROW_S``, ``Image.ARROW_SW``, "
+"``Image.ARROW_W``, ``Image.ARROW_NW``  (obrázky ŠÍPOK v rôznych smeroch "
+"označených anglickými skratkami zemepisných smerov (N-sever, S-juh, "
+"E-východ, W - západ)"
 
 #: ../../tutorials/images.rst:44
 msgid "``Image.TRIANGLE``"
-msgstr ""
+msgstr "``Image.TRIANGLE``  (obrázok TROJUHOLNÍK)"
 
 #: ../../tutorials/images.rst:45
 msgid "``Image.TRIANGLE_LEFT``"
-msgstr ""
+msgstr "``Image.TRIANGLE_LEFT``  (obrázok TROJUHOLNÍK VĽAVO)"
 
 #: ../../tutorials/images.rst:46
 msgid "``Image.CHESSBOARD``"
-msgstr ""
+msgstr "``Image.CHESSBOARD``  (obrázok ŠACHOVNICA)"
 
 #: ../../tutorials/images.rst:47
 msgid "``Image.DIAMOND``"
-msgstr ""
+msgstr "``Image.DIAMOND``  (obrázok DIAMANT)"
 
 #: ../../tutorials/images.rst:48
 msgid "``Image.DIAMOND_SMALL``"
-msgstr ""
+msgstr "``Image.DIAMOND_SMALL``  (obrázok MALÝ DIAMANT)"
 
 #: ../../tutorials/images.rst:49
 msgid "``Image.SQUARE``"
-msgstr ""
+msgstr "``Image.SQUARE``  (obrázok ŠTVOREC)"
 
 #: ../../tutorials/images.rst:50
 msgid "``Image.SQUARE_SMALL``"
-msgstr ""
+msgstr "``Image.SQUARE_SMALL``  (obrázok MALÝ ŠTVOREC)"
 
 #: ../../tutorials/images.rst:51
 msgid "``Image.RABBIT``"
-msgstr ""
+msgstr "``Image.RABBIT``  (obrázok ZAJAC)"
 
 #: ../../tutorials/images.rst:52
 msgid "``Image.COW``"
-msgstr ""
+msgstr "``Image.COW``  (obrázok KRAVA)"
 
 #: ../../tutorials/images.rst:53
 msgid "``Image.MUSIC_CROTCHET``"
-msgstr ""
+msgstr "``Image.MUSIC_CROTCHET``  (obrázok ŠTVRŤOVǍ NOTA)"
 
 #: ../../tutorials/images.rst:54
 msgid "``Image.MUSIC_QUAVER``"
-msgstr ""
+msgstr "``Image.MUSIC_QUAVER``  (obrázok OSMINOVÁ NOTA)"
 
 #: ../../tutorials/images.rst:55
 msgid "``Image.MUSIC_QUAVERS``"
-msgstr ""
+msgstr "``Image.MUSIC_QUAVER``  (obrázok OSMINOVÉ NOTY)"
 
 #: ../../tutorials/images.rst:56
 msgid "``Image.PITCHFORK``"
-msgstr ""
+msgstr "``Image.PITCHFORK``  (obrázok VIDLIČKA)"
 
 #: ../../tutorials/images.rst:57
 msgid "``Image.XMAS``"
-msgstr ""
+msgstr "``Image.XMAS``  (obrázok VIANOCE)"
 
 #: ../../tutorials/images.rst:58
 msgid "``Image.PACMAN``"
-msgstr ""
+msgstr "``Image.PACMAN``  (obrázok PACMAN)"
 
 #: ../../tutorials/images.rst:59
 msgid "``Image.TARGET``"
-msgstr ""
+msgstr "``Image.TARGET``  (obrázok TERČ)"
 
 #: ../../tutorials/images.rst:60
 msgid "``Image.TSHIRT``"
-msgstr ""
+msgstr "``Image.TSHIRT``  (obrázok TRIČKO)"
 
 #: ../../tutorials/images.rst:61
 msgid "``Image.ROLLERSKATE``"
-msgstr ""
+msgstr "``Image.ROLLERSKATE``  (obrázok KOLIESKOVÉ KORČULE)"
 
 #: ../../tutorials/images.rst:62
 msgid "``Image.DUCK``"
-msgstr ""
+msgstr "``Image.DUCK``  (obrázok KAČICA)"
 
 #: ../../tutorials/images.rst:63
 msgid "``Image.HOUSE``"
-msgstr ""
+msgstr "``Image.HOUSE``  (obrázok DOM)"
 
 #: ../../tutorials/images.rst:64
 msgid "``Image.TORTOISE``"
-msgstr ""
+msgstr "``Image.TORTOISE``  (obrázok KORYTNAČKA)"
 
 #: ../../tutorials/images.rst:65
 msgid "``Image.BUTTERFLY``"
-msgstr ""
+msgstr "``Image.BUTTERFLY``  (obrázok MOTÝĽ)"
 
 #: ../../tutorials/images.rst:66
 msgid "``Image.STICKFIGURE``"
-msgstr ""
+msgstr "``Image.STICKFIGURE``  (obrázok POSTAVIČKA)"
 
 #: ../../tutorials/images.rst:67
 msgid "``Image.GHOST``"
-msgstr ""
+msgstr "``Image.GHOST``  (obrázok DUCH)"
 
 #: ../../tutorials/images.rst:68
 msgid "``Image.SWORD``"
-msgstr ""
+msgstr "``Image.SWORD``  (obrázok MEČ)"
 
 #: ../../tutorials/images.rst:69
 msgid "``Image.GIRAFFE``"
-msgstr ""
+msgstr "``Image.GIRAFFE``  (obrázok ŽIRAFA)"
 
 #: ../../tutorials/images.rst:70
 msgid "``Image.SKULL``"
-msgstr ""
+msgstr "``Image.SKULL``  (obrázok LEBKA)"
 
 #: ../../tutorials/images.rst:71
 msgid "``Image.UMBRELLA``"
-msgstr ""
+msgstr "``Image.UMBRELLA``  (obrázok DÁŽDNIK)"
 
 #: ../../tutorials/images.rst:72
 msgid "``Image.SNAKE``"
-msgstr ""
+msgstr "``Image.SNAKE``  (obrázok HAD)"
 
 #: ../../tutorials/images.rst:74
 msgid ""
@@ -243,20 +264,24 @@ msgid ""
 "look happy to see what some of the other built-in images look like? (Just"
 " replace ``Image.HAPPY`` with one of the built-in images listed above.)"
 msgstr ""
+"Je ich fakt dosť! Skúsme, ako bude vyzerať micro:bit, keď vymeníme jeho "
+"šťastný obrázok za nejaký iný vstavaný obrázok. (Jednoducho iba "
+"nahraď obrázok ``Image.HAPPY`` za nejaký iný zo zoznamu.)"
 
 #: ../../tutorials/images.rst:79
 msgid "DIY Images"
-msgstr ""
+msgstr "Vlastné obrázky"
 
 #: ../../tutorials/images.rst:81
 msgid ""
 "Of course, you want to make your own image to display on the micro:bit, "
 "right?"
 msgstr ""
+"Jasné, chceš si urobiť vlastný obrázok, ktorý sa zobrazí na micro:bite, však?"
 
 #: ../../tutorials/images.rst:83
 msgid "That's easy."
-msgstr ""
+msgstr "Je to jednoduché."
 
 #: ../../tutorials/images.rst:85
 msgid ""
@@ -266,18 +291,26 @@ msgid ""
 "level. The values ``1`` to ``8`` represent the brightness levels between "
 "off (``0``) and full on (``9``)."
 msgstr ""
+"Na každom LED pixeli displeja vieme nastaviť jednu z deisatich hodnôt. "
+"Ak má pixel hodnotu ``0`` (nula), je vypnutý. Má doslova nulový jas. "
+"Ale ak ho nastavíme na ``9``, potom má najvyšší jas. Hodnoty ``1`` až ``8`` "
+"predstavujú úrovne jasu medzi vypnutou diódou (``0``) a maximálnym jasom "
+"(``9``)."
 
 #: ../../tutorials/images.rst:91
 msgid ""
 "Armed with this information, it's possible to create a new image like "
 "this::"
 msgstr ""
+"Vyzbrojení touto informáciou môžeme vytvoriť nový obrázok takto jednoducho::"
 
 #: ../../tutorials/images.rst:103
 msgid ""
 "(When run, the device should display an old-fashioned \"Blue Peter\" "
 "sailing ship with the masts dimmer than the boat's hull.)"
 msgstr ""
+"(Keď sa to spustí, zariadenie by malo zobraziť historickú loď "
+"\"Modrý Peter\" so stožiarmi, ktoré sú tmavšie ako trup lode.)"
 
 #: ../../tutorials/images.rst:106
 msgid ""
@@ -288,34 +321,44 @@ msgid ""
 "specify the individual brightness for each of the five pixels on each of "
 "the five lines on the physical display. That's how to create a new image."
 msgstr ""
+"Už vieš ako nakresliť obrázok? Vidíš, že každý riadok displeja sa zobrazuje "
+"ako riadok čísel končiaci ``:`` a uzavretý dvojitými úvodzovkami ``\"``? "
+"Každé z čísiel označuje jas. Keďže je tam päť riadkov po päť čísiel, "
+"dokážeme tak nastaviť jas pre každý jeden pixel displeja. Takto vytvárame "
+"nové obrázky."
 
 #: ../../tutorials/images.rst:113
 msgid "Simple!"
-msgstr ""
+msgstr "Jendoduché!"
 
 #: ../../tutorials/images.rst:115
 msgid ""
 "In fact, you don't need to write this over several lines. If you think "
 "you can keep track of each line, you can rewrite it like this::"
 msgstr ""
+"Vlastne, ani ich nepotrebuješ písať na niekoľko riadkov. Ak si myslíš, že "
+"nestratíš prehľad, môžeš ich zapísať aj takto::"
 
 #: ../../tutorials/images.rst:121
 msgid "Animation"
-msgstr ""
+msgstr "Animácia"
 
 #: ../../tutorials/images.rst:123
 msgid ""
 "Static images are fun, but it's even more fun to make them move. This is "
 "also amazingly simple to do with MicroPython ~ just use a list of images!"
 msgstr ""
+"Statické (nemenné) obrázky sú zábavné, ale oveľa väčšia zábava je, keď ich "
+"rozhýbeš. S MicroPythonom je aj toto úžasne ľahké - jednoducho použi "
+"zoznam obrázkov!"
 
 #: ../../tutorials/images.rst:126
 msgid "Here is a shopping list::"
-msgstr ""
+msgstr "Tu je náš nákupný zoznam::"
 
 #: ../../tutorials/images.rst:132
 msgid "Here's how you'd represent this list in Python::"
-msgstr ""
+msgstr "Takto zapíšeš zoznam v Pythone::"
 
 #: ../../tutorials/images.rst:136
 msgid ""
@@ -326,10 +369,16 @@ msgid ""
 "``\"Eggs\"``, ``\"Bacon\"`` and ``\"Tomatoes\"``. We know they are "
 "strings of characters because they're enclosed in quotation marks ``\"``."
 msgstr ""
+"Vytvoril som zoznam s názvom ``shopping`` (\"nákup\"), ktorý obsahuje tri "
+"položky. Python view, že je to zoznam, pretože je uzavretý v hranatých "
+"zátvorkách (``[`` a ``]``). Položky v zozname sú oddelené čiarkou (``,``) a "
+"v tomto prípade sú položky tri reťazce znakov: "
+"``\"Vajíčka\"``, ``\"Slanina\"`` and ``\"Rajčiny\"``. Vieme, že sú to "
+"reťazce znakov, pretože sú uzavreté v úvodzovkách ``\"``."
 
 #: ../../tutorials/images.rst:143
 msgid "You can store anything in a list with Python. Here's a list of numbers::"
-msgstr ""
+msgstr "V Pythone môžeš v zozname uložiť čokoľvek. Tu je zoznam čísel::"
 
 #: ../../tutorials/images.rst:150
 msgid ""
@@ -339,14 +388,18 @@ msgid ""
 "Don't worry if this doesn't make sense right now. You'll soon get used to"
 " it."
 msgstr ""
+"Čísla nemusia byť v úvodzovkách, pretože predstavujú hodnotu (teda nie "
+"reťazec znakov). Je rozdiel medzi ``2`` (číselná hodnota 2) a ``\"2\"`` "
+"(znak/číslica predstavujúca číslo 2). Ak ti to zatiaľ nedáva zmysel, netráp "
+"sa tým. Čoskoro si na to zvykneš."
 
 #: ../../tutorials/images.rst:155
 msgid "It's even possible to store different sorts of things in the same list::"
-msgstr ""
+msgstr "Dokonca je možné v jednom zozname uchovávať rôzne typy vecí::"
 
 #: ../../tutorials/images.rst:159
 msgid "Notice that last item? It was an image!"
-msgstr ""
+msgstr "Všímaš tu poslednú položku? To bol obrázok!"
 
 #: ../../tutorials/images.rst:161
 msgid ""
@@ -354,6 +407,10 @@ msgid ""
 "couple of lists of images already built in. They're called "
 "``Image.ALL_CLOCKS`` and ``Image.ALL_ARROWS``::"
 msgstr ""
+"MicroPythonu môžeme povedať, aby animoval zoznam obrázkov. Našťastie už "
+"máme zopár zoznamov obrázkov už vstavaných v MicroPythone. Volajú sa "
+"``Image.ALL_CLOCKS`` (obrázky VŠETKÝCH HODÍN) a ``Image.ALL_ARROWS`` "
+"(obrázky VŠETKÝCH ŠÍPOK)::"
 
 #: ../../tutorials/images.rst:169
 msgid ""
@@ -366,6 +423,14 @@ msgid ""
 "between each image to be only 100 milliseconds (a tenth of a second) with"
 " the argument ``delay=100``."
 msgstr ""
+"Tak ako pri samostatnom obrázku, používame ``display.show`` na zobrazenie "
+"obrázkov na displeji zariadenia. Ale tentokrát povieme MicroPythonu, že má "
+"použiť ``Image.ALL_CLOCKS`` a on rozumie, že má zobraziť každý obrázok zo "
+"zoznamu, jeden po druhom. Taktiež povieme MicroPythonu, že má zobrazovanie "
+"opakovať (takže animácia bude trvať donekonečna) pomocou argumentu "
+"``loop=True``. Navyše mu povieme, že chceme, aby medzi jednotlivými obrázkami"
+"bol interval (prestávka) iba 100 milisekúnd (desatina sekundy) pomocou "
+"argumentu ``delay=100``."
 
 #: ../../tutorials/images.rst:177
 msgid ""
@@ -374,40 +439,53 @@ msgid ""
 " although the default value for ``loop`` is ``False``)? Can you change "
 "the speed of the animation?"
 msgstr ""
+"Prídeš na to, ako animovať zoznam šípok ``Image.ALL_ARROWS``? Ako sa vyhneš "
+"opakovaniu donekonečna (rada: opak ``True`` (\"Pravda\") je ``False`` "
+"(\"Nepravda\") ale predvolená hodnota opakovania je ``loop = False``)? "
+"Dokážeš zmeniť rýchlosť animácie?"
 
 #: ../../tutorials/images.rst:182
 msgid ""
 "Finally, here's how to create your own animation. In my example I'm going"
 " to make my boat sink into the bottom of the display::"
 msgstr ""
+"Na záver je tu ukážka, ako si urobiť vlastnú animáciu. V mojom prípade "
+"potopím svoju loď pod okraj displeja::"
 
 #: ../../tutorials/images.rst:226
 msgid "Here's how the code works:"
-msgstr ""
+msgstr "Takto funguje kód:"
 
 #: ../../tutorials/images.rst:228
 msgid "I create six ``boat`` images in exactly the same way I described above."
 msgstr ""
+"Vytvoril som šesť obrázkov člnu (``boat``) presne podľa plánu, ktorý som "
+"popísal vyššie."
 
 #: ../../tutorials/images.rst:229
 msgid "Then, I put them all into a list that I call ``all_boats``."
-msgstr ""
+msgstr "Teraz ich všetky vložím do zoznamu s názvom ``all_boats`` (všetky člny)"
 
 #: ../../tutorials/images.rst:230
 msgid ""
 "Finally, I ask ``display.show`` to animate the list with a delay of 200 "
 "milliseconds."
 msgstr ""
+"Nakoniec zavolám metódu ``display.show``, ktorá mi animuje zoznam s "
+"intervalom 200 milisekúnd."
 
 #: ../../tutorials/images.rst:231
 msgid ""
 "Since I've not set ``loop=True`` the boat will only sink once (thus "
 "making my animation scientifically accurate). :-)"
 msgstr ""
+"Keďže som nenastavil ``loop=True`` čl sa potopí iba raz (a teda urobíme "
+"tak animáciu z vedeckého hľadiska presnú). :-)"
 
 #: ../../tutorials/images.rst:233
 msgid ""
 "What would you animate? Can you animate special effects? How would you "
 "make an image fade out and then fade in again?"
 msgstr ""
-
+"Čo budeš animovať ty? Dokážeš animovať špeciálne efekty? Ako by si "
+"spravil(a), aby obrázok vybledol a opäť sa objavil?"
