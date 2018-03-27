@@ -9,10 +9,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: BBC micro:bit MicroPython 0.5.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-03-25 09:53+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"POT-Creation-Date: 2018-03-27 23:13+0200\n"
+"PO-Revision-Date: 2018-03-27 23:13+0200\n"
+"Last-Translator: Juraj M Bezrucka <mimmon@gmail.com>\n"
+"Language-Team: SK \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -23,10 +23,12 @@ msgid ""
 "The image of the pizeo buzzer is CC BY-NC-SA 3.0 from "
 "https://www.flickr.com/photos/tronixstuff/4821350094"
 msgstr ""
+"Obrázok piezo bzučiaka je licencovaný pod licenciou CC BY-NC-SA 3.0 z "
+"https://www.flickr.com/photos/tronixstuff/4821350094"
 
 #: ../../tutorials/io.rst:2
 msgid "Input/Output"
-msgstr ""
+msgstr "Vstup/Výstup"
 
 #: ../../tutorials/io.rst:4
 msgid ""
@@ -34,6 +36,9 @@ msgid ""
 " make it look as if the device has teeth. These are the input/output pins"
 " (or I/O pins for short)."
 msgstr ""
+"Na spodnom okraji micro:bitu sa nachádzajú kovové prúžky, vďaka ktorým "
+"vyzerá trochu, ako keby mal zuby. Sú to vstupno/výstupné piny (skrátene "
+"tiež I/O piny)."
 
 #: ../../tutorials/io.rst:10
 msgid ""
@@ -43,6 +48,10 @@ msgid ""
 "connector board to the device it's possible to plug in wires connected to"
 " the other (smaller) pins."
 msgstr ""
+"Niektoré piny sú väčšie ako iné, takže je možné k nim pripojiť krokodílky. "
+"Sú označené 0, 1, 2, 3V a GND (počítače vždy počítajú od nuly). Ak ku "
+"zariadeniu pridáš konektorovú dosku, bude možné zapojiť aj káble "
+"pripojené k ďalším (menším) pinom."
 
 #: ../../tutorials/io.rst:15
 msgid ""
@@ -50,26 +59,33 @@ msgid ""
 "``pinN`` where ``N`` is the pin number. So, for example, to do things "
 "with the pin labelled with a 0 (zero), use the object called ``pin0``."
 msgstr ""
+"Každému pinu na micro:bite zodpovedá *objekt* s názvom ``pinN``, kde"
+" ``N`` je číslo pinu. Takže napríklad, ak chceme niečo robiť s pinom "
+"označeným ako 0 (nula), použijeme objekt s názvom ``pin0``."
 
 #: ../../tutorials/io.rst:19
 msgid "Simple!"
-msgstr ""
+msgstr "Jednoduché!"
 
 #: ../../tutorials/io.rst:21
 msgid ""
 "These objects have various *methods* associated with them depending upon "
 "what the specific pin is capable of."
 msgstr ""
+"K týmto objektom sú priradené rôzne *metódy* podľa toho, čo ktorý pin "
+"dokáže robiť."
 
 #: ../../tutorials/io.rst:25
 msgid "Ticklish Python"
-msgstr ""
+msgstr "Šteklivý Python"
 
 #: ../../tutorials/io.rst:27
 msgid ""
 "The simplest example of input via the pins is a check to see if they are "
 "touched. So, you can tickle your device to make it laugh like this::"
 msgstr ""
+"Najjednoduchší príklad vstupu cez piny je zistiť, či sa ich niečo dotýka. "
+"Takže môžeme poštekliť naše zariadenie, aby sa smialo - takto::"
 
 #: ../../tutorials/io.rst:38
 msgid ""
@@ -77,22 +93,29 @@ msgid ""
 "hand, touch (or tickle) the 0 (zero) pin. You should see the display "
 "change from grumpy to happy!"
 msgstr ""
+"Jednou rukou drž zariadenie za pin GND. Potom sa druhou rukou dotkni "
+"(alebo poštekli) pin 0 (nula). Mal(a) by si vidieť, že displej sa zmení "
+"z mrzutého na šťastný!"
 
 #: ../../tutorials/io.rst:42
 msgid ""
 "This is a form of very basic input measurement. However, the fun really "
 "starts when you plug in circuits and other devices via the pins."
 msgstr ""
+"Toto je úplne najzákladnéejší spôsob merania vstupov. Ale skutočná zábava "
+"začína až keď zapojíš obvody a ďalšie zariadenia cez piny."
 
 #: ../../tutorials/io.rst:46
 msgid "Bleeps and Bloops"
-msgstr ""
+msgstr "Pípanie a bublanie"
 
 #: ../../tutorials/io.rst:48
 msgid ""
 "The simplest thing we can attach to the device is a Piezo buzzer. We're "
 "going to use it for output."
 msgstr ""
+"Najjednoduchšia vec, ktorú vieme pripojiť k zariadeniu je Piezo bzučiak. "
+"Budeme ho používať na výstup."
 
 #: ../../tutorials/io.rst:53
 msgid ""
@@ -100,28 +123,37 @@ msgid ""
 "circuit. To attach one to your BBC micro:bit you should attach crocodile "
 "clips to pin 0 and GND (as shown below)."
 msgstr ""
+"Keď sú tieto malé zariadenia zapojené do obvodu, vydávajú vysoký piskľavý "
+"zvuk. Na pripojenie k micro:bitu ti postačí zapojiť krokodílky na piny "
+"0 a GND (ako na obrázku nižšie)."
 
 #: ../../tutorials/io.rst:59
 msgid ""
 "The wire from pin 0 should be attached to the positive connector on the "
 "buzzer and the wire from GND to the negative connector."
 msgstr ""
+"Drôt z pinu 0 musí byť pripojený na kladný konektor na bzučiaku a drôt z GND"
+" musí ísť na záporný konektor."
 
 #: ../../tutorials/io.rst:62
 msgid "The following program will cause the buzzer to make a sound::"
-msgstr ""
+msgstr "Tento program spôsobí, že bzučiak vydá zvuk::"
 
 #: ../../tutorials/io.rst:68
 msgid ""
 "This is fun for about 5 seconds and then you'll want to make the horrible"
 " squeaking stop. Let's improve our example and make the device bleep::"
 msgstr ""
+"Toto je zábavné asi tak 5 sekúnd a potom už chceš ten príšerný piskot "
+"zastaviť. Vylepšime teda náš príklad a zariaďme, aby zariadenie pípalo::"
 
 #: ../../tutorials/io.rst:79
 msgid ""
 "Can you work out how this script works? Remember that ``1`` is \"on\" and"
 " ``0`` is \"off\" in the digital world."
 msgstr ""
+"Rozumieš tomu, ako ten skript funguje? Nezabudni, že vo svete počítačov "
+"``1`` znamená \"zapnuté\" (\"on\") a ``0`` je \"vypnuté\" (\"off\")."
 
 #: ../../tutorials/io.rst:82
 msgid ""
@@ -132,8 +164,12 @@ msgid ""
 "480 milliseconds before looping back and starting all over again. This "
 "means you'll get two bleeps per second (one every 500 milliseconds)."
 msgstr ""
+"Zariadenie je v nekonečnom cykle a okamžite zapína pin 0. To spôsobí, že "
+"bzučiak pípne. Kým bzučiak pípa, zariadenie spí 20 milisekúnd a potom "
+"pin 0 vypne. Toto vytvára zdanie krátkeho pípnutia. Nakoniec zariadenie spí "
+"480 milisekúnd, kým sa cyklus nespustí odznova. To znamená, že máš dve "
+"pípnutia za sekundu (každých 500 milisekúnd jedno)."
 
 #: ../../tutorials/io.rst:89
 msgid "We've made a very simple metronome!"
-msgstr ""
-
+msgstr "Vyrobili sme jednoduchý metronóm!"
