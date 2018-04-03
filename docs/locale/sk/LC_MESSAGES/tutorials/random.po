@@ -10,9 +10,9 @@ msgstr ""
 "Project-Id-Version: BBC micro:bit MicroPython 0.5.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-25 09:53+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2018-03-27 23:13+0200\n"
+"Last-Translator: Juraj M Bezrucka <mimmon@gmail.com>\n"
+"Language-Team: SK \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -20,13 +20,15 @@ msgstr ""
 
 #: ../../tutorials/random.rst:2
 msgid "Random"
-msgstr ""
+msgstr "Náhoda"
 
 #: ../../tutorials/random.rst:4
 msgid ""
 "Sometimes you want to leave things to chance, or mix it up a little: you "
 "want the device to act randomly."
 msgstr ""
+"Niekedy chceš veciam dopriať voľnejší priebeh alebo niečo trochu pomiešať: "
+"chceš, aby sa zariadenie správalo náhodne."
 
 #: ../../tutorials/random.rst:7
 msgid ""
@@ -34,6 +36,9 @@ msgid ""
 "chance and a little chaos into your code. For example, here's how to "
 "scroll a random name across the display::"
 msgstr ""
+"MicroPython obsahuje modul ``random`` (\"náhoda\"), vďaka ktorému vniesť "
+"trochu chaosu do tvojho kódu, je veľmi jednoduché. Napríklad takto urobíš, "
+"aby sa na displeji posúvalo náhodne vybrané meno::"
 
 #: ../../tutorials/random.rst:18
 msgid ""
@@ -43,26 +48,36 @@ msgid ""
 "argument and returns an item chosen at random. This item (the randomly "
 "chosen name) is the argument for ``display.scroll``."
 msgstr ""
+"Zoznam (``names`` - \"mená\") obsahuje sedem mien, ktoré sú definované ako "
+"reťazce znakov. Posledný riadok je *vnorený* (\"cibuľový\" efekt, o ktorom "
+"sme hovorili v predchádzajúcich kapitolách): metóda ``random.choice`` "
+"(\"náhoda.výber\") prijme zoznam ``names`` ako argument ako vráti z neho náhodne "
+"položku. Táto položka (náhodne vybrané meno) je potom argumentom "
+"pre metódu ``display.scroll`` (\"displej.posúvaj\")."
 
 #: ../../tutorials/random.rst:24
 msgid "Can you modify the list to include your own set of names?"
-msgstr ""
+msgstr "Dokážeš upraviť zoznam tak, aby obsahoval tvoj vlastný zoznam mien?"
 
 #: ../../tutorials/random.rst:27
 msgid "Random Numbers"
-msgstr ""
+msgstr "Náhodné čísla"
 
 #: ../../tutorials/random.rst:29
 msgid ""
 "Random numbers are very useful. They're common in games. Why else do we "
 "have dice?"
 msgstr ""
+"Náhodné čísla sú veľmi užitočné. V hrách sú veľmi bežné. Prečo by sme inak "
+"mali kocky?"
 
 #: ../../tutorials/random.rst:32
 msgid ""
 "MicroPython comes with several useful random number methods. Here's how "
 "to make a simple dice::"
 msgstr ""
+"MicroPython obsahuje niekoľko užitočných metód na náhodné čísla. Takto "
+"jednoducho môžeme hádzať kockou::"
 
 #: ../../tutorials/random.rst:40
 msgid ""
@@ -74,6 +89,12 @@ msgid ""
 "character then we use the ``str`` function to turn the numeric value into"
 " a character (we turn, for example, ``6`` into ``\"6\"``)."
 msgstr ""
+"Zakaždým, keď zariadenie resetuješ, zobrazí číslo medzi 1 a 6. Myslím, že "
+"už rozumieš *vnoreniu*, takže je dobré si všimnúť, že ``random.randint`` "
+"vracia celé číslo medzi dvoma argumentami, vrátane (celé číslo sa v Pythone "
+"volá integer, preto má metóda také meno). Pretože ``display.show`` očakáva "
+"ako argument znak, musíme použiť funkciu ``str``, ktorou premeníme číslo "
+"na znak (napríklad zmeníme ``6`` na ``\"6\"``)."
 
 #: ../../tutorials/random.rst:48
 msgid ""
@@ -83,6 +104,10 @@ msgid ""
 "argument ``N`` (this is different to the behaviour of "
 "``random.randint``)."
 msgstr ""
+"Ak vieš, že budeš potrebovať vždy číslo medzi ``0`` a ``N``, môžeš použiť "
+"metódu ``random.randrange``. Ak jej zadáš iba jeden argument, vráti "
+"náhodné číslo do hodnoty ``N`` (ale nie vrátane tohto čísla). Tým sa líši "
+"od správania sa metódy ``random.randint``)."
 
 #: ../../tutorials/random.rst:53
 msgid ""
@@ -93,10 +118,15 @@ msgid ""
 "numbers add the results of ``random.randrange`` and ``random.random`` "
 "like this::"
 msgstr ""
+"Niekedy potrebuješ čísla aj s desatinnou čiarkou. Voláme ich reálne "
+"čísla (angl. *floating point* numbers) a môžeme ich generovať pomocou metódy "
+"``random.random``. Táto vracia hodnotu medzi ``0.0`` a ``1.0`` vrátane "
+"krajných hodnôt. Ak potrebuješ väčšie náhodné reálne číslo, pridaj takto "
+"výsledky metód ``random.randrange`` a ``random.random``::"
 
 #: ../../tutorials/random.rst:66
 msgid "Seeds of Chaos"
-msgstr ""
+msgstr "Počiatok chaosu"
 
 #: ../../tutorials/random.rst:68
 msgid ""
@@ -105,6 +135,11 @@ msgid ""
 " often generated from random-ish values such as the current time and/or "
 "readings from sensors such as the thermometers built into chips."
 msgstr ""
+"Generátory náhodných čísel, ktoré sa využívajú v počítačoch nie sú v "
+"skutočnosti úplne náhodné. Poskytujú akoby náhodné číslo, ktoré sa vypočíta "
+"z počiatočnej hodnoty. Počiatočná hodnota (*seed*) je často generovaná "
+"z kvázi-náhodných hodnôt ako napríklad aktuálny čas a/alebo hodnoty "
+"odčítané z rôznych senzorov, ako je napríklad v čipe vstavaný teplomer."
 
 #: ../../tutorials/random.rst:73
 msgid ""
@@ -112,6 +147,9 @@ msgid ""
 "randomness that is reproducible. It's like saying that you need the same "
 "five random values each time you throw a dice."
 msgstr ""
+"Niekedy potrebuješ opakovateľné kvázi-náhodné správanie: zdroja náhody, "
+"ktorý je reprodukovateľný. Napríklad, ak potrebuješ, aby pri každom hode "
+"kockami padlo 5 rovnakých náhodných čísel.."
 
 #: ../../tutorials/random.rst:77
 msgid ""
@@ -120,10 +158,17 @@ msgid ""
 "The seed is set with ``random.seed`` and any whole number (integer). This"
 " version of the dice program always produces the same results::"
 msgstr ""
+"Toto zabezpečíš jednoducho pomocou nastavenej počiatočnej hodnoty. "
+"Ak zadáme známu počiatočnú hodnotu - seed, generátor náhodných čísel "
+"vytvorí rovnaký set náhodných čísel. Počiatočná hodnota sa nastavuje "
+"pomocou ``random.seed`` a akéhokovek celého čísla. Takáto verzia programu "
+"na hádzanie kockou bude dávať vždy rovnaký výsledok::"
 
 #: ../../tutorials/random.rst:90
 msgid ""
 "Can you work out why this program needs us to press button A instead of "
 "reset the device as in the first dice example..?"
 msgstr ""
+"Vieš prečo tento program potrebuje, aby sme stlačili tlačítko A namiesto "
+"resetu zariadenia, ako to bolo v prvom príklade s kockami..?"
 
