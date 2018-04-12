@@ -2,7 +2,7 @@
 # Copyright (C) 2015-2018, Multiple authors
 # This file is distributed under the same license as the BBC micro:bit
 # MicroPython package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+# FIRST AUTHOR <juraj.bezrucka@gmail.com>, 2018.
 #
 #, fuzzy
 msgid ""
@@ -10,10 +10,9 @@ msgstr ""
 "Project-Id-Version: BBC micro:bit MicroPython 0.5.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-25 09:53+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"MIME-Version: 1.0\n"
+"PO-Revision-Date: 2018-04-11 23:59+0200\n"
+"Last-Translator: Juraj M Bezrucka <mimmon@gmail.com>\n"
+"Language-Team: SK \n""MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.5.3\n"
@@ -23,10 +22,12 @@ msgid ""
 "The image of Queen Elizabeth II is licensed as per the details here: "
 "https://commons.wikimedia.org/wiki/File:Queen_Elizabeth_II_March_2015.jpg"
 msgstr ""
+"Obrázok Kráľovnej Alžbety II je licencovaný s podmienkami uvedenými tu: "
+"https://commons.wikimedia.org/wiki/File:Queen_Elizabeth_II_March_2015.jpg"
 
 #: ../../tutorials/network.rst:2
 msgid "Network"
-msgstr ""
+msgstr "Sieť"
 
 #: ../../tutorials/network.rst:4
 msgid ""
@@ -35,6 +36,9 @@ msgid ""
 "interconnected networks is called an internet. The Internet is an "
 "internet of all the internets."
 msgstr ""
+"Zariadenia vieme spájať a posielať a prijímať medzi nimi správy. Toto sa "
+"volá sieť. Sieť prepojených sietí sa nazýva internet. Internet s veľkým I "
+"je internetom všetkých internetov."
 
 #: ../../tutorials/network.rst:9
 msgid ""
@@ -43,14 +47,17 @@ msgid ""
 "common aspects of network programming you need to know about. It's also "
 "remarkably simple and fun."
 msgstr ""
+"Sieťovanie je ťažké a to sa prejavuje aj na programe uvedenom nižšie. "
+"Ale krásne na tomto projekte je to, že obsahuje všetky bežné aspekty "
+"sieťového programovania. Je tiež až pozoruhodne jednoduchý a zábavný."
 
 #: ../../tutorials/network.rst:14
 msgid "But first, let's set the scene..."
-msgstr ""
+msgstr "Ale najskôr si pripravme scénu..."
 
 #: ../../tutorials/network.rst:17
 msgid "Connection"
-msgstr ""
+msgstr "Pripojenie"
 
 #: ../../tutorials/network.rst:19
 msgid ""
@@ -60,12 +67,17 @@ msgid ""
 "via a radio connection, but in this example we're simply going to use two"
 " wires."
 msgstr ""
+"Predstav si sieť ako sériu vrstiev. Na úplnom spodku je najzákladnejší "
+"aspekt komunikácie: tu sa nejako musí dostať signál z jedného zariadenia "
+"na druhé. Toto sa niekedy robí pomocou rádiového spojenia, ale v tomto "
+"prípade to urobíme jednoducho pomocou káblov."
 
 #: ../../tutorials/network.rst:26
 msgid ""
 "It is upon this foundation that we can build all the other layers in the "
 "*network stack*."
 msgstr ""
+"Na tomto základe vieme vystavať všetky ďalšie *vrstvy siete*."
 
 #: ../../tutorials/network.rst:29
 msgid ""
@@ -78,16 +90,24 @@ msgid ""
 "person's speaker. If you hold the phone the wrong way up, you'll get "
 "strange results!"
 msgstr ""
+"Ako ukazuje diagram, modré a červené micro:bits sú prepojené pomocou "
+"krokodíliek. Obidva používajú pin 1 na výstup a pin 2 na vstup. Výstup z "
+"jedného zariadenie je spojený so vstupom na druhom. Je to trochu ako "
+"vedieť správne otočiť telefón - jeden koniec má mikrofón (vstup) a "
+"druhý má reproduktor (výstup). Nahrávka tvojho hlasu cez mikrofón sa "
+"púšťa do reproduktoru druhého telefónu. Ak držíš telefón naopak, dostaneš "
+"čudné výsledky!"
 
 #: ../../tutorials/network.rst:37
 msgid ""
 "It's exactly the same in this instance: you must connect the wires "
 "properly!"
 msgstr ""
+"V našom prípade je to úplne rovnaké: káble musíš pripojiť správne!"
 
 #: ../../tutorials/network.rst:40
 msgid "Signal"
-msgstr ""
+msgstr "Signál"
 
 #: ../../tutorials/network.rst:42
 msgid ""
@@ -95,20 +115,26 @@ msgid ""
 "depend upon the characteristics of the connection. In our example it's "
 "simply digital on and off signals sent down the wires via the IO pins."
 msgstr ""
+"Ďalšou vrstvou vo *vrstvách siete* je signál. Ten bude často závisieť od "
+"charakteristík pripojenia. V našom príklade sú to jednoduché digitálne "
+"signály vypnuté a zapnuté, ktoré sa posielajú káblami cez IO piny."
+
 
 #: ../../tutorials/network.rst:46
 msgid "If you remember, it's possible to use the IO pins like this::"
-msgstr ""
+msgstr "Ak si spomínaš, IO piny vieme použiť takto::"
 
 #: ../../tutorials/network.rst:52
 msgid ""
 "The next step involves describing how to use and handle a signal. For "
 "that we need a..."
 msgstr ""
+"Ďalší krok obsahuje popis toho, ako použiť a spracovať signál. Na to budeme "
+"potrebovať..."
 
 #: ../../tutorials/network.rst:56
 msgid "Protocol"
-msgstr ""
+msgstr "Protokol"
 
 #: ../../tutorials/network.rst:58
 msgid ""
@@ -120,6 +146,14 @@ msgid ""
 "(such as meeting the Queen). A protocol is pre-defined to ensure everyone"
 " understands what's going on before a given situation arises."
 msgstr ""
+"Ak sa niekedy pôjdeš stretnúť s kráľovnou, budú od teba očakávať nejaké "
+"správanie. Napríklad, keď príde, mal(a) by si sa ukloniť, ak ti podá ruku, "
+"máš ňou slušne potriasť, pri prvom oslovení jej musíš povedať \"vaša "
+"výsosť\" a potom v ďalšom rozhovore \"madam\" a tak ďalej. Tento súbor "
+"pravidiel sa nazýva kráľovský protokol. Protokol vysvetľuje, ako sa správať "
+"v určitých situáciách (napríklad pri stretnutí s kráľovnou). Protokol je "
+"definovaný vopred, takže každý už pred stretnutím vie, čo sa bude diať "
+"ešte predtým, ako situácia vôbec nastane."
 
 #: ../../tutorials/network.rst:68
 msgid ""
@@ -128,6 +162,10 @@ msgid ""
 "to send and receive messages. Perhaps the best known protocol is the "
 "hypertext transfer protocol (HTTP) used by the world wide web."
 msgstr ""
+"Z toho istého dôvodu definujeme a používame protokoly na posielanie správ "
+"prostredníctvom počítačovej siete. Počítače sa najskôr musia dohodnúť, ako "
+"budú posielať a prijímať správy. Asi najznámejším protokolom je hyeprtextový "
+"prenosový protokol (HTTP), ktorý používa aj celosvetová sieť Internet."
 
 #: ../../tutorials/network.rst:73
 msgid ""
@@ -139,6 +177,12 @@ msgid ""
 "send characters. For example, here's how the standard Morse alphabet is "
 "defined::"
 msgstr ""
+"Ďalší slávny protoko na posielanie správ (ešte z obdobia pred počítačmi) "
+"je Morseov kód. Ten definuje ako posielať správy zložené zo znakov pomocou "
+"dlhších a kratších signálov. Tieto signály sa často zahrajú ako pípnutia. "
+"Tie dlhšie sa volajú pomlčky (``-``) a kratšie nazývame bodky (``.``). "
+"Kombináciou pomlčiek a bodiek Morse definoval spôsob ako posielať znaky. "
+"Tu je napríklad definícia štandardnej Morseovej abecedy::"
 
 #: ../../tutorials/network.rst:90
 msgid ""
@@ -147,6 +191,10 @@ msgid ""
 " the letter \"L\" the signal is also switched on four times, but the "
 "second signal has a longer duration (``.-..``)."
 msgstr ""
+"Podľa vyššie uvedenej tabuľky, na poslanie znaku \"H\" musíme signál "
+"štyrikrát zapnúť na krátky čas, čo predstavuje štyri bodky (``....``). "
+"Na písmeno \"L\" potrebujeme tiež štyri signály, ale druhý v poradí trvá "
+"dlhšie (``.-..``)."
 
 #: ../../tutorials/network.rst:95
 msgid ""
@@ -155,38 +203,45 @@ msgid ""
 "everyone's implementation of the protocol will work with everyone elses. "
 "In this instance we'll just say that:"
 msgstr ""
+"Samozrejme, aj načasovanie signálu je dôležité: musíme vedieť rodlíšiť "
+"bodku od pomlčky. To je ďalším bodom protokolu, dohodnúť také parametre, "
+"aby každý vedel ako správne implementovať protokol, aby fungoval s inými."
+"V tomto prípade povieme:"
 
 #: ../../tutorials/network.rst:100
 msgid "A signal with a duration less than 250 milliseconds is a dot."
-msgstr ""
+msgstr "Signál kratší ako 250 milisekúnd je bodka."
 
 #: ../../tutorials/network.rst:101
 msgid ""
 "A signal with a duration from 250 milliseconds to less than 500 "
 "milliseconds is a dash."
 msgstr ""
+"Signál dlhší ako 250 milisekúnd a kratší ako 500 milisekúnd je pomlčka."
 
 #: ../../tutorials/network.rst:102
 msgid "Any other duration of signal is ignored."
-msgstr ""
+msgstr "Všetky ostatné dĺžky ignorujeme."
 
 #: ../../tutorials/network.rst:103
 msgid ""
 "A pause / gap in the signal of greater than 500 milliseconds indicates "
 "the end of a character."
 msgstr ""
+"Prestávka / medzera medzi signálmi dlhšia ako 500 milisekúnd znamená koniec "
+"znaku."
 
 #: ../../tutorials/network.rst:105
 msgid ""
-"In this way, the sending of a letter \"H\" is defined as four \"on\" "
-"signals that last no longer than 250 milliseconds each, followed by a "
-"pause of greater than 500 milliseconds (indicating the end of the "
-"character)."
+"S takto zadefinovanými pravidlami, písmeno \"H\" je definované štyrmi "
+"\"zapnutými\" signálmi, ktoré netrvajú dlhšie ako 250 milisekúnd, po "
+"ktorých nasleduje prestávka dlhšia ako 500 milisekúnd (čo znamená koniec "
+"znaku)."
 msgstr ""
 
 #: ../../tutorials/network.rst:110
 msgid "Message"
-msgstr ""
+msgstr "Správa"
 
 #: ../../tutorials/network.rst:112
 msgid ""
@@ -194,20 +249,25 @@ msgid ""
 "actually means something to us humans. This is the top-most layer of our "
 "*network stack*."
 msgstr ""
+"Konečne sme sa dostali niekam, kde môžeme vytvoriť správu - správu, ktorá "
+"už bude niečo hovoriť aj nám, ľuďom. Toto je najvyššia vrstva z našich "
+"\"vrstiev siete\"."
 
 #: ../../tutorials/network.rst:116
 msgid ""
 "Using the protocol defined above I can send the following sequence of "
 "signals down the physical wire to the other micro:bit::"
 msgstr ""
+"S použitím vyššie definovaného protokolu môžem cez kábel poslať túto "
+"sekvenciu signálov do druhého micro:bitu::"
 
 #: ../../tutorials/network.rst:121
 msgid "Can you work out what it says?"
-msgstr ""
+msgstr "Vieš zistiť, čo je v nej zakódované?"
 
 #: ../../tutorials/network.rst:124
 msgid "Application"
-msgstr ""
+msgstr "Aplikácia"
 
 #: ../../tutorials/network.rst:126
 msgid ""
@@ -217,12 +277,19 @@ msgid ""
 "their web-browser handle it - the underlying *network stack* of the world"
 " wide web is hidden (as it should be)."
 msgstr ""
+"Je super mať vrstvy siete, ale potrebuješ aj vedieť s nimi narábať - "
+"nejakú aplikáciu na posielanie a prijímanie správ. Hoci HTTP protokol je "
+"zaujímavý, *väčšina* ľudí o ňom nevie a nestará sa, čo s ním robí ich "
+"prehliadač - *vrstvy siete* svetového webu (www) sú pred nimi schované "
+"(a tak by to aj malo byť)."
 
 #: ../../tutorials/network.rst:132
 msgid ""
 "So, what sort of application should we write for the BBC micro:bit? How "
 "should it work, from the user's point of view?"
 msgstr ""
+"Takže akú aplikáciu napíšeme pre micro:bit? Ako by mala fungovať z hľadiska "
+"používateľa?"
 
 #: ../../tutorials/network.rst:135
 msgid ""
@@ -233,16 +300,24 @@ msgid ""
 "if a speaker is attached, we should be able to play the beeps as a form "
 "of aural feedback while the user is entering their message."
 msgstr ""
+"Jasné, na posielanie správ by sme mali vedieť zadávať bodky a pomlčky "
+"(na to môžeme použiť tlačítko A). Ak chceme vidieť správu, ktorú sme "
+"poslali alebo práve prijali, mali by sme ju vedieť zobraziť, aby sa nám "
+"posúvala po displeji (na toto môžeme použiť tlačítko Bwe ). Nakoniec, keďže "
+"je to Morseov kód, ak je pripojený reproduktor, mali by sme vedieť zahrať "
+"užívateľovi pípnutia ako zvukovú odozvu počas tvorenia správy."
 
 #: ../../tutorials/network.rst:143
 msgid "The End Result"
-msgstr ""
+msgstr "Výsledok"
 
 #: ../../tutorials/network.rst:145
 msgid ""
 "Here's the program, in all its glory and annotated with plenty of "
 "comments so you can see what's going on::"
 msgstr ""
+"Tu je program, v cele svojej kráse s množstvom komentárov, takže si môžeš "
+"pozrieť, ako funguje::"
 
 #: ../../tutorials/network.rst:298
 msgid ""
@@ -250,4 +325,7 @@ msgid ""
 "dash so speedy Morse code users can use it? What happens if both devices "
 "are sending at the same time? What might you do to handle this situation?"
 msgstr ""
-
+"Ako by si ho zlepšil(a)? Vedel(a) by si zmeniť definíciu bodky a pomlčky, "
+"aby rýchlejší užívatelia mohli zadávať znaky rýchlejšie? Čo sa stane, ak "
+"obidve zariadenia posielaju správu súčasne? Čo by si mohol/mohla urobiť, "
+"aby si predišiel/predišla takejto situácii?"
