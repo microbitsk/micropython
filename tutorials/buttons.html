@@ -1,0 +1,408 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="sk" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="sk" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Tlačítka &mdash; Dokumentácia BBC micro:bit MicroPython 0.5.0</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Hľadať" href="../search.html" />
+    <link rel="next" title="Vstup/Výstup" href="io.html" />
+    <link rel="prev" title="Obrázky" href="images.html" /> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> BBC micro:bit MicroPython
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.5.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Tutorials</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="introduction.html">Úvod</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="hello.html">Ahoj, svet!</a></li>
+<li class="toctree-l2"><a class="reference internal" href="images.html">Obrázky</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Tlačítka</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#event-loops">Cykly</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#handling-an-event">Spracovanie udalosti</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="io.html">Vstup/Výstup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="music.html">Hudba</a></li>
+<li class="toctree-l2"><a class="reference internal" href="random.html">Náhoda</a></li>
+<li class="toctree-l2"><a class="reference internal" href="movement.html">Pohyb</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gestures.html">Gestá</a></li>
+<li class="toctree-l2"><a class="reference internal" href="direction.html">Smer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="storage.html">Úložisko</a></li>
+<li class="toctree-l2"><a class="reference internal" href="speech.html">Reč</a></li>
+<li class="toctree-l2"><a class="reference internal" href="network.html">Sieť</a></li>
+<li class="toctree-l2"><a class="reference internal" href="radio.html">Rádio</a></li>
+<li class="toctree-l2"><a class="reference internal" href="next.html">Next Steps</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="hello.html">Ahoj, svet!</a></li>
+<li class="toctree-l1"><a class="reference internal" href="images.html">Obrázky</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Tlačítka</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#event-loops">Cykly</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#handling-an-event">Spracovanie udalosti</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="io.html">Vstup/Výstup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="music.html">Hudba</a></li>
+<li class="toctree-l1"><a class="reference internal" href="random.html">Náhoda</a></li>
+<li class="toctree-l1"><a class="reference internal" href="movement.html">Pohyb</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gestures.html">Gestá</a></li>
+<li class="toctree-l1"><a class="reference internal" href="direction.html">Smer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="storage.html">Úložisko</a></li>
+<li class="toctree-l1"><a class="reference internal" href="speech.html">Reč</a></li>
+<li class="toctree-l1"><a class="reference internal" href="network.html">Sieť</a></li>
+<li class="toctree-l1"><a class="reference internal" href="radio.html">Rádio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="next.html">Next Steps</a></li>
+</ul>
+<p class="caption"><span class="caption-text">API Reference</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../microbit_micropython_api.html">micro:bit Micropython API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../microbit.html">Microbit Module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../accelerometer.html">Akcelerometer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ble.html">Bluetooth</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../button.html">Buttons</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../compass.html">Compass</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../display.html">Display</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../filesystem.html">Local Persistent File System</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../i2c.html">I²C</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../image.html">Image</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../music.html">Music</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../neopixel.html">NeoPixel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../os.html">The <code class="docutils literal notranslate"><span class="pre">os</span></code>  Module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pin.html">Input/Output Pins</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../radio.html">Radio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../random.html">Random Number Generation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../speech.html">Speech</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../spi.html">SPI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../uart.html">UART</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Developer Guide</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../devguide/installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../devguide/flashfirmware.html">Flashing Firmware</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../devguide/repl.html">Accessing the REPL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../devguide/devfaq.html">Developer FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../devguide/contributing.html">Contributing</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">BBC micro:bit MicroPython</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="introduction.html">Úvod</a> &raquo;</li>
+        
+      <li>Tlačítka</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/tutorials/buttons.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="buttons">
+<h1>Tlačítka<a class="headerlink" href="#buttons" title="Trvalý odkaz na tento nadpis">¶</a></h1>
+<p>Zatiaľ sme vytvorili kód, ktorý hovorí zariadeniu, čo má robiť. Tomu hovoríme <em>výstup</em> (output). Niekedy ale potrebujeme, aby naše zariadenie reagovalo na podnety. Tomu hovoríme <em>vstupy</em> (input).</p>
+<p>Zapamätáš si to ľahko: výstup je niečo, čo ide zo zariadenia von do sveta a vstup je niečo, čo vchádza do zariadenia, ktoré to spracuje.</p>
+<p>Asi najviac viditeľný spôsob vstupu na micro:bite sú jeho dve tlačítka, označené ako <code class="docutils literal notranslate"><span class="pre">A</span></code> a <code class="docutils literal notranslate"><span class="pre">B</span></code>. Potrebovali by sme, aby MicroPython nejako reagoval, keď tlačítka stlačíme.</p>
+<p>Toto je obzvlášť jednoduché:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">microbit</span> <span class="k">import</span> <span class="o">*</span>
+
+<span class="n">sleep</span><span class="p">(</span><span class="mi">10000</span><span class="p">)</span>
+<span class="n">display</span><span class="o">.</span><span class="n">scroll</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">button_a</span><span class="o">.</span><span class="n">get_presses</span><span class="p">()))</span>
+</pre></div>
+</div>
+<p>Tento skript najskôr spí desať tisíc milisekúnd (teda 10 sekúnd) a potom posúvaním zobrazí počet, koľko krát si stlačil(a) tlačítko <code class="docutils literal notranslate"><span class="pre">A</span></code>. To je všetko!</p>
+<p>Uznávam, trochu zbytočný skript, ale zoznamuje nás s niekoľkými zaujímavými novými myšlienkami:</p>
+<ol class="arabic simple">
+<li><em>Funkcia</em> <code class="docutils literal notranslate"><span class="pre">sleep</span></code> („spať“) povie micro:bit, že má spať určité množstvo milisekúnd. Ak chceš mať vo svojom programe pauzu, urobíš to presne takto. <em>Funkcia</em> je presne ako <em>metóda</em>, akurát nie je spojená bodkou s <em>objektom</em>.</li>
+<li>Ďalej máme objekt s názvom <code class="docutils literal notranslate"><span class="pre">button_a</span></code> („tlačítko A“), ktorý nám umožňuje zistiť, koľko krát bolo stlačené pomocou <em>metódy</em> <code class="docutils literal notranslate"><span class="pre">get_presses</span></code>.</li>
+</ol>
+<p>Keďže <code class="docutils literal notranslate"><span class="pre">get_presses</span></code> dáva číselnú hodnotu a <code class="docutils literal notranslate"><span class="pre">display.scroll</span></code> vie zobrazovať iba znaky, musíme numerickú hodnotu konvertovať (premeniť) na reťazec znakov. To urobíme pomocou funkcie <code class="docutils literal notranslate"><span class="pre">str</span></code> (skratka pre „string“ = reťazec) ~ mení veci na reťazce znakov).</p>
+<p>Tretí riadok je trochu ako cibuľa. Ak by boli zátvorky šupky cibule, videli by sme, že <code class="docutils literal notranslate"><span class="pre">display.scroll</span></code> obsahuje <code class="docutils literal notranslate"><span class="pre">str</span></code>, ktoré obsahuje <code class="docutils literal notranslate"><span class="pre">button_a.get_presses</span></code>. Python sa snaží spracovať to od najhlbšie vnorenej odpovede smerom k vonkajším vrstvám. Hovoríme tomu <em>nesting</em> („hniezdovanie“) - programovací ekvivalent ruských matriošiek.</p>
+<img alt="../_images/matrioshka.jpg" src="../_images/matrioshka.jpg" />
+<p>Predstavme si, že si stlačil(a) tlačítko 10-krát. Takto Python spracuje to, čo sa deje na riadku tri:</p>
+<p>Python vidí celý riadok a získa hodnotu z``get_presses``:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">display</span><span class="o">.</span><span class="n">scroll</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">button_a</span><span class="o">.</span><span class="n">get_presses</span><span class="p">()))</span>
+</pre></div>
+</div>
+<p>Teraz, keď už Python vie, koľkokrát bolo tlačítko stlačené, premení číslo na reťazec znakov:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">display</span><span class="o">.</span><span class="n">scroll</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="mi">10</span><span class="p">))</span>
+</pre></div>
+</div>
+<p>Nakoniec Python vie, čo má zobraziť a posúvať po obrazovke:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">display</span><span class="o">.</span><span class="n">scroll</span><span class="p">(</span><span class="s2">&quot;10&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Hoci to vyzerá ako kopec práce, MicroPython to zvládne neobyčajne rýchlo.</p>
+<div class="section" id="event-loops">
+<h2>Cykly<a class="headerlink" href="#event-loops" title="Trvalý odkaz na tento nadpis">¶</a></h2>
+<p>Často potrebujeme, aby program len tak čakal na nejakú zaujímavú udalosť. Na to môžeš využiť slučku = opakovanie kúska kódu, ktorý hovorí o tom, akomá program reagovať v prípade špeciálnych udalostí, napríklad stlačenie tlačítka.</p>
+<p>Na takéto cykly v Pythone používame slovo <code class="docutils literal notranslate"><span class="pre">while</span></code> („kým“), ktoré kontroluje, či je niečo pravdivé (<code class="docutils literal notranslate"><span class="pre">True</span></code>). Ak je, spustí <em>blok kódu</em>, ktoému hovorím <em>telo</em> slučky. Ak podmienka nie je pravdivá, vyskočí zo slučky (preskočí telo) a pokračuje vo vykonávaní zvyšku programu.</p>
+<p>V Pythone je jednoduché písať blok kódu. Povedzme, že mám zoznam úloh napísaný na papieri. Bude to vyzerať asi takto nejako:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Shopping</span>
+<span class="n">Fix</span> <span class="n">broken</span> <span class="n">gutter</span>
+<span class="n">Mow</span> <span class="n">the</span> <span class="n">lawn</span>
+</pre></div>
+</div>
+<p>Ak by som chcel posunúť môj zoznam úloh trochu ďalej, mohol by som napísať niečo takéto:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Shopping</span><span class="p">:</span>
+    <span class="n">Eggs</span>
+    <span class="n">Bacon</span>
+    <span class="n">Tomatoes</span>
+<span class="n">Fix</span> <span class="n">broken</span> <span class="n">gutter</span><span class="p">:</span>
+    <span class="n">Borrow</span> <span class="n">ladder</span> <span class="kn">from</span> <span class="nn">next</span> <span class="n">door</span>
+    <span class="n">Find</span> <span class="n">hammer</span> <span class="ow">and</span> <span class="n">nails</span>
+    <span class="n">Return</span> <span class="n">ladder</span>
+<span class="n">Mow</span> <span class="n">the</span> <span class="n">lawn</span><span class="p">:</span>
+    <span class="n">Check</span> <span class="n">lawn</span> <span class="n">around</span> <span class="n">pond</span> <span class="k">for</span> <span class="n">frogs</span>
+    <span class="n">Check</span> <span class="n">mower</span> <span class="n">fuel</span> <span class="n">level</span>
+</pre></div>
+</div>
+<p>Je zrejmé, že hlavné úlohy sú rozdelené do pod-úloh, ktoré sú <em>odsadené</em> pod hlavnou úlohou, ku ktorej patria. Takže <code class="docutils literal notranslate"><span class="pre">Vajíčka</span></code>, <code class="docutils literal notranslate"><span class="pre">Slanina</span></code> a <code class="docutils literal notranslate"><span class="pre">Rajčiny</span></code> samozrejme patria ku <code class="docutils literal notranslate"><span class="pre">Nákupu</span></code>. Odsadením vecí docielime, že je na prvý pohľad jasné, ktoré úlohy patria k sebe.</p>
+<p>To sa volá <em>nesting</em> („hniezdovanie“). Používame ho na definovanie blokov kódu, ako napríklad tento:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">microbit</span> <span class="k">import</span> <span class="o">*</span>
+
+<span class="k">while</span> <span class="n">running_time</span><span class="p">()</span> <span class="o">&lt;</span> <span class="mi">10000</span><span class="p">:</span>
+    <span class="n">display</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">Image</span><span class="o">.</span><span class="n">ASLEEP</span><span class="p">)</span>
+
+<span class="n">display</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">Image</span><span class="o">.</span><span class="n">SURPRISED</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Funkcia <code class="docutils literal notranslate"><span class="pre">running_time</span></code> (čas behu) vracia počet milisekúnd od spustenia zariadenia.</p>
+<p>Riadok <code class="docutils literal notranslate"><span class="pre">while</span> <span class="pre">running_time()</span> <span class="pre">&lt;</span> <span class="pre">10000:</span></code> kontroluje či čas behu (running time) je menej ako 10000 milisekúnd (teda 10 sekúnd). Ak je, <em>a toto je presne miesto, kde prichádza do akcie scoping</em>, potom zobrazí ospalý obrázok <code class="docutils literal notranslate"><span class="pre">Image.ASLEEP</span></code>. Všimni si, ako je odsadný pod výrazom <code class="docutils literal notranslate"><span class="pre">while</span></code> <em>presne ako v našom zozname úloh</em>.</p>
+<p>Je jasné, že ak je čas behu rovný alebo väčší ako 10000 milisekúnd, displej zobrazí <code class="docutils literal notranslate"><span class="pre">Image.SURPRISED</span></code> (obrázok Prekvapený). Prečo? Lebo podmienka pre <code class="docutils literal notranslate"><span class="pre">while</span></code> bude nepravdivá (False), pretože <code class="docutils literal notranslate"><span class="pre">running_time</span></code> (čas behu) už nie je <code class="docutils literal notranslate"><span class="pre">&lt;</span> <span class="pre">10000</span></code>. V tom prípade cyklus skončí a program bude pokračovať tam, kde končí blok kódu v cykle <code class="docutils literal notranslate"><span class="pre">while</span></code>. Bude to vyzerať, ako keby tvoj micro:bit 10 sekúnd spal a potom sa zobudil s prekvapeným výrazom na tvári.</p>
+<p>Vyskúšaj to!</p>
+</div>
+<div class="section" id="handling-an-event">
+<h2>Spracovanie udalosti<a class="headerlink" href="#handling-an-event" title="Trvalý odkaz na tento nadpis">¶</a></h2>
+<p>Ak chceme, aby MicroPython reagoval na stlačenia tlačítka, musíme dať kód do nekonečného cyklu (slučky) a kontrolovať, či je tlačítko stlačené (<code class="docutils literal notranslate"><span class="pre">is_pressed</span></code>).</p>
+<p>Urobiť nekonečný cyklus je jednoduché:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+    <span class="c1"># Do stuff</span>
+</pre></div>
+</div>
+<p>(Nezabudni, <code class="docutils literal notranslate"><span class="pre">while</span></code> kontroluje či je niečo pravdivé (<code class="docutils literal notranslate"><span class="pre">True</span></code>), aby určil, či má spustiť blok kódu. Keďže Pravda (<code class="docutils literal notranslate"><span class="pre">True</span></code>) je jednoznačne vždy pravdivá, dostaneš tak nekonečný cyklus!)</p>
+<p>Urobme si veľmi jednoduché kyber zvieratko. Ak nestlačíš tlačítko A, tak je stále smutné. Ak stlačíš tlačítko B, umrie. (Uznávam, že tot nie je veľmi pekná hra, ale aspoň máš priestor na zlepšenie.):</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">microbit</span> <span class="k">import</span> <span class="o">*</span>
+
+<span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">button_a</span><span class="o">.</span><span class="n">is_pressed</span><span class="p">():</span>
+        <span class="n">display</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">Image</span><span class="o">.</span><span class="n">HAPPY</span><span class="p">)</span>
+    <span class="k">elif</span> <span class="n">button_b</span><span class="o">.</span><span class="n">is_pressed</span><span class="p">():</span>
+        <span class="k">break</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">display</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">Image</span><span class="o">.</span><span class="n">SAD</span><span class="p">)</span>
+
+<span class="n">display</span><span class="o">.</span><span class="n">clear</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>Vidíš, ako kontrolujeme, ktoré tlačítka sú stlačené? Použili sme <code class="docutils literal notranslate"><span class="pre">if</span></code> („ak“), <code class="docutils literal notranslate"><span class="pre">elif</span></code> (skratka pre „else if“ = „inak ak“) a <code class="docutils literal notranslate"><span class="pre">else</span></code> („inak“). Hovoríme im <em>podmienky</em> a fungujú takto:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="n">something</span> <span class="ow">is</span> <span class="kc">True</span><span class="p">:</span>
+    <span class="c1"># do one thing</span>
+<span class="k">elif</span> <span class="n">some</span> <span class="n">other</span> <span class="n">thing</span> <span class="ow">is</span> <span class="kc">True</span><span class="p">:</span>
+    <span class="c1"># do another thing</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="c1"># do yet another thing.</span>
+</pre></div>
+</div>
+<p>Toto sa vážne podobá na angličtinu!</p>
+<p>Metóda <code class="docutils literal notranslate"><span class="pre">is_pressed</span></code> dáva iba dva výsledky: <code class="docutils literal notranslate"><span class="pre">True</span></code> („pravda“) alebo <code class="docutils literal notranslate"><span class="pre">False</span></code> („nepravda“). Ak práve stláčaš tlačítko, vráti <code class="docutils literal notranslate"><span class="pre">True</span></code>, inak vráti <code class="docutils literal notranslate"><span class="pre">False</span></code>. Vyššie uvedený kód hovorí, po slovensky,  „na večné veky, ak je stlačené tlačítko A, ukáž veselú tvár, inak ak je stlačené tlačítko B, vyskoč z cyklu, inak zobraz smutnú tvár.“ Z cyklu vyskočíme pomocou príkazu <code class="docutils literal notranslate"><span class="pre">break</span></code> (inak by program bežal na večné veky).</p>
+<p>Na úplnom konci, keď kyber zvieratko umrie, vyčístíme (<code class="docutils literal notranslate"><span class="pre">clear</span></code>) displej.</p>
+<p>Vieš vymyslieť nejaký spôsob, aby táto hra nekončila tak tragicky? Ako by si skontroloval(a), či sú stlačené <em>obidve</em> tlačítka? (Hint: Python má logické operátory <code class="docutils literal notranslate"><span class="pre">and</span></code> („a“), <code class="docutils literal notranslate"><span class="pre">or</span></code> („alebo“) a <code class="docutils literal notranslate"><span class="pre">not</span></code> („nie“), pomocou ktorých môžeš skontrolovať rôzne výrazy (veci, čo vracajú ako výsledky buď pravda alebo nepravda - <code class="docutils literal notranslate"><span class="pre">True</span></code> alebo <code class="docutils literal notranslate"><span class="pre">False</span></code>).</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="io.html" class="btn btn-neutral float-right" title="Vstup/Výstup" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="images.html" class="btn btn-neutral" title="Obrázky" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2015-2018, Multiple authors.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'0.5.0',
+            LANGUAGE:'sk',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="../_static/translations.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          
+          SphinxRtdTheme.Navigation.enableSticky();
+          
+      });
+  </script> 
+
+</body>
+</html>

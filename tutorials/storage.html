@@ -1,0 +1,422 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="sk" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="sk" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Úložisko &mdash; Dokumentácia BBC micro:bit MicroPython 0.5.0</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Hľadať" href="../search.html" />
+    <link rel="next" title="Reč" href="speech.html" />
+    <link rel="prev" title="Smer" href="direction.html" /> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> BBC micro:bit MicroPython
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.5.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Tutorials</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="introduction.html">Úvod</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="hello.html">Ahoj, svet!</a></li>
+<li class="toctree-l2"><a class="reference internal" href="images.html">Obrázky</a></li>
+<li class="toctree-l2"><a class="reference internal" href="buttons.html">Tlačítka</a></li>
+<li class="toctree-l2"><a class="reference internal" href="io.html">Vstup/Výstup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="music.html">Hudba</a></li>
+<li class="toctree-l2"><a class="reference internal" href="random.html">Náhoda</a></li>
+<li class="toctree-l2"><a class="reference internal" href="movement.html">Pohyb</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gestures.html">Gestá</a></li>
+<li class="toctree-l2"><a class="reference internal" href="direction.html">Smer</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Úložisko</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#open-sesame">Sezam, otvor sa</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#os-sos">OS SOS</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#file-transfer">Prenos súborov</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#mainly-main-py">Hlavne main.py</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="speech.html">Reč</a></li>
+<li class="toctree-l2"><a class="reference internal" href="network.html">Sieť</a></li>
+<li class="toctree-l2"><a class="reference internal" href="radio.html">Rádio</a></li>
+<li class="toctree-l2"><a class="reference internal" href="next.html">Next Steps</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="hello.html">Ahoj, svet!</a></li>
+<li class="toctree-l1"><a class="reference internal" href="images.html">Obrázky</a></li>
+<li class="toctree-l1"><a class="reference internal" href="buttons.html">Tlačítka</a></li>
+<li class="toctree-l1"><a class="reference internal" href="io.html">Vstup/Výstup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="music.html">Hudba</a></li>
+<li class="toctree-l1"><a class="reference internal" href="random.html">Náhoda</a></li>
+<li class="toctree-l1"><a class="reference internal" href="movement.html">Pohyb</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gestures.html">Gestá</a></li>
+<li class="toctree-l1"><a class="reference internal" href="direction.html">Smer</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Úložisko</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#open-sesame">Sezam, otvor sa</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#os-sos">OS SOS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#file-transfer">Prenos súborov</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#mainly-main-py">Hlavne main.py</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="speech.html">Reč</a></li>
+<li class="toctree-l1"><a class="reference internal" href="network.html">Sieť</a></li>
+<li class="toctree-l1"><a class="reference internal" href="radio.html">Rádio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="next.html">Next Steps</a></li>
+</ul>
+<p class="caption"><span class="caption-text">API Reference</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../microbit_micropython_api.html">micro:bit Micropython API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../microbit.html">Microbit Module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../accelerometer.html">Akcelerometer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ble.html">Bluetooth</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../button.html">Buttons</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../compass.html">Compass</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../display.html">Display</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../filesystem.html">Local Persistent File System</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../i2c.html">I²C</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../image.html">Image</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../music.html">Music</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../neopixel.html">NeoPixel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../os.html">The <code class="docutils literal notranslate"><span class="pre">os</span></code>  Module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pin.html">Input/Output Pins</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../radio.html">Radio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../random.html">Random Number Generation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../speech.html">Speech</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../spi.html">SPI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../uart.html">UART</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Developer Guide</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../devguide/installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../devguide/flashfirmware.html">Flashing Firmware</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../devguide/repl.html">Accessing the REPL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../devguide/devfaq.html">Developer FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../devguide/contributing.html">Contributing</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">BBC micro:bit MicroPython</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="introduction.html">Úvod</a> &raquo;</li>
+        
+      <li>Úložisko</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/tutorials/storage.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="storage">
+<h1>Úložisko<a class="headerlink" href="#storage" title="Trvalý odkaz na tento nadpis">¶</a></h1>
+<p>Niekdy potrebuješ uložiť užitočné informácie. Tieto informácie sú uložené ako dáta: reprezentácia informácie (v digitálnej forme, ak sú uložené v počítačoch). Ak uložíš dáta do počítača, mali by ostať zachované a to aj vtedy, ak zariadenie vypneš a znova zapneš.</p>
+<p>Našťastie, MicroPython na micro:bite ti umožňuje urobiť to pomocou veľmi jednoduchého súborového systému. Keďže pamäť má výrazné obmedzenia, v súborovom systéme <strong>máš k dispozícii približne 30k úložného priestoru</strong>.</p>
+<p>Čo je to súborový systém?</p>
+<p>Je to spôsob, akým sa ukladajú a triedia dáta tak, aby pretrvali - všetky dáta uložené v súborovom systéme by mali prežiť reštart zariadenia. Ako naznačuje názov, dáta uložené v súborovom systéme sú ukladané v súboroch.</p>
+<img alt="../_images/files.jpg" src="../_images/files.jpg" />
+<p>Počítačový súbor je pomenovaný digitálny zdroj údajov, ktorý je uložený v súborovom systéme. Takéto zdroje obsahujú užitočné informácie. Rovnako fungujú aj v papierovej forme. Je to vlastne pomenovaný zakladač, ktorý obsahuje užitočné informácie. Zvyčajne, papierové aj digitálne súbory majú svoje mená, aby sme ľahko vedeli určiť, čo obsahujú. Na počítačoch je bežné dávať súborom koncovku <code class="docutils literal notranslate"><span class="pre">.nieco</span></code>. Toto „nieco“ zvyčajne naznačuje, akým typom dát uchovávame informáciu. Napríklad <code class="docutils literal notranslate"><span class="pre">.txt</span></code> označuje textový súbor, <code class="docutils literal notranslate"><span class="pre">.jpg</span></code> obrázok vo formáte JPEG a <code class="docutils literal notranslate"><span class="pre">.mp3</span></code> zvukové dáta zakódované vo formáte MP3.</p>
+<p>Niektoré súborové systémy (napríklad ti, čo máte v notebooku či počítači) umožňujú organizovať súbory do adresárov: pomenovaných kontajnerov, ktoré uchovávajú príbuzné súbory a tiež podadresáre. Avšak, <em>súborový systém MicroPythonu je plochý súborový systém</em>. Plochý (flat) súborový systém nemá adresáre - všetky súbory sú uložené na jednom mieste.</p>
+<p>Programovací jazyk Python obsahuje jednoduché, no výkonné nástroje na prácu so súborovým systémom na počítači. MicroPython na micro:bite implementuje užitočnú podmnožinu týchto nástrojov, aby bolo možné jednoducho čítať a zapisovať súbory na zariadenie, no stále zachovať kompatibilitu s inými verziami Pythonu.</p>
+<div class="admonition warning">
+<p class="first admonition-title">Varovanie</p>
+<p>Flashovanie micro:bitu ZNIČÍ VŠETKY DÁTA, keďže sa pri tom prepíše celá flash pamäť, ktorú zariadenie používa a súborový systém je uložený vo flash pamäti.</p>
+<p class="last">No ak vypneš zariadenie, dáta ostanú nedotknuté, až kým ich nezmažeš, alebo neflashneš zariadenie.</p>
+</div>
+<div class="section" id="open-sesame">
+<h2>Sezam, otvor sa<a class="headerlink" href="#open-sesame" title="Trvalý odkaz na tento nadpis">¶</a></h2>
+<p>Čítanie a zapisovanie súborov do súborového systéme urobíme pomocou funkcie <code class="docutils literal notranslate"><span class="pre">open</span></code>. Keď už máš súbor otvorený, môžeš s ním robiť rôzne veci, až kým ho nezatvoríš (rovnako ako pri papierovej forme). Je veľmi dôležité, aby si súbor zatvoril(a), aby MicroPython vedel, že si s ním už po skončil(a).</p>
+<p>Toto najlepšie dosiahneme pomocou výrazu <code class="docutils literal notranslate"><span class="pre">with</span></code>, takto:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;story.txt&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">my_file</span><span class="p">:</span>
+    <span class="n">content</span> <span class="o">=</span> <span class="n">my_file</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">content</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Výraz <code class="docutils literal notranslate"><span class="pre">with</span></code> použije funkciu <code class="docutils literal notranslate"><span class="pre">open</span></code>, aby s ňou otvoril súbor a priradil ho nejakému objektu. V príklade vyššie, funkcia <code class="docutils literal notranslate"><span class="pre">open</span></code> otvára súbor s názvom <code class="docutils literal notranslate"><span class="pre">story.txt</span></code> (podľa názvu zrejme textový súbor, ktorý obsahuje nejaký príbeh - story). Objekt, ktorý reprezentuje tento súbor v Pythone sa volá <code class="docutils literal notranslate"><span class="pre">my_file</span></code>. Následne, v bloku kódu odsadenom pod výrazom <code class="docutils literal notranslate"><span class="pre">with</span></code> sa používa  objekt <code class="docutils literal notranslate"><span class="pre">my_file</span></code> na čítanie obsahu súboru a priradenie <code class="docutils literal notranslate"><span class="pre">obsahu</span></code> k objektu.</p>
+<p>A teraz dôležitá poznámka: <em>nasledujúci riadok, ktorý obsahuje výraz</em> <code class="docutils literal notranslate"><span class="pre">print</span></code>, <em>nie je odsadený</em>. Blok kódu spojený s výrazom <code class="docutils literal notranslate"><span class="pre">with</span></code> je iba ten jeden riadok, ktorý načíta obsah súboru. Keď sa blok spojený s <code class="docutils literal notranslate"><span class="pre">with</span></code> skončí, potom Python (a aj MicroPython) automaticky zatvorí súbor. Toto sa nazýva spracovanie kontextu (context handling) a funkcia <code class="docutils literal notranslate"><span class="pre">open</span></code> vytvára objekty, ktoré sú context handlermi pre súbory.</p>
+<p>Jednoducho povedané, rozsah tvojej interakcie so súborom definuje blok kódu spojený s výrazom <code class="docutils literal notranslate"><span class="pre">with</span></code>, ktorý otvára súbor.</p>
+<p>Zmätený/á?</p>
+<p>Nebuď. Tvoj kód má jednoducho vyzerať takto:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;some_file&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">some_object</span><span class="p">:</span>
+    <span class="c1"># Do stuff with some_object in this block of code</span>
+    <span class="c1"># associated with the with statement.</span>
+
+<span class="c1"># When the block is finished then MicroPython</span>
+<span class="c1"># automatically closes the file for you.</span>
+</pre></div>
+</div>
+<p>Rovnako ako papierová zložka, digitálny súbor sa otvára z dvoch dôvodov: kvôli čítaniu jeho obsahu (ako sme si ukázali vyššie) alebo kvôli zápisu.Predvolený mód je čítanie súboru. Ak chceš do súboru zapisovať, musíš to funkcii <code class="docutils literal notranslate"><span class="pre">open</span></code> povedať takto:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;hello.txt&#39;</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">my_file</span><span class="p">:</span>
+    <span class="n">my_file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;Hello, World!&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Všimni si argument <code class="docutils literal notranslate"><span class="pre">'w'</span></code>, ktorý použijeme, aby sme nastavili objekt <code class="docutils literal notranslate"><span class="pre">my_file</span></code> do zapisovacieho módu. Môžeš tam tiež nastaviť argument <code class="docutils literal notranslate"><span class="pre">'r'</span></code>, ak chceš nastaviť súbor do módu na čítanie, ale keďže to je predvolená hodnota, často sa vynecháva.</p>
+<p>Zápis dát do súboru sa robí pomocou metódy <code class="docutils literal notranslate"><span class="pre">write</span></code> , ktorá ako argument potrebuje reťazec, ktorý chceš zapísať do súboru. V príklade vyššie zapisujem text „Hello, World!“ do súboru s názvom „hello.txt“.</p>
+<p>Jednoduché!</p>
+<div class="admonition note">
+<p class="first admonition-title">Poznámka</p>
+<p>Keď otvoríš súbor a zapíšeš doň (možno aj viackrát, kým je súbor otvorený), budeš stále prepisovať jeho obsah, ak už súbor existuje.</p>
+<p>Ak chceš len pridať dáta do súboru, najskôr ho musíš prečítať, odložiť si niekam jeho obsah, zatvoriť, pridať dáta do obsahu, potom ho otvoriť a nakoniec zapísať upravený obsah.</p>
+<p class="last">Toto platí pre MicroPython, „normálny“ Python vie otvárať súbory aj v móde na dopĺňanie („append“). To, že na micro:bite to urobiť nevieme, je dôsledok jednduchej implementácie súborového systému.</p>
+</div>
+</div>
+<div class="section" id="os-sos">
+<h2>OS SOS<a class="headerlink" href="#os-sos" title="Trvalý odkaz na tento nadpis">¶</a></h2>
+<p>Tak ako čítať a písať, Python vie so súbormi aj manipulovať. Určite niekedy potrebuješ vedieť, kde sa súbory nachádzajú a niekedy ich dokonca potrebuješ aj zmazať.</p>
+<p>Na bežnom počítači je toto úlohou operačného systému (ako napríklad Windows, OSX alebo Linux), ktorý to urobia za Python. Takáto funkcionalita sa v Pythone zabezpečuje pomocou modulu, ktorý sa volá <code class="docutils literal notranslate"><span class="pre">os</span></code>. Keďže MicroPython <strong>je</strong> operačný systém, rozhodli sme sa pre konzistentnosť zachovať tieto funkcie v module <code class="docutils literal notranslate"><span class="pre">os</span></code>, takže nabudúce, keď budeš používať „normálny“ Python na zariadení ako notebook alebo Raspberry Pi, budeš vedieť, kde ich nájdeš.</p>
+<p>Čo je dôležité, na súborovom systéme môžeš robiť tri operácie: zoznam súborov, odstrániť súbor a zistiť veľkosť súboru.</p>
+<p>Na zobrazenie zoznamu súborov na tvojom súborovom systéme použi funkciu <code class="docutils literal notranslate"><span class="pre">listdir</span></code>. Jej návratovou hodnotou je zoznam reťazcov, ktoré predstavujú názvy súborov v súborovom systéme:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">os</span>
+<span class="n">my_files</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>Súbor zmažeš pomocou funkcie <code class="docutils literal notranslate"><span class="pre">remove</span></code>. Tá ako argument potrebuje názov súboru, ktorý si želáš zmazať. Vyzerá to takto:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">os</span>
+<span class="n">os</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="s1">&#39;filename.txt&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>A na záver, niekedy je užitočné vedieť, aký veľký je súbor predtým, ako z neho začneme čítať. Toto zistíme pomocou funkcie <code class="docutils literal notranslate"><span class="pre">size</span></code>. Rovnako ako funkcia <code class="docutils literal notranslate"><span class="pre">remove</span></code>, vezme reťazec predstavujúci názov súboru, ktorého veľkosť chceš vedieť. Vráti celé číslo (integer), ktoré hovorí, koľko bajtov súbor v pamäti zaberá:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">os</span>
+<span class="n">file_size</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">size</span><span class="p">(</span><span class="s1">&#39;a_big_file.txt&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Je to fajn mať súborový systém, ale čo ak chceme dostať súbory do alebo zo zariadenia?</p>
+<p>Na to použi pomocný program <code class="docutils literal notranslate"><span class="pre">microfs</span></code>!</p>
+</div>
+<div class="section" id="file-transfer">
+<h2>Prenos súborov<a class="headerlink" href="#file-transfer" title="Trvalý odkaz na tento nadpis">¶</a></h2>
+<p>Ak máš nainštalovaný Python na počítači, ktorý používať na programovanie micro:bitu, tak môžeš využiť špeciálny program, ktorý sa volá <code class="docutils literal notranslate"><span class="pre">microfs</span></code> (skrátene <code class="docutils literal notranslate"><span class="pre">ufs</span></code> ak používaš príkazový riadok). Kompletné inštrukcie na inštaláciu a používanie všetkých možností microfs sú k dispozícii v dokumentácii &lt;<a class="reference external" href="https://microfs.readthedocs.io">https://microfs.readthedocs.io</a>&gt;`_.</p>
+<p>No ale aj tak, na väčšinu vecí, ktoré budeš potrebovať, použiješ iba štyri jednoduché príkazy:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ ufs ls
+story.txt
+</pre></div>
+</div>
+<p>Príkaz <code class="docutils literal notranslate"><span class="pre">ls</span></code> zobrazí zoznam súborov na súborovom systéme (volá sa rovnako ako Unixový príkaz, ktorý slúži na rovnaký účel).</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ ufs get story.txt
+</pre></div>
+</div>
+<p>Príkaz <code class="docutils literal notranslate"><span class="pre">get</span></code> zoberie súbor z pripojeného micro:bitu a uloží ho do tvojho aktuálneho adresára na počítači (príkaz je pomenovaný rovnako ako príkaz <code class="docutils literal notranslate"><span class="pre">get</span></code>, ktorý je súčasťou protokolu na prenos súborov FTP a ktorý má rovnakú funkciu).</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ ufs rm story.txt
+</pre></div>
+</div>
+<p>Príkaz <code class="docutils literal notranslate"><span class="pre">rm</span></code> odstraňuje označený súbor zo súborového systému na pripojenom micro:bite (je pomenovaný po štandardnom Unixovom príkaze, <code class="docutils literal notranslate"><span class="pre">rm</span></code>, ktorý slúži tiež na mazanie súborov).</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ ufs put story2.txt
+</pre></div>
+</div>
+<p>Finally, the <code class="docutils literal notranslate"><span class="pre">put</span></code> sub-command puts a file from your computer onto the
+connected device (it’s named after the <code class="docutils literal notranslate"><span class="pre">put</span></code> command that’s part of FTP that
+serves the same function).</p>
+</div>
+<div class="section" id="mainly-main-py">
+<h2>Hlavne main.py<a class="headerlink" href="#mainly-main-py" title="Trvalý odkaz na tento nadpis">¶</a></h2>
+<p>Súborový systém má tiež zaujímavú vlastnosť: ak na zariadenie naflashuješ iba MicroPython, tak po zapnutí bude zariadenie čakať, čo má robiť. No ak nakopíruješ do súborového systému špeciálny súbor s názvom <code class="docutils literal notranslate"><span class="pre">main.py</span></code> (main = hlavný), potom po reštare zariadenia MicroPython spustí obsah tohto súboru.</p>
+<p>Navyše, ak nakopíruješ ďalšie Pythonské súbory na súborový systém, potom ich môže <code class="docutils literal notranslate"><span class="pre">import``ovať</span> <span class="pre">tak,</span> <span class="pre">ako</span> <span class="pre">hocijaký</span> <span class="pre">iný</span> <span class="pre">Pythonský</span> <span class="pre">modul.</span> <span class="pre">Napríklad,</span> <span class="pre">ak</span> <span class="pre">máš</span> <span class="pre">súbor</span> <span class="pre">``hello.py</span></code>, ktorý obsahuje tento jednoduchý kód:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">say_hello</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">&quot;World&quot;</span><span class="p">):</span>
+    <span class="k">return</span> <span class="s2">&quot;Hello, </span><span class="si">{}</span><span class="s2">!&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>… môžeš ho naimportovať a takto použiť funkciu <code class="docutils literal notranslate"><span class="pre">say_hello</span></code>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">microbit</span> <span class="k">import</span> <span class="n">display</span>
+<span class="kn">from</span> <span class="nn">hello</span> <span class="k">import</span> <span class="n">say_hello</span>
+
+<span class="n">display</span><span class="o">.</span><span class="n">scroll</span><span class="p">(</span><span class="n">say_hello</span><span class="p">())</span>
+</pre></div>
+</div>
+<p>Samozrejme, výsledkom je text „Hello, World!“, ktorý sa posúva po displeji. Dôležitým bodom je, že tento príklad bol rozdelený do dvoch Pythonských modulov a použili sme výraz <code class="docutils literal notranslate"><span class="pre">import</span></code> na zdieľanie kódu.</p>
+<div class="admonition note">
+<p class="first admonition-title">Poznámka</p>
+<p>Ak si okrem samotného MicroPythonu naflashoval na zariadenie aj ďalší skript, potom MicroPython odignoruje <code class="docutils literal notranslate"><span class="pre">main.py</span></code> a namiesto neho spustí tvoj vložený skript.</p>
+<p class="last">Ak chceš naflashovať iba samotný MicroPython, tak sa len uisti, že skript, ktorý si napísal(a) vo svojom editore má nula znakov. Po naflashovaní ho budeš môcť nahradiť nakopírovaním súboru <code class="docutils literal notranslate"><span class="pre">main.py</span></code>.</p>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="speech.html" class="btn btn-neutral float-right" title="Reč" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="direction.html" class="btn btn-neutral" title="Smer" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2015-2018, Multiple authors.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'0.5.0',
+            LANGUAGE:'sk',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="../_static/translations.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          
+          SphinxRtdTheme.Navigation.enableSticky();
+          
+      });
+  </script> 
+
+</body>
+</html>

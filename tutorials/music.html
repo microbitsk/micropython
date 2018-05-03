@@ -1,0 +1,384 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="sk" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="sk" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Hudba &mdash; Dokumentácia BBC micro:bit MicroPython 0.5.0</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Hľadať" href="../search.html" />
+    <link rel="next" title="Náhoda" href="random.html" />
+    <link rel="prev" title="Vstup/Výstup" href="io.html" /> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> BBC micro:bit MicroPython
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.5.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Tutorials</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="introduction.html">Úvod</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="hello.html">Ahoj, svet!</a></li>
+<li class="toctree-l2"><a class="reference internal" href="images.html">Obrázky</a></li>
+<li class="toctree-l2"><a class="reference internal" href="buttons.html">Tlačítka</a></li>
+<li class="toctree-l2"><a class="reference internal" href="io.html">Vstup/Výstup</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Hudba</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#wolfgang-amadeus-microbit">Wolfgang Amadeus Microbit</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#sound-effects">Zvukové efekty</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="random.html">Náhoda</a></li>
+<li class="toctree-l2"><a class="reference internal" href="movement.html">Pohyb</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gestures.html">Gestá</a></li>
+<li class="toctree-l2"><a class="reference internal" href="direction.html">Smer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="storage.html">Úložisko</a></li>
+<li class="toctree-l2"><a class="reference internal" href="speech.html">Reč</a></li>
+<li class="toctree-l2"><a class="reference internal" href="network.html">Sieť</a></li>
+<li class="toctree-l2"><a class="reference internal" href="radio.html">Rádio</a></li>
+<li class="toctree-l2"><a class="reference internal" href="next.html">Next Steps</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="hello.html">Ahoj, svet!</a></li>
+<li class="toctree-l1"><a class="reference internal" href="images.html">Obrázky</a></li>
+<li class="toctree-l1"><a class="reference internal" href="buttons.html">Tlačítka</a></li>
+<li class="toctree-l1"><a class="reference internal" href="io.html">Vstup/Výstup</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Hudba</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#wolfgang-amadeus-microbit">Wolfgang Amadeus Microbit</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#sound-effects">Zvukové efekty</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="random.html">Náhoda</a></li>
+<li class="toctree-l1"><a class="reference internal" href="movement.html">Pohyb</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gestures.html">Gestá</a></li>
+<li class="toctree-l1"><a class="reference internal" href="direction.html">Smer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="storage.html">Úložisko</a></li>
+<li class="toctree-l1"><a class="reference internal" href="speech.html">Reč</a></li>
+<li class="toctree-l1"><a class="reference internal" href="network.html">Sieť</a></li>
+<li class="toctree-l1"><a class="reference internal" href="radio.html">Rádio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="next.html">Next Steps</a></li>
+</ul>
+<p class="caption"><span class="caption-text">API Reference</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../microbit_micropython_api.html">micro:bit Micropython API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../microbit.html">Microbit Module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../accelerometer.html">Akcelerometer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ble.html">Bluetooth</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../button.html">Buttons</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../compass.html">Compass</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../display.html">Display</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../filesystem.html">Local Persistent File System</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../i2c.html">I²C</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../image.html">Image</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../music.html">Music</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../neopixel.html">NeoPixel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../os.html">The <code class="docutils literal notranslate"><span class="pre">os</span></code>  Module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pin.html">Input/Output Pins</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../radio.html">Radio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../random.html">Random Number Generation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../speech.html">Speech</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../spi.html">SPI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../uart.html">UART</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Developer Guide</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../devguide/installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../devguide/flashfirmware.html">Flashing Firmware</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../devguide/repl.html">Accessing the REPL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../devguide/devfaq.html">Developer FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../devguide/contributing.html">Contributing</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">BBC micro:bit MicroPython</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="introduction.html">Úvod</a> &raquo;</li>
+        
+      <li>Hudba</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/tutorials/music.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="music">
+<h1>Hudba<a class="headerlink" href="#music" title="Trvalý odkaz na tento nadpis">¶</a></h1>
+<p>MicroPython na BBC micro:bite obsahuje nadupaný modul na hudbu a zvuky. Generovať zvuky je veľmi jednoduché, <em>ak pripojíš reproduktor</em>. Prepoj krokodílkami piny 0 a GND s kladným a záporným vstupom do reproduktora - nezáleží na tom, v akom poradí sú pripojené.</p>
+<img alt="../_images/pin0-gnd.png" src="../_images/pin0-gnd.png" />
+<div class="admonition note">
+<p class="first admonition-title">Poznámka</p>
+<p class="last">Toto neskúšaj s Piezo bzučiakom - tieto bzučiaky vedia hrať iba jeden tón.</p>
+</div>
+<p>Poďme zahrať nejakú hudbu:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">music</span>
+
+<span class="n">music</span><span class="o">.</span><span class="n">play</span><span class="p">(</span><span class="n">music</span><span class="o">.</span><span class="n">NYAN</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Všimni si, že importujeme modul <code class="docutils literal notranslate"><span class="pre">music</span></code> („hudba“). Ten obsahuje metódy na vytváranie a ovládanie zvuku.</p>
+<p>MicroPython má dosť veľa vstavaných melódií. Tu je ich kompletný zoznam:</p>
+<ul class="simple">
+<li><code class="docutils literal notranslate"><span class="pre">music.DADADADUM</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">music.ENTERTAINER</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">music.PRELUDE</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">music.ODE</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">music.NYAN</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">music.RINGTONE</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">music.FUNK</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">music.BLUES</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">music.BIRTHDAY</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">music.WEDDING</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">music.FUNERAL</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">music.PUNCHLINE</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">music.PYTHON</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">music.BADDY</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">music.CHASE</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">music.BA_DING</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">music.WAWAWAWAA</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">music.JUMP_UP</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">music.JUMP_DOWN</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">music.POWER_UP</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">music.POWER_DOWN</span></code></li>
+</ul>
+<p>Vezmi si ukážkový kód a zmeň melódiu. Ktorá je tvoja obľúbená? Vedel(a) by si nejako využiť takéto melódie ako signály?</p>
+<div class="section" id="wolfgang-amadeus-microbit">
+<h2>Wolfgang Amadeus Microbit<a class="headerlink" href="#wolfgang-amadeus-microbit" title="Trvalý odkaz na tento nadpis">¶</a></h2>
+<p>Vytváranie vlastných melódií je jednoduché!</p>
+<p>Každá nota má svoj názov (napríklad <code class="docutils literal notranslate"><span class="pre">C#</span></code> alebo <code class="docutils literal notranslate"><span class="pre">F</span></code>), oktávu (tá hovorí MicroPythonu ako vysoko alebo nízko má daný tón zahrať) a dĺžku (ako dlho má trvať). Oktávy sú označený číslom ~ 0 je najnižšia oktáva, 4 obsahuje stredné C a 8 je tak vysoko, že to nikdy nevyužiješ. Teda pokiaľ nebudeš komponovať hudbu pre psov. Dĺžka tónu je tiež vyjadrená číslami. Čím vyššia hodnota, tým dlhšie bude trvať. Tieto hodnoty navzájom súvisia - napríklad dĺžka trvania <code class="docutils literal notranslate"><span class="pre">4</span></code> bude trvať dvakrát tak dlho ako <code class="docutils literal notranslate"><span class="pre">2</span></code> (a tak ďalej). Ak použiješ notu <code class="docutils literal notranslate"><span class="pre">R</span></code>, vtedy MicroPython zahrá pomlčku (t.j. ticho) so zvolenou dĺžkou (trvaním).</p>
+<p>Každá nota je vyjadrená takýto reťazec znakov:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">NOTE</span><span class="p">[</span><span class="n">octave</span><span class="p">][:</span><span class="n">duration</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>Napríklad, <code class="docutils literal notranslate"><span class="pre">&quot;A1:4&quot;</span></code> znamená, že nota <code class="docutils literal notranslate"><span class="pre">A</span></code> v oktáve <code class="docutils literal notranslate"><span class="pre">1</span></code> má byť zahranás dĺžkou trvania <code class="docutils literal notranslate"><span class="pre">4</span></code>.</p>
+<p>Priprav zoznam nôt, pomocou ktorého vytvoríš melódiu (je to podobné, ako vytváranie animácie pomocou zoznamu obrázkov). Napríklad takto dosiahneš, že MicroPython zahrá úvod pesničky „Frere Jacques“:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">music</span>
+
+<span class="n">tune</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;C4:4&quot;</span><span class="p">,</span> <span class="s2">&quot;D4:4&quot;</span><span class="p">,</span> <span class="s2">&quot;E4:4&quot;</span><span class="p">,</span> <span class="s2">&quot;C4:4&quot;</span><span class="p">,</span> <span class="s2">&quot;C4:4&quot;</span><span class="p">,</span> <span class="s2">&quot;D4:4&quot;</span><span class="p">,</span> <span class="s2">&quot;E4:4&quot;</span><span class="p">,</span> <span class="s2">&quot;C4:4&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;E4:4&quot;</span><span class="p">,</span> <span class="s2">&quot;F4:4&quot;</span><span class="p">,</span> <span class="s2">&quot;G4:8&quot;</span><span class="p">,</span> <span class="s2">&quot;E4:4&quot;</span><span class="p">,</span> <span class="s2">&quot;F4:4&quot;</span><span class="p">,</span> <span class="s2">&quot;G4:8&quot;</span><span class="p">]</span>
+<span class="n">music</span><span class="o">.</span><span class="n">play</span><span class="p">(</span><span class="n">tune</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Poznámka</p>
+<p>MicroPython vie takéto melódie zjednodušiť. Zapamätá si oktávu a dĺžku trvania, až kým ich nezmeníš. Vďaka tomu, vyššie uvedený príklad môžeš zapísať aj takto:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">music</span>
+
+<span class="n">tune</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;C4:4&quot;</span><span class="p">,</span> <span class="s2">&quot;D&quot;</span><span class="p">,</span> <span class="s2">&quot;E&quot;</span><span class="p">,</span> <span class="s2">&quot;C&quot;</span><span class="p">,</span> <span class="s2">&quot;C&quot;</span><span class="p">,</span> <span class="s2">&quot;D&quot;</span><span class="p">,</span> <span class="s2">&quot;E&quot;</span><span class="p">,</span> <span class="s2">&quot;C&quot;</span><span class="p">,</span> <span class="s2">&quot;E&quot;</span><span class="p">,</span> <span class="s2">&quot;F&quot;</span><span class="p">,</span> <span class="s2">&quot;G:8&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;E:4&quot;</span><span class="p">,</span> <span class="s2">&quot;F&quot;</span><span class="p">,</span> <span class="s2">&quot;G:8&quot;</span><span class="p">]</span>
+<span class="n">music</span><span class="o">.</span><span class="n">play</span><span class="p">(</span><span class="n">tune</span><span class="p">)</span>
+</pre></div>
+</div>
+<p class="last">Všimni si, ako sa oktáva a trvanie menia iba vtedy, keď musia. Musíme tak omnoho mneje písať a je to navyše ľahšie aj na čítanie.</p>
+</div>
+</div>
+<div class="section" id="sound-effects">
+<h2>Zvukové efekty<a class="headerlink" href="#sound-effects" title="Trvalý odkaz na tento nadpis">¶</a></h2>
+<p>MicroPython ti umožní vytvárať aj tóny, ktoré nie sú hudobnými notami. Tu je príklad, ako vytvoriť efekt policajnej sirény:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">music</span>
+
+<span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+    <span class="k">for</span> <span class="n">freq</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">880</span><span class="p">,</span> <span class="mi">1760</span><span class="p">,</span> <span class="mi">16</span><span class="p">):</span>
+        <span class="n">music</span><span class="o">.</span><span class="n">pitch</span><span class="p">(</span><span class="n">freq</span><span class="p">,</span> <span class="mi">6</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">freq</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1760</span><span class="p">,</span> <span class="mi">880</span><span class="p">,</span> <span class="o">-</span><span class="mi">16</span><span class="p">):</span>
+        <span class="n">music</span><span class="o">.</span><span class="n">pitch</span><span class="p">(</span><span class="n">freq</span><span class="p">,</span> <span class="mi">6</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Všimni si, ako sme v tomto prípade použili <em>metódu</em> <code class="docutils literal notranslate"><span class="pre">music.pitch</span></code>. Táto metóda očakáva frekvenciu ako argument. Napríklad frekvencia <code class="docutils literal notranslate"><span class="pre">440</span></code> je komorné <code class="docutils literal notranslate"><span class="pre">A</span></code>, ktoré sa používa pri ladení orchestra.</p>
+<p>V tomto príklade používame funkciu <code class="docutils literal notranslate"><span class="pre">range</span></code> na vytvorenie postupnosti číselných hodnôt. Tieto čísla sa používajú na definovanie farby tónu. Tri argumenty pre funkciu <code class="docutils literal notranslate"><span class="pre">range</span></code> sú začiatočná hodnota, koncová hodnota a krok. Preto tam, kde používame <code class="docutils literal notranslate"><span class="pre">range</span></code> prvýkrát hovorím po slovensky „vytvor postupnosť čísel medzi 880 a 1760 s krokom 16“. Pri druhom použití hovoríme „vytvor postupnosť hodnôt medzi 1760 a 880 s krokom -16“. Takto vytvoríme postupnosť frekvencií, ktoré stúpajú a klesajú v tóne rovnako ako policajná siréna.</p>
+<p>A keďže siréna môže trvať donekonečna, zabalili sme ju do nekonečného <code class="docutils literal notranslate"><span class="pre">while</span></code> cyklu.</p>
+<p>Práve sme si predstavili nový druh cyklu vo vnútri <code class="docutils literal notranslate"><span class="pre">while</span></code> cyklu: <code class="docutils literal notranslate"><span class="pre">for</span></code> cyklus. Po slovensky by sme namiesto neho povedali niečo takéto: „s každým prvkom v nejakej zbierke prvkov urob nejakú aktivitu“. Konkrétne, v uvedenom príklade by to bolo asi takto: „s každou frekvenciou v definovanej postupnosti frekvencií zahraj tón tej frekvencie v dĺžke 6 milisekúnd“. Všimni si, že to, čo sa má diať s každou položkou v cykle, je odsadené (ako sme hovorili už v predchádzajúcich návodoch), takže Python vie presne, ktorú časť kódu má spustiť pre každú položku.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="random.html" class="btn btn-neutral float-right" title="Náhoda" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="io.html" class="btn btn-neutral" title="Vstup/Výstup" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2015-2018, Multiple authors.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'0.5.0',
+            LANGUAGE:'sk',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="../_static/translations.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          
+          SphinxRtdTheme.Navigation.enableSticky();
+          
+      });
+  </script> 
+
+</body>
+</html>

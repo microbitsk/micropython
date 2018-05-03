@@ -1,0 +1,348 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="sk" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="sk" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Náhoda &mdash; Dokumentácia BBC micro:bit MicroPython 0.5.0</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Hľadať" href="../search.html" />
+    <link rel="next" title="Pohyb" href="movement.html" />
+    <link rel="prev" title="Hudba" href="music.html" /> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> BBC micro:bit MicroPython
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.5.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Tutorials</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="introduction.html">Úvod</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="hello.html">Ahoj, svet!</a></li>
+<li class="toctree-l2"><a class="reference internal" href="images.html">Obrázky</a></li>
+<li class="toctree-l2"><a class="reference internal" href="buttons.html">Tlačítka</a></li>
+<li class="toctree-l2"><a class="reference internal" href="io.html">Vstup/Výstup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="music.html">Hudba</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Náhoda</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#random-numbers">Náhodné čísla</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#seeds-of-chaos">Počiatok chaosu</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="movement.html">Pohyb</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gestures.html">Gestá</a></li>
+<li class="toctree-l2"><a class="reference internal" href="direction.html">Smer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="storage.html">Úložisko</a></li>
+<li class="toctree-l2"><a class="reference internal" href="speech.html">Reč</a></li>
+<li class="toctree-l2"><a class="reference internal" href="network.html">Sieť</a></li>
+<li class="toctree-l2"><a class="reference internal" href="radio.html">Rádio</a></li>
+<li class="toctree-l2"><a class="reference internal" href="next.html">Next Steps</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="hello.html">Ahoj, svet!</a></li>
+<li class="toctree-l1"><a class="reference internal" href="images.html">Obrázky</a></li>
+<li class="toctree-l1"><a class="reference internal" href="buttons.html">Tlačítka</a></li>
+<li class="toctree-l1"><a class="reference internal" href="io.html">Vstup/Výstup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="music.html">Hudba</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Náhoda</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#random-numbers">Náhodné čísla</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#seeds-of-chaos">Počiatok chaosu</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="movement.html">Pohyb</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gestures.html">Gestá</a></li>
+<li class="toctree-l1"><a class="reference internal" href="direction.html">Smer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="storage.html">Úložisko</a></li>
+<li class="toctree-l1"><a class="reference internal" href="speech.html">Reč</a></li>
+<li class="toctree-l1"><a class="reference internal" href="network.html">Sieť</a></li>
+<li class="toctree-l1"><a class="reference internal" href="radio.html">Rádio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="next.html">Next Steps</a></li>
+</ul>
+<p class="caption"><span class="caption-text">API Reference</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../microbit_micropython_api.html">micro:bit Micropython API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../microbit.html">Microbit Module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../accelerometer.html">Akcelerometer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ble.html">Bluetooth</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../button.html">Buttons</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../compass.html">Compass</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../display.html">Display</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../filesystem.html">Local Persistent File System</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../i2c.html">I²C</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../image.html">Image</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../music.html">Music</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../neopixel.html">NeoPixel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../os.html">The <code class="docutils literal notranslate"><span class="pre">os</span></code>  Module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pin.html">Input/Output Pins</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../radio.html">Radio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../random.html">Random Number Generation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../speech.html">Speech</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../spi.html">SPI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../uart.html">UART</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Developer Guide</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../devguide/installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../devguide/flashfirmware.html">Flashing Firmware</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../devguide/repl.html">Accessing the REPL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../devguide/devfaq.html">Developer FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../devguide/contributing.html">Contributing</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">BBC micro:bit MicroPython</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="introduction.html">Úvod</a> &raquo;</li>
+        
+      <li>Náhoda</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/tutorials/random.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="random">
+<h1>Náhoda<a class="headerlink" href="#random" title="Trvalý odkaz na tento nadpis">¶</a></h1>
+<p>Niekedy chceš veciam dopriať voľnejší priebeh alebo niečo trochu pomiešať: chceš, aby sa zariadenie správalo náhodne.</p>
+<p>MicroPython obsahuje modul <code class="docutils literal notranslate"><span class="pre">random</span></code> („náhoda“), vďaka ktorému vniesť trochu chaosu do tvojho kódu, je veľmi jednoduché. Napríklad takto urobíš, aby sa na displeji posúvalo náhodne vybrané meno:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">microbit</span> <span class="k">import</span> <span class="o">*</span>
+<span class="kn">import</span> <span class="nn">random</span>
+
+<span class="n">names</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Mary&quot;</span><span class="p">,</span> <span class="s2">&quot;Yolanda&quot;</span><span class="p">,</span> <span class="s2">&quot;Damien&quot;</span><span class="p">,</span> <span class="s2">&quot;Alia&quot;</span><span class="p">,</span> <span class="s2">&quot;Kushal&quot;</span><span class="p">,</span> <span class="s2">&quot;Mei Xiu&quot;</span><span class="p">,</span> <span class="s2">&quot;Zoltan&quot;</span> <span class="p">]</span>
+
+<span class="n">display</span><span class="o">.</span><span class="n">scroll</span><span class="p">(</span><span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">names</span><span class="p">))</span>
+</pre></div>
+</div>
+<p>Zoznam (<code class="docutils literal notranslate"><span class="pre">names</span></code> - „mená“) obsahuje sedem mien, ktoré sú definované ako reťazce znakov. Posledný riadok je <em>vnorený</em> („cibuľový“ efekt, o ktorom sme hovorili v predchádzajúcich kapitolách): metóda <code class="docutils literal notranslate"><span class="pre">random.choice</span></code> („náhoda.výber“) prijme zoznam <code class="docutils literal notranslate"><span class="pre">names</span></code> ako argument ako vráti z neho náhodne položku. Táto položka (náhodne vybrané meno) je potom argumentom pre metódu <code class="docutils literal notranslate"><span class="pre">display.scroll</span></code> („displej.posúvaj“).</p>
+<p>Dokážeš upraviť zoznam tak, aby obsahoval tvoj vlastný zoznam mien?</p>
+<div class="section" id="random-numbers">
+<h2>Náhodné čísla<a class="headerlink" href="#random-numbers" title="Trvalý odkaz na tento nadpis">¶</a></h2>
+<p>Náhodné čísla sú veľmi užitočné. V hrách sú veľmi bežné. Prečo by sme inak mali kocky?</p>
+<p>MicroPython obsahuje niekoľko užitočných metód na náhodné čísla. Takto jednoducho môžeme hádzať kockou:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">microbit</span> <span class="k">import</span> <span class="o">*</span>
+<span class="kn">import</span> <span class="nn">random</span>
+
+<span class="n">display</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">6</span><span class="p">)))</span>
+</pre></div>
+</div>
+<p>Zakaždým, keď zariadenie resetuješ, zobrazí číslo medzi 1 a 6. Myslím, že už rozumieš <em>vnoreniu</em>, takže je dobré si všimnúť, že <code class="docutils literal notranslate"><span class="pre">random.randint</span></code> vracia celé číslo medzi dvoma argumentami, vrátane (celé číslo sa v Pythone volá integer, preto má metóda také meno). Pretože <code class="docutils literal notranslate"><span class="pre">display.show</span></code> očakáva ako argument znak, musíme použiť funkciu <code class="docutils literal notranslate"><span class="pre">str</span></code>, ktorou premeníme číslo na znak (napríklad zmeníme <code class="docutils literal notranslate"><span class="pre">6</span></code> na <code class="docutils literal notranslate"><span class="pre">&quot;6&quot;</span></code>).</p>
+<p>Ak vieš, že budeš potrebovať vždy číslo medzi <code class="docutils literal notranslate"><span class="pre">0</span></code> a <code class="docutils literal notranslate"><span class="pre">N</span></code>, môžeš použiť metódu <code class="docutils literal notranslate"><span class="pre">random.randrange</span></code>. Ak jej zadáš iba jeden argument, vráti náhodné číslo do hodnoty <code class="docutils literal notranslate"><span class="pre">N</span></code> (ale nie vrátane tohto čísla). Tým sa líši od správania sa metódy <code class="docutils literal notranslate"><span class="pre">random.randint</span></code>).</p>
+<p>Niekedy potrebuješ čísla aj s desatinnou čiarkou. Voláme ich reálne čísla (angl. <em>floating point</em> numbers) a môžeme ich generovať pomocou metódy <code class="docutils literal notranslate"><span class="pre">random.random</span></code>. Táto vracia hodnotu medzi <code class="docutils literal notranslate"><span class="pre">0.0</span></code> a <code class="docutils literal notranslate"><span class="pre">1.0</span></code> vrátane krajných hodnôt. Ak potrebuješ väčšie náhodné reálne číslo, pridaj takto výsledky metód <code class="docutils literal notranslate"><span class="pre">random.randrange</span></code> a <code class="docutils literal notranslate"><span class="pre">random.random</span></code>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">microbit</span> <span class="k">import</span> <span class="o">*</span>
+<span class="kn">import</span> <span class="nn">random</span>
+
+<span class="n">answer</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randrange</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span> <span class="o">+</span> <span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">()</span>
+<span class="n">display</span><span class="o">.</span><span class="n">scroll</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">answer</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="seeds-of-chaos">
+<h2>Počiatok chaosu<a class="headerlink" href="#seeds-of-chaos" title="Trvalý odkaz na tento nadpis">¶</a></h2>
+<p>Generátory náhodných čísel, ktoré sa využívajú v počítačoch nie sú v skutočnosti úplne náhodné. Poskytujú akoby náhodné číslo, ktoré sa vypočíta z počiatočnej hodnoty. Počiatočná hodnota (<em>seed</em>) je často generovaná z kvázi-náhodných hodnôt ako napríklad aktuálny čas a/alebo hodnoty odčítané z rôznych senzorov, ako je napríklad v čipe vstavaný teplomer.</p>
+<p>Niekedy potrebuješ opakovateľné kvázi-náhodné správanie: zdroja náhody, ktorý je reprodukovateľný. Napríklad, ak potrebuješ, aby pri každom hode kockami padlo 5 rovnakých náhodných čísel..</p>
+<p>Toto zabezpečíš jednoducho pomocou nastavenej počiatočnej hodnoty. Ak zadáme známu počiatočnú hodnotu - seed, generátor náhodných čísel vytvorí rovnaký set náhodných čísel. Počiatočná hodnota sa nastavuje pomocou <code class="docutils literal notranslate"><span class="pre">random.seed</span></code> a akéhokovek celého čísla. Takáto verzia programu na hádzanie kockou bude dávať vždy rovnaký výsledok:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">microbit</span> <span class="k">import</span> <span class="o">*</span>
+<span class="kn">import</span> <span class="nn">random</span>
+
+<span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="mi">1337</span><span class="p">)</span>
+<span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">button_a</span><span class="o">.</span><span class="n">was_pressed</span><span class="p">():</span>
+        <span class="n">display</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">6</span><span class="p">)))</span>
+</pre></div>
+</div>
+<p>Vieš prečo tento program potrebuje, aby sme stlačili tlačítko A namiesto resetu zariadenia, ako to bolo v prvom príklade s kockami..?</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="movement.html" class="btn btn-neutral float-right" title="Pohyb" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="music.html" class="btn btn-neutral" title="Hudba" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2015-2018, Multiple authors.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'0.5.0',
+            LANGUAGE:'sk',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="../_static/translations.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          
+          SphinxRtdTheme.Navigation.enableSticky();
+          
+      });
+  </script> 
+
+</body>
+</html>

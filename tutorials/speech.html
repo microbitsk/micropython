@@ -1,0 +1,450 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="sk" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="sk" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Reč &mdash; Dokumentácia BBC micro:bit MicroPython 0.5.0</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Hľadať" href="../search.html" />
+    <link rel="next" title="Sieť" href="network.html" />
+    <link rel="prev" title="Úložisko" href="storage.html" /> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> BBC micro:bit MicroPython
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.5.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Tutorials</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="introduction.html">Úvod</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="hello.html">Ahoj, svet!</a></li>
+<li class="toctree-l2"><a class="reference internal" href="images.html">Obrázky</a></li>
+<li class="toctree-l2"><a class="reference internal" href="buttons.html">Tlačítka</a></li>
+<li class="toctree-l2"><a class="reference internal" href="io.html">Vstup/Výstup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="music.html">Hudba</a></li>
+<li class="toctree-l2"><a class="reference internal" href="random.html">Náhoda</a></li>
+<li class="toctree-l2"><a class="reference internal" href="movement.html">Pohyb</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gestures.html">Gestá</a></li>
+<li class="toctree-l2"><a class="reference internal" href="direction.html">Smer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="storage.html">Úložisko</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Reč</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#dalek-poetry">DALEKova poézia</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#say-something">Povedz niečo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#poetry-on-demand">Poézia na požiadanie</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#phonemes">Fonémy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#sing-a-song-of-micro-bit">Zaspievaj pieseň Micro:bitu</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="network.html">Sieť</a></li>
+<li class="toctree-l2"><a class="reference internal" href="radio.html">Rádio</a></li>
+<li class="toctree-l2"><a class="reference internal" href="next.html">Next Steps</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="hello.html">Ahoj, svet!</a></li>
+<li class="toctree-l1"><a class="reference internal" href="images.html">Obrázky</a></li>
+<li class="toctree-l1"><a class="reference internal" href="buttons.html">Tlačítka</a></li>
+<li class="toctree-l1"><a class="reference internal" href="io.html">Vstup/Výstup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="music.html">Hudba</a></li>
+<li class="toctree-l1"><a class="reference internal" href="random.html">Náhoda</a></li>
+<li class="toctree-l1"><a class="reference internal" href="movement.html">Pohyb</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gestures.html">Gestá</a></li>
+<li class="toctree-l1"><a class="reference internal" href="direction.html">Smer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="storage.html">Úložisko</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Reč</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#dalek-poetry">DALEKova poézia</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#say-something">Povedz niečo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#poetry-on-demand">Poézia na požiadanie</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#phonemes">Fonémy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#sing-a-song-of-micro-bit">Zaspievaj pieseň Micro:bitu</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="network.html">Sieť</a></li>
+<li class="toctree-l1"><a class="reference internal" href="radio.html">Rádio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="next.html">Next Steps</a></li>
+</ul>
+<p class="caption"><span class="caption-text">API Reference</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../microbit_micropython_api.html">micro:bit Micropython API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../microbit.html">Microbit Module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../accelerometer.html">Akcelerometer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ble.html">Bluetooth</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../button.html">Buttons</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../compass.html">Compass</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../display.html">Display</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../filesystem.html">Local Persistent File System</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../i2c.html">I²C</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../image.html">Image</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../music.html">Music</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../neopixel.html">NeoPixel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../os.html">The <code class="docutils literal notranslate"><span class="pre">os</span></code>  Module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pin.html">Input/Output Pins</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../radio.html">Radio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../random.html">Random Number Generation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../speech.html">Speech</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../spi.html">SPI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../uart.html">UART</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Developer Guide</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../devguide/installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../devguide/flashfirmware.html">Flashing Firmware</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../devguide/repl.html">Accessing the REPL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../devguide/devfaq.html">Developer FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../devguide/contributing.html">Contributing</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">BBC micro:bit MicroPython</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="introduction.html">Úvod</a> &raquo;</li>
+        
+      <li>Reč</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/tutorials/speech.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="speech">
+<h1>Reč<a class="headerlink" href="#speech" title="Trvalý odkaz na tento nadpis">¶</a></h1>
+<div class="admonition warning">
+<p class="first admonition-title">Varovanie</p>
+<p>VAROVANIE! TENTO KÓD SA MÔŽE ZMENIŤ.</p>
+<p>Vyhradzujeme si právo zmeniť toto API počas vývoja.</p>
+<p class="last">Kvalita reči nie je veľmi vysoká, skôr „taká akurát“. Vzhľadom na limity zariadenia možno narazíš na chyby pamäte a/alebo neočakávané zvuky počas prehrávania. Vývoj je ešte na začiatku a stále zlepšujeme kód rečového syntetizátora. Oznamovanie chýb a opravy formou pull requestov sú vítané.</p>
+</div>
+<p>Počítače a roboti, ktorí hovoria, vyzerajú „ľudskejšie“.</p>
+<p>Často si hovoríme, čo chce počítač robiť prostredníctvom grafického rozhrania (GUI). V prípade BBC micro:bitu je týmto rozhraním LED matica s rozmerom 5x5, čo nedáva toľko možností, koľko by sme chceli.</p>
+<p>Donútiť micro:bit rozprávať je jedným zo spôsobov, ako vyjadriť informáciu vtipne, efektívne a užitočne. Integrovali sme jednoduchý rečový syntetizátor založený na revernom inžinierstve syntetizéra z 80-tych rokov minulého storočia. Znie to veľmi milo, takým tým „všetci ľudia musia umrieť“ spôsobom.</p>
+<p>S týmto na pamäti, použijeme rečový syntetizátor na vytvorenie…</p>
+<div class="section" id="dalek-poetry">
+<h2>DALEKova poézia<a class="headerlink" href="#dalek-poetry" title="Trvalý odkaz na tento nadpis">¶</a></h2>
+<img alt="../_images/dalek.jpg" src="../_images/dalek.jpg" />
+<p>Nie je to veľmi známy fakt, ale DALEKovia majú radi poéziu ~ najmä rýmovačky limerick. Idú sa zblázniť za anapestickou metrikou striktnej AABBA formy. Kto by si to o nich bol pomyslel?</p>
+<p>(No, ako sa dozvieme neskôr, je to Doktorova chyba, že DALEKovia majú radi rýmovačky, čo dosť štve Davrosa.)</p>
+<p>Každopádne, ideme vytvoriť recitál DALEKovej poézie na požiadanie.</p>
+</div>
+<div class="section" id="say-something">
+<h2>Povedz niečo<a class="headerlink" href="#say-something" title="Trvalý odkaz na tento nadpis">¶</a></h2>
+<p>Predtým, ako má zariadenie hovoriť, treba naň zapojiť reproduktory:</p>
+<img alt="../_images/speech1.png" src="../_images/speech1.png" />
+<p>Najjednoduchšie, ako donútiť zariadenie rozprávať je importovať modul <code class="docutils literal notranslate"><span class="pre">speech</span></code> (reč) a použiť funkciu <code class="docutils literal notranslate"><span class="pre">say</span></code> (povedz):</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">speech</span>
+
+<span class="n">speech</span><span class="o">.</span><span class="n">say</span><span class="p">(</span><span class="s2">&quot;Hello, World&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Hoci toto je vážne milé, rozhodne to ešte nie je pre nás dostatočne DALEKovské, takže musíme zmeniť niektoré parametre, ktoré syntetizátor používa na vytváranie hlasu. Náš rečový syntetizátor je dosť pokročilý, čo sa tohto týka, pretože vieme meniť štyri parametre:</p>
+<ul class="simple">
+<li><code class="docutils literal notranslate"><span class="pre">pitch</span></code> - ako vysoko má hlas znieť (0 = vysoko, 255 = Barry White)</li>
+<li><code class="docutils literal notranslate"><span class="pre">speed</span></code> - ako rýchlo má zariadenie hovoriť (0 = nemožné, 255 = uspávanka)</li>
+<li><code class="docutils literal notranslate"><span class="pre">mouth</span></code> - ako veľmi majú byť zovreté pery pri vyslovovaní (0 = bruchovravecká bábka, 255 = Foghorn Leghorn)</li>
+<li><code class="docutils literal notranslate"><span class="pre">throat</span></code> - how relaxed or tense is the tone of voice (0 = falling apart, 255 = totally chilled)</li>
+</ul>
+<p>Spoločne, tieto parametre ovládajú kvalitu zvuku - teda zafarbenie. Úprimne, najlepší tón hlasu dosiahneš tak, že budeš experimentovať a používať vlastný úsudok a nastavenia.</p>
+<p>Aby si mohol/mohla upraviť nastavenia, musíš ich poslať ako argumenty funkcie <code class="docutils literal notranslate"><span class="pre">say</span></code>. Viac podrobností nájdeš v dokumentácii modulu``speech``.</p>
+<p>Po troche experimentov sme uznali tento zvuk ako vcelku DALEKovský.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">speech</span><span class="o">.</span><span class="n">say</span><span class="p">(</span><span class="s2">&quot;I am a DALEK - EXTERMINATE&quot;</span><span class="p">,</span> <span class="n">speed</span><span class="o">=</span><span class="mi">120</span><span class="p">,</span> <span class="n">pitch</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">throat</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">mouth</span><span class="o">=</span><span class="mi">200</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="poetry-on-demand">
+<h2>Poézia na požiadanie<a class="headerlink" href="#poetry-on-demand" title="Trvalý odkaz na tento nadpis">¶</a></h2>
+<p>Keďže sú kyborgovia, DALEKovia používajú svoje robotie schopnosti na tvorbu poézie a vyzerá to, že algoritmus, ktorý používajú, je napísaný v Pythone a vyzerá takto:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># DALEK poetry generator, by The Doctor</span>
+<span class="kn">import</span> <span class="nn">speech</span>
+<span class="kn">import</span> <span class="nn">random</span>
+<span class="kn">from</span> <span class="nn">microbit</span> <span class="k">import</span> <span class="n">sleep</span>
+
+<span class="c1"># Randomly select fragments to interpolate into the template.</span>
+<span class="n">location</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">([</span><span class="s2">&quot;brent&quot;</span><span class="p">,</span> <span class="s2">&quot;trent&quot;</span><span class="p">,</span> <span class="s2">&quot;kent&quot;</span><span class="p">,</span> <span class="s2">&quot;tashkent&quot;</span><span class="p">])</span>
+<span class="n">action</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">([</span><span class="s2">&quot;wrapped up&quot;</span><span class="p">,</span> <span class="s2">&quot;covered&quot;</span><span class="p">,</span> <span class="s2">&quot;sang to&quot;</span><span class="p">,</span> <span class="s2">&quot;played games with&quot;</span><span class="p">])</span>
+<span class="n">obj</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">([</span><span class="s2">&quot;head&quot;</span><span class="p">,</span> <span class="s2">&quot;hand&quot;</span><span class="p">,</span> <span class="s2">&quot;dog&quot;</span><span class="p">,</span> <span class="s2">&quot;foot&quot;</span><span class="p">])</span>
+<span class="n">prop</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">([</span><span class="s2">&quot;in a tent&quot;</span><span class="p">,</span> <span class="s2">&quot;with cement&quot;</span><span class="p">,</span> <span class="s2">&quot;with some scent&quot;</span><span class="p">,</span>
+                     <span class="s2">&quot;that was bent&quot;</span><span class="p">])</span>
+<span class="n">result</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">([</span><span class="s2">&quot;it ran off&quot;</span><span class="p">,</span> <span class="s2">&quot;it glowed&quot;</span><span class="p">,</span> <span class="s2">&quot;it blew up&quot;</span><span class="p">,</span>
+                       <span class="s2">&quot;it turned blue&quot;</span><span class="p">])</span>
+<span class="n">attitude</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">([</span><span class="s2">&quot;in the park&quot;</span><span class="p">,</span> <span class="s2">&quot;like a shark&quot;</span><span class="p">,</span> <span class="s2">&quot;for a lark&quot;</span><span class="p">,</span>
+                         <span class="s2">&quot;with a bark&quot;</span><span class="p">])</span>
+<span class="n">conclusion</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">([</span><span class="s2">&quot;where it went&quot;</span><span class="p">,</span> <span class="s2">&quot;its intent&quot;</span><span class="p">,</span> <span class="s2">&quot;why it went&quot;</span><span class="p">,</span>
+                           <span class="s2">&quot;what it meant&quot;</span><span class="p">])</span>
+
+<span class="c1"># A template of the poem. The {} are replaced by the named fragments.</span>
+<span class="n">poem</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="s2">&quot;there was a young man from </span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">location</span><span class="p">),</span>
+    <span class="s2">&quot;who </span><span class="si">{}</span><span class="s2"> his </span><span class="si">{}</span><span class="s2"> </span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">action</span><span class="p">,</span> <span class="n">obj</span><span class="p">,</span> <span class="n">prop</span><span class="p">),</span>
+    <span class="s2">&quot;one night after dark&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;</span><span class="si">{}</span><span class="s2"> </span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">result</span><span class="p">,</span> <span class="n">attitude</span><span class="p">),</span>
+    <span class="s2">&quot;and he never worked out </span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">conclusion</span><span class="p">),</span>
+    <span class="s2">&quot;EXTERMINATE&quot;</span><span class="p">,</span>
+<span class="p">]</span>
+
+<span class="c1"># Loop over each line in the poem and use the speech module to recite it.</span>
+<span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">poem</span><span class="p">:</span>
+    <span class="n">speech</span><span class="o">.</span><span class="n">say</span><span class="p">(</span><span class="n">line</span><span class="p">,</span> <span class="n">speed</span><span class="o">=</span><span class="mi">120</span><span class="p">,</span> <span class="n">pitch</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">throat</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">mouth</span><span class="o">=</span><span class="mi">200</span><span class="p">)</span>
+    <span class="n">sleep</span><span class="p">(</span><span class="mi">500</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Ako naznačujú komentáre, je veľmi jednoduchý:</p>
+<ul class="simple">
+<li>Pomenované fragmenty (<code class="docutils literal notranslate"><span class="pre">location</span></code>, <code class="docutils literal notranslate"><span class="pre">prop</span></code>, <code class="docutils literal notranslate"><span class="pre">attitude</span></code> atď.) sú náhodne generované preddefinované zoznamy možných hodnôt. Všimni si, že používame metódu <code class="docutils literal notranslate"><span class="pre">random.choice</span></code> na výber položky zo zoznamu.</li>
+<li>Šablóna básne je definovaná ako zoznam strof s „dierami“ (označenými pomocou <code class="docutils literal notranslate"><span class="pre">{}</span></code>), do ktorých budeme vkladať pomenované fragmenty pomocou metódy <code class="docutils literal notranslate"><span class="pre">format</span></code>.</li>
+<li>Nakoniec, Python prechdádza všetky položky zoznamu predpripravených strof a používa <code class="docutils literal notranslate"><span class="pre">speech.say</span></code> s nastaveniami pre DALEKov hlas na recitovanie básne. Medzi riadky je vložená 500-milisekundová prestávka, pretože aj DALEKovia sa niekedy potrebujú nadýchnuť.</li>
+</ul>
+<p>Zaujímavé je, že pôvodné funkcie na poéziu boli napísané Davrosom vo <a class="reference external" href="https://en.wikipedia.org/wiki/Fortran">FORTRANe</a> (vhodný jazyk pre DALEKSov, keďže píšeš VŠETKO VEĽKÝMI PÍSMENAMI). Avšak, Doktor sa vrátil v čase presne do bodu medzi tým, kedy Davrosove <a class="reference external" href="https://en.wikipedia.org/wiki/Unit_testing">unit testy</a> prechádzali a chystal <a class="reference external" href="https://en.wikipedia.org/wiki/Continuous_delivery">nasadenie</a> . V tomto okamihu mohol vložiť interpreter MicroPythonu do DALEKovho operačného systému a vyššie uvedený kód do Dalekovej pamäťovej banky ako <a class="reference external" href="https://en.wikipedia.org/wiki/Easter_egg_(media)">Prekvapenie</a> alebo <a class="reference external" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Chyták</a> Pána času.</p>
+</div>
+<div class="section" id="phonemes">
+<h2>Fonémy<a class="headerlink" href="#phonemes" title="Trvalý odkaz na tento nadpis">¶</a></h2>
+<p>Môžeš si všimnúť, že funkcia <code class="docutils literal notranslate"><span class="pre">say</span></code> nie vždy preloží presne anglické slová do správneho zvuku. Aby si mal(a) extra citlivú kontrolu nad výstupom, používaj fonémy: základné stavebné bloky zvukov jazyka.</p>
+<p>Výhodou používania foném je, že nemusíš presne vedieť, ako sa to píše. Naopak, musíš vedieť, ako to slovo povedať a vyhláskovať ho foneticky.</p>
+<p>Kompletný zoznam foném, ktoré rečový syntetizátor pozná sa nachádza v API dokumentácii k rečovému modulu. Alebo ušetri si kopec času posielaním anglických slov funkcii <code class="docutils literal notranslate"><span class="pre">translate</span></code>. Vráti ti len prvé priblíženie foném, ktoré použije na generovanie zvukového výstupu. Tento výsledok môžeš ďalej ručne upraviť a zlepšiť jeho presnosť, ohýbanie a dôraz (aby znel prirodzenejšie).</p>
+<p>Funkcia <code class="docutils literal notranslate"><span class="pre">pronounce</span></code> (vyslov) sa používa na výstup foném takto:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">speech</span><span class="o">.</span><span class="n">pronounce</span><span class="p">(</span><span class="s2">&quot;/HEH5EH4EH3EH2EH2EH3EH4EH5EHLP.”)</span>
+</pre></div>
+</div>
+<p>Ako by si mohol/mohla zlepšiť Doktorov kód na výrobu týchto foném?</p>
+</div>
+<div class="section" id="sing-a-song-of-micro-bit">
+<h2>Zaspievaj pieseň Micro:bitu<a class="headerlink" href="#sing-a-song-of-micro-bit" title="Trvalý odkaz na tento nadpis">¶</a></h2>
+<p>Zmenou nastavenia výšky - <code class="docutils literal notranslate"><span class="pre">pitch</span></code> a zavolaním funkcie <code class="docutils literal notranslate"><span class="pre">sing</span></code> (spievaj) je možné donútiť zariadenie spievať (i keď zrejme tak skoro nevyhrá Eurovíziu).</p>
+<p>Mapovanie výšok (pitch) do hudobných nôt je nižšie:</p>
+<img alt="../_images/speech-pitch1.png" src="../_images/speech-pitch1.png" />
+<p>Funkcia <code class="docutils literal notranslate"><span class="pre">sing</span></code> (spievaj) vezme fonémy a výšku ako vstupy:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">speech</span><span class="o">.</span><span class="n">sing</span><span class="p">(</span><span class="s2">&quot;#115DOWWWW&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Všimni si, ako výška, ktorá sa má zaspievať je na začiatku pred fonémou s mriežkou (<code class="docutils literal notranslate"><span class="pre">#</span></code>). Výška zostane rovnaká aj pre nasledujúce fonémy, kým nebude zadaná nová výška.</p>
+<p>Nasledujúci príklad ukazuje ako môžu byť použité všetky tri generujúce funkcie (<code class="docutils literal notranslate"><span class="pre">say</span></code>, <code class="docutils literal notranslate"><span class="pre">pronounce</span></code> a <code class="docutils literal notranslate"><span class="pre">sing</span></code>) na vytvorenie výstupu, ktorý znie ako reč:</p>
+<div class="code python highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">speech</span>
+<span class="kn">from</span> <span class="nn">microbit</span> <span class="k">import</span> <span class="n">sleep</span>
+
+<span class="c1"># The say method attempts to convert English into phonemes.</span>
+<span class="n">speech</span><span class="o">.</span><span class="n">say</span><span class="p">(</span><span class="s2">&quot;I can sing!&quot;</span><span class="p">)</span>
+<span class="n">sleep</span><span class="p">(</span><span class="mi">1000</span><span class="p">)</span>
+<span class="n">speech</span><span class="o">.</span><span class="n">say</span><span class="p">(</span><span class="s2">&quot;Listen to me!&quot;</span><span class="p">)</span>
+<span class="n">sleep</span><span class="p">(</span><span class="mi">1000</span><span class="p">)</span>
+
+<span class="c1"># Clearing the throat requires the use of phonemes. Changing</span>
+<span class="c1"># the pitch and speed also helps create the right effect.</span>
+<span class="n">speech</span><span class="o">.</span><span class="n">pronounce</span><span class="p">(</span><span class="s2">&quot;AEAE/HAEMM&quot;</span><span class="p">,</span> <span class="n">pitch</span><span class="o">=</span><span class="mi">200</span><span class="p">,</span> <span class="n">speed</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span>  <span class="c1"># Ahem</span>
+<span class="n">sleep</span><span class="p">(</span><span class="mi">1000</span><span class="p">)</span>
+
+<span class="c1"># Singing requires a phoneme with an annotated pitch for each syllable.</span>
+<span class="n">solfa</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="s2">&quot;#115DOWWWWWW&quot;</span><span class="p">,</span>   <span class="c1"># Doh</span>
+    <span class="s2">&quot;#103REYYYYYY&quot;</span><span class="p">,</span>   <span class="c1"># Re</span>
+    <span class="s2">&quot;#94MIYYYYYY&quot;</span><span class="p">,</span>    <span class="c1"># Mi</span>
+    <span class="s2">&quot;#88FAOAOAOAOR&quot;</span><span class="p">,</span>  <span class="c1"># Fa</span>
+    <span class="s2">&quot;#78SOHWWWWW&quot;</span><span class="p">,</span>    <span class="c1"># Soh</span>
+    <span class="s2">&quot;#70LAOAOAOAOR&quot;</span><span class="p">,</span>  <span class="c1"># La</span>
+    <span class="s2">&quot;#62TIYYYYYY&quot;</span><span class="p">,</span>    <span class="c1"># Ti</span>
+    <span class="s2">&quot;#58DOWWWWWW&quot;</span><span class="p">,</span>    <span class="c1"># Doh</span>
+<span class="p">]</span>
+
+<span class="c1"># Sing the scale ascending in pitch.</span>
+<span class="n">song</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">solfa</span><span class="p">)</span>
+<span class="n">speech</span><span class="o">.</span><span class="n">sing</span><span class="p">(</span><span class="n">song</span><span class="p">,</span> <span class="n">speed</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span>
+<span class="c1"># Reverse the list of syllables.</span>
+<span class="n">solfa</span><span class="o">.</span><span class="n">reverse</span><span class="p">()</span>
+<span class="n">song</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">solfa</span><span class="p">)</span>
+<span class="c1"># Sing the scale descending in pitch.</span>
+<span class="n">speech</span><span class="o">.</span><span class="n">sing</span><span class="p">(</span><span class="n">song</span><span class="p">,</span> <span class="n">speed</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="network.html" class="btn btn-neutral float-right" title="Sieť" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="storage.html" class="btn btn-neutral" title="Úložisko" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2015-2018, Multiple authors.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'0.5.0',
+            LANGUAGE:'sk',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="../_static/translations.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          
+          SphinxRtdTheme.Navigation.enableSticky();
+          
+      });
+  </script> 
+
+</body>
+</html>

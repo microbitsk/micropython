@@ -1,0 +1,470 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="sk" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="sk" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Obrázky &mdash; Dokumentácia BBC micro:bit MicroPython 0.5.0</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Hľadať" href="../search.html" />
+    <link rel="next" title="Tlačítka" href="buttons.html" />
+    <link rel="prev" title="Ahoj, svet!" href="hello.html" /> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> BBC micro:bit MicroPython
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.5.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Tutorials</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="introduction.html">Úvod</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="hello.html">Ahoj, svet!</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Obrázky</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#diy-images">Vlastné obrázky</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#animation">Animácia</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="buttons.html">Tlačítka</a></li>
+<li class="toctree-l2"><a class="reference internal" href="io.html">Vstup/Výstup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="music.html">Hudba</a></li>
+<li class="toctree-l2"><a class="reference internal" href="random.html">Náhoda</a></li>
+<li class="toctree-l2"><a class="reference internal" href="movement.html">Pohyb</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gestures.html">Gestá</a></li>
+<li class="toctree-l2"><a class="reference internal" href="direction.html">Smer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="storage.html">Úložisko</a></li>
+<li class="toctree-l2"><a class="reference internal" href="speech.html">Reč</a></li>
+<li class="toctree-l2"><a class="reference internal" href="network.html">Sieť</a></li>
+<li class="toctree-l2"><a class="reference internal" href="radio.html">Rádio</a></li>
+<li class="toctree-l2"><a class="reference internal" href="next.html">Next Steps</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="hello.html">Ahoj, svet!</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Obrázky</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#diy-images">Vlastné obrázky</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#animation">Animácia</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="buttons.html">Tlačítka</a></li>
+<li class="toctree-l1"><a class="reference internal" href="io.html">Vstup/Výstup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="music.html">Hudba</a></li>
+<li class="toctree-l1"><a class="reference internal" href="random.html">Náhoda</a></li>
+<li class="toctree-l1"><a class="reference internal" href="movement.html">Pohyb</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gestures.html">Gestá</a></li>
+<li class="toctree-l1"><a class="reference internal" href="direction.html">Smer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="storage.html">Úložisko</a></li>
+<li class="toctree-l1"><a class="reference internal" href="speech.html">Reč</a></li>
+<li class="toctree-l1"><a class="reference internal" href="network.html">Sieť</a></li>
+<li class="toctree-l1"><a class="reference internal" href="radio.html">Rádio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="next.html">Next Steps</a></li>
+</ul>
+<p class="caption"><span class="caption-text">API Reference</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../microbit_micropython_api.html">micro:bit Micropython API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../microbit.html">Microbit Module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../accelerometer.html">Akcelerometer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ble.html">Bluetooth</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../button.html">Buttons</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../compass.html">Compass</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../display.html">Display</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../filesystem.html">Local Persistent File System</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../i2c.html">I²C</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../image.html">Image</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../music.html">Music</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../neopixel.html">NeoPixel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../os.html">The <code class="docutils literal notranslate"><span class="pre">os</span></code>  Module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pin.html">Input/Output Pins</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../radio.html">Radio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../random.html">Random Number Generation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../speech.html">Speech</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../spi.html">SPI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../uart.html">UART</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Developer Guide</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../devguide/installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../devguide/flashfirmware.html">Flashing Firmware</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../devguide/repl.html">Accessing the REPL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../devguide/devfaq.html">Developer FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../devguide/contributing.html">Contributing</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">BBC micro:bit MicroPython</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="introduction.html">Úvod</a> &raquo;</li>
+        
+      <li>Obrázky</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/tutorials/images.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="images">
+<h1>Obrázky<a class="headerlink" href="#images" title="Trvalý odkaz na tento nadpis">¶</a></h1>
+<p>Čo sa týka umenia, MicroPython ja asi rovnako dobrý ako ty, pokiaľ by si mal(a) k dispozícii iba sieť 5x5 červených LED diód (to sú tie svetielka na prednej strane zariadenia). MicroPython ti dáva pomerne veľa možností, ako ovládať displej, takže môžeš vytvoriť všelijaké zaujímavé efekty.</p>
+<p>MicroPython má množstvo zabudovaných obrázkov, ktoré vie zobraziť na displeji. Napríklad, ak chceš, aby micro:bit vyzeral šťastne, napíš:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">microbit</span> <span class="k">import</span> <span class="o">*</span>
+<span class="n">display</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">Image</span><span class="o">.</span><span class="n">HAPPY</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Predpokladám, že si pamätáš, čo robí prvý riadok. Druhý riadok hovorí objektu <code class="docutils literal notranslate"><span class="pre">display</span></code> (=“displej“), že má <code class="docutils literal notranslate"><span class="pre">show</span></code> (=“zobraziť“) vstavaný obrázok. Šťastný obrázok, ktorý chceme zobraziť je súčasťou objektu <code class="docutils literal notranslate"><span class="pre">Image</span></code> („obrázok“) a volá sa <code class="docutils literal notranslate"><span class="pre">HAPPY</span></code> (=“ŠŤASTNÝ“). Metóde <code class="docutils literal notranslate"><span class="pre">show</span></code> ((=“zobraziť“) povieme, že má použiť práve ten tak, že zadáme jeho názov do zátvoriek (<code class="docutils literal notranslate"><span class="pre">(</span></code> a <code class="docutils literal notranslate"><span class="pre">)</span></code>).</p>
+<img alt="../_images/happy.png" src="../_images/happy.png" />
+<p>Tu je zoznam vstavaných obrázkov:</p>
+<blockquote>
+<div><ul class="simple">
+<li><code class="docutils literal notranslate"><span class="pre">Image.HEART</span></code>  (obrázok SRDCE)</li>
+<li><code class="docutils literal notranslate"><span class="pre">Image.HEART_SMALL</span></code>  (obrázok MALÉ SRDCE)</li>
+<li><code class="docutils literal notranslate"><span class="pre">Image.HAPPY</span></code>  (obrázok ŠŤASTNÝ)</li>
+<li><code class="docutils literal notranslate"><span class="pre">Image.SMILE</span></code>  (obrázok ÚSMEV)</li>
+<li><code class="docutils literal notranslate"><span class="pre">Image.SAD</span></code>  (obrázok SMUTNÝ)</li>
+<li><code class="docutils literal notranslate"><span class="pre">Image.CONFUSED</span></code>  (obrázok ZMÄTENÝ)</li>
+<li><code class="docutils literal notranslate"><span class="pre">Image.ANGRY</span></code>  (obrázok NAHNEVANÝ)</li>
+<li><code class="docutils literal notranslate"><span class="pre">Image.ASLEEP</span></code>  (obrázok SPIACI)</li>
+<li><code class="docutils literal notranslate"><span class="pre">Image.SURPRISED</span></code>  (obrázok PREKVAPENÝ)</li>
+<li><code class="docutils literal notranslate"><span class="pre">Image.SILLY</span></code>  (obrázok HLÚPY)</li>
+<li><code class="docutils literal notranslate"><span class="pre">Image.FABULOUS</span></code>  (obrázok ÚŽASNÝ)</li>
+<li><code class="docutils literal notranslate"><span class="pre">Image.MEH</span></code>  (obrázok MEH)</li>
+<li><code class="docutils literal notranslate"><span class="pre">Image.YES</span></code>  (obrázok ÁNO)</li>
+<li><code class="docutils literal notranslate"><span class="pre">Image.NO</span></code>  (obrázok NIE)</li>
+<li><code class="docutils literal notranslate"><span class="pre">Image.CLOCK12</span></code>, <code class="docutils literal notranslate"><span class="pre">Image.CLOCK11</span></code>, <code class="docutils literal notranslate"><span class="pre">Image.CLOCK10</span></code>, <code class="docutils literal notranslate"><span class="pre">Image.CLOCK9</span></code>, <code class="docutils literal notranslate"><span class="pre">Image.CLOCK8</span></code>, <code class="docutils literal notranslate"><span class="pre">Image.CLOCK7</span></code>, <code class="docutils literal notranslate"><span class="pre">Image.CLOCK6</span></code>, <code class="docutils literal notranslate"><span class="pre">Image.CLOCK5</span></code>, <code class="docutils literal notranslate"><span class="pre">Image.CLOCK4</span></code>, <code class="docutils literal notranslate"><span class="pre">Image.CLOCK3</span></code>, <code class="docutils literal notranslate"><span class="pre">Image.CLOCK2</span></code>, <code class="docutils literal notranslate"><span class="pre">Image.CLOCK1</span></code> (obrázky HODÍN o 12.-1. hodine)</li>
+<li><code class="docutils literal notranslate"><span class="pre">Image.ARROW_N</span></code>, <code class="docutils literal notranslate"><span class="pre">Image.ARROW_NE</span></code>, <code class="docutils literal notranslate"><span class="pre">Image.ARROW_E</span></code>, <code class="docutils literal notranslate"><span class="pre">Image.ARROW_SE</span></code>, <code class="docutils literal notranslate"><span class="pre">Image.ARROW_S</span></code>, <code class="docutils literal notranslate"><span class="pre">Image.ARROW_SW</span></code>, <code class="docutils literal notranslate"><span class="pre">Image.ARROW_W</span></code>, <code class="docutils literal notranslate"><span class="pre">Image.ARROW_NW</span></code>  (obrázky ŠÍPOK v rôznych smeroch označených anglickými skratkami zemepisných smerov (N-sever, S-juh, E-východ, W - západ)</li>
+<li><code class="docutils literal notranslate"><span class="pre">Image.TRIANGLE</span></code>  (obrázok TROJUHOLNÍK)</li>
+<li><code class="docutils literal notranslate"><span class="pre">Image.TRIANGLE_LEFT</span></code>  (obrázok TROJUHOLNÍK VĽAVO)</li>
+<li><code class="docutils literal notranslate"><span class="pre">Image.CHESSBOARD</span></code>  (obrázok ŠACHOVNICA)</li>
+<li><code class="docutils literal notranslate"><span class="pre">Image.DIAMOND</span></code>  (obrázok DIAMANT)</li>
+<li><code class="docutils literal notranslate"><span class="pre">Image.DIAMOND_SMALL</span></code>  (obrázok MALÝ DIAMANT)</li>
+<li><code class="docutils literal notranslate"><span class="pre">Image.SQUARE</span></code>  (obrázok ŠTVOREC)</li>
+<li><code class="docutils literal notranslate"><span class="pre">Image.SQUARE_SMALL</span></code>  (obrázok MALÝ ŠTVOREC)</li>
+<li><code class="docutils literal notranslate"><span class="pre">Image.RABBIT</span></code>  (obrázok ZAJAC)</li>
+<li><code class="docutils literal notranslate"><span class="pre">Image.COW</span></code>  (obrázok KRAVA)</li>
+<li><code class="docutils literal notranslate"><span class="pre">Image.MUSIC_CROTCHET</span></code>  (obrázok ŠTVRŤOVǍ NOTA)</li>
+<li><code class="docutils literal notranslate"><span class="pre">Image.MUSIC_QUAVER</span></code>  (obrázok OSMINOVÁ NOTA)</li>
+<li><code class="docutils literal notranslate"><span class="pre">Image.MUSIC_QUAVER</span></code>  (obrázok OSMINOVÉ NOTY)</li>
+<li><code class="docutils literal notranslate"><span class="pre">Image.PITCHFORK</span></code>  (obrázok VIDLIČKA)</li>
+<li><code class="docutils literal notranslate"><span class="pre">Image.XMAS</span></code>  (obrázok VIANOCE)</li>
+<li><code class="docutils literal notranslate"><span class="pre">Image.PACMAN</span></code>  (obrázok PACMAN)</li>
+<li><code class="docutils literal notranslate"><span class="pre">Image.TARGET</span></code>  (obrázok TERČ)</li>
+<li><code class="docutils literal notranslate"><span class="pre">Image.TSHIRT</span></code>  (obrázok TRIČKO)</li>
+<li><code class="docutils literal notranslate"><span class="pre">Image.ROLLERSKATE</span></code>  (obrázok KOLIESKOVÉ KORČULE)</li>
+<li><code class="docutils literal notranslate"><span class="pre">Image.DUCK</span></code>  (obrázok KAČICA)</li>
+<li><code class="docutils literal notranslate"><span class="pre">Image.HOUSE</span></code>  (obrázok DOM)</li>
+<li><code class="docutils literal notranslate"><span class="pre">Image.TORTOISE</span></code>  (obrázok KORYTNAČKA)</li>
+<li><code class="docutils literal notranslate"><span class="pre">Image.BUTTERFLY</span></code>  (obrázok MOTÝĽ)</li>
+<li><code class="docutils literal notranslate"><span class="pre">Image.STICKFIGURE</span></code>  (obrázok POSTAVIČKA)</li>
+<li><code class="docutils literal notranslate"><span class="pre">Image.GHOST</span></code>  (obrázok DUCH)</li>
+<li><code class="docutils literal notranslate"><span class="pre">Image.SWORD</span></code>  (obrázok MEČ)</li>
+<li><code class="docutils literal notranslate"><span class="pre">Image.GIRAFFE</span></code>  (obrázok ŽIRAFA)</li>
+<li><code class="docutils literal notranslate"><span class="pre">Image.SKULL</span></code>  (obrázok LEBKA)</li>
+<li><code class="docutils literal notranslate"><span class="pre">Image.UMBRELLA</span></code>  (obrázok DÁŽDNIK)</li>
+<li><code class="docutils literal notranslate"><span class="pre">Image.SNAKE</span></code>  (obrázok HAD)</li>
+</ul>
+</div></blockquote>
+<p>Je ich fakt dosť! Skúsme, ako bude vyzerať micro:bit, keď vymeníme jeho šťastný obrázok za nejaký iný vstavaný obrázok. (Jednoducho iba nahraď obrázok <code class="docutils literal notranslate"><span class="pre">Image.HAPPY</span></code> za nejaký iný zo zoznamu.)</p>
+<div class="section" id="diy-images">
+<h2>Vlastné obrázky<a class="headerlink" href="#diy-images" title="Trvalý odkaz na tento nadpis">¶</a></h2>
+<p>Jasné, chceš si urobiť vlastný obrázok, ktorý sa zobrazí na micro:bite, však?</p>
+<p>Je to jednoduché.</p>
+<p>Na každom LED pixeli displeja vieme nastaviť jednu z deisatich hodnôt. Ak má pixel hodnotu <code class="docutils literal notranslate"><span class="pre">0</span></code> (nula), je vypnutý. Má doslova nulový jas. Ale ak ho nastavíme na <code class="docutils literal notranslate"><span class="pre">9</span></code>, potom má najvyšší jas. Hodnoty <code class="docutils literal notranslate"><span class="pre">1</span></code> až <code class="docutils literal notranslate"><span class="pre">8</span></code> predstavujú úrovne jasu medzi vypnutou diódou (<code class="docutils literal notranslate"><span class="pre">0</span></code>) a maximálnym jasom (<code class="docutils literal notranslate"><span class="pre">9</span></code>).</p>
+<p>Vyzbrojení touto informáciou môžeme vytvoriť nový obrázok takto jednoducho:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">microbit</span> <span class="k">import</span> <span class="o">*</span>
+
+<span class="n">boat</span> <span class="o">=</span> <span class="n">Image</span><span class="p">(</span><span class="s2">&quot;05050:&quot;</span>
+             <span class="s2">&quot;05050:&quot;</span>
+             <span class="s2">&quot;05050:&quot;</span>
+             <span class="s2">&quot;99999:&quot;</span>
+             <span class="s2">&quot;09990&quot;</span><span class="p">)</span>
+
+<span class="n">display</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">boat</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>(Keď sa to spustí, zariadenie by malo zobraziť historickú loď „Modrý Peter“ so stožiarmi, ktoré sú tmavšie ako trup lode.)</p>
+<p>Už vieš ako nakresliť obrázok? Vidíš, že každý riadok displeja sa zobrazuje ako riadok čísel končiaci <code class="docutils literal notranslate"><span class="pre">:</span></code> a uzavretý dvojitými úvodzovkami <code class="docutils literal notranslate"><span class="pre">&quot;</span></code>? Každé z čísiel označuje jas. Keďže je tam päť riadkov po päť čísiel, dokážeme tak nastaviť jas pre každý jeden pixel displeja. Takto vytvárame nové obrázky.</p>
+<p>Jendoduché!</p>
+<p>Vlastne, ani ich nepotrebuješ písať na niekoľko riadkov. Ak si myslíš, že nestratíš prehľad, môžeš ich zapísať aj takto:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">boat</span> <span class="o">=</span> <span class="n">Image</span><span class="p">(</span><span class="s2">&quot;05050:05050:05050:99999:09990&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="animation">
+<h2>Animácia<a class="headerlink" href="#animation" title="Trvalý odkaz na tento nadpis">¶</a></h2>
+<p>Statické (nemenné) obrázky sú zábavné, ale oveľa väčšia zábava je, keď ich rozhýbeš. S MicroPythonom je aj toto úžasne ľahké - jednoducho použi zoznam obrázkov!</p>
+<p>Tu je náš nákupný zoznam:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Eggs</span>
+<span class="n">Bacon</span>
+<span class="n">Tomatoes</span>
+</pre></div>
+</div>
+<p>Takto zapíšeš zoznam v Pythone:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">shopping</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Eggs&quot;</span><span class="p">,</span> <span class="s2">&quot;Bacon&quot;</span><span class="p">,</span> <span class="s2">&quot;Tomatoes&quot;</span> <span class="p">]</span>
+</pre></div>
+</div>
+<p>Vytvoril som zoznam s názvom <code class="docutils literal notranslate"><span class="pre">shopping</span></code> („nákup“), ktorý obsahuje tri položky. Python view, že je to zoznam, pretože je uzavretý v hranatých zátvorkách (<code class="docutils literal notranslate"><span class="pre">[</span></code> a <code class="docutils literal notranslate"><span class="pre">]</span></code>). Položky v zozname sú oddelené čiarkou (<code class="docutils literal notranslate"><span class="pre">,</span></code>) a v tomto prípade sú položky tri reťazce znakov: <code class="docutils literal notranslate"><span class="pre">&quot;Vajíčka&quot;</span></code>, <code class="docutils literal notranslate"><span class="pre">&quot;Slanina&quot;</span></code> and <code class="docutils literal notranslate"><span class="pre">&quot;Rajčiny&quot;</span></code>. Vieme, že sú to reťazce znakov, pretože sú uzavreté v úvodzovkách <code class="docutils literal notranslate"><span class="pre">&quot;</span></code>.</p>
+<p>V Pythone môžeš v zozname uložiť čokoľvek. Tu je zoznam čísel:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">primes</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">13</span><span class="p">,</span> <span class="mi">17</span><span class="p">,</span> <span class="mi">19</span><span class="p">]</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Poznámka</p>
+<p class="last">Čísla nemusia byť v úvodzovkách, pretože predstavujú hodnotu (teda nie reťazec znakov). Je rozdiel medzi <code class="docutils literal notranslate"><span class="pre">2</span></code> (číselná hodnota 2) a <code class="docutils literal notranslate"><span class="pre">&quot;2&quot;</span></code> (znak/číslica predstavujúca číslo 2). Ak ti to zatiaľ nedáva zmysel, netráp sa tým. Čoskoro si na to zvykneš.</p>
+</div>
+<p>Dokonca je možné v jednom zozname uchovávať rôzne typy vecí:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">mixed_up_list</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;hello!&quot;</span><span class="p">,</span> <span class="mf">1.234</span><span class="p">,</span> <span class="n">Image</span><span class="o">.</span><span class="n">HAPPY</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>Všímaš tu poslednú položku? To bol obrázok!</p>
+<p>MicroPythonu môžeme povedať, aby animoval zoznam obrázkov. Našťastie už máme zopár zoznamov obrázkov už vstavaných v MicroPythone. Volajú sa <code class="docutils literal notranslate"><span class="pre">Image.ALL_CLOCKS</span></code> (obrázky VŠETKÝCH HODÍN) a <code class="docutils literal notranslate"><span class="pre">Image.ALL_ARROWS</span></code> (obrázky VŠETKÝCH ŠÍPOK):</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">microbit</span> <span class="k">import</span> <span class="o">*</span>
+
+<span class="n">display</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">Image</span><span class="o">.</span><span class="n">ALL_CLOCKS</span><span class="p">,</span> <span class="n">loop</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">delay</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Tak ako pri samostatnom obrázku, používame <code class="docutils literal notranslate"><span class="pre">display.show</span></code> na zobrazenie obrázkov na displeji zariadenia. Ale tentokrát povieme MicroPythonu, že má použiť <code class="docutils literal notranslate"><span class="pre">Image.ALL_CLOCKS</span></code> a on rozumie, že má zobraziť každý obrázok zo zoznamu, jeden po druhom. Taktiež povieme MicroPythonu, že má zobrazovanie opakovať (takže animácia bude trvať donekonečna) pomocou argumentu <code class="docutils literal notranslate"><span class="pre">loop=True</span></code>. Navyše mu povieme, že chceme, aby medzi jednotlivými obrázkamibol interval (prestávka) iba 100 milisekúnd (desatina sekundy) pomocou argumentu <code class="docutils literal notranslate"><span class="pre">delay=100</span></code>.</p>
+<p>Prídeš na to, ako animovať zoznam šípok <code class="docutils literal notranslate"><span class="pre">Image.ALL_ARROWS</span></code>? Ako sa vyhneš opakovaniu donekonečna (rada: opak <code class="docutils literal notranslate"><span class="pre">True</span></code> („Pravda“) je <code class="docutils literal notranslate"><span class="pre">False</span></code> („Nepravda“) ale predvolená hodnota opakovania je <code class="docutils literal notranslate"><span class="pre">loop</span> <span class="pre">=</span> <span class="pre">False</span></code>)? Dokážeš zmeniť rýchlosť animácie?</p>
+<p>Na záver je tu ukážka, ako si urobiť vlastnú animáciu. V mojom prípade potopím svoju loď pod okraj displeja:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">microbit</span> <span class="k">import</span> <span class="o">*</span>
+
+<span class="n">boat1</span> <span class="o">=</span> <span class="n">Image</span><span class="p">(</span><span class="s2">&quot;05050:&quot;</span>
+              <span class="s2">&quot;05050:&quot;</span>
+              <span class="s2">&quot;05050:&quot;</span>
+              <span class="s2">&quot;99999:&quot;</span>
+              <span class="s2">&quot;09990&quot;</span><span class="p">)</span>
+
+<span class="n">boat2</span> <span class="o">=</span> <span class="n">Image</span><span class="p">(</span><span class="s2">&quot;00000:&quot;</span>
+              <span class="s2">&quot;05050:&quot;</span>
+              <span class="s2">&quot;05050:&quot;</span>
+              <span class="s2">&quot;05050:&quot;</span>
+              <span class="s2">&quot;99999&quot;</span><span class="p">)</span>
+
+<span class="n">boat3</span> <span class="o">=</span> <span class="n">Image</span><span class="p">(</span><span class="s2">&quot;00000:&quot;</span>
+              <span class="s2">&quot;00000:&quot;</span>
+              <span class="s2">&quot;05050:&quot;</span>
+              <span class="s2">&quot;05050:&quot;</span>
+              <span class="s2">&quot;05050&quot;</span><span class="p">)</span>
+
+<span class="n">boat4</span> <span class="o">=</span> <span class="n">Image</span><span class="p">(</span><span class="s2">&quot;00000:&quot;</span>
+              <span class="s2">&quot;00000:&quot;</span>
+              <span class="s2">&quot;00000:&quot;</span>
+              <span class="s2">&quot;05050:&quot;</span>
+              <span class="s2">&quot;05050&quot;</span><span class="p">)</span>
+
+<span class="n">boat5</span> <span class="o">=</span> <span class="n">Image</span><span class="p">(</span><span class="s2">&quot;00000:&quot;</span>
+              <span class="s2">&quot;00000:&quot;</span>
+              <span class="s2">&quot;00000:&quot;</span>
+              <span class="s2">&quot;00000:&quot;</span>
+              <span class="s2">&quot;05050&quot;</span><span class="p">)</span>
+
+<span class="n">boat6</span> <span class="o">=</span> <span class="n">Image</span><span class="p">(</span><span class="s2">&quot;00000:&quot;</span>
+              <span class="s2">&quot;00000:&quot;</span>
+              <span class="s2">&quot;00000:&quot;</span>
+              <span class="s2">&quot;00000:&quot;</span>
+              <span class="s2">&quot;00000&quot;</span><span class="p">)</span>
+
+<span class="n">all_boats</span> <span class="o">=</span> <span class="p">[</span><span class="n">boat1</span><span class="p">,</span> <span class="n">boat2</span><span class="p">,</span> <span class="n">boat3</span><span class="p">,</span> <span class="n">boat4</span><span class="p">,</span> <span class="n">boat5</span><span class="p">,</span> <span class="n">boat6</span><span class="p">]</span>
+<span class="n">display</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">all_boats</span><span class="p">,</span> <span class="n">delay</span><span class="o">=</span><span class="mi">200</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Takto funguje kód:</p>
+<ul class="simple">
+<li>Vytvoril som šesť obrázkov člnu (<code class="docutils literal notranslate"><span class="pre">boat</span></code>) presne podľa plánu, ktorý som popísal vyššie.</li>
+<li>Teraz ich všetky vložím do zoznamu s názvom <code class="docutils literal notranslate"><span class="pre">all_boats</span></code> (všetky člny)</li>
+<li>Nakoniec zavolám metódu <code class="docutils literal notranslate"><span class="pre">display.show</span></code>, ktorá mi animuje zoznam s intervalom 200 milisekúnd.</li>
+<li>Keďže som nenastavil <code class="docutils literal notranslate"><span class="pre">loop=True</span></code> čl sa potopí iba raz (a teda urobíme tak animáciu z vedeckého hľadiska presnú). :-)</li>
+</ul>
+<p>Čo budeš animovať ty? Dokážeš animovať špeciálne efekty? Ako by si spravil(a), aby obrázok vybledol a opäť sa objavil?</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="buttons.html" class="btn btn-neutral float-right" title="Tlačítka" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="hello.html" class="btn btn-neutral" title="Ahoj, svet!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2015-2018, Multiple authors.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'0.5.0',
+            LANGUAGE:'sk',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="../_static/translations.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          
+          SphinxRtdTheme.Navigation.enableSticky();
+          
+      });
+  </script> 
+
+</body>
+</html>

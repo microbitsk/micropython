@@ -1,0 +1,529 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="sk" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="sk" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Sieť &mdash; Dokumentácia BBC micro:bit MicroPython 0.5.0</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Hľadať" href="../search.html" />
+    <link rel="next" title="Rádio" href="radio.html" />
+    <link rel="prev" title="Reč" href="speech.html" /> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> BBC micro:bit MicroPython
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.5.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Tutorials</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="introduction.html">Úvod</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="hello.html">Ahoj, svet!</a></li>
+<li class="toctree-l2"><a class="reference internal" href="images.html">Obrázky</a></li>
+<li class="toctree-l2"><a class="reference internal" href="buttons.html">Tlačítka</a></li>
+<li class="toctree-l2"><a class="reference internal" href="io.html">Vstup/Výstup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="music.html">Hudba</a></li>
+<li class="toctree-l2"><a class="reference internal" href="random.html">Náhoda</a></li>
+<li class="toctree-l2"><a class="reference internal" href="movement.html">Pohyb</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gestures.html">Gestá</a></li>
+<li class="toctree-l2"><a class="reference internal" href="direction.html">Smer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="storage.html">Úložisko</a></li>
+<li class="toctree-l2"><a class="reference internal" href="speech.html">Reč</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Sieť</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#connection">Pripojenie</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#signal">Signál</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#protocol">Protokol</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#message">Správa</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#application">Aplikácia</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#the-end-result">Výsledok</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="radio.html">Rádio</a></li>
+<li class="toctree-l2"><a class="reference internal" href="next.html">Next Steps</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="hello.html">Ahoj, svet!</a></li>
+<li class="toctree-l1"><a class="reference internal" href="images.html">Obrázky</a></li>
+<li class="toctree-l1"><a class="reference internal" href="buttons.html">Tlačítka</a></li>
+<li class="toctree-l1"><a class="reference internal" href="io.html">Vstup/Výstup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="music.html">Hudba</a></li>
+<li class="toctree-l1"><a class="reference internal" href="random.html">Náhoda</a></li>
+<li class="toctree-l1"><a class="reference internal" href="movement.html">Pohyb</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gestures.html">Gestá</a></li>
+<li class="toctree-l1"><a class="reference internal" href="direction.html">Smer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="storage.html">Úložisko</a></li>
+<li class="toctree-l1"><a class="reference internal" href="speech.html">Reč</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Sieť</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#connection">Pripojenie</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#signal">Signál</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#protocol">Protokol</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#message">Správa</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#application">Aplikácia</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#the-end-result">Výsledok</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="radio.html">Rádio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="next.html">Next Steps</a></li>
+</ul>
+<p class="caption"><span class="caption-text">API Reference</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../microbit_micropython_api.html">micro:bit Micropython API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../microbit.html">Microbit Module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../accelerometer.html">Akcelerometer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ble.html">Bluetooth</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../button.html">Buttons</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../compass.html">Compass</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../display.html">Display</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../filesystem.html">Local Persistent File System</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../i2c.html">I²C</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../image.html">Image</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../music.html">Music</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../neopixel.html">NeoPixel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../os.html">The <code class="docutils literal notranslate"><span class="pre">os</span></code>  Module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pin.html">Input/Output Pins</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../radio.html">Radio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../random.html">Random Number Generation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../speech.html">Speech</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../spi.html">SPI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../uart.html">UART</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Developer Guide</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../devguide/installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../devguide/flashfirmware.html">Flashing Firmware</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../devguide/repl.html">Accessing the REPL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../devguide/devfaq.html">Developer FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../devguide/contributing.html">Contributing</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">BBC micro:bit MicroPython</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="introduction.html">Úvod</a> &raquo;</li>
+        
+      <li>Sieť</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/tutorials/network.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="network">
+<h1>Sieť<a class="headerlink" href="#network" title="Trvalý odkaz na tento nadpis">¶</a></h1>
+<p>Zariadenia vieme spájať a posielať a prijímať medzi nimi správy. Toto sa volá sieť. Sieť prepojených sietí sa nazýva internet. Internet s veľkým I je internetom všetkých internetov.</p>
+<p>Sieťovanie je ťažké a to sa prejavuje aj na programe uvedenom nižšie. Ale krásne na tomto projekte je to, že obsahuje všetky bežné aspekty sieťového programovania. Je tiež až pozoruhodne jednoduchý a zábavný.</p>
+<p>Ale najskôr si pripravme scénu…</p>
+<div class="section" id="connection">
+<h2>Pripojenie<a class="headerlink" href="#connection" title="Trvalý odkaz na tento nadpis">¶</a></h2>
+<p>Predstav si sieť ako sériu vrstiev. Na úplnom spodku je najzákladnejší aspekt komunikácie: tu sa nejako musí dostať signál z jedného zariadenia na druhé. Toto sa niekedy robí pomocou rádiového spojenia, ale v tomto prípade to urobíme jednoducho pomocou káblov.</p>
+<img alt="../_images/network.png" src="../_images/network.png" />
+<p>Na tomto základe vieme vystavať všetky ďalšie <em>vrstvy siete</em>.</p>
+<p>Ako ukazuje diagram, modré a červené micro:bits sú prepojené pomocou krokodíliek. Obidva používajú pin 1 na výstup a pin 2 na vstup. Výstup z jedného zariadenie je spojený so vstupom na druhom. Je to trochu ako vedieť správne otočiť telefón - jeden koniec má mikrofón (vstup) a druhý má reproduktor (výstup). Nahrávka tvojho hlasu cez mikrofón sa púšťa do reproduktoru druhého telefónu. Ak držíš telefón naopak, dostaneš čudné výsledky!</p>
+<p>V našom prípade je to úplne rovnaké: káble musíš pripojiť správne!</p>
+</div>
+<div class="section" id="signal">
+<h2>Signál<a class="headerlink" href="#signal" title="Trvalý odkaz na tento nadpis">¶</a></h2>
+<p>Ďalšou vrstvou vo <em>vrstvách siete</em> je signál. Ten bude často závisieť od charakteristík pripojenia. V našom príklade sú to jednoduché digitálne signály vypnuté a zapnuté, ktoré sa posielajú káblami cez IO piny.</p>
+<p>Ak si spomínaš, IO piny vieme použiť takto:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pin1</span><span class="o">.</span><span class="n">write_digital</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>  <span class="c1"># switch the signal on</span>
+<span class="n">pin1</span><span class="o">.</span><span class="n">write_digital</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>  <span class="c1"># switch the signal off</span>
+<span class="nb">input</span> <span class="o">=</span> <span class="n">pin2</span><span class="o">.</span><span class="n">read_digital</span><span class="p">()</span>  <span class="c1"># read the value of the signal (either 1 or 0)</span>
+</pre></div>
+</div>
+<p>Ďalší krok obsahuje popis toho, ako použiť a spracovať signál. Na to budeme potrebovať…</p>
+</div>
+<div class="section" id="protocol">
+<h2>Protokol<a class="headerlink" href="#protocol" title="Trvalý odkaz na tento nadpis">¶</a></h2>
+<p>Ak sa niekedy pôjdeš stretnúť s kráľovnou, budú od teba očakávať nejaké správanie. Napríklad, keď príde, mal(a) by si sa ukloniť, ak ti podá ruku, máš ňou slušne potriasť, pri prvom oslovení jej musíš povedať „vaša výsosť“ a potom v ďalšom rozhovore „madam“ a tak ďalej. Tento súbor pravidiel sa nazýva kráľovský protokol. Protokol vysvetľuje, ako sa správať v určitých situáciách (napríklad pri stretnutí s kráľovnou). Protokol je definovaný vopred, takže každý už pred stretnutím vie, čo sa bude diať ešte predtým, ako situácia vôbec nastane.</p>
+<img alt="../_images/queen.jpg" src="../_images/queen.jpg" />
+<p>Z toho istého dôvodu definujeme a používame protokoly na posielanie správ prostredníctvom počítačovej siete. Počítače sa najskôr musia dohodnúť, ako budú posielať a prijímať správy. Asi najznámejším protokolom je hyeprtextový prenosový protokol (HTTP), ktorý používa aj celosvetová sieť Internet.</p>
+<p>Ďalší slávny protoko na posielanie správ (ešte z obdobia pred počítačmi) je Morseov kód. Ten definuje ako posielať správy zložené zo znakov pomocou dlhších a kratších signálov. Tieto signály sa často zahrajú ako pípnutia. Tie dlhšie sa volajú pomlčky (<code class="docutils literal notranslate"><span class="pre">-</span></code>) a kratšie nazývame bodky (<code class="docutils literal notranslate"><span class="pre">.</span></code>). Kombináciou pomlčiek a bodiek Morse definoval spôsob ako posielať znaky. Tu je napríklad definícia štandardnej Morseovej abecedy:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">.-</span>    <span class="n">A</span>     <span class="o">.---</span>  <span class="n">J</span>     <span class="o">...</span>   <span class="n">S</span>     <span class="o">.----</span>  <span class="mi">1</span>      <span class="o">----.</span>  <span class="mi">9</span>
+<span class="o">-...</span>  <span class="n">B</span>     <span class="o">-.-</span>   <span class="n">K</span>     <span class="o">-</span>     <span class="n">T</span>     <span class="o">..---</span>  <span class="mi">2</span>      <span class="o">-----</span>  <span class="mi">0</span>
+<span class="o">-.-.</span>  <span class="n">C</span>     <span class="o">.-..</span>  <span class="n">L</span>     <span class="o">..-</span>   <span class="n">U</span>     <span class="o">...--</span>  <span class="mi">3</span>
+<span class="o">-..</span>   <span class="n">D</span>     <span class="o">--</span>    <span class="n">M</span>     <span class="o">...-</span>  <span class="n">V</span>     <span class="o">....-</span>  <span class="mi">4</span>
+<span class="o">.</span>     <span class="n">E</span>     <span class="o">-.</span>    <span class="n">N</span>     <span class="o">.--</span>   <span class="n">W</span>     <span class="o">.....</span>  <span class="mi">5</span>
+<span class="o">..-.</span>  <span class="n">F</span>     <span class="o">---</span>   <span class="n">O</span>     <span class="o">-..-</span>  <span class="n">X</span>     <span class="o">-....</span>  <span class="mi">6</span>
+<span class="o">--.</span>   <span class="n">G</span>     <span class="o">.--.</span>  <span class="n">P</span>     <span class="o">-.--</span>  <span class="n">Y</span>     <span class="o">--...</span>  <span class="mi">7</span>
+<span class="o">....</span>  <span class="n">H</span>     <span class="o">--.-</span>  <span class="n">Q</span>     <span class="o">--..</span>  <span class="n">Z</span>     <span class="o">---..</span>  <span class="mi">8</span>
+<span class="o">..</span>    <span class="n">I</span>     <span class="o">.-.</span>   <span class="n">R</span>
+</pre></div>
+</div>
+<p>Podľa vyššie uvedenej tabuľky, na poslanie znaku „H“ musíme signál štyrikrát zapnúť na krátky čas, čo predstavuje štyri bodky (<code class="docutils literal notranslate"><span class="pre">....</span></code>). Na písmeno „L“ potrebujeme tiež štyri signály, ale druhý v poradí trvá dlhšie (<code class="docutils literal notranslate"><span class="pre">.-..</span></code>).</p>
+<p>Samozrejme, aj načasovanie signálu je dôležité: musíme vedieť rodlíšiť bodku od pomlčky. To je ďalším bodom protokolu, dohodnúť také parametre, aby každý vedel ako správne implementovať protokol, aby fungoval s inými.V tomto prípade povieme:</p>
+<ul class="simple">
+<li>Signál kratší ako 250 milisekúnd je bodka.</li>
+<li>Signál dlhší ako 250 milisekúnd a kratší ako 500 milisekúnd je pomlčka.</li>
+<li>Všetky ostatné dĺžky ignorujeme.</li>
+<li>Prestávka / medzera medzi signálmi dlhšia ako 500 milisekúnd znamená koniec znaku.</li>
+</ul>
+<p>In this way, the sending of a letter „H“ is defined as four „on“ signals that
+last no longer than 250 milliseconds each, followed by a pause of greater than
+500 milliseconds (indicating the end of the character).</p>
+</div>
+<div class="section" id="message">
+<h2>Správa<a class="headerlink" href="#message" title="Trvalý odkaz na tento nadpis">¶</a></h2>
+<p>Konečne sme sa dostali niekam, kde môžeme vytvoriť správu - správu, ktorá už bude niečo hovoriť aj nám, ľuďom. Toto je najvyššia vrstva z našich „vrstiev siete“.</p>
+<p>S použitím vyššie definovaného protokolu môžem cez kábel poslať túto sekvenciu signálov do druhého micro:bitu:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">...././.-../.-../---/.--/---/.-./.-../-..</span>
+</pre></div>
+</div>
+<p>Vieš zistiť, čo je v nej zakódované?</p>
+</div>
+<div class="section" id="application">
+<h2>Aplikácia<a class="headerlink" href="#application" title="Trvalý odkaz na tento nadpis">¶</a></h2>
+<p>Je super mať vrstvy siete, ale potrebuješ aj vedieť s nimi narábať - nejakú aplikáciu na posielanie a prijímanie správ. Hoci HTTP protokol je zaujímavý, <em>väčšina</em> ľudí o ňom nevie a nestará sa, čo s ním robí ich prehliadač - <em>vrstvy siete</em> svetového webu (www) sú pred nimi schované (a tak by to aj malo byť).</p>
+<p>Takže akú aplikáciu napíšeme pre micro:bit? Ako by mala fungovať z hľadiska používateľa?</p>
+<p>Jasné, na posielanie správ by sme mali vedieť zadávať bodky a pomlčky (na to môžeme použiť tlačítko A). Ak chceme vidieť správu, ktorú sme poslali alebo práve prijali, mali by sme ju vedieť zobraziť, aby sa nám posúvala po displeji (na toto môžeme použiť tlačítko Bwe ). Nakoniec, keďže je to Morseov kód, ak je pripojený reproduktor, mali by sme vedieť zahrať užívateľovi pípnutia ako zvukovú odozvu počas tvorenia správy.</p>
+</div>
+<div class="section" id="the-end-result">
+<h2>Výsledok<a class="headerlink" href="#the-end-result" title="Trvalý odkaz na tento nadpis">¶</a></h2>
+<p>Tu je program, v cele svojej kráse s množstvom komentárov, takže si môžeš pozrieť, ako funguje:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">microbit</span> <span class="k">import</span> <span class="o">*</span>
+<span class="kn">import</span> <span class="nn">music</span>
+
+
+<span class="c1"># A lookup table of morse codes and associated characters.</span>
+<span class="n">MORSE_CODE_LOOKUP</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;.-&quot;</span><span class="p">:</span> <span class="s2">&quot;A&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;-...&quot;</span><span class="p">:</span> <span class="s2">&quot;B&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;-.-.&quot;</span><span class="p">:</span> <span class="s2">&quot;C&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;-..&quot;</span><span class="p">:</span> <span class="s2">&quot;D&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;.&quot;</span><span class="p">:</span> <span class="s2">&quot;E&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;..-.&quot;</span><span class="p">:</span> <span class="s2">&quot;F&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;--.&quot;</span><span class="p">:</span> <span class="s2">&quot;G&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;....&quot;</span><span class="p">:</span> <span class="s2">&quot;H&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;..&quot;</span><span class="p">:</span> <span class="s2">&quot;I&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;.---&quot;</span><span class="p">:</span> <span class="s2">&quot;J&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;-.-&quot;</span><span class="p">:</span> <span class="s2">&quot;K&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;.-..&quot;</span><span class="p">:</span> <span class="s2">&quot;L&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;--&quot;</span><span class="p">:</span> <span class="s2">&quot;M&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;-.&quot;</span><span class="p">:</span> <span class="s2">&quot;N&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;---&quot;</span><span class="p">:</span> <span class="s2">&quot;O&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;.--.&quot;</span><span class="p">:</span> <span class="s2">&quot;P&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;--.-&quot;</span><span class="p">:</span> <span class="s2">&quot;Q&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;.-.&quot;</span><span class="p">:</span> <span class="s2">&quot;R&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;...&quot;</span><span class="p">:</span> <span class="s2">&quot;S&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;-&quot;</span><span class="p">:</span> <span class="s2">&quot;T&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;..-&quot;</span><span class="p">:</span> <span class="s2">&quot;U&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;...-&quot;</span><span class="p">:</span> <span class="s2">&quot;V&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;.--&quot;</span><span class="p">:</span> <span class="s2">&quot;W&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;-..-&quot;</span><span class="p">:</span> <span class="s2">&quot;X&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;-.--&quot;</span><span class="p">:</span> <span class="s2">&quot;Y&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;--..&quot;</span><span class="p">:</span> <span class="s2">&quot;Z&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;.----&quot;</span><span class="p">:</span> <span class="s2">&quot;1&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;..---&quot;</span><span class="p">:</span> <span class="s2">&quot;2&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;...--&quot;</span><span class="p">:</span> <span class="s2">&quot;3&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;....-&quot;</span><span class="p">:</span> <span class="s2">&quot;4&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;.....&quot;</span><span class="p">:</span> <span class="s2">&quot;5&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;-....&quot;</span><span class="p">:</span> <span class="s2">&quot;6&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;--...&quot;</span><span class="p">:</span> <span class="s2">&quot;7&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;---..&quot;</span><span class="p">:</span> <span class="s2">&quot;8&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;----.&quot;</span><span class="p">:</span> <span class="s2">&quot;9&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;-----&quot;</span><span class="p">:</span> <span class="s2">&quot;0&quot;</span>
+<span class="p">}</span>
+
+
+<span class="k">def</span> <span class="nf">decode</span><span class="p">(</span><span class="n">buffer</span><span class="p">):</span>
+    <span class="c1"># Attempts to get the buffer of Morse code data from the lookup table. If</span>
+    <span class="c1"># it&#39;s not there, just return a full stop.</span>
+    <span class="k">return</span> <span class="n">MORSE_CODE_LOOKUP</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">buffer</span><span class="p">,</span> <span class="s1">&#39;.&#39;</span><span class="p">)</span>
+
+
+<span class="c1"># How to display a single dot.</span>
+<span class="n">DOT</span> <span class="o">=</span> <span class="n">Image</span><span class="p">(</span><span class="s2">&quot;00000:&quot;</span>
+            <span class="s2">&quot;00000:&quot;</span>
+            <span class="s2">&quot;00900:&quot;</span>
+            <span class="s2">&quot;00000:&quot;</span>
+            <span class="s2">&quot;00000:&quot;</span><span class="p">)</span>
+
+
+<span class="c1"># How to display a single dash.</span>
+<span class="n">DASH</span> <span class="o">=</span> <span class="n">Image</span><span class="p">(</span><span class="s2">&quot;00000:&quot;</span>
+             <span class="s2">&quot;00000:&quot;</span>
+             <span class="s2">&quot;09990:&quot;</span>
+             <span class="s2">&quot;00000:&quot;</span>
+             <span class="s2">&quot;00000:&quot;</span><span class="p">)</span>
+
+
+<span class="c1"># To create a DOT you need to hold the button for less than 250ms.</span>
+<span class="n">DOT_THRESHOLD</span> <span class="o">=</span> <span class="mi">250</span>
+<span class="c1"># To create a DASH you need to hold the button for less than 500ms.</span>
+<span class="n">DASH_THRESHOLD</span> <span class="o">=</span> <span class="mi">500</span>
+
+
+<span class="c1"># Holds the incoming Morse signals.</span>
+<span class="n">buffer</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
+<span class="c1"># Holds the translated Morse as characters.</span>
+<span class="n">message</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
+<span class="c1"># The time from which the device has been waiting for the next keypress.</span>
+<span class="n">started_to_wait</span> <span class="o">=</span> <span class="n">running_time</span><span class="p">()</span>
+
+
+<span class="c1"># Put the device in a loop to wait for and react to key presses.</span>
+<span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+    <span class="c1"># Work out how long the device has been waiting for a keypress.</span>
+    <span class="n">waiting</span> <span class="o">=</span> <span class="n">running_time</span><span class="p">()</span> <span class="o">-</span> <span class="n">started_to_wait</span>
+    <span class="c1"># Reset the timestamp for the key_down_time.</span>
+    <span class="n">key_down_time</span> <span class="o">=</span> <span class="kc">None</span>
+    <span class="c1"># If button_a is held down, then...</span>
+    <span class="k">while</span> <span class="n">button_a</span><span class="o">.</span><span class="n">is_pressed</span><span class="p">():</span>
+        <span class="c1"># Play a beep - this is Morse code y&#39;know ;-)</span>
+        <span class="n">music</span><span class="o">.</span><span class="n">pitch</span><span class="p">(</span><span class="mi">880</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
+        <span class="c1"># Set pin1 (output) to &quot;on&quot;</span>
+        <span class="n">pin1</span><span class="o">.</span><span class="n">write_digital</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+        <span class="c1"># ...and if there&#39;s not a key_down_time then set it to now!</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">key_down_time</span><span class="p">:</span>
+            <span class="n">key_down_time</span> <span class="o">=</span> <span class="n">running_time</span><span class="p">()</span>
+    <span class="c1"># Alternatively, if pin2 (input) is getting a signal, pretend it&#39;s a</span>
+    <span class="c1"># button_a key press...</span>
+    <span class="k">while</span> <span class="n">pin2</span><span class="o">.</span><span class="n">read_digital</span><span class="p">():</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">key_down_time</span><span class="p">:</span>
+            <span class="n">key_down_time</span> <span class="o">=</span> <span class="n">running_time</span><span class="p">()</span>
+    <span class="c1"># Get the current time and call it key_up_time.</span>
+    <span class="n">key_up_time</span> <span class="o">=</span> <span class="n">running_time</span><span class="p">()</span>
+    <span class="c1"># Set pin1 (output) to &quot;off&quot;</span>
+    <span class="n">pin1</span><span class="o">.</span><span class="n">write_digital</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+    <span class="c1"># If there&#39;s a key_down_time (created when button_a was first pressed</span>
+    <span class="c1"># down).</span>
+    <span class="k">if</span> <span class="n">key_down_time</span><span class="p">:</span>
+        <span class="c1"># ... then work out for how long it was pressed.</span>
+        <span class="n">duration</span> <span class="o">=</span> <span class="n">key_up_time</span> <span class="o">-</span> <span class="n">key_down_time</span>
+        <span class="c1"># If the duration is less than the max length for a &quot;dot&quot; press...</span>
+        <span class="k">if</span> <span class="n">duration</span> <span class="o">&lt;</span> <span class="n">DOT_THRESHOLD</span><span class="p">:</span>
+            <span class="c1"># ... then add a dot to the buffer containing incoming Morse codes</span>
+            <span class="c1"># and display a dot on the display.</span>
+            <span class="n">buffer</span> <span class="o">+=</span> <span class="s1">&#39;.&#39;</span>
+            <span class="n">display</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">DOT</span><span class="p">)</span>
+        <span class="c1"># Else, if the duration is less than the max length for a &quot;dash&quot;</span>
+        <span class="c1"># press... (but longer than that for a DOT ~ handled above)</span>
+        <span class="k">elif</span> <span class="n">duration</span> <span class="o">&lt;</span> <span class="n">DASH_THRESHOLD</span><span class="p">:</span>
+            <span class="c1"># ... then add a dash to the buffer and display a dash.</span>
+            <span class="n">buffer</span> <span class="o">+=</span> <span class="s1">&#39;-&#39;</span>
+            <span class="n">display</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">DASH</span><span class="p">)</span>
+        <span class="c1"># Otherwise, any other sort of keypress duration is ignored (this isn&#39;t</span>
+        <span class="c1"># needed, but added for &quot;understandability&quot;).</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">pass</span>
+        <span class="c1"># The button press has been handled, so reset the time from which the</span>
+        <span class="c1"># device is starting to wait for a  button press.</span>
+        <span class="n">started_to_wait</span> <span class="o">=</span> <span class="n">running_time</span><span class="p">()</span>
+    <span class="c1"># Otherwise, there hasn&#39;t been a button_a press during this cycle of the</span>
+    <span class="c1"># loop, so check there&#39;s not been a pause to indicate an end of the</span>
+    <span class="c1"># incoming Morse code character. The pause must be longer than a DASH</span>
+    <span class="c1"># code&#39;s duration.</span>
+    <span class="k">elif</span> <span class="nb">len</span><span class="p">(</span><span class="n">buffer</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="ow">and</span> <span class="n">waiting</span> <span class="o">&gt;</span> <span class="n">DASH_THRESHOLD</span><span class="p">:</span>
+        <span class="c1"># There is a buffer and it&#39;s reached the end of a code so...</span>
+        <span class="c1"># Decode the incoming buffer.</span>
+        <span class="n">character</span> <span class="o">=</span> <span class="n">decode</span><span class="p">(</span><span class="n">buffer</span><span class="p">)</span>
+        <span class="c1"># Reset the buffer to empty.</span>
+        <span class="n">buffer</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
+        <span class="c1"># Show the decoded character.</span>
+        <span class="n">display</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">character</span><span class="p">)</span>
+        <span class="c1"># Add the character to the message.</span>
+        <span class="n">message</span> <span class="o">+=</span> <span class="n">character</span>
+    <span class="c1"># Finally, if button_b was pressed while all the above was going on...</span>
+    <span class="k">if</span> <span class="n">button_b</span><span class="o">.</span><span class="n">was_pressed</span><span class="p">():</span>
+        <span class="c1"># ... display the message,</span>
+        <span class="n">display</span><span class="o">.</span><span class="n">scroll</span><span class="p">(</span><span class="n">message</span><span class="p">)</span>
+        <span class="c1"># then reset it to empty (ready for a new message).</span>
+        <span class="n">message</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
+</pre></div>
+</div>
+<p>Ako by si ho zlepšil(a)? Vedel(a) by si zmeniť definíciu bodky a pomlčky, aby rýchlejší užívatelia mohli zadávať znaky rýchlejšie? Čo sa stane, ak obidve zariadenia posielaju správu súčasne? Čo by si mohol/mohla urobiť, aby si predišiel/predišla takejto situácii?</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="radio.html" class="btn btn-neutral float-right" title="Rádio" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="speech.html" class="btn btn-neutral" title="Reč" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2015-2018, Multiple authors.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'0.5.0',
+            LANGUAGE:'sk',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="../_static/translations.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          
+          SphinxRtdTheme.Navigation.enableSticky();
+          
+      });
+  </script> 
+
+</body>
+</html>

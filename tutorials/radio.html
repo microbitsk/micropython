@@ -1,0 +1,391 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="sk" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="sk" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Rádio &mdash; Dokumentácia BBC micro:bit MicroPython 0.5.0</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Hľadať" href="../search.html" />
+    <link rel="next" title="Next Steps" href="next.html" />
+    <link rel="prev" title="Sieť" href="network.html" /> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> BBC micro:bit MicroPython
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.5.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Tutorials</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="introduction.html">Úvod</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="hello.html">Ahoj, svet!</a></li>
+<li class="toctree-l2"><a class="reference internal" href="images.html">Obrázky</a></li>
+<li class="toctree-l2"><a class="reference internal" href="buttons.html">Tlačítka</a></li>
+<li class="toctree-l2"><a class="reference internal" href="io.html">Vstup/Výstup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="music.html">Hudba</a></li>
+<li class="toctree-l2"><a class="reference internal" href="random.html">Náhoda</a></li>
+<li class="toctree-l2"><a class="reference internal" href="movement.html">Pohyb</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gestures.html">Gestá</a></li>
+<li class="toctree-l2"><a class="reference internal" href="direction.html">Smer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="storage.html">Úložisko</a></li>
+<li class="toctree-l2"><a class="reference internal" href="speech.html">Reč</a></li>
+<li class="toctree-l2"><a class="reference internal" href="network.html">Sieť</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Rádio</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#layers-upon-layers">Vrstvy za vrstvami</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#bytes">Bajty</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#addressing">Adresovanie</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#fireflies">Svätojánske mušky</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="next.html">Next Steps</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="hello.html">Ahoj, svet!</a></li>
+<li class="toctree-l1"><a class="reference internal" href="images.html">Obrázky</a></li>
+<li class="toctree-l1"><a class="reference internal" href="buttons.html">Tlačítka</a></li>
+<li class="toctree-l1"><a class="reference internal" href="io.html">Vstup/Výstup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="music.html">Hudba</a></li>
+<li class="toctree-l1"><a class="reference internal" href="random.html">Náhoda</a></li>
+<li class="toctree-l1"><a class="reference internal" href="movement.html">Pohyb</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gestures.html">Gestá</a></li>
+<li class="toctree-l1"><a class="reference internal" href="direction.html">Smer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="storage.html">Úložisko</a></li>
+<li class="toctree-l1"><a class="reference internal" href="speech.html">Reč</a></li>
+<li class="toctree-l1"><a class="reference internal" href="network.html">Sieť</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Rádio</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#layers-upon-layers">Vrstvy za vrstvami</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#bytes">Bajty</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#addressing">Adresovanie</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#fireflies">Svätojánske mušky</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="next.html">Next Steps</a></li>
+</ul>
+<p class="caption"><span class="caption-text">API Reference</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../microbit_micropython_api.html">micro:bit Micropython API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../microbit.html">Microbit Module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../accelerometer.html">Akcelerometer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ble.html">Bluetooth</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../button.html">Buttons</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../compass.html">Compass</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../display.html">Display</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../filesystem.html">Local Persistent File System</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../i2c.html">I²C</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../image.html">Image</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../music.html">Music</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../neopixel.html">NeoPixel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../os.html">The <code class="docutils literal notranslate"><span class="pre">os</span></code>  Module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pin.html">Input/Output Pins</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../radio.html">Radio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../random.html">Random Number Generation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../speech.html">Speech</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../spi.html">SPI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../uart.html">UART</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Developer Guide</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../devguide/installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../devguide/flashfirmware.html">Flashing Firmware</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../devguide/repl.html">Accessing the REPL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../devguide/devfaq.html">Developer FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../devguide/contributing.html">Contributing</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">BBC micro:bit MicroPython</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="introduction.html">Úvod</a> &raquo;</li>
+        
+      <li>Rádio</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/tutorials/radio.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="radio">
+<h1>Rádio<a class="headerlink" href="#radio" title="Trvalý odkaz na tento nadpis">¶</a></h1>
+<p>Interakcia na diaľku vyzerá ako kúzlo.</p>
+<p>Kúzlo by si mohol/mohla využiť, ak by si bol(a) elfom, čarodejom alebo jednorožcom, ale takto to funguje iba v rozprávkach.</p>
+<p>Ale je tu niečo lepšie ako kúzla: fyzika!</p>
+<p>Bezdrôtová interakcia je celá o fyzike: rádiové vlny (typ elektromagnetického žiarenia, podobné ako viditeľné svetlo) majú niektoré vlastnosti (napríklad amplitúdu, fázu alebo vlnovú dĺžku) modulované vysielačom takým spôsobom, že doň môže byť zakódovaná informácia a teda aj vysielaná. Keď sa rádiové vlny stretnú s elektrickým vodičom (t.j. anténa), spôsobia zmenu prúdu, pomocou ktorej vieme extrahovať informáciu z vń a zmeniť ju do jej pôvodného tvaru.</p>
+<div class="section" id="layers-upon-layers">
+<h2>Vrstvy za vrstvami<a class="headerlink" href="#layers-upon-layers" title="Trvalý odkaz na tento nadpis">¶</a></h2>
+<p>Ak si spomínaš, siete sú postavené vo vrstvách.</p>
+<p>Najzákladnejšou požiadavkou na sieť je nejaké spojenie, ktoré umožní signálu dostať sa z jedného zariadenia na druhé. V našom sieťovom návode používame drôty pripojené k I/O pinom. Vďaka rádiovému modulu to môžeme urobiť aj bez drôtov a využiť fyziku, ako sme si vysvetlili už skôr, ako neviditeľné spojenie medzi dvoma zariadeniami.</p>
+<p>Ďalšia vrstva vo vrstvách siete je tiež trochu iná ako náš príklad v tomto návode. V príklade s káblami sme používali digitálnu informáciu zapnutý / vypnutý na posielanie a čítanie signálov z pinov. Ak používame vstavané rádio na micro:bite, najmenšou zmysluplnou jednotkou signálu je bajt.</p>
+</div>
+<div class="section" id="bytes">
+<h2>Bajty<a class="headerlink" href="#bytes" title="Trvalý odkaz na tento nadpis">¶</a></h2>
+<p>bajt je jednotka informácie, ktorá (zvyčajne) pozostáva z ôsmych bitov. Bit je najmenšia možná jednotka informácie, keďže má len dva stavy: zapnutý alebo vypnutý.</p>
+<p>Bajty fungujú ako počítadlo: každá poloha v bajte je ako stĺpec v počítadle - predstavujú čísla. Na počítadle su zvyajne tisícky, stovky, desiatky a jednotky (vo Veľkej Británii). V bajte sú to 128, 64, 32, 16, 8, 4, 2 and 1. Vzduchom sa síce posielajú bity (zapnutý/vypnutý), no u prijímateľa sa znova poskladajú do bajtov.</p>
+<p>Všimol/všimla si si nejaký vzor? (Poradím ti: sú to násobky 2)</p>
+<p>Priraďovaním čísel nastavených ako zapnuté alebo vypnuté spojených s určitou pozíciou v bajte, vieme vyjadriť čísla od 0 do 255. Obrázok nižšie ukazuje, ako to funguje s piatimi bitmi a počítaním do 32:</p>
+<img alt="../_images/binary_count.gif" src="../_images/binary_count.gif" />
+<p>Ak sa dohodneme, čo každé z 255 čísel (zakódovaných do bajtu) predstavuje ~ napríklad znak ~ potom môžeme začať posielať texty ako jeden znak na bajt.</p>
+<p>Ľudia už na toto <a class="reference external" href="https://en.wikipedia.org/wiki/ASCII">mysleli</a> ~ používanie bajtov na zakódovanie a dekódovanie informácie je úplne bežné. Je to podobné ako „protokol“ Morseovho kódu v príklade s káblovou sieťou.</p>
+<p>Veľmi dobré a deťom (aj učiteľom) prístupné vysvetlenie „všetko  o bajtoch“ je k dispozícii na webstránke <a class="reference external" href="http://csunplugged.org/binary-numbers/">CS unplugged</a> (po anglicky).</p>
+</div>
+<div class="section" id="addressing">
+<h2>Adresovanie<a class="headerlink" href="#addressing" title="Trvalý odkaz na tento nadpis">¶</a></h2>
+<p>Problém s rádion je, že nemôžeš vysielať priamo konkrétnej osobe. Hocikto s vhodnou ant=nou môže prijímať správy, ktoré vysielaš. Preto je dôležité, aby sme vedeli roylíšiť, kto má byť schopný prijímať náš signál.</p>
+<p>Spôsob, akým je rádio vstavané do micro:bitu tento problém rieši vcelku jednoducho:</p>
+<ul class="simple">
+<li>Rádio je možné naladiť na rôzne kanály (očíslované od 0 do 100). Funguje to presne ako na detských vysielačkách: každý sa naladí na rovnaký kanál a každý počuje, čo všetci vysielajú. Rovnako, ako pri detských vysielačkách, aj tu je malá šanca interferencie, ak použiješ blízke kanály.</li>
+<li>Rádio modul ti umožňuje špecifikovať dva typy informácie: adresu a skupinu. Adresa je ako poštová adresa a skupina je ako konkrétny prijímateľ na danej adrese. Dôležité je mať na pamäti, že rádio odfiltruje správy, ktoré prijalo, no nezodpovedali tvojej adrese a skupine. Dôsledkom toho je, že je veľmi dôležité správne nastaviť, ktorú adresu a skupinu bude tvoja aplikácia používať.</li>
+</ul>
+<p>Samozrejme, micro:bit stále prijíma vysielané správy pre ostatné adresy a skupiny. Dôležité však je, že o toto sa nemusíš starať. Ak by však bol dosť šikovný, mohol by čítať <em>všetky správy v bezdrôtovej sieti</em> bez ohľadu na to, pre akú adresu a skupinu sú určené. V takom prípade je dôležité používať iba šifrovanú komunikáciu, aby si správu vedel prečítať iba skutočný adresát. Kryptografia je fascinujúca téma, no žiaľ presahuje rozsah tohto návodu.</p>
+</div>
+<div class="section" id="fireflies">
+<h2>Svätojánske mušky<a class="headerlink" href="#fireflies" title="Trvalý odkaz na tento nadpis">¶</a></h2>
+<p>Toto je svätojánska muška</p>
+<img alt="../_images/firefly.gif" src="../_images/firefly.gif" />
+<p>Je to druh hmyzu, ktorý využíva svetielkovanie na komunikáciu (bezdrôtovú) so svojimi kamošmi. Takto vyzerajú, keď si navzájom posielajú signály:</p>
+<img alt="../_images/fireflies.gif" src="../_images/fireflies.gif" />
+<p>BBC má k dispozícii online <a class="reference external" href="http://www.bbc.com/earth/story/20160224-worlds-largest-gathering-of-synchronised-fireflies">veľmi pekné video</a> o svätojánskych muškách.</p>
+<p>Pomocou rádiového modulu vytvoríme niečo podobné roju svätojánskych mušiek, ktoré navzájom komunikujú.</p>
+<p>Na začiatok importuj rádiový modul pomocou <code class="docutils literal notranslate"><span class="pre">import</span> <span class="pre">radio</span></code>, aby si mohol/mohla používať tieto funkcie vo svojom programe. Potom zavolaj funkciu <code class="docutils literal notranslate"><span class="pre">radio.on()</span></code>, abz sa rádio zaplo. Keďže rádio spotrebováva energiu aj pamäť, urobili sme to tak, aby si <em>ty</em> rozhodol/rozhodla, kedy je zapnuté  (samozrejme existuje aj funkcia <code class="docutils literal notranslate"><span class="pre">radio.off()</span></code>, ktorá ho vypne).</p>
+<p>Teraz má rádio nastavené zmysluplné predvolené nastavenia, vďaka ktorým je kompatibilné s inými platformami, ktoré môžu komunikovať s tvojím micro:bitom. Môžeme ovládať množstvo vlastností, ktoré sme spomenuli už skôr (napríklad kanály a adresovanie) a tiež aj množstvo energie, ktorá sa použije na vysielanie správ a množstvo RAM, ktorá sa využije na uchovanie prichádzajúcich správ. API dokumentácia obsahuje všetky informácie potrebné na konfiguráciu rádia podľa tvojich potrieb.</p>
+<p>Ak predpokladáme, že nám vyhovujú predvolené nastavenia, najjednoduchší spôsob, ako poslať správu je:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">radio</span><span class="o">.</span><span class="n">send</span><span class="p">(</span><span class="s2">&quot;a message&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Príklad používa funkciu <code class="docutils literal notranslate"><span class="pre">send</span></code> na jednoduché odoslanie reťazca „a message“ (správa). Prijať správu je ešte jednoduchšie:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">new_message</span> <span class="o">=</span> <span class="n">radio</span><span class="o">.</span><span class="n">receive</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>Správy sa po prijatí radia do poradia. Funkcia <code class="docutils literal notranslate"><span class="pre">receive</span></code> (prijímať) vráti ako reťazec najstaršiu správu z poradia a tým uvoľní miesto pre novú prichádzajúcu správu. Ak sa poradie zaplní, nové správy budú ignorované.</p>
+<p>To už je k tomu naozaj všetko! (Aj keď rádio modul je dostatočne vybavený na to, aby si s ním posielal(a) akýkoľvek typ dát, nie len reťazce. Pre viac informácii o tom, ako to funguje, pozri API dokumentáciu.)</p>
+<p>Vyzbrojení týmito znalosťami teraz takto ľahko vyrobíme micro:bitové svätojánske mušky:</p>
+<div class="code python highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># A micro:bit Firefly.</span>
+<span class="c1"># By Nicholas H.Tollervey. Released to the public domain.</span>
+<span class="kn">import</span> <span class="nn">radio</span>
+<span class="kn">import</span> <span class="nn">random</span>
+<span class="kn">from</span> <span class="nn">microbit</span> <span class="k">import</span> <span class="n">display</span><span class="p">,</span> <span class="n">Image</span><span class="p">,</span> <span class="n">button_a</span><span class="p">,</span> <span class="n">sleep</span>
+
+<span class="c1"># Create the &quot;flash&quot; animation frames. Can you work out how it&#39;s done?</span>
+<span class="n">flash</span> <span class="o">=</span> <span class="p">[</span><span class="n">Image</span><span class="p">()</span><span class="o">.</span><span class="n">invert</span><span class="p">()</span><span class="o">*</span><span class="p">(</span><span class="n">i</span><span class="o">/</span><span class="mi">9</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">9</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">)]</span>
+
+<span class="c1"># The radio won&#39;t work unless it&#39;s switched on.</span>
+<span class="n">radio</span><span class="o">.</span><span class="n">on</span><span class="p">()</span>
+
+<span class="c1"># Event loop.</span>
+<span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+    <span class="c1"># Button A sends a &quot;flash&quot; message.</span>
+    <span class="k">if</span> <span class="n">button_a</span><span class="o">.</span><span class="n">was_pressed</span><span class="p">():</span>
+        <span class="n">radio</span><span class="o">.</span><span class="n">send</span><span class="p">(</span><span class="s1">&#39;flash&#39;</span><span class="p">)</span>  <span class="c1"># a-ha</span>
+    <span class="c1"># Read any incoming messages.</span>
+    <span class="n">incoming</span> <span class="o">=</span> <span class="n">radio</span><span class="o">.</span><span class="n">receive</span><span class="p">()</span>
+    <span class="k">if</span> <span class="n">incoming</span> <span class="o">==</span> <span class="s1">&#39;flash&#39;</span><span class="p">:</span>
+        <span class="c1"># If there&#39;s an incoming &quot;flash&quot; message display</span>
+        <span class="c1"># the firefly flash animation after a random short</span>
+        <span class="c1"># pause.</span>
+        <span class="n">sleep</span><span class="p">(</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">50</span><span class="p">,</span> <span class="mi">350</span><span class="p">))</span>
+        <span class="n">display</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">flash</span><span class="p">,</span> <span class="n">delay</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">wait</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+        <span class="c1"># Randomly re-broadcast the flash message after a</span>
+        <span class="c1"># slight delay.</span>
+        <span class="k">if</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">9</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="n">sleep</span><span class="p">(</span><span class="mi">500</span><span class="p">)</span>
+            <span class="n">radio</span><span class="o">.</span><span class="n">send</span><span class="p">(</span><span class="s1">&#39;flash&#39;</span><span class="p">)</span>  <span class="c1"># a-ha</span>
+</pre></div>
+</div>
+<p>Import sa udeje v cykle. Najskôr skontroluje, či bolo stlačené tlačítko A a ak bolo, použije rádio na odoslanie správy „blik“. Potom číta správy z poradia pomocou <code class="docutils literal notranslate"><span class="pre">radio.receive()</span></code>. Ak je tam správa, chvíľku počká  - dĺžka čakania je náhodná, aby displej vyzeral zaujímavejšie a potom pomocou <code class="docutils literal notranslate"><span class="pre">display.show()</span></code> animuje blikanie svätojánskej mušky. Nakoniec, aby to celé bolo trochu zábavnejšie, vyberie si náhodné číslo tak, aby bola šanca 1 ku 10, že správu (blik) pošle niekomu ďalšiemu (takto je možné udržať „svätojánsky“ displej medzi viacerými zariadeniami). Ak sa rozhodne správu preposlať, počká pol sekundy (takže displej z pôvodného bliku stihne stmavnúť) a potom pošle signál znova. Keďže tento kód je uzavretý v bloku <code class="docutils literal notranslate"><span class="pre">while</span> <span class="pre">True</span></code> (=opakuj kým platí, že pravda je pravdivá), vráti sa potom späť na začiatok cyklu a opakuje tento proces donekonečna.</p>
+<p>Výsledok (s použitím skupiny micro:bitov) by mal vyzerať takto nejako:</p>
+<img alt="../_images/mb-firefly.gif" src="../_images/mb-firefly.gif" />
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="next.html" class="btn btn-neutral float-right" title="Next Steps" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="network.html" class="btn btn-neutral" title="Sieť" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2015-2018, Multiple authors.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'0.5.0',
+            LANGUAGE:'sk',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="../_static/translations.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          
+          SphinxRtdTheme.Navigation.enableSticky();
+          
+      });
+  </script> 
+
+</body>
+</html>
