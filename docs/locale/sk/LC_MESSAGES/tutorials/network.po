@@ -233,11 +233,15 @@ msgstr ""
 
 #: ../../tutorials/network.rst:105
 msgid ""
+"In this way, the sending of a letter \"H\" is defined as four \"on\" "
+"signals that last no longer than 250 milliseconds each, followed by a "
+"pause of greater than 500 milliseconds (indicating the end of the "
+"character)."
+msgstr ""
 "S takto zadefinovanými pravidlami, písmeno \"H\" je definované štyrmi "
 "\"zapnutými\" signálmi, ktoré netrvajú dlhšie ako 250 milisekúnd, po "
 "ktorých nasleduje prestávka dlhšia ako 500 milisekúnd (čo znamená koniec "
 "znaku)."
-msgstr ""
 
 #: ../../tutorials/network.rst:110
 msgid "Message"
