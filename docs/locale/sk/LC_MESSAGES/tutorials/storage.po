@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: bbc-microbit-micropython\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-25 09:53+0200\n"
-"PO-Revision-Date: 2018-05-04 08:13-0400\n"
+"PO-Revision-Date: 2018-05-04 14:50-0400\n"
 "Last-Translator: RicCo386 <richard.kellner@pycon.sk>\n"
 "Language-Team: Slovak\n"
 "MIME-Version: 1.0\n"
@@ -124,7 +124,7 @@ msgstr "Toto platí pre MicroPython, \"normálny\" Python vie otvárať súbory 
 
 #: ../../tutorials/storage.rst:127
 msgid "OS SOS"
-msgstr ""
+msgstr "OS SOS"
 
 #: ../../tutorials/storage.rst:129
 msgid "As well as reading and writing files, Python can manipulate them. You certainly need to know what files are on the file system and sometimes you need to delete them too."
