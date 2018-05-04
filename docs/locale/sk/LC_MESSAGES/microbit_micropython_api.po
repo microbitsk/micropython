@@ -1,34 +1,28 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2015-2018, Multiple authors
-# This file is distributed under the same license as the BBC micro:bit
-# MicroPython package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
-#
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: BBC micro:bit MicroPython 0.5.0\n"
+"Project-Id-Version: bbc-microbit-micropython\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-25 09:53+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2018-05-04 07:28-0400\n"
+"Last-Translator: RicCo386 <richard.kellner@pycon.sk>\n"
+"Language-Team: Slovak\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.5.3\n"
+"Plural-Forms: nplurals=4; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 3;\n"
+"X-Generator: crowdin.com\n"
+"X-Crowdin-Project: bbc-microbit-micropython\n"
+"X-Crowdin-Language: sk\n"
+"X-Crowdin-File: /master/docs/locale/sk/LC_MESSAGES/microbit_micropython_api.po\n"
+"Language: sk_SK\n"
 
 #: ../../microbit_micropython_api.rst:2
 msgid "micro:bit Micropython API"
 msgstr ""
 
 #: ../../microbit_micropython_api.rst:5
-msgid ""
-"As we work towards a 1.0 release, this API is subject to frequent "
-"changes. This page reflects the current micro:bit API in a developer-"
-"friendly (but not necessarily kid-friendly) way. The tutorials associated"
-" with this documentation are a good place to start for non-developers "
-"looking for information."
+msgid "As we work towards a 1.0 release, this API is subject to frequent changes. This page reflects the current micro:bit API in a developer-friendly (but not necessarily kid-friendly) way. The tutorials associated with this documentation are a good place to start for non-developers looking for information."
 msgstr ""
 
 #: ../../microbit_micropython_api.rst:8
@@ -36,10 +30,7 @@ msgid "The microbit module"
 msgstr ""
 
 #: ../../microbit_micropython_api.rst:10
-msgid ""
-"Everything directly related to interacting with the hardware lives in the"
-" `microbit` module.  For ease of use it's recommended you start all "
-"scripts with::"
+msgid "Everything directly related to interacting with the hardware lives in the `microbit` module.  For ease of use it's recommended you start all scripts with::"
 msgstr ""
 
 #: ../../microbit_micropython_api.rst:14
@@ -51,16 +42,11 @@ msgid "There are a few functions available directly::"
 msgstr ""
 
 #: ../../microbit_micropython_api.rst:29
-msgid ""
-"The rest of the functionality is provided by objects and classes in the "
-"microbit module, as described below."
+msgid "The rest of the functionality is provided by objects and classes in the microbit module, as described below."
 msgstr ""
 
 #: ../../microbit_micropython_api.rst:31
-msgid ""
-"Note that the API exposes integers only (ie no floats are needed, but "
-"they may be accepted).  We thus use milliseconds for the standard time "
-"unit."
+msgid "Note that the API exposes integers only (ie no floats are needed, but they may be accepted).  We thus use milliseconds for the standard time unit."
 msgstr ""
 
 #: ../../microbit_micropython_api.rst:34
@@ -88,16 +74,11 @@ msgid "Pins"
 msgstr ""
 
 #: ../../microbit_micropython_api.rst:76
-msgid ""
-"Provide digital and analog input and output functionality, for the pins "
-"in the connector. Some pins are connected internally to the I/O that "
-"drives the LED matrix and the buttons."
+msgid "Provide digital and analog input and output functionality, for the pins in the connector. Some pins are connected internally to the I/O that drives the LED matrix and the buttons."
 msgstr ""
 
 #: ../../microbit_micropython_api.rst:78
-msgid ""
-"Each pin is provided as an object directly in the ``microbit`` module.  "
-"This keeps the API relatively flat, making it very easy to use:"
+msgid "Each pin is provided as an object directly in the ``microbit`` module.  This keeps the API relatively flat, making it very easy to use:"
 msgstr ""
 
 #: ../../microbit_micropython_api.rst:80
@@ -133,9 +114,7 @@ msgid "pin20"
 msgstr ""
 
 #: ../../microbit_micropython_api.rst:89
-msgid ""
-"Each of these pins are instances of the ``MicroBitPin`` class, which "
-"offers the following API::"
+msgid "Each of these pins are instances of the ``MicroBitPin`` class, which offers the following API::"
 msgstr ""
 
 #: ../../microbit_micropython_api.rst:109
@@ -143,11 +122,7 @@ msgid "Images"
 msgstr ""
 
 #: ../../microbit_micropython_api.rst:113
-msgid ""
-"You don't always need to create one of these yourself - you can access "
-"the image shown on the display directly with `display.image`. "
-"`display.image` is just an instance of `Image`, so you can use all of the"
-" same methods."
+msgid "You don't always need to create one of these yourself - you can access the image shown on the display directly with `display.image`. `display.image` is just an instance of `Image`, so you can use all of the same methods."
 msgstr ""
 
 #: ../../microbit_micropython_api.rst:117
@@ -163,10 +138,7 @@ msgid "The accelerometer is accessed via the ``accelerometer`` object::"
 msgstr ""
 
 #: ../../microbit_micropython_api.rst:238
-msgid ""
-"The recognised gestures are: ``up``, ``down``, ``left``, ``right``, "
-"``face up``, ``face down``, ``freefall``, ``3g``, ``6g``, ``8g``, "
-"``shake``."
+msgid "The recognised gestures are: ``up``, ``down``, ``left``, ``right``, ``face up``, ``face down``, ``freefall``, ``3g``, ``6g``, ``8g``, ``shake``."
 msgstr ""
 
 #: ../../microbit_micropython_api.rst:242
@@ -182,9 +154,7 @@ msgid "I2C bus"
 msgstr ""
 
 #: ../../microbit_micropython_api.rst:261
-msgid ""
-"There is an I2C bus on the micro:bit that is exposed via the `i2c` "
-"object.  It has the following methods::"
+msgid "There is an I2C bus on the micro:bit that is exposed via the `i2c` object.  It has the following methods::"
 msgstr ""
 
 #: ../../microbit_micropython_api.rst:270
@@ -192,8 +162,6 @@ msgid "UART"
 msgstr ""
 
 #: ../../microbit_micropython_api.rst:272
-msgid ""
-"Use ``uart`` to communicate with a serial device connected to the "
-"device's I/O pins::"
+msgid "Use ``uart`` to communicate with a serial device connected to the device's I/O pins::"
 msgstr ""
 
