@@ -1,68 +1,48 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2015-2018, Multiple authors
-# This file is distributed under the same license as the BBC micro:bit
-# MicroPython package.
-# SPy o.z. <info@microbit.sk>, 2018.
-#
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: BBC micro:bit MicroPython 0.5.0\n"
+"Project-Id-Version: bbc-microbit-micropython\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-25 10:41+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2018-05-04 07:28-0400\n"
+"Last-Translator: RicCo386 <richard.kellner@pycon.sk>\n"
+"Language-Team: Slovak\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.5.3\n"
+"Plural-Forms: nplurals=4; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 3;\n"
+"X-Generator: crowdin.com\n"
+"X-Crowdin-Project: bbc-microbit-micropython\n"
+"X-Crowdin-Language: sk\n"
+"X-Crowdin-File: /master/docs/locale/sk/LC_MESSAGES/accelerometer.po\n"
+"Language: sk_SK\n"
 
 #: ../../accelerometer.rst:2
 msgid "Accelerometer"
 msgstr "Akcelerometer"
 
 #: ../../accelerometer.rst:6
-#, fuzzy
-msgid ""
-"This object gives you access to the on-board accelerometer. The "
-"accelerometer also provides convenience functions for detecting gestures."
-" The recognised gestures are: ``up``, ``down``, ``left``, ``right``, "
-"``face up``, ``face down``, ``freefall``, ``3g``, ``6g``, ``8g``, "
-"``shake``."
+msgid "This object gives you access to the on-board accelerometer. The accelerometer also provides convenience functions for detecting gestures. The recognised gestures are: ``up``, ``down``, ``left``, ``right``, ``face up``, ``face down``, ``freefall``, ``3g``, ``6g``, ``8g``, ``shake``."
 msgstr ""
-"Tento objekt vám umožňuje prístup k akcelerometru, ktorý je na doske "
-"micro:bit-u. Akcelerometer tiež poskytuje pohodlné funkcie na detekciu "
-"pohybových gest. Rozpoznané gestá sú: ``up``, ``down``, ``left``, "
-"``right``, ``face up``, ``face down``, ``freefall``, ``3g``, ``6g``, "
-"``8g``, ``shake``."
 
 #: ../../accelerometer.rst:13
 msgid "Functions"
 msgstr "Funkcie"
 
 #: ../../accelerometer.rst:17
-msgid ""
-"Get the acceleration measurement in the ``x`` axis, as a positive or "
-"negative integer, depending on the direction."
+msgid "Get the acceleration measurement in the ``x`` axis, as a positive or negative integer, depending on the direction."
 msgstr ""
 
 #: ../../accelerometer.rst:23
-msgid ""
-"Get the acceleration measurement in the ``y`` axis, as a positive or "
-"negative integer, depending on the direction."
+msgid "Get the acceleration measurement in the ``y`` axis, as a positive or negative integer, depending on the direction."
 msgstr ""
 
 #: ../../accelerometer.rst:29
-msgid ""
-"Get the acceleration measurement in the ``z`` axis, as a positive or "
-"negative integer, depending on the direction."
+msgid "Get the acceleration measurement in the ``z`` axis, as a positive or negative integer, depending on the direction."
 msgstr ""
 
 #: ../../accelerometer.rst:34
-msgid ""
-"Get the acceleration measurements in all axes at once, as a three-element"
-" tuple of integers ordered as X, Y, Z."
+msgid "Get the acceleration measurements in all axes at once, as a three-element tuple of integers ordered as X, Y, Z."
 msgstr ""
 
 #: ../../accelerometer.rst:39
@@ -70,11 +50,7 @@ msgid "Return the name of the current gesture."
 msgstr ""
 
 #: ../../accelerometer.rst:43
-msgid ""
-"MicroPython understands the following gesture names: ``\"up\"``, "
-"``\"down\"``, ``\"left\"``, ``\"right\"``, ``\"face up\"``, ``\"face "
-"down\"``, ``\"freefall\"``, ``\"3g\"``, ``\"6g\"``, ``\"8g\"``, "
-"``\"shake\"``. Gestures are always represented as strings."
+msgid "MicroPython understands the following gesture names: ``\"up\"``, ``\"down\"``, ``\"left\"``, ``\"right\"``, ``\"face up\"``, ``\"face down\"``, ``\"freefall\"``, ``\"3g\"``, ``\"6g\"``, ``\"8g\"``, ``\"shake\"``. Gestures are always represented as strings."
 msgstr ""
 
 #: ../../accelerometer.rst:50
@@ -82,15 +58,11 @@ msgid "Return True or False to indicate if the named gesture is currently active
 msgstr ""
 
 #: ../../accelerometer.rst:54
-msgid ""
-"Return True or False to indicate if the named gesture was active since "
-"the last call."
+msgid "Return True or False to indicate if the named gesture was active since the last call."
 msgstr ""
 
 #: ../../accelerometer.rst:59
-msgid ""
-"Return a tuple of the gesture history. The most recent is listed last. "
-"Also clears the gesture history before returning."
+msgid "Return a tuple of the gesture history. The most recent is listed last. Also clears the gesture history before returning."
 msgstr ""
 
 #: ../../accelerometer.rst:63
@@ -98,9 +70,7 @@ msgid "Examples"
 msgstr ""
 
 #: ../../accelerometer.rst:65
-msgid ""
-"A fortune telling magic 8-ball. Ask a question then shake the device for "
-"an answer."
+msgid "A fortune telling magic 8-ball. Ask a question then shake the device for an answer."
 msgstr ""
 
 #: ../../accelerometer.rst:71
