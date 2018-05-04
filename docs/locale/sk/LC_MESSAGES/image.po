@@ -1,32 +1,28 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2015-2018, Multiple authors
-# This file is distributed under the same license as the BBC micro:bit
-# MicroPython package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
-#
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: BBC micro:bit MicroPython 0.5.0\n"
+"Project-Id-Version: bbc-microbit-micropython\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-25 09:53+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2018-05-04 07:28-0400\n"
+"Last-Translator: RicCo386 <richard.kellner@pycon.sk>\n"
+"Language-Team: Slovak\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.5.3\n"
+"Plural-Forms: nplurals=4; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 3;\n"
+"X-Generator: crowdin.com\n"
+"X-Crowdin-Project: bbc-microbit-micropython\n"
+"X-Crowdin-Language: sk\n"
+"X-Crowdin-File: /master/docs/locale/sk/LC_MESSAGES/image.po\n"
+"Language: sk_SK\n"
 
 #: ../../image.rst:2
 msgid "Image"
 msgstr ""
 
 #: ../../image.rst:6
-msgid ""
-"The ``Image`` class is used to create images that can be displayed easily"
-" on the device's LED matrix. Given an image object it's possible to "
-"display it via the ``display`` API::"
+msgid "The ``Image`` class is used to create images that can be displayed easily on the device's LED matrix. Given an image object it's possible to display it via the ``display`` API::"
 msgstr ""
 
 #: ../../image.rst:15
@@ -34,23 +30,15 @@ msgid "Classes"
 msgstr ""
 
 #: ../../image.rst:21
-msgid ""
-"If ``string`` is used, it has to consist of digits 0-9 arranged into "
-"lines, describing the image, for example::"
+msgid "If ``string`` is used, it has to consist of digits 0-9 arranged into lines, describing the image, for example::"
 msgstr ""
 
 #: ../../image.rst:30
-msgid ""
-"will create a 5×5 image of an X. The end of a line is indicated by a "
-"colon. It's also possible to use a newline (\\n) to indicate the end of a"
-" line like this::"
+msgid "will create a 5×5 image of an X. The end of a line is indicated by a colon. It's also possible to use a newline (\\n) to indicate the end of a line like this::"
 msgstr ""
 
 #: ../../image.rst:40
-msgid ""
-"The other form creates an empty image with ``width`` columns and "
-"``height`` rows. Optionally ``buffer`` can be an array of "
-"``width``×``height`` integers in range 0-9 to initialize the image."
+msgid "The other form creates an empty image with ``width`` columns and ``height`` rows. Optionally ``buffer`` can be an array of ``width``×``height`` integers in range 0-9 to initialize the image."
 msgstr ""
 
 #: ../../image.rst:47
@@ -62,21 +50,15 @@ msgid "Return the numbers of rows in the image."
 msgstr ""
 
 #: ../../image.rst:57
-msgid ""
-"Set the brightness of the pixel at column ``x`` and row ``y`` to the "
-"``value``, which has to be between 0 (dark) and 9 (bright)."
+msgid "Set the brightness of the pixel at column ``x`` and row ``y`` to the ``value``, which has to be between 0 (dark) and 9 (bright)."
 msgstr ""
 
 #: ../../image.rst:60 ../../image.rst:108
-msgid ""
-"This method will raise an exception when called on any of the built-in "
-"read-only images, like ``Image.HEART``."
+msgid "This method will raise an exception when called on any of the built-in read-only images, like ``Image.HEART``."
 msgstr ""
 
 #: ../../image.rst:66
-msgid ""
-"Return the brightness of pixel at column ``x`` and row ``y`` as an "
-"integer between 0 and 9."
+msgid "Return the brightness of pixel at column ``x`` and row ``y`` as an integer between 0 and 9."
 msgstr ""
 
 #: ../../image.rst:72
@@ -96,9 +78,7 @@ msgid "Same as ``image.shift_up(-n)``."
 msgstr ""
 
 #: ../../image.rst:91
-msgid ""
-"Return a new image by cropping the picture to a width of ``w`` and a "
-"height of ``h``, starting with the pixel at column ``x`` and row ``y``."
+msgid "Return a new image by cropping the picture to a width of ``w`` and a height of ``h``, starting with the pixel at column ``x`` and row ``y``."
 msgstr ""
 
 #: ../../image.rst:96
@@ -106,30 +86,19 @@ msgid "Return an exact copy of the image."
 msgstr ""
 
 #: ../../image.rst:100
-msgid ""
-"Return a new image by inverting the brightness of the pixels in the "
-"source image."
+msgid "Return a new image by inverting the brightness of the pixels in the source image."
 msgstr ""
 
 #: ../../image.rst:105
-msgid ""
-"Set the brightness of all the pixels in the image to the ``value``, which"
-" has to be between 0 (dark) and 9 (bright)."
+msgid "Set the brightness of all the pixels in the image to the ``value``, which has to be between 0 (dark) and 9 (bright)."
 msgstr ""
 
 #: ../../image.rst:113
-msgid ""
-"Copy the rectangle defined by ``x``, ``y``, ``w``, ``h`` from the image "
-"``src`` into this image at ``xdest``, ``ydest``. Areas in the source "
-"rectangle, but outside the source image are treated as having a value of "
-"0."
+msgid "Copy the rectangle defined by ``x``, ``y``, ``w``, ``h`` from the image ``src`` into this image at ``xdest``, ``ydest``. Areas in the source rectangle, but outside the source image are treated as having a value of 0."
 msgstr ""
 
 #: ../../image.rst:117
-msgid ""
-"``shift_left()``, ``shift_right()``, ``shift_up()``, ``shift_down()`` and"
-" ``crop()`` can are all implemented by using ``blit()``. For example, "
-"img.crop(x, y, w, h) can be implemented as::"
+msgid "``shift_left()``, ``shift_right()``, ``shift_up()``, ``shift_down()`` and ``crop()`` can are all implemented by using ``blit()``. For example, img.crop(x, y, w, h) can be implemented as::"
 msgstr ""
 
 #: ../../image.rst:128
@@ -137,10 +106,7 @@ msgid "Attributes"
 msgstr ""
 
 #: ../../image.rst:130
-msgid ""
-"The ``Image`` class also has the following built-in instances of itself "
-"included as its attributes (the attribute names indicate what the image "
-"represents):"
+msgid "The ``Image`` class also has the following built-in instances of itself included as its attributes (the attribute names indicate what the image represents):"
 msgstr ""
 
 #: ../../image.rst:134
@@ -200,18 +166,11 @@ msgid "``Image.NO``"
 msgstr ""
 
 #: ../../image.rst:148
-msgid ""
-"``Image.CLOCK12``, ``Image.CLOCK11``, ``Image.CLOCK10``, "
-"``Image.CLOCK9``, ``Image.CLOCK8``, ``Image.CLOCK7``, ``Image.CLOCK6``, "
-"``Image.CLOCK5``, ``Image.CLOCK4``, ``Image.CLOCK3``, ``Image.CLOCK2``, "
-"``Image.CLOCK1``"
+msgid "``Image.CLOCK12``, ``Image.CLOCK11``, ``Image.CLOCK10``, ``Image.CLOCK9``, ``Image.CLOCK8``, ``Image.CLOCK7``, ``Image.CLOCK6``, ``Image.CLOCK5``, ``Image.CLOCK4``, ``Image.CLOCK3``, ``Image.CLOCK2``, ``Image.CLOCK1``"
 msgstr ""
 
 #: ../../image.rst:151
-msgid ""
-"``Image.ARROW_N``, ``Image.ARROW_NE``, ``Image.ARROW_E``, "
-"``Image.ARROW_SE``, ``Image.ARROW_S``, ``Image.ARROW_SW``, "
-"``Image.ARROW_W``, ``Image.ARROW_NW``"
+msgid "``Image.ARROW_N``, ``Image.ARROW_NE``, ``Image.ARROW_E``, ``Image.ARROW_SE``, ``Image.ARROW_S``, ``Image.ARROW_SW``, ``Image.ARROW_W``, ``Image.ARROW_NW``"
 msgstr ""
 
 #: ../../image.rst:154
@@ -347,9 +306,7 @@ msgid "Get a readable string representation of the image."
 msgstr ""
 
 #: ../../image.rst:209
-msgid ""
-"Create a new image by adding the brightness values from the two images "
-"for each pixel."
+msgid "Create a new image by adding the brightness values from the two images for each pixel."
 msgstr ""
 
 #: ../../image.rst:216
