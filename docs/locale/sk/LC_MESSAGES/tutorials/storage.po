@@ -419,10 +419,13 @@ msgstr ""
 
 #: ../../tutorials/storage.rst:209
 msgid ""
+"Finally, the ``put`` sub-command puts a file from your computer onto the "
+"connected device (it's named after the ``put`` command that's part of FTP"
+" that serves the same function)."
+msgstr ""
 "A nakoniec, príkaz ``put`` ukladá súbor z tvojho počítača na pripojené "
 "zariadenie (je pomenovaný po príkaze ``put``, ktorý je súčasťou protokolu "
 "FTP a slúži na rovnaký účel)."
-msgstr ""
 
 #: ../../tutorials/storage.rst:214
 msgid "Mainly main.py"
