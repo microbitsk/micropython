@@ -1,40 +1,32 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2015-2018, Multiple authors
-# This file is distributed under the same license as the BBC micro:bit
-# MicroPython package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
-#
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: BBC micro:bit MicroPython 0.5.0\n"
+"Project-Id-Version: bbc-microbit-micropython\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-25 09:53+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2018-05-04 07:36-0400\n"
+"Last-Translator: RicCo386 <richard.kellner@pycon.sk>\n"
+"Language-Team: Slovak\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.5.3\n"
+"Plural-Forms: nplurals=4; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 3;\n"
+"X-Generator: crowdin.com\n"
+"X-Crowdin-Project: bbc-microbit-micropython\n"
+"X-Crowdin-Language: sk\n"
+"X-Crowdin-File: /master/docs/locale/sk/LC_MESSAGES/audio.po\n"
+"Language: sk_SK\n"
 
 #: ../../audio.rst:2
 msgid "Audio"
 msgstr ""
 
 #: ../../audio.rst:6
-msgid ""
-"This module allows you play sounds from a speaker attached to the "
-"Microbit. In order to use the audio module you will need to provide a "
-"sound source."
+msgid "This module allows you play sounds from a speaker attached to the Microbit. In order to use the audio module you will need to provide a sound source."
 msgstr ""
 
 #: ../../audio.rst:9
-msgid ""
-"A sound source is an iterable (sequence, like list or tuple, or a "
-"generator) of frames, each of 32 samples. The ``audio`` modules plays "
-"samples at the rate of 7812.5 samples per second, which means that it can"
-" reproduce frequencies up to 3.9kHz."
+msgid "A sound source is an iterable (sequence, like list or tuple, or a generator) of frames, each of 32 samples. The ``audio`` modules plays samples at the rate of 7812.5 samples per second, which means that it can reproduce frequencies up to 3.9kHz."
 msgstr ""
 
 #: ../../audio.rst:15
@@ -46,15 +38,11 @@ msgid "Play the source to completion."
 msgstr ""
 
 #: ../../audio.rst:21
-msgid ""
-"``source`` is an iterable, each element of which must be an "
-"``AudioFrame``."
+msgid "``source`` is an iterable, each element of which must be an ``AudioFrame``."
 msgstr ""
 
 #: ../../audio.rst:23
-msgid ""
-"If ``wait`` is ``True``, this function will block until the source is "
-"exhausted."
+msgid "If ``wait`` is ``True``, this function will block until the source is exhausted."
 msgstr ""
 
 #: ../../audio.rst:25
@@ -66,9 +54,7 @@ msgid "Classes"
 msgstr ""
 
 #: ../../audio.rst:33
-msgid ""
-"An ``AudioFrame`` object is a list of 32 samples each of which is a "
-"signed byte (whole number between -128 and 127)."
+msgid "An ``AudioFrame`` object is a list of 32 samples each of which is a signed byte (whole number between -128 and 127)."
 msgstr ""
 
 #: ../../audio.rst:36
@@ -80,10 +66,7 @@ msgid "Using audio"
 msgstr ""
 
 #: ../../audio.rst:41
-msgid ""
-"You will need a sound source, as input to the ``play`` function. You can "
-"generate your own, like in ``examples/waveforms.py`` or you can use the "
-"sound sources provided by modules like ``synth``."
+msgid "You will need a sound source, as input to the ``play`` function. You can generate your own, like in ``examples/waveforms.py`` or you can use the sound sources provided by modules like ``synth``."
 msgstr ""
 
 #: ../../audio.rst:46
@@ -91,33 +74,19 @@ msgid "Technical Details"
 msgstr ""
 
 #: ../../audio.rst:49
-msgid ""
-"You don't need to understand this section to use the ``audio`` module. It"
-" is just here in case you wanted to know how it works."
+msgid "You don't need to understand this section to use the ``audio`` module. It is just here in case you wanted to know how it works."
 msgstr ""
 
 #: ../../audio.rst:52
-msgid ""
-"The ``audio`` module consumes samples at 7812.5 kHz, and uses linear "
-"interpolation to output a PWM signal at 32.5 kHz, which gives tolerable "
-"sound quality."
+msgid "The ``audio`` module consumes samples at 7812.5 kHz, and uses linear interpolation to output a PWM signal at 32.5 kHz, which gives tolerable sound quality."
 msgstr ""
 
 #: ../../audio.rst:55
-msgid ""
-"The function ``play`` fully copies all data from each ``AudioFrame`` "
-"before it calls ``next()`` for the next frame, so a sound source can use "
-"the same ``AudioFrame`` repeatedly."
+msgid "The function ``play`` fully copies all data from each ``AudioFrame`` before it calls ``next()`` for the next frame, so a sound source can use the same ``AudioFrame`` repeatedly."
 msgstr ""
 
 #: ../../audio.rst:59
-msgid ""
-"The ``audio`` module has an internal 64 sample buffer from which it reads"
-" samples. When reading reaches the start or the mid-point of the buffer, "
-"it triggers a callback to fetch the next ``AudioFrame`` which is then "
-"copied into the buffer. This means that a sound source has under 4ms to "
-"compute the next ``AudioFrame``, and for reliable operation needs to take"
-" less 2ms (which is 32000 cycles, so should be plenty)."
+msgid "The ``audio`` module has an internal 64 sample buffer from which it reads samples. When reading reaches the start or the mid-point of the buffer, it triggers a callback to fetch the next ``AudioFrame`` which is then copied into the buffer. This means that a sound source has under 4ms to compute the next ``AudioFrame``, and for reliable operation needs to take less 2ms (which is 32000 cycles, so should be plenty)."
 msgstr ""
 
 #: ../../audio.rst:67
