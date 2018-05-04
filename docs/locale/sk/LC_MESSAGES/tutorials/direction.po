@@ -10,9 +10,9 @@ msgstr ""
 "Project-Id-Version: BBC micro:bit MicroPython 0.5.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-25 09:53+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2018-04-05 08:00+0200\n"
+"Last-Translator: Juraj M Bezrucka <mimmon@gmail.com>\n"
+"Language-Team: SK \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -20,21 +20,23 @@ msgstr ""
 
 #: ../../tutorials/direction.rst:2
 msgid "Direction"
-msgstr ""
+msgstr "Smer"
 
 #: ../../tutorials/direction.rst:4
 msgid ""
 "There is a compass on the BBC micro:bit. If you ever make a weather "
 "station use the device to work out the wind direction."
 msgstr ""
+"V BBC micro:bite sa nachádza kompas. Ak by si niekedy robil(a) meteostanicu,"
+" môžeš použiť zariadenie na určenie smeru vetra."
 
 #: ../../tutorials/direction.rst:8
 msgid "Compass"
-msgstr ""
+msgstr "Kompas"
 
 #: ../../tutorials/direction.rst:10
 msgid "It can also tell you the direction of North like this::"
-msgstr ""
+msgstr "Taktiež ti môže povedať, kde je sever - takto::"
 
 #: ../../tutorials/direction.rst:22
 msgid ""
@@ -43,12 +45,18 @@ msgid ""
 "little game to help the device work out where it is in relation to the "
 "Earth's magnetic field."
 msgstr ""
+"**Pred čítaním hodnôt musíš kompas kalibrovať.** Ak to neurobíš, budeš "
+"dostávať na nič výsledky. Metóda ``calibration`` spustí zábavnú hru, "
+"ktorá pomôže zariadeniu zistiť, kde sa vzhľadom na magnetické pole Zeme "
+"nachádza."
 
 #: ../../tutorials/direction.rst:27
 msgid ""
 "To calibrate the compass, tilt the micro:bit around until a circle of "
 "pixels is drawn on the outside edges of the display."
 msgstr ""
+"Kompas skalibruješ tak, že budeš nakláňať micro:bit, až kým krúžok pixelov "
+"nebude na vonkajšom okraji displeja."
 
 #: ../../tutorials/direction.rst:30
 msgid ""
@@ -59,4 +67,10 @@ msgid ""
 "out the number of the clock hand to use to display on the screen so that "
 "it is pointing roughly North."
 msgstr ""
+"Program vezme hodnotu ``compass.heading`` a s použitím jednoduchých, no "
+"sofistikovaných výpočtov, `delením na celé číslo "
+"<https://en.wikipedia.org/wiki/Floor_and_ceiling_functions>`_ ``//`` a "
+"`zvyšku (modulo) <https://en.wikipedia.org/wiki/Modulo_operation>`_ ``%``, "
+"určí číslo hodinovej ručičky, ktorá sa zobrazí na displeji tak, aby "
+"ukazovala na sever."
 

@@ -10,9 +10,9 @@ msgstr ""
 "Project-Id-Version: BBC micro:bit MicroPython 0.5.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-25 09:53+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2018-03-28 08:13+0200\n"
+"Last-Translator: Juraj M Bezrucka <mimmon@gmail.com>\n"
+"Language-Team: SK \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -20,7 +20,7 @@ msgstr ""
 
 #: ../../tutorials/music.rst:2
 msgid "Music"
-msgstr ""
+msgstr "Hudba"
 
 #: ../../tutorials/music.rst:4
 msgid ""
@@ -30,124 +30,134 @@ msgid ""
 " positive and negative inputs on the speaker - it doesn't matter which "
 "way round they are connected to the speaker."
 msgstr ""
+"MicroPython na BBC micro:bite obsahuje nadupaný modul na hudbu a zvuky. "
+"Generovať zvuky je veľmi jednoduché, *ak pripojíš reproduktor*. Prepoj "
+"krokodílkami piny 0 a GND s kladným a záporným vstupom do reproduktora "
+"- nezáleží na tom, v akom poradí sú pripojené."
 
 #: ../../tutorials/music.rst:14
 msgid ""
 "Do not attempt this with a Piezo buzzer - such buzzers are only able to "
 "play a single tone."
 msgstr ""
+"Toto neskúšaj s Piezo bzučiakom - tieto bzučiaky vedia hrať iba jeden tón."
 
 #: ../../tutorials/music.rst:17
 msgid "Let's play some music::"
-msgstr ""
+msgstr "Poďme zahrať nejakú hudbu::"
 
 #: ../../tutorials/music.rst:23
 msgid ""
 "Notice that we import the ``music`` module. It contains methods used to "
 "make and control sound."
 msgstr ""
+"Všimni si, že importujeme modul ``music`` (\"hudba\"). Ten obsahuje metódy "
+"na vytváranie a ovládanie zvuku."
 
 #: ../../tutorials/music.rst:26
 msgid "MicroPython has quite a lot of built-in melodies. Here's a complete list:"
 msgstr ""
+"MicroPython má dosť veľa vstavaných melódií. Tu je ich kompletný zoznam:"
 
 #: ../../tutorials/music.rst:28
 msgid "``music.DADADADUM``"
-msgstr ""
+msgstr "``music.DADADADUM``"
 
 #: ../../tutorials/music.rst:29
 msgid "``music.ENTERTAINER``"
-msgstr ""
+msgstr "``music.ENTERTAINER``"
 
 #: ../../tutorials/music.rst:30
 msgid "``music.PRELUDE``"
-msgstr ""
+msgstr "``music.PRELUDE``"
 
 #: ../../tutorials/music.rst:31
 msgid "``music.ODE``"
-msgstr ""
+msgstr "``music.ODE``"
 
 #: ../../tutorials/music.rst:32
 msgid "``music.NYAN``"
-msgstr ""
+msgstr "``music.NYAN``"
 
 #: ../../tutorials/music.rst:33
 msgid "``music.RINGTONE``"
-msgstr ""
+msgstr "``music.RINGTONE``"
 
 #: ../../tutorials/music.rst:34
 msgid "``music.FUNK``"
-msgstr ""
+msgstr "``music.FUNK``"
 
 #: ../../tutorials/music.rst:35
 msgid "``music.BLUES``"
-msgstr ""
+msgstr "``music.BLUES``"
 
 #: ../../tutorials/music.rst:36
 msgid "``music.BIRTHDAY``"
-msgstr ""
+msgstr "``music.BIRTHDAY``"
 
 #: ../../tutorials/music.rst:37
 msgid "``music.WEDDING``"
-msgstr ""
+msgstr "``music.WEDDING``"
 
 #: ../../tutorials/music.rst:38
 msgid "``music.FUNERAL``"
-msgstr ""
+msgstr "``music.FUNERAL``"
 
 #: ../../tutorials/music.rst:39
 msgid "``music.PUNCHLINE``"
-msgstr ""
+msgstr "``music.PUNCHLINE``"
 
 #: ../../tutorials/music.rst:40
 msgid "``music.PYTHON``"
-msgstr ""
+msgstr "``music.PYTHON``"
 
 #: ../../tutorials/music.rst:41
 msgid "``music.BADDY``"
-msgstr ""
+msgstr "``music.BADDY``"
 
 #: ../../tutorials/music.rst:42
 msgid "``music.CHASE``"
-msgstr ""
+msgstr "``music.CHASE``"
 
 #: ../../tutorials/music.rst:43
 msgid "``music.BA_DING``"
-msgstr ""
+msgstr "``music.BA_DING``"
 
 #: ../../tutorials/music.rst:44
 msgid "``music.WAWAWAWAA``"
-msgstr ""
+msgstr "``music.WAWAWAWAA``"
 
 #: ../../tutorials/music.rst:45
 msgid "``music.JUMP_UP``"
-msgstr ""
+msgstr "``music.JUMP_UP``"
 
 #: ../../tutorials/music.rst:46
 msgid "``music.JUMP_DOWN``"
-msgstr ""
+msgstr "``music.JUMP_DOWN``"
 
 #: ../../tutorials/music.rst:47
 msgid "``music.POWER_UP``"
-msgstr ""
+msgstr "``music.POWER_UP``"
 
 #: ../../tutorials/music.rst:48
 msgid "``music.POWER_DOWN``"
-msgstr ""
+msgstr "``music.POWER_DOWN``"
 
 #: ../../tutorials/music.rst:50
 msgid ""
 "Take the example code and change the melody. Which one is your favourite?"
 " How would you use such tunes as signals or cues?"
 msgstr ""
+"Vezmi si ukážkový kód a zmeň melódiu. Ktorá je tvoja obľúbená? "
+"Vedel(a) by si nejako využiť takéto melódie ako signály?"
 
 #: ../../tutorials/music.rst:54
 msgid "Wolfgang Amadeus Microbit"
-msgstr ""
+msgstr "Wolfgang Amadeus Microbit"
 
 #: ../../tutorials/music.rst:56
 msgid "Creating your own tunes is easy!"
-msgstr ""
+msgstr "Vytváranie vlastných melódií je jednoduché!"
 
 #: ../../tutorials/music.rst:58
 msgid ""
@@ -162,16 +172,27 @@ msgid ""
 "on). If you use the note name ``R`` then MicroPython will play a rest "
 "(i.e. silence) for the specified duration."
 msgstr ""
+"Každá nota má svoj názov (napríklad ``C#`` alebo ``F``), oktávu (tá hovorí "
+"MicroPythonu ako vysoko alebo nízko má daný tón zahrať) a dĺžku (ako dlho "
+"má trvať). Oktávy sú označený číslom ~ 0 je najnižšia oktáva, 4 obsahuje "
+"stredné C a 8 je tak vysoko, že to nikdy nevyužiješ. Teda pokiaľ nebudeš "
+"komponovať hudbu pre psov. Dĺžka tónu je tiež vyjadrená číslami. Čím vyššia "
+"hodnota, tým dlhšie bude trvať. Tieto hodnoty navzájom súvisia - napríklad "
+"dĺžka trvania ``4`` bude trvať dvakrát tak dlho ako ``2`` (a tak ďalej). "
+"Ak použiješ notu ``R``, vtedy MicroPython zahrá pomlčku (t.j. ticho) so "
+"zvolenou dĺžkou (trvaním)."
 
 #: ../../tutorials/music.rst:68
 msgid "Each note is expressed as a string of characters like this::"
-msgstr ""
+msgstr "Každá nota je vyjadrená takýto reťazec znakov::"
 
 #: ../../tutorials/music.rst:72
 msgid ""
 "For example, ``\"A1:4\"`` refers to the note named ``A`` in octave number"
 " ``1`` to be played for a duration of ``4``."
 msgstr ""
+"Napríklad, ``\"A1:4\"`` znamená, že nota ``A`` v oktáve ``1`` má byť zahraná"
+"s dĺžkou trvania ``4``."
 
 #: ../../tutorials/music.rst:75
 msgid ""
@@ -179,6 +200,9 @@ msgid ""
 "animation with a list of images). For example, here's how to make "
 "MicroPython play opening of \"Frere Jaques\"::"
 msgstr ""
+"Priprav zoznam nôt, pomocou ktorého vytvoríš melódiu (je to podobné, ako "
+"vytváranie animácie pomocou zoznamu obrázkov). Napríklad takto dosiahneš, že"
+" MicroPython zahrá úvod pesničky \"Frere Jacques\"::"
 
 #: ../../tutorials/music.rst:87
 msgid ""
@@ -186,22 +210,29 @@ msgid ""
 "octave and duration values until you next change them. As a result, the "
 "example above can be re-written as::"
 msgstr ""
+"MicroPython vie takéto melódie zjednodušiť. Zapamätá si oktávu a dĺžku "
+"trvania, až kým ich nezmeníš. Vďaka tomu, vyššie uvedený príklad môžeš "
+"zapísať aj takto::"
 
 #: ../../tutorials/music.rst:97
 msgid ""
 "Notice how the octave and duration values only change when they have to. "
 "It's a lot less typing and simpler to read."
 msgstr ""
+"Všimni si, ako sa oktáva a trvanie menia iba vtedy, keď musia. Musíme tak "
+"omnoho mneje písať a je to navyše ľahšie aj na čítanie."
 
 #: ../../tutorials/music.rst:101
 msgid "Sound Effects"
-msgstr ""
+msgstr "Zvukové efekty"
 
 #: ../../tutorials/music.rst:103
 msgid ""
 "MicroPython lets you make tones that are not musical notes. For example, "
 "here's how to create a Police siren effect::"
 msgstr ""
+"MicroPython ti umožní vytvárať aj tóny, ktoré nie sú hudobnými notami. "
+"Tu je príklad, ako vytvoriť efekt policajnej sirény::"
 
 #: ../../tutorials/music.rst:115
 msgid ""
@@ -209,6 +240,9 @@ msgid ""
 "expects a frequency. For example, the frequency of ``440`` is the same as"
 " a concert ``A`` used to tune a symphony orchestra."
 msgstr ""
+"Všimni si, ako sme v tomto prípade použili *metódu* ``music.pitch``. Táto "
+"metóda očakáva frekvenciu ako argument. Napríklad frekvencia ``440`` je "
+"komorné ``A``, ktoré sa používa pri ladení orchestra."
 
 #: ../../tutorials/music.rst:119
 msgid ""
@@ -221,12 +255,22 @@ msgid ""
 "between 1760 and 880 in steps of -16\". This is how we get a range of "
 "frequencies that go up and down in pitch like a siren."
 msgstr ""
+"V tomto príklade používame funkciu ``range`` na vytvorenie postupnosti "
+"číselných hodnôt. Tieto čísla sa používajú na definovanie farby tónu. "
+"Tri argumenty pre funkciu ``range`` sú začiatočná hodnota, koncová hodnota "
+"a krok. Preto tam, kde používame ``range`` prvýkrát hovorím po slovensky "
+"\"vytvor postupnosť čísel medzi 880 a 1760 s krokom 16\". Pri druhom "
+"použití hovoríme \"vytvor postupnosť hodnôt medzi 1760 a 880 s krokom -16\". "
+"Takto vytvoríme postupnosť frekvencií, ktoré stúpajú a klesajú v tóne "
+"rovnako ako policajná siréna."
 
 #: ../../tutorials/music.rst:128
 msgid ""
 "Because the siren should last forever it's wrapped in an infinite "
 "``while`` loop."
 msgstr ""
+"A keďže siréna môže trvať donekonečna, zabalili sme ju do nekonečného "
+"``while`` cyklu."
 
 #: ../../tutorials/music.rst:131
 msgid ""
@@ -239,4 +283,11 @@ msgid ""
 "discussed earlier) so Python knows exactly which code to run to handle "
 "the individual items."
 msgstr ""
-
+"Práve sme si predstavili nový druh cyklu vo vnútri ``while`` cyklu: "
+"``for`` cyklus. Po slovensky by sme namiesto neho povedali niečo takéto: "
+"\"s každým prvkom v nejakej zbierke prvkov urob nejakú aktivitu\". Konkrétne,"
+" v uvedenom príklade by to bolo asi takto: \"s každou frekvenciou v "
+"definovanej postupnosti frekvencií zahraj tón tej frekvencie v dĺžke "
+"6 milisekúnd\". Všimni si, že to, čo sa má diať s každou položkou v cykle, "
+"je odsadené (ako sme hovorili už v predchádzajúcich návodoch), takže Python "
+"vie presne, ktorú časť kódu má spustiť pre každú položku."
