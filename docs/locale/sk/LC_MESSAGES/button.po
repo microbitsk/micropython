@@ -1,22 +1,21 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2015-2018, Multiple authors
-# This file is distributed under the same license as the BBC micro:bit
-# MicroPython package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
-#
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: BBC micro:bit MicroPython 0.5.0\n"
+"Project-Id-Version: bbc-microbit-micropython\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-25 09:53+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2018-05-04 07:33-0400\n"
+"Last-Translator: RicCo386 <richard.kellner@pycon.sk>\n"
+"Language-Team: Slovak\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.5.3\n"
+"Plural-Forms: nplurals=4; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 3;\n"
+"X-Generator: crowdin.com\n"
+"X-Crowdin-Project: bbc-microbit-micropython\n"
+"X-Crowdin-Language: sk\n"
+"X-Crowdin-File: /master/docs/locale/sk/LC_MESSAGES/button.po\n"
+"Language: sk_SK\n"
 
 #: ../../button.rst:2
 msgid "Buttons"
@@ -47,27 +46,19 @@ msgid "Represents a button."
 msgstr ""
 
 #: ../../button.rst:30
-msgid ""
-"This class is not actually available to the user, it is only used by the "
-"two button instances, which are provided already initialized."
+msgid "This class is not actually available to the user, it is only used by the two button instances, which are provided already initialized."
 msgstr ""
 
 #: ../../button.rst:36
-msgid ""
-"Returns ``True`` if the specified button ``button`` is pressed, and "
-"``False`` otherwise."
+msgid "Returns ``True`` if the specified button ``button`` is pressed, and ``False`` otherwise."
 msgstr ""
 
 #: ../../button.rst:41
-msgid ""
-"Returns ``True`` or ``False`` to indicate if the button was pressed since"
-" the device started or the last time this method was called."
+msgid "Returns ``True`` or ``False`` to indicate if the button was pressed since the device started or the last time this method was called."
 msgstr ""
 
 #: ../../button.rst:46
-msgid ""
-"Returns the running total of button presses, and resets this total to "
-"zero before returning."
+msgid "Returns the running total of button presses, and resets this total to zero before returning."
 msgstr ""
 
 #: ../../button.rst:50
