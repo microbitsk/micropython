@@ -1,34 +1,29 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2015-2018, Multiple authors
-# This file is distributed under the same license as the BBC micro:bit
-# MicroPython package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
-#
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: BBC micro:bit MicroPython 0.5.0\n"
+"Project-Id-Version: bbc-microbit-micropython\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-25 09:53+0200\n"
-"PO-Revision-Date: 2018-04-03 17:49+0200\n"
-"Last-Translator: Juraj M Bezrucka <mimmon@gmail.com>\n"
-"Language-Team: SK \n"
+"PO-Revision-Date: 2018-05-04 07:47-0400\n"
+"Last-Translator: RicCo386 <richard.kellner@pycon.sk>\n"
+"Language-Team: Slovak\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.5.3\n"
+"Plural-Forms: nplurals=4; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 3;\n"
+"X-Generator: crowdin.com\n"
+"X-Crowdin-Project: bbc-microbit-micropython\n"
+"X-Crowdin-Language: sk\n"
+"X-Crowdin-File: /master/docs/locale/sk/LC_MESSAGES/tutorials/movement.po\n"
+"Language: sk_SK\n"
 
 #: ../../tutorials/movement.rst:2
 msgid "Movement"
 msgstr "Pohyb"
 
 #: ../../tutorials/movement.rst:4
-msgid ""
-"Your BBC micro:bit comes with an accelerometer. It measures movement "
-"along three axes:"
-msgstr ""
-"Tvoj BBC micro:bit obsahuje akcelerometer, ktorý meria pohyb v troch "
-"smeroch:"
+msgid "Your BBC micro:bit comes with an accelerometer. It measures movement along three axes:"
+msgstr "Tvoj BBC micro:bit obsahuje akcelerometer, ktorý meria pohyb v troch smeroch:"
 
 #: ../../tutorials/movement.rst:7
 msgid "X - tilting from left to right."
@@ -43,136 +38,58 @@ msgid "Z - moving up and down."
 msgstr "Z - pohyb hore a dole."
 
 #: ../../tutorials/movement.rst:11
-msgid ""
-"There is a method for each axis that returns a positive or negative "
-"number indicating a measurement in milli-g's. When the reading is 0 you "
-"are \"level\" along that particular axis."
-msgstr ""
-"Pre každú os (smer) existuje metóda, ktorá vracia kladné alebo záporné "
-"číslo, predstavujúce počet mili-g. Ak je čítanie 0, zariadenie máš "
-"zarovnané pozdĺž konkrétnej osi."
+msgid "There is a method for each axis that returns a positive or negative number indicating a measurement in milli-g's. When the reading is 0 you are \"level\" along that particular axis."
+msgstr "Pre každú os (smer) existuje metóda, ktorá vracia kladné alebo záporné číslo, predstavujúce počet mili-g. Ak je čítanie 0, zariadenie máš zarovnané pozdĺž konkrétnej osi."
 
 #: ../../tutorials/movement.rst:15
-msgid ""
-"For example, here's a very simple spirit-level that uses ``get_x`` to "
-"measure how level the device is along the X axis::"
-msgstr ""
-"Napríklad, takto si vyrobíš jednoduchú libelu, ktorá využíva ``get_x`` na "
-"určenie, ako je naklonené zariadenie pozdĺž osi X::"
+msgid "For example, here's a very simple spirit-level that uses ``get_x`` to measure how level the device is along the X axis::"
+msgstr "Napríklad, takto si vyrobíš jednoduchú libelu, ktorá využíva ``get_x`` na určenie, ako je naklonené zariadenie pozdĺž osi X::"
 
 #: ../../tutorials/movement.rst:29
-msgid ""
-"If you hold the device flat it should display ``-``; however, rotate it "
-"left or right and it'll show ``L`` and ``R`` respectively."
-msgstr ""
-"Ak držíš zariadenie naplocho, alo by zobrazovať ``-``; no, ak ho potočíš "
-"doprava (right) alebo doľava (left), ukáže R alebo L."
+msgid "If you hold the device flat it should display ``-``; however, rotate it left or right and it'll show ``L`` and ``R`` respectively."
+msgstr "Ak držíš zariadenie naplocho, alo by zobrazovať ``-``; no, ak ho potočíš doprava (right) alebo doľava (left), ukáže R alebo L."
 
 #: ../../tutorials/movement.rst:32
-msgid ""
-"We want the device to constantly react to change, so we use an infinite "
-"``while`` loop. The first thing to happen *within the body of the loop* "
-"is a measurement along the X axis which is called ``reading``. Because "
-"the accelerometer is *so* sensitive I've made level +/-20 in range. It's "
-"why the ``if`` and ``elif`` conditionals check for ``> 20`` and ``< "
-"-20``. The ``else`` statement means that if the ``reading`` is between "
-"-20 and 20 then we consider it level. For each of these conditions we use"
-" the display to show the appropriate character."
-msgstr ""
-"Keďže chceme, aby zariadenie stále reagovalo na naše zmeny, použijeme "
-"nekonečný ``while`` cyklus. Prvá vec, čo sa udeje vo *vnútri tela cyklu*, "
-"je meranie na osi X, ktorému tiež hovoríme ``čítanie``. Keďže akcelerometer "
-"je veľmi citlivý, upravil som program tak, aby rovina bola v rozsahu +/-20. "
-"Preto podmienky ``if`` a ``elif`` kontrolujú ``> 20`` a ``< -20``. Výraz "
-"``else`` znamená, že ak je ``čítanie`` medzi -20 a 20, potom ho poukladáme "
-"za vodorovné. Pre každú z týchto podmienok používame displej na zobrazenie "
-"vhodného písmena/znaku."
+msgid "We want the device to constantly react to change, so we use an infinite ``while`` loop. The first thing to happen *within the body of the loop* is a measurement along the X axis which is called ``reading``. Because the accelerometer is *so* sensitive I've made level +/-20 in range. It's why the ``if`` and ``elif`` conditionals check for ``> 20`` and ``< -20``. The ``else`` statement means that if the ``reading`` is between -20 and 20 then we consider it level. For each of these conditions we use the display to show the appropriate character."
+msgstr "Keďže chceme, aby zariadenie stále reagovalo na naše zmeny, použijeme nekonečný ``while`` cyklus. Prvá vec, čo sa udeje vo *vnútri tela cyklu*, je meranie na osi X, ktorému tiež hovoríme ``čítanie``. Keďže akcelerometer je veľmi citlivý, upravil som program tak, aby rovina bola v rozsahu +/-20. Preto podmienky ``if`` a ``elif`` kontrolujú ``> 20`` a ``< -20``. Výraz ``else`` znamená, že ak je ``čítanie`` medzi -20 a 20, potom ho poukladáme za vodorovné. Pre každú z týchto podmienok používame displej na zobrazenie vhodného písmena/znaku."
 
 #: ../../tutorials/movement.rst:41
-msgid ""
-"There is also a ``get_y`` method for the Y axis and a ``get_z`` method "
-"for the Z axis."
-msgstr ""
-"Okrem toho ešte existujú aj metódy ``get_y`` pre os Y a ``get_z`` pre os Z."
+msgid "There is also a ``get_y`` method for the Y axis and a ``get_z`` method for the Z axis."
+msgstr "Okrem toho ešte existujú aj metódy ``get_y`` pre os Y a ``get_z`` pre os Z."
 
 #: ../../tutorials/movement.rst:44
-msgid ""
-"If you've ever wondered how a mobile phone knows which up to show the "
-"images on its screen, it's because it uses an accelerometer in exactly "
-"the same way as the program above. Game controllers also contain "
-"accelerometers to help you steer and move around in games."
-msgstr ""
-"Ak si niekedy rozmýšľal(a), ako tvoj mobil vie, ako má otočiť obrázky na "
-"obrazovke, tak už vieš, že to robí akcelerometer rovnakým spôsobom, ako sme "
-"si práve ukázali. Rôzne herné konzoly tiež obsahujú akcelerometre, ktoré "
-"umožňujú ovládanie alebo pohyb v hrách."
+msgid "If you've ever wondered how a mobile phone knows which up to show the images on its screen, it's because it uses an accelerometer in exactly the same way as the program above. Game controllers also contain accelerometers to help you steer and move around in games."
+msgstr "Ak si niekedy rozmýšľal(a), ako tvoj mobil vie, ako má otočiť obrázky na obrazovke, tak už vieš, že to robí akcelerometer rovnakým spôsobom, ako sme si práve ukázali. Rôzne herné konzoly tiež obsahujú akcelerometre, ktoré umožňujú ovládanie alebo pohyb v hrách."
 
 #: ../../tutorials/movement.rst:50
 msgid "Musical Mayhem"
 msgstr "Hudobné šialenstvo"
 
 #: ../../tutorials/movement.rst:52
-msgid ""
-"One of the most wonderful aspects of MicroPython on the BBC micro:bit is "
-"how it lets you easily link different capabilities of the device "
-"together. For example, let's turn it into a musical instrument (of "
-"sorts)."
-msgstr ""
-"Jedna z najlepších vlastností MicroPythonu na BBC micro:bite je, ako ľahko "
-"môžeš pospájať rôzne funkcie zariadenia dokopy. Premeňme ho, napríklad, "
-"na hudobný nástroj (alebo čosi také)."
+msgid "One of the most wonderful aspects of MicroPython on the BBC micro:bit is how it lets you easily link different capabilities of the device together. For example, let's turn it into a musical instrument (of sorts)."
+msgstr "Jedna z najlepších vlastností MicroPythonu na BBC micro:bite je, ako ľahko môžeš pospájať rôzne funkcie zariadenia dokopy. Premeňme ho, napríklad, na hudobný nástroj (alebo čosi také)."
 
 #: ../../tutorials/movement.rst:56
-msgid ""
-"Connect a speaker as you did in the music tutorial. Use crocodile clips "
-"to attach pin 0 and GND to the positive and negative inputs on the "
-"speaker - it doesn't matter which way round they are connected to the "
-"speaker."
-msgstr ""
-"Pripoj reproduktor rovnako ako v hudobnom návode. Pomocou krokodíliek "
-"prepoj pin 0 a GND s kladným a záporným vstupom na reproduktore - nezáleží "
-"na tom, ktorý je napojený na ktorý."
+msgid "Connect a speaker as you did in the music tutorial. Use crocodile clips to attach pin 0 and GND to the positive and negative inputs on the speaker - it doesn't matter which way round they are connected to the speaker."
+msgstr "Pripoj reproduktor rovnako ako v hudobnom návode. Pomocou krokodíliek prepoj pin 0 a GND s kladným a záporným vstupom na reproduktore - nezáleží na tom, ktorý je napojený na ktorý."
 
 #: ../../tutorials/movement.rst:62
-msgid ""
-"What happens if we take the readings from the accelerometer and play them"
-" as pitches? Let's find out::"
-msgstr ""
-"Čo sa stane, ak prečítame hodnotu z akcelerometra a zahráme ju ako farbu "
-"tónu? Poďme to zistiť::"
+msgid "What happens if we take the readings from the accelerometer and play them as pitches? Let's find out::"
+msgstr "Čo sa stane, ak prečítame hodnotu z akcelerometra a zahráme ju ako farbu tónu? Poďme to zistiť::"
 
 #: ../../tutorials/movement.rst:71
-msgid ""
-"The key line is at the end and remarkably simple. We *nest* the reading "
-"from the Y axis as the frequency to feed into the ``music.pitch`` method."
-" We only let it play for 10 milliseconds because we want the tone to "
-"change quickly as the device is tipped. Because the device is in an "
-"infinite ``while`` loop it is constantly reacting to changes in the Y "
-"axis measurement."
-msgstr ""
-"Kľúčový riadok je na konci a je pozoruhodne jednoduchý. *Vnorili* sme "
-"čítanie z osi Y ako frekvenciu, ktorú použijeme v metóde ``music.pitch``. "
-"Zahráme ju len 10 milisekúnd, lebo chceme, aby sa tón rýchlo menil, keď sa "
-"micro:bit hýbe. Keďže zariadenie je v nekonečnom ``while`` cykle, neustále "
-"reaguje na zmeny v meraniach na osi Y."
+msgid "The key line is at the end and remarkably simple. We *nest* the reading from the Y axis as the frequency to feed into the ``music.pitch`` method. We only let it play for 10 milliseconds because we want the tone to change quickly as the device is tipped. Because the device is in an infinite ``while`` loop it is constantly reacting to changes in the Y axis measurement."
+msgstr "Kľúčový riadok je na konci a je pozoruhodne jednoduchý. *Vnorili* sme čítanie z osi Y ako frekvenciu, ktorú použijeme v metóde ``music.pitch``. Zahráme ju len 10 milisekúnd, lebo chceme, aby sa tón rýchlo menil, keď sa micro:bit hýbe. Keďže zariadenie je v nekonečnom ``while`` cykle, neustále reaguje na zmeny v meraniach na osi Y."
 
 #: ../../tutorials/movement.rst:77
 msgid "That's it!"
 msgstr "To je ono!"
 
 #: ../../tutorials/movement.rst:79
-msgid ""
-"Tip the device forwards and backwards. If the reading along the Y axis is"
-" positive it'll change the pitch of the tone played by the micro:bit."
-msgstr ""
-"Pohýb zariadením dopredu a dozadu. Ak je čítanie na osi Y kladné, zmení sa "
-"farba tónu, ktorý hrá micro:bit."
+msgid "Tip the device forwards and backwards. If the reading along the Y axis is positive it'll change the pitch of the tone played by the micro:bit."
+msgstr "Pohýb zariadením dopredu a dozadu. Ak je čítanie na osi Y kladné, zmení sa farba tónu, ktorý hrá micro:bit."
 
 #: ../../tutorials/movement.rst:82
-msgid ""
-"Imagine a whole symphony orchestra of these devices. Can you play a tune?"
-" How would you improve the program to make the micro:bit sound more "
-"musical?"
-msgstr ""
-"Predstav si symfonický orchester takýchto zariadení. Dokážeš zahrať nejakú "
-"melódiu? Ako by si zlepšil(a) program, aby znel trochu 'hudobnejšie'?"
+msgid "Imagine a whole symphony orchestra of these devices. Can you play a tune? How would you improve the program to make the micro:bit sound more musical?"
+msgstr "Predstav si symfonický orchester takýchto zariadení. Dokážeš zahrať nejakú melódiu? Ako by si zlepšil(a) program, aby znel trochu 'hudobnejšie'?"
+
