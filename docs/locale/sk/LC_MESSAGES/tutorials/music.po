@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: bbc-microbit-micropython\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-25 09:53+0200\n"
-"PO-Revision-Date: 2018-05-04 08:51-0400\n"
+"PO-Revision-Date: 2018-05-04 09:01-0400\n"
 "Last-Translator: RicCo386 <richard.kellner@pycon.sk>\n"
 "Language-Team: Slovak\n"
 "MIME-Version: 1.0\n"
@@ -160,7 +160,7 @@ msgstr "MicroPython vie takéto melódie zjednodušiť. Zapamätá si oktávu a 
 
 #: ../../tutorials/music.rst:97
 msgid "Notice how the octave and duration values only change when they have to. It's a lot less typing and simpler to read."
-msgstr "Všimni si, ako sa oktáva a trvanie menia iba vtedy, keď musia. Musíme tak omnoho mneje písať a je to navyše ľahšie aj na čítanie."
+msgstr "Všimni si, ako sa oktáva a trvanie menia iba vtedy, keď musia. Musíme tak omnoho menej písať a je to navyše ľahšie aj na čítanie."
 
 #: ../../tutorials/music.rst:101
 msgid "Sound Effects"
