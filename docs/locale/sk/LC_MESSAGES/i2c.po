@@ -1,41 +1,32 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2015-2018, Multiple authors
-# This file is distributed under the same license as the BBC micro:bit
-# MicroPython package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
-#
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: BBC micro:bit MicroPython 0.5.0\n"
+"Project-Id-Version: bbc-microbit-micropython\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-25 09:53+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2018-05-04 07:33-0400\n"
+"Last-Translator: RicCo386 <richard.kellner@pycon.sk>\n"
+"Language-Team: Slovak\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.5.3\n"
+"Plural-Forms: nplurals=4; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 3;\n"
+"X-Generator: crowdin.com\n"
+"X-Crowdin-Project: bbc-microbit-micropython\n"
+"X-Crowdin-Language: sk\n"
+"X-Crowdin-File: /master/docs/locale/sk/LC_MESSAGES/i2c.po\n"
+"Language: sk_SK\n"
 
 #: ../../i2c.rst:2
 msgid "I²C"
 msgstr ""
 
 #: ../../i2c.rst:6
-msgid ""
-"The ``i2c`` module lets you communicate with devices connected to your "
-"board using the I²C bus protocol. There can be multiple slave devices "
-"connected at the same time, and each one has its own unique address, that"
-" is either fixed for the device or configured on it. Your board acts as "
-"the I²C master."
+msgid "The ``i2c`` module lets you communicate with devices connected to your board using the I²C bus protocol. There can be multiple slave devices connected at the same time, and each one has its own unique address, that is either fixed for the device or configured on it. Your board acts as the I²C master."
 msgstr ""
 
 #: ../../i2c.rst:11
-msgid ""
-"We use 7-bit addressing for devices because of the reasons stated `here "
-"<http://www.totalphase.com/support/articles/200349176-7-bit-8-bit-and-10"
-"-bit-I2C-Slave-Addressing>`_."
+msgid "We use 7-bit addressing for devices because of the reasons stated `here <http://www.totalphase.com/support/articles/200349176-7-bit-8-bit-and-10-bit-I2C-Slave-Addressing>`_."
 msgstr ""
 
 #: ../../i2c.rst:14
@@ -43,11 +34,7 @@ msgid "This may be different to other micro:bit related solutions."
 msgstr ""
 
 #: ../../i2c.rst:16
-msgid ""
-"How exactly you should communicate with the devices, that is, what bytes "
-"to send and how to interpret the responses, depends on the device in "
-"question and should be described separately in that device's "
-"documentation."
+msgid "How exactly you should communicate with the devices, that is, what bytes to send and how to interpret the responses, depends on the device in question and should be described separately in that device's documentation."
 msgstr ""
 
 #: ../../i2c.rst:22
@@ -55,33 +42,23 @@ msgid "Functions"
 msgstr ""
 
 #: ../../i2c.rst:26
-msgid ""
-"Re-initialize peripheral with the specified clock frequency ``freq`` on "
-"the specified ``sda`` and ``scl`` pins."
+msgid "Re-initialize peripheral with the specified clock frequency ``freq`` on the specified ``sda`` and ``scl`` pins."
 msgstr ""
 
 #: ../../i2c.rst:31
-msgid ""
-"Changing the I²C pins from defaults will make the accelerometer and "
-"compass stop working, as they are connected internally to those pins."
+msgid "Changing the I²C pins from defaults will make the accelerometer and compass stop working, as they are connected internally to those pins."
 msgstr ""
 
 #: ../../i2c.rst:37
-msgid ""
-"Scan the bus for devices.  Returns a list of 7-bit addresses "
-"corresponding to those devices that responded to the scan."
+msgid "Scan the bus for devices.  Returns a list of 7-bit addresses corresponding to those devices that responded to the scan."
 msgstr ""
 
 #: ../../i2c.rst:43
-msgid ""
-"Read ``n`` bytes from the device with 7-bit address ``addr``. If "
-"``repeat`` is ``True``, no stop bit will be sent."
+msgid "Read ``n`` bytes from the device with 7-bit address ``addr``. If ``repeat`` is ``True``, no stop bit will be sent."
 msgstr ""
 
 #: ../../i2c.rst:49
-msgid ""
-"Write bytes from ``buf`` to the device with 7-bit address ``addr``. If "
-"``repeat`` is ``True``, no stop bit will be sent."
+msgid "Write bytes from ``buf`` to the device with 7-bit address ``addr``. If ``repeat`` is ``True``, no stop bit will be sent."
 msgstr ""
 
 #: ../../i2c.rst:54
@@ -89,17 +66,10 @@ msgid "Connecting"
 msgstr ""
 
 #: ../../i2c.rst:56
-msgid ""
-"You should connect the device's ``SCL`` pin to micro:bit pin 19, and the "
-"device's ``SDA`` pin to micro:bit pin 20. You also must connect the "
-"device's ground to the micro:bit ground (pin ``GND``). You may need to "
-"power the device using an external power supply or the micro:bit."
+msgid "You should connect the device's ``SCL`` pin to micro:bit pin 19, and the device's ``SDA`` pin to micro:bit pin 20. You also must connect the device's ground to the micro:bit ground (pin ``GND``). You may need to power the device using an external power supply or the micro:bit."
 msgstr ""
 
 #: ../../i2c.rst:61
-msgid ""
-"There are internal pull-up resistors on the I²C lines of the board, but "
-"with particularly long wires or large number of devices you may need to "
-"add additional pull-up resistors, to ensure noise-free communication."
+msgid "There are internal pull-up resistors on the I²C lines of the board, but with particularly long wires or large number of devices you may need to add additional pull-up resistors, to ensure noise-free communication."
 msgstr ""
 
