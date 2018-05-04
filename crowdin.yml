@@ -1,3 +1,7 @@
 files:
   - source: /docs/locale/sk/LC_MESSAGES/*.po
     translation: /docs/locale/%two_letters_code%/LC_MESSAGES/%original_file_name%
+  - source: /docs/locale/sk/LC_MESSAGES/tutorials/*.po
+    translation: /docs/locale/%two_letters_code%/LC_MESSAGES/tutorials/%original_file_name%
+  - source: /docs/locale/sk/LC_MESSAGES/devguide/*.po
+    translation: /docs/locale/%two_letters_code%/LC_MESSAGES/devguide/%original_file_name%
