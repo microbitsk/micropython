@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: bbc-microbit-micropython\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-25 09:53+0200\n"
-"PO-Revision-Date: 2018-05-04 09:01-0400\n"
+"PO-Revision-Date: 2018-05-04 09:31-0400\n"
 "Last-Translator: RicCo386 <richard.kellner@pycon.sk>\n"
 "Language-Team: Slovak\n"
 "MIME-Version: 1.0\n"
@@ -48,13 +48,13 @@ msgstr "Skúmaj, experimentuj a neboj sa skúšať nové veci ~ pretože toto s�
 
 #: ../../tutorials/next.rst:29
 msgid "Such skill in Python is valuable: it's one of the world's most popular professional programming languages."
-msgstr ""
+msgstr "Takáto schopnosť je v Python veľmi cenná: je to jeden z najpopulárnejších profesionálnych programovacích jazykov na svete."
 
 #: ../../tutorials/next.rst:32
 msgid "Amaze us with your code! Make things that delight us! Most of all, have fun!"
-msgstr ""
+msgstr "Ohrom nás s svojím kódom! Rob veci, ktoré nás potešia! Ale hlavne, bav sa!"
 
 #: ../../tutorials/next.rst:34
 msgid "Happy hacking!"
-msgstr ""
+msgstr "Veľa šťastia pri hackovaní!"
 
