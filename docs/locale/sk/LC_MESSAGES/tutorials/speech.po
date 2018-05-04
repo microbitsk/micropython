@@ -162,9 +162,11 @@ msgstr ""
 
 #: ../../tutorials/speech.rst:64
 msgid ""
+"``throat`` - how relaxed or tense is the tone of voice (0 = falling "
+"apart, 255 = totally chilled)"
+msgstr ""
 "``throat`` - ako uvoľnený alebo napätý má byť tón hlasu (0 = úplne na "
 "prášky, 255 = absolútne v pohode)"
-msgstr ""
 
 #: ../../tutorials/speech.rst:66
 msgid ""
