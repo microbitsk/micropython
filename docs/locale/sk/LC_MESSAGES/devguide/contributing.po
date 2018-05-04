@@ -1,22 +1,21 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2015-2018, Multiple authors
-# This file is distributed under the same license as the BBC micro:bit
-# MicroPython package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
-#
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: BBC micro:bit MicroPython 0.5.0\n"
+"Project-Id-Version: bbc-microbit-micropython\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-25 09:53+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2018-05-04 07:48-0400\n"
+"Last-Translator: RicCo386 <richard.kellner@pycon.sk>\n"
+"Language-Team: Slovak\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.5.3\n"
+"Plural-Forms: nplurals=4; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 3;\n"
+"X-Generator: crowdin.com\n"
+"X-Crowdin-Project: bbc-microbit-micropython\n"
+"X-Crowdin-Language: sk\n"
+"X-Crowdin-File: /master/docs/locale/sk/LC_MESSAGES/devguide/contributing.po\n"
+"Language: sk_SK\n"
 
 #: ../../devguide/contributing.rst:2
 msgid "Contributing"
@@ -27,28 +26,19 @@ msgid "Hey! Many thanks for wanting to improve MicroPython on the micro:bit."
 msgstr ""
 
 #: ../../devguide/contributing.rst:6
-msgid ""
-"Contributions are welcome without prejudice from *anyone* irrespective of"
-" age, gender, religion, race or sexuality. Good quality code and "
-"engagement with respect, humour and intelligence wins every time."
+msgid "Contributions are welcome without prejudice from *anyone* irrespective of age, gender, religion, race or sexuality. Good quality code and engagement with respect, humour and intelligence wins every time."
 msgstr ""
 
 #: ../../devguide/contributing.rst:10
-msgid ""
-"If you're from a background which isn't well-represented in most geeky "
-"groups, get involved - *we want to help you make a difference*."
+msgid "If you're from a background which isn't well-represented in most geeky groups, get involved - *we want to help you make a difference*."
 msgstr ""
 
 #: ../../devguide/contributing.rst:11
-msgid ""
-"If you're from a background which *is* well-represented in most geeky "
-"groups, get involved - *we want your help making a difference*."
+msgid "If you're from a background which *is* well-represented in most geeky groups, get involved - *we want your help making a difference*."
 msgstr ""
 
 #: ../../devguide/contributing.rst:12
-msgid ""
-"If you're worried about not being technical enough, get involved - *your "
-"fresh perspective will be invaluable*."
+msgid "If you're worried about not being technical enough, get involved - *your fresh perspective will be invaluable*."
 msgstr ""
 
 #: ../../devguide/contributing.rst:13
@@ -68,16 +58,11 @@ msgid "This is a new community, so, get involved."
 msgstr ""
 
 #: ../../devguide/contributing.rst:18
-msgid ""
-"We expect contributors to follow the Python Software Foundation's Code of"
-" Conduct: https://www.python.org/psf/codeofconduct/"
+msgid "We expect contributors to follow the Python Software Foundation's Code of Conduct: https://www.python.org/psf/codeofconduct/"
 msgstr ""
 
 #: ../../devguide/contributing.rst:21
-msgid ""
-"Feedback may be given for contributions and, where necessary, changes "
-"will be politely requested and discussed with the originating author. "
-"Respectful yet robust argument is most welcome."
+msgid "Feedback may be given for contributions and, where necessary, changes will be politely requested and discussed with the originating author. Respectful yet robust argument is most welcome."
 msgstr ""
 
 #: ../../devguide/contributing.rst:26
@@ -89,16 +74,11 @@ msgid "Your code should be commented in *plain English* (British spelling)."
 msgstr ""
 
 #: ../../devguide/contributing.rst:29
-msgid ""
-"If your contribution is for a major block of work and you've not done so "
-"already, add yourself to the AUTHORS file following the convention found "
-"therein."
+msgid "If your contribution is for a major block of work and you've not done so already, add yourself to the AUTHORS file following the convention found therein."
 msgstr ""
 
 #: ../../devguide/contributing.rst:32
-msgid ""
-"If in doubt, ask a question. The only stupid question is the one that's "
-"never asked."
+msgid "If in doubt, ask a question. The only stupid question is the one that's never asked."
 msgstr ""
 
 #: ../../devguide/contributing.rst:33
