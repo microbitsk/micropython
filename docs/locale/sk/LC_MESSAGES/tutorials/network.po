@@ -1,55 +1,38 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2015-2018, Multiple authors
-# This file is distributed under the same license as the BBC micro:bit
-# MicroPython package.
-# FIRST AUTHOR <juraj.bezrucka@gmail.com>, 2018.
-#
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: BBC micro:bit MicroPython 0.5.0\n"
+"Project-Id-Version: bbc-microbit-micropython\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-25 09:53+0200\n"
-"PO-Revision-Date: 2018-04-11 23:59+0200\n"
-"Last-Translator: Juraj M Bezrucka <mimmon@gmail.com>\n"
-"Language-Team: SK \n""MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"PO-Revision-Date: 2018-05-04 07:47-0400\n"
+"Last-Translator: RicCo386 <richard.kellner@pycon.sk>\n"
+"Language-Team: Slovak\n"
+"""\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.5.3\n"
+"Plural-Forms: nplurals=4; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 3;\n"
+"X-Generator: crowdin.com\n"
+"X-Crowdin-Project: bbc-microbit-micropython\n"
+"X-Crowdin-Language: sk\n"
+"X-Crowdin-File: /master/docs/locale/sk/LC_MESSAGES/tutorials/network.po\n"
+"Language: sk_SK\n"
 
 #: ../../tutorials/network.rst:302
-msgid ""
-"The image of Queen Elizabeth II is licensed as per the details here: "
-"https://commons.wikimedia.org/wiki/File:Queen_Elizabeth_II_March_2015.jpg"
-msgstr ""
-"Obrázok Kráľovnej Alžbety II je licencovaný s podmienkami uvedenými tu: "
-"https://commons.wikimedia.org/wiki/File:Queen_Elizabeth_II_March_2015.jpg"
+msgid "The image of Queen Elizabeth II is licensed as per the details here: https://commons.wikimedia.org/wiki/File:Queen_Elizabeth_II_March_2015.jpg"
+msgstr "Obrázok Kráľovnej Alžbety II je licencovaný s podmienkami uvedenými tu: https://commons.wikimedia.org/wiki/File:Queen_Elizabeth_II_March_2015.jpg"
 
 #: ../../tutorials/network.rst:2
 msgid "Network"
 msgstr "Sieť"
 
 #: ../../tutorials/network.rst:4
-msgid ""
-"It is possible to connect devices together to send and receive messages "
-"to and from each other. This is called a network. A network of "
-"interconnected networks is called an internet. The Internet is an "
-"internet of all the internets."
-msgstr ""
-"Zariadenia vieme spájať a posielať a prijímať medzi nimi správy. Toto sa "
-"volá sieť. Sieť prepojených sietí sa nazýva internet. Internet s veľkým I "
-"je internetom všetkých internetov."
+msgid "It is possible to connect devices together to send and receive messages to and from each other. This is called a network. A network of interconnected networks is called an internet. The Internet is an internet of all the internets."
+msgstr "Zariadenia vieme spájať a posielať a prijímať medzi nimi správy. Toto sa volá sieť. Sieť prepojených sietí sa nazýva internet. Internet s veľkým I je internetom všetkých internetov."
 
 #: ../../tutorials/network.rst:9
-msgid ""
-"Networking is hard and this is reflected in the program described below. "
-"However, the beautiful thing about this project is it contains all the "
-"common aspects of network programming you need to know about. It's also "
-"remarkably simple and fun."
-msgstr ""
-"Sieťovanie je ťažké a to sa prejavuje aj na programe uvedenom nižšie. "
-"Ale krásne na tomto projekte je to, že obsahuje všetky bežné aspekty "
-"sieťového programovania. Je tiež až pozoruhodne jednoduchý a zábavný."
+msgid "Networking is hard and this is reflected in the program described below. However, the beautiful thing about this project is it contains all the common aspects of network programming you need to know about. It's also remarkably simple and fun."
+msgstr "Sieťovanie je ťažké a to sa prejavuje aj na programe uvedenom nižšie. Ale krásne na tomto projekte je to, že obsahuje všetky bežné aspekty sieťového programovania. Je tiež až pozoruhodne jednoduchý a zábavný."
 
 #: ../../tutorials/network.rst:14
 msgid "But first, let's set the scene..."
@@ -60,183 +43,79 @@ msgid "Connection"
 msgstr "Pripojenie"
 
 #: ../../tutorials/network.rst:19
-msgid ""
-"Imagine a network as a series of layers. At the very bottom is the most "
-"fundamental aspect of communication: there needs to be some sort of way "
-"for a signal to get from one device to the other. Sometimes this is done "
-"via a radio connection, but in this example we're simply going to use two"
-" wires."
-msgstr ""
-"Predstav si sieť ako sériu vrstiev. Na úplnom spodku je najzákladnejší "
-"aspekt komunikácie: tu sa nejako musí dostať signál z jedného zariadenia "
-"na druhé. Toto sa niekedy robí pomocou rádiového spojenia, ale v tomto "
-"prípade to urobíme jednoducho pomocou káblov."
+msgid "Imagine a network as a series of layers. At the very bottom is the most fundamental aspect of communication: there needs to be some sort of way for a signal to get from one device to the other. Sometimes this is done via a radio connection, but in this example we're simply going to use two wires."
+msgstr "Predstav si sieť ako sériu vrstiev. Na úplnom spodku je najzákladnejší aspekt komunikácie: tu sa nejako musí dostať signál z jedného zariadenia na druhé. Toto sa niekedy robí pomocou rádiového spojenia, ale v tomto prípade to urobíme jednoducho pomocou káblov."
 
 #: ../../tutorials/network.rst:26
-msgid ""
-"It is upon this foundation that we can build all the other layers in the "
-"*network stack*."
-msgstr ""
-"Na tomto základe vieme vystavať všetky ďalšie *vrstvy siete*."
+msgid "It is upon this foundation that we can build all the other layers in the *network stack*."
+msgstr "Na tomto základe vieme vystavať všetky ďalšie *vrstvy siete*."
 
 #: ../../tutorials/network.rst:29
-msgid ""
-"As the diagram shows, blue and red micro:bits are connected via crocodile"
-" leads. Both use pin 1 for output and pin 2 for input. The output from "
-"one device is connected to the input on the other. It's a bit like "
-"knowing which way round to hold a telephone handset - one end has a "
-"microphone (the input) and the other a speaker (the output). The "
-"recording of your voice via your microphone is played out of the other "
-"person's speaker. If you hold the phone the wrong way up, you'll get "
-"strange results!"
-msgstr ""
-"Ako ukazuje diagram, modré a červené micro:bits sú prepojené pomocou "
-"krokodíliek. Obidva používajú pin 1 na výstup a pin 2 na vstup. Výstup z "
-"jedného zariadenie je spojený so vstupom na druhom. Je to trochu ako "
-"vedieť správne otočiť telefón - jeden koniec má mikrofón (vstup) a "
-"druhý má reproduktor (výstup). Nahrávka tvojho hlasu cez mikrofón sa "
-"púšťa do reproduktoru druhého telefónu. Ak držíš telefón naopak, dostaneš "
-"čudné výsledky!"
+msgid "As the diagram shows, blue and red micro:bits are connected via crocodile leads. Both use pin 1 for output and pin 2 for input. The output from one device is connected to the input on the other. It's a bit like knowing which way round to hold a telephone handset - one end has a microphone (the input) and the other a speaker (the output). The recording of your voice via your microphone is played out of the other person's speaker. If you hold the phone the wrong way up, you'll get strange results!"
+msgstr "Ako ukazuje diagram, modré a červené micro:bits sú prepojené pomocou krokodíliek. Obidva používajú pin 1 na výstup a pin 2 na vstup. Výstup z jedného zariadenie je spojený so vstupom na druhom. Je to trochu ako vedieť správne otočiť telefón - jeden koniec má mikrofón (vstup) a druhý má reproduktor (výstup). Nahrávka tvojho hlasu cez mikrofón sa púšťa do reproduktoru druhého telefónu. Ak držíš telefón naopak, dostaneš čudné výsledky!"
 
 #: ../../tutorials/network.rst:37
-msgid ""
-"It's exactly the same in this instance: you must connect the wires "
-"properly!"
-msgstr ""
-"V našom prípade je to úplne rovnaké: káble musíš pripojiť správne!"
+msgid "It's exactly the same in this instance: you must connect the wires properly!"
+msgstr "V našom prípade je to úplne rovnaké: káble musíš pripojiť správne!"
 
 #: ../../tutorials/network.rst:40
 msgid "Signal"
 msgstr "Signál"
 
 #: ../../tutorials/network.rst:42
-msgid ""
-"The next layer in the *network stack* is the signal. Often this will "
-"depend upon the characteristics of the connection. In our example it's "
-"simply digital on and off signals sent down the wires via the IO pins."
-msgstr ""
-"Ďalšou vrstvou vo *vrstvách siete* je signál. Ten bude často závisieť od "
-"charakteristík pripojenia. V našom príklade sú to jednoduché digitálne "
-"signály vypnuté a zapnuté, ktoré sa posielajú káblami cez IO piny."
-
+msgid "The next layer in the *network stack* is the signal. Often this will depend upon the characteristics of the connection. In our example it's simply digital on and off signals sent down the wires via the IO pins."
+msgstr "Ďalšou vrstvou vo *vrstvách siete* je signál. Ten bude často závisieť od charakteristík pripojenia. V našom príklade sú to jednoduché digitálne signály vypnuté a zapnuté, ktoré sa posielajú káblami cez IO piny."
 
 #: ../../tutorials/network.rst:46
 msgid "If you remember, it's possible to use the IO pins like this::"
 msgstr "Ak si spomínaš, IO piny vieme použiť takto::"
 
 #: ../../tutorials/network.rst:52
-msgid ""
-"The next step involves describing how to use and handle a signal. For "
-"that we need a..."
-msgstr ""
-"Ďalší krok obsahuje popis toho, ako použiť a spracovať signál. Na to budeme "
-"potrebovať..."
+msgid "The next step involves describing how to use and handle a signal. For that we need a..."
+msgstr "Ďalší krok obsahuje popis toho, ako použiť a spracovať signál. Na to budeme potrebovať..."
 
 #: ../../tutorials/network.rst:56
 msgid "Protocol"
 msgstr "Protokol"
 
 #: ../../tutorials/network.rst:58
-msgid ""
-"If you ever meet the Queen there are expectations about how you ought to "
-"behave. For example, when she arrives you may bow or curtsey, if she "
-"offers her hand politely shake it, refer to her as \"your majesty\" and "
-"thereafter as \"ma'am\" and so on. This set of rules is called the royal "
-"protocol. A protocol explains how to behave given a specific situation "
-"(such as meeting the Queen). A protocol is pre-defined to ensure everyone"
-" understands what's going on before a given situation arises."
-msgstr ""
-"Ak sa niekedy pôjdeš stretnúť s kráľovnou, budú od teba očakávať nejaké "
-"správanie. Napríklad, keď príde, mal(a) by si sa ukloniť, ak ti podá ruku, "
-"máš ňou slušne potriasť, pri prvom oslovení jej musíš povedať \"vaša "
-"výsosť\" a potom v ďalšom rozhovore \"madam\" a tak ďalej. Tento súbor "
-"pravidiel sa nazýva kráľovský protokol. Protokol vysvetľuje, ako sa správať "
-"v určitých situáciách (napríklad pri stretnutí s kráľovnou). Protokol je "
-"definovaný vopred, takže každý už pred stretnutím vie, čo sa bude diať "
-"ešte predtým, ako situácia vôbec nastane."
+msgid "If you ever meet the Queen there are expectations about how you ought to behave. For example, when she arrives you may bow or curtsey, if she offers her hand politely shake it, refer to her as \"your majesty\" and thereafter as \"ma'am\" and so on. This set of rules is called the royal protocol. A protocol explains how to behave given a specific situation (such as meeting the Queen). A protocol is pre-defined to ensure everyone understands what's going on before a given situation arises."
+msgstr "Ak sa niekedy pôjdeš stretnúť s kráľovnou, budú od teba očakávať nejaké správanie. Napríklad, keď príde, mal(a) by si sa ukloniť, ak ti podá ruku, máš ňou slušne potriasť, pri prvom oslovení jej musíš povedať \"vaša výsosť\" a potom v ďalšom rozhovore \"madam\" a tak ďalej. Tento súbor pravidiel sa nazýva kráľovský protokol. Protokol vysvetľuje, ako sa správať v určitých situáciách (napríklad pri stretnutí s kráľovnou). Protokol je definovaný vopred, takže každý už pred stretnutím vie, čo sa bude diať ešte predtým, ako situácia vôbec nastane."
 
 #: ../../tutorials/network.rst:68
-msgid ""
-"It is for this reason that we define and use protocols for communicating "
-"messages via a computer network. Computers need to agree before hand how "
-"to send and receive messages. Perhaps the best known protocol is the "
-"hypertext transfer protocol (HTTP) used by the world wide web."
-msgstr ""
-"Z toho istého dôvodu definujeme a používame protokoly na posielanie správ "
-"prostredníctvom počítačovej siete. Počítače sa najskôr musia dohodnúť, ako "
-"budú posielať a prijímať správy. Asi najznámejším protokolom je hyeprtextový "
-"prenosový protokol (HTTP), ktorý používa aj celosvetová sieť Internet."
+msgid "It is for this reason that we define and use protocols for communicating messages via a computer network. Computers need to agree before hand how to send and receive messages. Perhaps the best known protocol is the hypertext transfer protocol (HTTP) used by the world wide web."
+msgstr "Z toho istého dôvodu definujeme a používame protokoly na posielanie správ prostredníctvom počítačovej siete. Počítače sa najskôr musia dohodnúť, ako budú posielať a prijímať správy. Asi najznámejším protokolom je hyeprtextový prenosový protokol (HTTP), ktorý používa aj celosvetová sieť Internet."
 
 #: ../../tutorials/network.rst:73
-msgid ""
-"Another famous protocol for sending messages (that pre-dates computers) "
-"is Morse code. It defines how to send character-based messages via on/off"
-" signals of long or short durations. Often such signals are played as "
-"bleeps. Long durations are called dashes (``-``) whereas short durations "
-"are dots (``.``). By combining dashes and dots Morse defines a way to "
-"send characters. For example, here's how the standard Morse alphabet is "
-"defined::"
-msgstr ""
-"Ďalší slávny protoko na posielanie správ (ešte z obdobia pred počítačmi) "
-"je Morseov kód. Ten definuje ako posielať správy zložené zo znakov pomocou "
-"dlhších a kratších signálov. Tieto signály sa často zahrajú ako pípnutia. "
-"Tie dlhšie sa volajú pomlčky (``-``) a kratšie nazývame bodky (``.``). "
-"Kombináciou pomlčiek a bodiek Morse definoval spôsob ako posielať znaky. "
-"Tu je napríklad definícia štandardnej Morseovej abecedy::"
+msgid "Another famous protocol for sending messages (that pre-dates computers) is Morse code. It defines how to send character-based messages via on/off signals of long or short durations. Often such signals are played as bleeps. Long durations are called dashes (``-``) whereas short durations are dots (``.``). By combining dashes and dots Morse defines a way to send characters. For example, here's how the standard Morse alphabet is defined::"
+msgstr "Ďalší slávny protoko na posielanie správ (ešte z obdobia pred počítačmi) je Morseov kód. Ten definuje ako posielať správy zložené zo znakov pomocou dlhších a kratších signálov. Tieto signály sa často zahrajú ako pípnutia. Tie dlhšie sa volajú pomlčky (``-``) a kratšie nazývame bodky (``.``). Kombináciou pomlčiek a bodiek Morse definoval spôsob ako posielať znaky. Tu je napríklad definícia štandardnej Morseovej abecedy::"
 
 #: ../../tutorials/network.rst:90
-msgid ""
-"Given the chart above, to send the character \"H\" the signal is switched"
-" on four times for a short duration, indicating four dots (``....``). For"
-" the letter \"L\" the signal is also switched on four times, but the "
-"second signal has a longer duration (``.-..``)."
-msgstr ""
-"Podľa vyššie uvedenej tabuľky, na poslanie znaku \"H\" musíme signál "
-"štyrikrát zapnúť na krátky čas, čo predstavuje štyri bodky (``....``). "
-"Na písmeno \"L\" potrebujeme tiež štyri signály, ale druhý v poradí trvá "
-"dlhšie (``.-..``)."
+msgid "Given the chart above, to send the character \"H\" the signal is switched on four times for a short duration, indicating four dots (``....``). For the letter \"L\" the signal is also switched on four times, but the second signal has a longer duration (``.-..``)."
+msgstr "Podľa vyššie uvedenej tabuľky, na poslanie znaku \"H\" musíme signál štyrikrát zapnúť na krátky čas, čo predstavuje štyri bodky (``....``). Na písmeno \"L\" potrebujeme tiež štyri signály, ale druhý v poradí trvá dlhšie (``.-..``)."
 
 #: ../../tutorials/network.rst:95
-msgid ""
-"Obviously, the timing of the signal is important: we need to tell a dot "
-"from a dash. That's another point of a protocol, to agree such things so "
-"everyone's implementation of the protocol will work with everyone elses. "
-"In this instance we'll just say that:"
-msgstr ""
-"Samozrejme, aj načasovanie signálu je dôležité: musíme vedieť rodlíšiť "
-"bodku od pomlčky. To je ďalším bodom protokolu, dohodnúť také parametre, "
-"aby každý vedel ako správne implementovať protokol, aby fungoval s inými."
-"V tomto prípade povieme:"
+msgid "Obviously, the timing of the signal is important: we need to tell a dot from a dash. That's another point of a protocol, to agree such things so everyone's implementation of the protocol will work with everyone elses. In this instance we'll just say that:"
+msgstr "Samozrejme, aj načasovanie signálu je dôležité: musíme vedieť rodlíšiť bodku od pomlčky. To je ďalším bodom protokolu, dohodnúť také parametre, aby každý vedel ako správne implementovať protokol, aby fungoval s inými.V tomto prípade povieme:"
 
 #: ../../tutorials/network.rst:100
 msgid "A signal with a duration less than 250 milliseconds is a dot."
 msgstr "Signál kratší ako 250 milisekúnd je bodka."
 
 #: ../../tutorials/network.rst:101
-msgid ""
-"A signal with a duration from 250 milliseconds to less than 500 "
-"milliseconds is a dash."
-msgstr ""
-"Signál dlhší ako 250 milisekúnd a kratší ako 500 milisekúnd je pomlčka."
+msgid "A signal with a duration from 250 milliseconds to less than 500 milliseconds is a dash."
+msgstr "Signál dlhší ako 250 milisekúnd a kratší ako 500 milisekúnd je pomlčka."
 
 #: ../../tutorials/network.rst:102
 msgid "Any other duration of signal is ignored."
 msgstr "Všetky ostatné dĺžky ignorujeme."
 
 #: ../../tutorials/network.rst:103
-msgid ""
-"A pause / gap in the signal of greater than 500 milliseconds indicates "
-"the end of a character."
-msgstr ""
-"Prestávka / medzera medzi signálmi dlhšia ako 500 milisekúnd znamená koniec "
-"znaku."
+msgid "A pause / gap in the signal of greater than 500 milliseconds indicates the end of a character."
+msgstr "Prestávka / medzera medzi signálmi dlhšia ako 500 milisekúnd znamená koniec znaku."
 
 #: ../../tutorials/network.rst:105
-msgid ""
-"S takto zadefinovanými pravidlami, písmeno \"H\" je definované štyrmi "
-"\"zapnutými\" signálmi, ktoré netrvajú dlhšie ako 250 milisekúnd, po "
-"ktorých nasleduje prestávka dlhšia ako 500 milisekúnd (čo znamená koniec "
-"znaku)."
+msgid "S takto zadefinovanými pravidlami, písmeno \"H\" je definované štyrmi \"zapnutými\" signálmi, ktoré netrvajú dlhšie ako 250 milisekúnd, po ktorých nasleduje prestávka dlhšia ako 500 milisekúnd (čo znamená koniec znaku)."
 msgstr ""
 
 #: ../../tutorials/network.rst:110
@@ -244,22 +123,12 @@ msgid "Message"
 msgstr "Správa"
 
 #: ../../tutorials/network.rst:112
-msgid ""
-"We're finally at a stage where we can build a message - a message that "
-"actually means something to us humans. This is the top-most layer of our "
-"*network stack*."
-msgstr ""
-"Konečne sme sa dostali niekam, kde môžeme vytvoriť správu - správu, ktorá "
-"už bude niečo hovoriť aj nám, ľuďom. Toto je najvyššia vrstva z našich "
-"\"vrstiev siete\"."
+msgid "We're finally at a stage where we can build a message - a message that actually means something to us humans. This is the top-most layer of our *network stack*."
+msgstr "Konečne sme sa dostali niekam, kde môžeme vytvoriť správu - správu, ktorá už bude niečo hovoriť aj nám, ľuďom. Toto je najvyššia vrstva z našich \"vrstiev siete\"."
 
 #: ../../tutorials/network.rst:116
-msgid ""
-"Using the protocol defined above I can send the following sequence of "
-"signals down the physical wire to the other micro:bit::"
-msgstr ""
-"S použitím vyššie definovaného protokolu môžem cez kábel poslať túto "
-"sekvenciu signálov do druhého micro:bitu::"
+msgid "Using the protocol defined above I can send the following sequence of signals down the physical wire to the other micro:bit::"
+msgstr "S použitím vyššie definovaného protokolu môžem cez kábel poslať túto sekvenciu signálov do druhého micro:bitu::"
 
 #: ../../tutorials/network.rst:121
 msgid "Can you work out what it says?"
@@ -270,62 +139,26 @@ msgid "Application"
 msgstr "Aplikácia"
 
 #: ../../tutorials/network.rst:126
-msgid ""
-"It's all very well having a network stack, but you also need a way to "
-"interact with it - some form of application to send and receive messages."
-" While HTTP is interesting *most* people don't know about it and let "
-"their web-browser handle it - the underlying *network stack* of the world"
-" wide web is hidden (as it should be)."
-msgstr ""
-"Je super mať vrstvy siete, ale potrebuješ aj vedieť s nimi narábať - "
-"nejakú aplikáciu na posielanie a prijímanie správ. Hoci HTTP protokol je "
-"zaujímavý, *väčšina* ľudí o ňom nevie a nestará sa, čo s ním robí ich "
-"prehliadač - *vrstvy siete* svetového webu (www) sú pred nimi schované "
-"(a tak by to aj malo byť)."
+msgid "It's all very well having a network stack, but you also need a way to interact with it - some form of application to send and receive messages. While HTTP is interesting *most* people don't know about it and let their web-browser handle it - the underlying *network stack* of the world wide web is hidden (as it should be)."
+msgstr "Je super mať vrstvy siete, ale potrebuješ aj vedieť s nimi narábať - nejakú aplikáciu na posielanie a prijímanie správ. Hoci HTTP protokol je zaujímavý, *väčšina* ľudí o ňom nevie a nestará sa, čo s ním robí ich prehliadač - *vrstvy siete* svetového webu (www) sú pred nimi schované (a tak by to aj malo byť)."
 
 #: ../../tutorials/network.rst:132
-msgid ""
-"So, what sort of application should we write for the BBC micro:bit? How "
-"should it work, from the user's point of view?"
-msgstr ""
-"Takže akú aplikáciu napíšeme pre micro:bit? Ako by mala fungovať z hľadiska "
-"používateľa?"
+msgid "So, what sort of application should we write for the BBC micro:bit? How should it work, from the user's point of view?"
+msgstr "Takže akú aplikáciu napíšeme pre micro:bit? Ako by mala fungovať z hľadiska používateľa?"
 
 #: ../../tutorials/network.rst:135
-msgid ""
-"Obviously, to send a message you should be able to input dots and dashes "
-"(we can use button A for that). If we want to see the message we sent or "
-"just received we should be able to trigger it to scroll across the "
-"display (we can use button B for that). Finally, this being Morse code, "
-"if a speaker is attached, we should be able to play the beeps as a form "
-"of aural feedback while the user is entering their message."
-msgstr ""
-"Jasné, na posielanie správ by sme mali vedieť zadávať bodky a pomlčky "
-"(na to môžeme použiť tlačítko A). Ak chceme vidieť správu, ktorú sme "
-"poslali alebo práve prijali, mali by sme ju vedieť zobraziť, aby sa nám "
-"posúvala po displeji (na toto môžeme použiť tlačítko Bwe ). Nakoniec, keďže "
-"je to Morseov kód, ak je pripojený reproduktor, mali by sme vedieť zahrať "
-"užívateľovi pípnutia ako zvukovú odozvu počas tvorenia správy."
+msgid "Obviously, to send a message you should be able to input dots and dashes (we can use button A for that). If we want to see the message we sent or just received we should be able to trigger it to scroll across the display (we can use button B for that). Finally, this being Morse code, if a speaker is attached, we should be able to play the beeps as a form of aural feedback while the user is entering their message."
+msgstr "Jasné, na posielanie správ by sme mali vedieť zadávať bodky a pomlčky (na to môžeme použiť tlačítko A). Ak chceme vidieť správu, ktorú sme poslali alebo práve prijali, mali by sme ju vedieť zobraziť, aby sa nám posúvala po displeji (na toto môžeme použiť tlačítko Bwe ). Nakoniec, keďže je to Morseov kód, ak je pripojený reproduktor, mali by sme vedieť zahrať užívateľovi pípnutia ako zvukovú odozvu počas tvorenia správy."
 
 #: ../../tutorials/network.rst:143
 msgid "The End Result"
 msgstr "Výsledok"
 
 #: ../../tutorials/network.rst:145
-msgid ""
-"Here's the program, in all its glory and annotated with plenty of "
-"comments so you can see what's going on::"
-msgstr ""
-"Tu je program, v cele svojej kráse s množstvom komentárov, takže si môžeš "
-"pozrieť, ako funguje::"
+msgid "Here's the program, in all its glory and annotated with plenty of comments so you can see what's going on::"
+msgstr "Tu je program, v cele svojej kráse s množstvom komentárov, takže si môžeš pozrieť, ako funguje::"
 
 #: ../../tutorials/network.rst:298
-msgid ""
-"How would you improve it? Can you change the definition of a dot and a "
-"dash so speedy Morse code users can use it? What happens if both devices "
-"are sending at the same time? What might you do to handle this situation?"
-msgstr ""
-"Ako by si ho zlepšil(a)? Vedel(a) by si zmeniť definíciu bodky a pomlčky, "
-"aby rýchlejší užívatelia mohli zadávať znaky rýchlejšie? Čo sa stane, ak "
-"obidve zariadenia posielaju správu súčasne? Čo by si mohol/mohla urobiť, "
-"aby si predišiel/predišla takejto situácii?"
+msgid "How would you improve it? Can you change the definition of a dot and a dash so speedy Morse code users can use it? What happens if both devices are sending at the same time? What might you do to handle this situation?"
+msgstr "Ako by si ho zlepšil(a)? Vedel(a) by si zmeniť definíciu bodky a pomlčky, aby rýchlejší užívatelia mohli zadávať znaky rýchlejšie? Čo sa stane, ak obidve zariadenia posielaju správu súčasne? Čo by si mohol/mohla urobiť, aby si predišiel/predišla takejto situácii?"
+
