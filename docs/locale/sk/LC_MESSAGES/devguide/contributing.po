@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: bbc-microbit-micropython\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-25 09:53+0200\n"
-"PO-Revision-Date: 2018-05-04 08:13-0400\n"
+"PO-Revision-Date: 2018-05-07 16:40-0400\n"
 "Last-Translator: RicCo386 <richard.kellner@pycon.sk>\n"
 "Language-Team: Slovak\n"
 "MIME-Version: 1.0\n"
@@ -24,7 +24,7 @@ msgstr ""
 
 #: ../../devguide/contributing.rst:4
 msgid "Hey! Many thanks for wanting to improve MicroPython on the micro:bit."
-msgstr ""
+msgstr "Ahoj! Vďaka, že chceš pomôcť zlepšiť MicroPython na micro:bite."
 
 #: ../../devguide/contributing.rst:6
 msgid "Contributions are welcome without prejudice from *anyone* irrespective of age, gender, religion, race or sexuality. Good quality code and engagement with respect, humour and intelligence wins every time."
