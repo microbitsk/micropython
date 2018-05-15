@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: bbc-microbit-micropython\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-25 09:53+0200\n"
-"PO-Revision-Date: 2018-05-15 10:11-0400\n"
+"PO-Revision-Date: 2018-05-15 10:28-0400\n"
 "Last-Translator: RicCo386 <richard.kellner@pycon.sk>\n"
 "Language-Team: Slovak\n"
 "MIME-Version: 1.0\n"
@@ -20,7 +20,7 @@ msgstr ""
 
 #: ../../microbit_micropython_api.rst:2
 msgid "micro:bit Micropython API"
-msgstr ""
+msgstr "micro:bit Micropython API"
 
 #: ../../microbit_micropython_api.rst:5
 msgid "As we work towards a 1.0 release, this API is subject to frequent changes. This page reflects the current micro:bit API in a developer-friendly (but not necessarily kid-friendly) way. The tutorials associated with this documentation are a good place to start for non-developers looking for information."
@@ -32,11 +32,11 @@ msgstr "Microbit modul"
 
 #: ../../microbit_micropython_api.rst:10
 msgid "Everything directly related to interacting with the hardware lives in the `microbit` module.  For ease of use it's recommended you start all scripts with::"
-msgstr ""
+msgstr "Všetko, čo priamo súvisí s interakciou s hardvérom, sa nachádza v module mikrobit. Pre jednoduchosť používania sa odporúča začať všetky skripty pomocou::"
 
 #: ../../microbit_micropython_api.rst:14
 msgid "The following documentation assumes you have done this."
-msgstr ""
+msgstr "Nasledujúca dokumentácia predpokladá, že si to urobil."
 
 #: ../../microbit_micropython_api.rst:16
 msgid "There are a few functions available directly::"
