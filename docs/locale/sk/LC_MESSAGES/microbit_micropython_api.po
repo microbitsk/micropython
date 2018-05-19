@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: bbc-microbit-micropython\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-25 09:53+0200\n"
-"PO-Revision-Date: 2018-05-19 12:50-0400\n"
+"PO-Revision-Date: 2018-05-19 13:00-0400\n"
 "Last-Translator: RicCo386 <richard.kellner@pycon.sk>\n"
 "Language-Team: Slovak\n"
 "MIME-Version: 1.0\n"
@@ -60,19 +60,19 @@ msgstr "Sú 2 tlačítka::"
 
 #: ../../microbit_micropython_api.rst:41
 msgid "These are both objects and have the following methods::"
-msgstr ""
+msgstr "Obe sú objekty a majú nasledujúce metódy::"
 
 #: ../../microbit_micropython_api.rst:53
 msgid "The LED display"
-msgstr ""
+msgstr "LED displej"
 
 #: ../../microbit_micropython_api.rst:55
 msgid "The LED display is exposed via the `display` object::"
-msgstr ""
+msgstr "LED displej je exposed pomocou objektu display::"
 
 #: ../../microbit_micropython_api.rst:74
 msgid "Pins"
-msgstr ""
+msgstr "Piny"
 
 #: ../../microbit_micropython_api.rst:76
 msgid "Provide digital and analog input and output functionality, for the pins in the connector. Some pins are connected internally to the I/O that drives the LED matrix and the buttons."
