@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: bbc-microbit-micropython\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-25 09:53+0200\n"
-"PO-Revision-Date: 2018-05-19 13:00-0400\n"
+"PO-Revision-Date: 2018-05-19 13:10-0400\n"
 "Last-Translator: RicCo386 <richard.kellner@pycon.sk>\n"
 "Language-Team: Slovak\n"
 "MIME-Version: 1.0\n"
@@ -76,51 +76,51 @@ msgstr "Piny"
 
 #: ../../microbit_micropython_api.rst:76
 msgid "Provide digital and analog input and output functionality, for the pins in the connector. Some pins are connected internally to the I/O that drives the LED matrix and the buttons."
-msgstr ""
+msgstr "Zabezpečujú digitálne a analógové vstupné a výstupné funkcie pinov v konektore. Niektoré piny sú vnútorne prepojené s I/O, ktorý poháňa LED maticu a tlačítka."
 
 #: ../../microbit_micropython_api.rst:78
 msgid "Each pin is provided as an object directly in the ``microbit`` module.  This keeps the API relatively flat, making it very easy to use:"
-msgstr ""
+msgstr "Každý pin je k dispozícii ako objekt priamo v module mikrobit. Toto udržuje rozhranie API relatívne flat, takže sa používa veľmi jednoducho:"
 
 #: ../../microbit_micropython_api.rst:80
 msgid "pin0"
-msgstr ""
+msgstr "pin0"
 
 #: ../../microbit_micropython_api.rst:81
 msgid "pin1"
-msgstr ""
+msgstr "pin1"
 
 #: ../../microbit_micropython_api.rst:82
 msgid "..."
-msgstr ""
+msgstr "..."
 
 #: ../../microbit_micropython_api.rst:83
 msgid "pin15"
-msgstr ""
+msgstr "pin15"
 
 #: ../../microbit_micropython_api.rst:84
 msgid "pin16"
-msgstr ""
+msgstr "pin16"
 
 #: ../../microbit_micropython_api.rst:85
 msgid "*Warning: P17-P18 (inclusive) are unavailable.*"
-msgstr ""
+msgstr "Upozornenie: P17-P18 (vrátane) sú nedostupné"
 
 #: ../../microbit_micropython_api.rst:86
 msgid "pin19"
-msgstr ""
+msgstr "pin19"
 
 #: ../../microbit_micropython_api.rst:87
 msgid "pin20"
-msgstr ""
+msgstr "pin20"
 
 #: ../../microbit_micropython_api.rst:89
 msgid "Each of these pins are instances of the ``MicroBitPin`` class, which offers the following API::"
-msgstr ""
+msgstr "Každý z týchto pinov je príkladom class MicroBitPin, ktorá ponúka nasledujúce API::"
 
 #: ../../microbit_micropython_api.rst:109
 msgid "Images"
-msgstr ""
+msgstr "Obrázky"
 
 #: ../../microbit_micropython_api.rst:113
 msgid "You don't always need to create one of these yourself - you can access the image shown on the display directly with `display.image`. `display.image` is just an instance of `Image`, so you can use all of the same methods."
