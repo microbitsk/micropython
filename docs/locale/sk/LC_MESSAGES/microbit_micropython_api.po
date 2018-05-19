@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: bbc-microbit-micropython\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-25 09:53+0200\n"
-"PO-Revision-Date: 2018-05-19 13:30-0400\n"
+"PO-Revision-Date: 2018-05-19 13:40-0400\n"
 "Last-Translator: RicCo386 <richard.kellner@pycon.sk>\n"
 "Language-Team: Slovak\n"
 "MIME-Version: 1.0\n"
@@ -156,13 +156,13 @@ msgstr "Zbernica I2C"
 
 #: ../../microbit_micropython_api.rst:261
 msgid "There is an I2C bus on the micro:bit that is exposed via the `i2c` object.  It has the following methods::"
-msgstr ""
+msgstr "Micro:bit má zbernicu I2C, ktorá je exposed pomocou objektu I2C. Má nasledujúce metódy::"
 
 #: ../../microbit_micropython_api.rst:270
 msgid "UART"
-msgstr ""
+msgstr "UART"
 
 #: ../../microbit_micropython_api.rst:272
 msgid "Use ``uart`` to communicate with a serial device connected to the device's I/O pins::"
-msgstr ""
+msgstr "Použite uart na komunikáciu so sériovým zariadením pripojeným k I/O pinom zariadenia::"
 
