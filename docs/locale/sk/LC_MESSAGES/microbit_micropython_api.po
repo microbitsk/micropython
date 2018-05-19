@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: bbc-microbit-micropython\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-25 09:53+0200\n"
-"PO-Revision-Date: 2018-05-19 13:10-0400\n"
+"PO-Revision-Date: 2018-05-19 13:20-0400\n"
 "Last-Translator: RicCo386 <richard.kellner@pycon.sk>\n"
 "Language-Team: Slovak\n"
 "MIME-Version: 1.0\n"
@@ -124,15 +124,15 @@ msgstr "Obrázky"
 
 #: ../../microbit_micropython_api.rst:113
 msgid "You don't always need to create one of these yourself - you can access the image shown on the display directly with `display.image`. `display.image` is just an instance of `Image`, so you can use all of the same methods."
-msgstr ""
+msgstr "Nemusíš vždy vytvoriť jeden z nich sám - môžeš sa dostať k obrázku zobrazenom na displeji priamo pomocou display.image. display.image je len príkladom Image, takže môžeš použiť všetky rovnaké metódy."
 
 #: ../../microbit_micropython_api.rst:117
 msgid "Images API::"
-msgstr ""
+msgstr "Rozhranie API pre obrázky::"
 
 #: ../../microbit_micropython_api.rst:216
 msgid "The accelerometer"
-msgstr ""
+msgstr "Akcelerometer"
 
 #: ../../microbit_micropython_api.rst:218
 msgid "The accelerometer is accessed via the ``accelerometer`` object::"
