@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: bbc-microbit-micropython\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-25 09:53+0200\n"
-"PO-Revision-Date: 2018-05-07 16:50-0400\n"
+"PO-Revision-Date: 2018-07-19 15:51\n"
 "Last-Translator: RicCo386 <richard.kellner@pycon.sk>\n"
 "Language-Team: Slovak\n"
 "MIME-Version: 1.0\n"
@@ -20,7 +20,7 @@ msgstr ""
 
 #: ../../devguide/contributing.rst:2
 msgid "Contributing"
-msgstr ""
+msgstr "Ako pomôcť"
 
 #: ../../devguide/contributing.rst:4
 msgid "Hey! Many thanks for wanting to improve MicroPython on the micro:bit."
@@ -32,15 +32,15 @@ msgstr "Príspevky vítame bez akýchkoľvek predsudkov od *kohokoľvek* bez oh�
 
 #: ../../devguide/contributing.rst:10
 msgid "If you're from a background which isn't well-represented in most geeky groups, get involved - *we want to help you make a difference*."
-msgstr ""
+msgstr "Ak si z prostredia, ktoré nie je príliš zastúpené v geekovských komunitách, pridaj sa - *chceme ti pomôcť urobiť zmenu*."
 
 #: ../../devguide/contributing.rst:11
 msgid "If you're from a background which *is* well-represented in most geeky groups, get involved - *we want your help making a difference*."
-msgstr ""
+msgstr "Ak si z prostredia, ktoré *je* dobre zastúpené v geekovských skupinách, pridaj sa - *chceme, aby si nám pomohol urobiť zmenu*."
 
 #: ../../devguide/contributing.rst:12
 msgid "If you're worried about not being technical enough, get involved - *your fresh perspective will be invaluable*."
-msgstr ""
+msgstr "Ak sa obávaš, že nie si dostatočne technický/á, pridaj sa - *tvoj svieži pohľad bude neoceniteľný*."
 
 #: ../../devguide/contributing.rst:13
 msgid "If you think you're an imposter, get involved."
