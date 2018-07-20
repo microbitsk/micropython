@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: bbc-microbit-micropython\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-25 09:53+0200\n"
-"PO-Revision-Date: 2018-07-19 17:31\n"
+"PO-Revision-Date: 2018-07-20 08:43\n"
 "Last-Translator: RicCo386 <richard.kellner@pycon.sk>\n"
 "Language-Team: Slovak\n"
 "MIME-Version: 1.0\n"
@@ -60,29 +60,29 @@ msgstr "Toto je nová komunita, takže - pridaj sa."
 
 #: ../../devguide/contributing.rst:18
 msgid "We expect contributors to follow the Python Software Foundation's Code of Conduct: https://www.python.org/psf/codeofconduct/"
-msgstr ""
+msgstr "Od prispievateľov očakávame, že budú dodržiavať Pravidlá Správania od Python Software Foundation: https://www.python.org/psf/codeofconduct/"
 
 #: ../../devguide/contributing.rst:21
 msgid "Feedback may be given for contributions and, where necessary, changes will be politely requested and discussed with the originating author. Respectful yet robust argument is most welcome."
-msgstr ""
+msgstr "Príspevky môžu mať spätnú väzbu a tam, kde je to bude potebné, budú slušne vyžiadané zmeny a prediskutované s pôvodným autorom. Vítané sú silné, no rešpektujúce argumenty."
 
 #: ../../devguide/contributing.rst:26
 msgid "Checklist"
-msgstr ""
+msgstr "Kontrolný zoznam"
 
 #: ../../devguide/contributing.rst:28
 msgid "Your code should be commented in *plain English* (British spelling)."
-msgstr ""
+msgstr "Tvoj kód by mal byť komentovaný v *bežnej angličtine* (britský pravopis)."
 
 #: ../../devguide/contributing.rst:29
 msgid "If your contribution is for a major block of work and you've not done so already, add yourself to the AUTHORS file following the convention found therein."
-msgstr ""
+msgstr "Ak je tvoj príspevok významnejší kus práce a zatiaľ si tak neurobil(a), pridaj sa do zoznamu autorov v súbore AUTHORS podľa dohodnutých konvencií."
 
 #: ../../devguide/contributing.rst:32
 msgid "If in doubt, ask a question. The only stupid question is the one that's never asked."
-msgstr ""
+msgstr "V prípade pochybností sa pýtaj. Jediná hlúpa otázka je tá, ktorá nebola vyslovená."
 
 #: ../../devguide/contributing.rst:33
 msgid "Have fun!"
-msgstr ""
+msgstr "Bav sa!"
 
