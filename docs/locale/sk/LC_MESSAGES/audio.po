@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: bbc-microbit-micropython\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-25 09:53+0200\n"
-"PO-Revision-Date: 2018-07-20 09:13\n"
+"PO-Revision-Date: 2018-07-20 10:11\n"
 "Last-Translator: RicCo386 <richard.kellner@pycon.sk>\n"
 "Language-Team: Slovak\n"
 "MIME-Version: 1.0\n"
@@ -36,7 +36,7 @@ msgstr "Funkcie"
 
 #: ../../audio.rst:19
 msgid "Play the source to completion."
-msgstr ""
+msgstr "Prehraj zdroj do konca."
 
 #: ../../audio.rst:21
 msgid "``source`` is an iterable, each element of which must be an ``AudioFrame``."
@@ -52,7 +52,7 @@ msgstr ""
 
 #: ../../audio.rst:28
 msgid "Classes"
-msgstr ""
+msgstr "Triedy"
 
 #: ../../audio.rst:33
 msgid "An ``AudioFrame`` object is a list of 32 samples each of which is a signed byte (whole number between -128 and 127)."
@@ -60,11 +60,11 @@ msgstr ""
 
 #: ../../audio.rst:36
 msgid "It takes just over 4 ms to play a single frame."
-msgstr ""
+msgstr "Prehrať jeden rámec trvá 4 ms."
 
 #: ../../audio.rst:39
 msgid "Using audio"
-msgstr ""
+msgstr "Použitie audia"
 
 #: ../../audio.rst:41
 msgid "You will need a sound source, as input to the ``play`` function. You can generate your own, like in ``examples/waveforms.py`` or you can use the sound sources provided by modules like ``synth``."
@@ -72,7 +72,7 @@ msgstr ""
 
 #: ../../audio.rst:46
 msgid "Technical Details"
-msgstr ""
+msgstr "Technické detaily"
 
 #: ../../audio.rst:49
 msgid "You don't need to understand this section to use the ``audio`` module. It is just here in case you wanted to know how it works."
@@ -92,5 +92,5 @@ msgstr ""
 
 #: ../../audio.rst:67
 msgid "Example"
-msgstr ""
+msgstr "Príklad"
 
