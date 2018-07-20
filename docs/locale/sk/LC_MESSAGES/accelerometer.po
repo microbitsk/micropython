@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: bbc-microbit-micropython\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-25 10:41+0200\n"
-"PO-Revision-Date: 2018-07-20 08:53\n"
+"PO-Revision-Date: 2018-07-20 09:02\n"
 "Last-Translator: RicCo386 <richard.kellner@pycon.sk>\n"
 "Language-Team: Slovak\n"
 "MIME-Version: 1.0\n"
@@ -24,7 +24,7 @@ msgstr "Akcelerometer"
 
 #: ../../accelerometer.rst:6
 msgid "This object gives you access to the on-board accelerometer. The accelerometer also provides convenience functions for detecting gestures. The recognised gestures are: ``up``, ``down``, ``left``, ``right``, ``face up``, ``face down``, ``freefall``, ``3g``, ``6g``, ``8g``, ``shake``."
-msgstr ""
+msgstr "Tento objekt umožňuje prístup k akcelerometru na doske. Akcelerometer tiež poskytuje funkcie na detekciu gest a dokáže rozoznať tieto gestá: ``hore``, ``dole``, ``vľavo``, ``vpravo``, ``tvárou nahor``, ``tvárou nadol``, ``voľný pád``, ``3g``, ``6g``, ``8g``, ``trasenie``."
 
 #: ../../accelerometer.rst:13
 msgid "Functions"
@@ -32,35 +32,35 @@ msgstr "Funkcie"
 
 #: ../../accelerometer.rst:17
 msgid "Get the acceleration measurement in the ``x`` axis, as a positive or negative integer, depending on the direction."
-msgstr ""
+msgstr "Získaj meranie zrýchlenia v smere osi ``x`` ako kladné alebo záporné číslo v závislosti od smeru."
 
 #: ../../accelerometer.rst:23
 msgid "Get the acceleration measurement in the ``y`` axis, as a positive or negative integer, depending on the direction."
-msgstr ""
+msgstr "Získaj meranie zrýchlenia v smere osi ``y`` ako kladné alebo záporné číslo v závislosti od smeru."
 
 #: ../../accelerometer.rst:29
 msgid "Get the acceleration measurement in the ``z`` axis, as a positive or negative integer, depending on the direction."
-msgstr ""
+msgstr "Získaj meranie zrýchlenia v smere osi ``z`` ako kladné alebo záporné číslo v závislosti od smeru."
 
 #: ../../accelerometer.rst:34
 msgid "Get the acceleration measurements in all axes at once, as a three-element tuple of integers ordered as X, Y, Z."
-msgstr ""
+msgstr "Získaj merania zrýchlenia vo všetkých osiach naraz ako trojicu čísel zoradených ako X, Y, Z."
 
 #: ../../accelerometer.rst:39
 msgid "Return the name of the current gesture."
-msgstr ""
+msgstr "Vráti názov aktuálneho gesta."
 
 #: ../../accelerometer.rst:43
 msgid "MicroPython understands the following gesture names: ``\"up\"``, ``\"down\"``, ``\"left\"``, ``\"right\"``, ``\"face up\"``, ``\"face down\"``, ``\"freefall\"``, ``\"3g\"``, ``\"6g\"``, ``\"8g\"``, ``\"shake\"``. Gestures are always represented as strings."
-msgstr ""
+msgstr "MicroPython pozná tieto názvy gest: ``\"up\"`` (hore), ``\"down\"`` (dole), ``\"left\"`` (vľavo), ``\"right\"`` (vpravo), ``\"face up\"`` (tvárou nahor), ``\"face down\"`` (tvárou nadol), ``\"freefall\"`` (voľný pád), ``\"3g\"``, ``\"6g\"``, ``\"8g\"``, ``\"shake\"`` (trasenie). Gestá sú vždy reprezentované ako reťazce."
 
 #: ../../accelerometer.rst:50
 msgid "Return True or False to indicate if the named gesture is currently active."
-msgstr ""
+msgstr "Vráti True alebo False, čím naznačí či je známe gesto aktuálne aktívne."
 
 #: ../../accelerometer.rst:54
 msgid "Return True or False to indicate if the named gesture was active since the last call."
-msgstr ""
+msgstr "Vráti True alebo False, čím naznačí či známe gesto bolo aktívne od posledného volania."
 
 #: ../../accelerometer.rst:59
 msgid "Return a tuple of the gesture history. The most recent is listed last. Also clears the gesture history before returning."
