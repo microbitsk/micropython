@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: bbc-microbit-micropython\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-25 09:53+0200\n"
-"PO-Revision-Date: 2018-07-21 20:11\n"
+"PO-Revision-Date: 2018-07-21 20:21\n"
 "Last-Translator: RicCo386 <richard.kellner@pycon.sk>\n"
 "Language-Team: Slovak\n"
 "MIME-Version: 1.0\n"
@@ -24,23 +24,23 @@ msgstr "I²C"
 
 #: ../../i2c.rst:6
 msgid "The ``i2c`` module lets you communicate with devices connected to your board using the I²C bus protocol. There can be multiple slave devices connected at the same time, and each one has its own unique address, that is either fixed for the device or configured on it. Your board acts as the I²C master."
-msgstr ""
+msgstr "Modul ``i2c`` ti umožní komunikovať so zariadeniami pripojenými k tvojej doske pomocou protokolu I²C. Naraz môže byť pripojených viacero zariadení ako slave a každé má vlastnú unikátnu adresu, ktorá môže byť fixná pre zariadenie alebo nakonfigurovaná. Tvoje zariadenie pracuje ako master."
 
 #: ../../i2c.rst:11
 msgid "We use 7-bit addressing for devices because of the reasons stated `here <http://www.totalphase.com/support/articles/200349176-7-bit-8-bit-and-10-bit-I2C-Slave-Addressing>`_."
-msgstr ""
+msgstr "Pre zariadenia používame 7-bitové adresovanie z dôvodov uvedených `tu <http://www.totalphase.com/support/articles/200349176-7-bit-8-bit-and-10-bit-I2C-Slave-Addressing>`_."
 
 #: ../../i2c.rst:14
 msgid "This may be different to other micro:bit related solutions."
-msgstr ""
+msgstr "Toto sa môže pri iných prípadoch s micro:bitmi líšiť."
 
 #: ../../i2c.rst:16
 msgid "How exactly you should communicate with the devices, that is, what bytes to send and how to interpret the responses, depends on the device in question and should be described separately in that device's documentation."
-msgstr ""
+msgstr "Ako presne by si mal/a komunikovať so zariadeniami, čiže aké bajty posielať a ako interpretovať odpovede, závisí od príslušného zariadenia a malo by byť popísané samostatne v dokumentácii tohto zariadenia."
 
 #: ../../i2c.rst:22
 msgid "Functions"
-msgstr ""
+msgstr "Funkcie"
 
 #: ../../i2c.rst:26
 msgid "Re-initialize peripheral with the specified clock frequency ``freq`` on the specified ``sda`` and ``scl`` pins."
