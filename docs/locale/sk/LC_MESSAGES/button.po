@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: bbc-microbit-micropython\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-25 09:53+0200\n"
-"PO-Revision-Date: 2018-05-04 08:14-0400\n"
+"PO-Revision-Date: 2018-07-21 18:47\n"
 "Last-Translator: RicCo386 <richard.kellner@pycon.sk>\n"
 "Language-Team: Slovak\n"
 "MIME-Version: 1.0\n"
@@ -20,31 +20,31 @@ msgstr ""
 
 #: ../../button.rst:2
 msgid "Buttons"
-msgstr ""
+msgstr "Tlačítka"
 
 #: ../../button.rst:6
 msgid "There are two buttons on the board, called ``button_a`` and ``button_b``."
-msgstr ""
+msgstr "Na doske sú dve tlačítka, volajú sa ``button_a`` (tlačítko_a) a ``button_b`` (tlačítko_b)."
 
 #: ../../button.rst:9
 msgid "Attributes"
-msgstr ""
+msgstr "Vlastnosti"
 
 #: ../../button.rst:14
 msgid "A ``Button`` instance (see below) representing the left button."
-msgstr ""
+msgstr "Inštancia ``Button`` (pozri nižšie) predstavuje ľavé tlačítko."
 
 #: ../../button.rst:19
 msgid "Represents the right button."
-msgstr ""
+msgstr "Predstavuje pravé tlačítko."
 
 #: ../../button.rst:23
 msgid "Classes"
-msgstr ""
+msgstr "Triedy"
 
 #: ../../button.rst:27
 msgid "Represents a button."
-msgstr ""
+msgstr "Predstavuje tlačítko."
 
 #: ../../button.rst:30
 msgid "This class is not actually available to the user, it is only used by the two button instances, which are provided already initialized."
