@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: bbc-microbit-micropython\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-25 09:53+0200\n"
-"PO-Revision-Date: 2018-05-04 08:14-0400\n"
+"PO-Revision-Date: 2018-07-21 19:01\n"
 "Last-Translator: RicCo386 <richard.kellner@pycon.sk>\n"
 "Language-Team: Slovak\n"
 "MIME-Version: 1.0\n"
@@ -20,7 +20,7 @@ msgstr ""
 
 #: ../../compass.rst:2
 msgid "Compass"
-msgstr ""
+msgstr "Kompas"
 
 #: ../../compass.rst:6
 msgid "This module lets you access the built-in electronic compass. Before using, the compass should be calibrated, otherwise the readings may be wrong."
