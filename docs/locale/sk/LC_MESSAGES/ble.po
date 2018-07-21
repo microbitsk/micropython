@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: bbc-microbit-micropython\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-25 09:53+0200\n"
-"PO-Revision-Date: 2018-05-04 08:14-0400\n"
+"PO-Revision-Date: 2018-07-21 18:47\n"
 "Last-Translator: RicCo386 <richard.kellner@pycon.sk>\n"
 "Language-Team: Slovak\n"
 "MIME-Version: 1.0\n"
@@ -20,21 +20,21 @@ msgstr ""
 
 #: ../../ble.rst:2
 msgid "Bluetooth"
-msgstr ""
+msgstr "Bluetooth"
 
 #: ../../ble.rst:4
 msgid "While the BBC micro:bit has hardware capable of allowing the device to work as a Bluetooth Low Energy (BLE) device, it only has 16k of RAM. The BLE stack alone takes up 12k RAM which means there's not enough room to run MicroPython."
-msgstr ""
+msgstr "Hoci BBC micro:bit má hardvér umožňujúci zariadeniu fungovať ako nízkoenergetické Bluetooth zariadenie (BLE), má však iba 16 kB RAM. BLE sám o sebe zaberá 12k RAM, čo znamená, že na spustenie MicroPythonu neostáva priestor."
 
 #: ../../ble.rst:8
 msgid "Future versions of the device may come with 32k RAM which would be sufficient. However, until such time it's highly unlikely MicroPython will support BLE."
-msgstr ""
+msgstr "Budúce verzie zariadenia možno prídu s 32k RAM čo bude stačiť. No dovtedy je vysoko nepravdepodobné, že by MicroPython podporoval BLE."
 
 #: ../../ble.rst:12
 msgid "MicroPython uses the radio hardware with the ``radio`` module. This allows users to create simple yet effective wireless networks of micro:bit devices."
-msgstr ""
+msgstr "MicroPython používa rádio hardvér pomocou modulu ``radio``. To umožňuje užívateľom jednoduché, no efektívne bezdrôtové siete micro:bitov."
 
 #: ../../ble.rst:16
 msgid "Furthermore, the protocol used in the ``radio`` module is a lot simpler than BLE, making it far easier to use in an educational context."
-msgstr ""
+msgstr "Navyše, protokol, ktorý využíva modul ``radio`` je oveľa jednoduchší ako BLE, vďaka čomu je oveľa jednoduchšie používať ho pri výučbe."
 
