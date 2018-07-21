@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: bbc-microbit-micropython\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-25 09:53+0200\n"
-"PO-Revision-Date: 2018-07-20 10:11\n"
+"PO-Revision-Date: 2018-07-21 19:01\n"
 "Last-Translator: RicCo386 <richard.kellner@pycon.sk>\n"
 "Language-Team: Slovak\n"
 "MIME-Version: 1.0\n"
@@ -40,15 +40,15 @@ msgstr "Prehraj zdroj do konca."
 
 #: ../../audio.rst:21
 msgid "``source`` is an iterable, each element of which must be an ``AudioFrame``."
-msgstr ""
+msgstr "``source`` je iterovateľná premenná, ktorej každý prvok musí byť ``AudioFrame``."
 
 #: ../../audio.rst:23
 msgid "If ``wait`` is ``True``, this function will block until the source is exhausted."
-msgstr ""
+msgstr "Ak ``wait`` (čakať) je ``True``, táto funkcia bude blokovať do vyčerpania zdroja."
 
 #: ../../audio.rst:25
 msgid "``pins`` specifies which pins the speaker is connected to."
-msgstr ""
+msgstr "``pins`` definuje, ku ktorým pinom je reproduktor pripojený."
 
 #: ../../audio.rst:28
 msgid "Classes"
@@ -56,7 +56,7 @@ msgstr "Triedy"
 
 #: ../../audio.rst:33
 msgid "An ``AudioFrame`` object is a list of 32 samples each of which is a signed byte (whole number between -128 and 127)."
-msgstr ""
+msgstr "Objekt ``AudioFrame`` je zoznam 32 samplov, z ktorých každý je signovaný byte (celé číslo medzi -128 a 127)."
 
 #: ../../audio.rst:36
 msgid "It takes just over 4 ms to play a single frame."
