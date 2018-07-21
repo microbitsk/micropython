@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: bbc-microbit-micropython\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-25 09:53+0200\n"
-"PO-Revision-Date: 2018-07-21 20:21\n"
+"PO-Revision-Date: 2018-07-21 20:31\n"
 "Last-Translator: RicCo386 <richard.kellner@pycon.sk>\n"
 "Language-Team: Slovak\n"
 "MIME-Version: 1.0\n"
@@ -84,7 +84,7 @@ msgstr "Modul ``audio`` spotrebúva vzorky na 7812,5 kHz a na výstup používa 
 
 #: ../../audio.rst:55
 msgid "The function ``play`` fully copies all data from each ``AudioFrame`` before it calls ``next()`` for the next frame, so a sound source can use the same ``AudioFrame`` repeatedly."
-msgstr ""
+msgstr "Funkcia ``play`` plne skopíruje všetky údaje z každého políčka ``AudioFrame`` predtým, ako zavolá ``next()`` pre ďalšie políčko, takže zdroj zvuku môže používať rovnaký ``AudioFrame`` opakovane."
 
 #: ../../audio.rst:59
 msgid "The ``audio`` module has an internal 64 sample buffer from which it reads samples. When reading reaches the start or the mid-point of the buffer, it triggers a callback to fetch the next ``AudioFrame`` which is then copied into the buffer. This means that a sound source has under 4ms to compute the next ``AudioFrame``, and for reliable operation needs to take less 2ms (which is 32000 cycles, so should be plenty)."
