@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: bbc-microbit-micropython\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-25 09:53+0200\n"
-"PO-Revision-Date: 2018-07-21 20:11\n"
+"PO-Revision-Date: 2018-07-21 20:21\n"
 "Last-Translator: RicCo386 <richard.kellner@pycon.sk>\n"
 "Language-Team: Slovak\n"
 "MIME-Version: 1.0\n"
@@ -76,11 +76,11 @@ msgstr "Technické detaily"
 
 #: ../../audio.rst:49
 msgid "You don't need to understand this section to use the ``audio`` module. It is just here in case you wanted to know how it works."
-msgstr ""
+msgstr "Tejto sekcii nemusíš rozumieť, aby si mohol/mohla používať modul ``audio``. Je to tu pre prípad, že by si chcel/a zistiť, ako to funguje."
 
 #: ../../audio.rst:52
 msgid "The ``audio`` module consumes samples at 7812.5 kHz, and uses linear interpolation to output a PWM signal at 32.5 kHz, which gives tolerable sound quality."
-msgstr ""
+msgstr "Modul ``audio`` spotrebúva vzorky na 7812,5 kHz a na výstup používa lineárnu interpoláciu PWM signálu na 32,5 kHz, čo nám dáva dostatočnú kvalitu zvuku."
 
 #: ../../audio.rst:55
 msgid "The function ``play`` fully copies all data from each ``AudioFrame`` before it calls ``next()`` for the next frame, so a sound source can use the same ``AudioFrame`` repeatedly."
