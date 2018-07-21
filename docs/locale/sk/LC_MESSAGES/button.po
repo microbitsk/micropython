@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: bbc-microbit-micropython\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-25 09:53+0200\n"
-"PO-Revision-Date: 2018-07-21 18:53\n"
+"PO-Revision-Date: 2018-07-21 19:01\n"
 "Last-Translator: RicCo386 <richard.kellner@pycon.sk>\n"
 "Language-Team: Slovak\n"
 "MIME-Version: 1.0\n"
@@ -60,9 +60,9 @@ msgstr "Vráti ``True`` alebo ``False`` podľa toho, či tlačítko bol stlačen
 
 #: ../../button.rst:46
 msgid "Returns the running total of button presses, and resets this total to zero before returning."
-msgstr ""
+msgstr "Vráti celkový počet stlačení tlačítka a následne ho vynuluje."
 
 #: ../../button.rst:50
 msgid "Example"
-msgstr ""
+msgstr "Príklad"
 
