@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: bbc-microbit-micropython\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-25 09:53+0200\n"
-"PO-Revision-Date: 2018-07-21 18:47\n"
+"PO-Revision-Date: 2018-07-21 18:53\n"
 "Last-Translator: RicCo386 <richard.kellner@pycon.sk>\n"
 "Language-Team: Slovak\n"
 "MIME-Version: 1.0\n"
@@ -48,15 +48,15 @@ msgstr "Predstavuje tlačítko."
 
 #: ../../button.rst:30
 msgid "This class is not actually available to the user, it is only used by the two button instances, which are provided already initialized."
-msgstr ""
+msgstr "Táto trieda ani nie je k dispozícii užívateľom, využívajú ju iba dve inštancie tlačítok, ktoré sú k dispozícii už inicializované."
 
 #: ../../button.rst:36
 msgid "Returns ``True`` if the specified button ``button`` is pressed, and ``False`` otherwise."
-msgstr ""
+msgstr "Vráti ``True`` ak zadané tlačítko ``button`` je stlačené a ``False`` ak nie je."
 
 #: ../../button.rst:41
 msgid "Returns ``True`` or ``False`` to indicate if the button was pressed since the device started or the last time this method was called."
-msgstr ""
+msgstr "Vráti ``True`` alebo ``False`` podľa toho, či tlačítko bol stlačené od spustenia zariadenia alebo od posledného volania tejto metódy."
 
 #: ../../button.rst:46
 msgid "Returns the running total of button presses, and resets this total to zero before returning."
