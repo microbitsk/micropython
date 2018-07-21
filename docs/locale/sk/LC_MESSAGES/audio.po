@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: bbc-microbit-micropython\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-25 09:53+0200\n"
-"PO-Revision-Date: 2018-07-21 19:01\n"
+"PO-Revision-Date: 2018-07-21 20:11\n"
 "Last-Translator: RicCo386 <richard.kellner@pycon.sk>\n"
 "Language-Team: Slovak\n"
 "MIME-Version: 1.0\n"
@@ -68,7 +68,7 @@ msgstr "Použitie audia"
 
 #: ../../audio.rst:41
 msgid "You will need a sound source, as input to the ``play`` function. You can generate your own, like in ``examples/waveforms.py`` or you can use the sound sources provided by modules like ``synth``."
-msgstr ""
+msgstr "Ako vstup pre funkciu ``play`` budeš potrebovať zdroj zvuku. Môžeš si vytvoriť vlastný, ako napríklad v ``examples/waveforms.py`` alebo môžeš používať zdroje zvuku poskytované modulmi ako napríklad ``synth``."
 
 #: ../../audio.rst:46
 msgid "Technical Details"
