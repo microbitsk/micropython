@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: bbc-microbit-micropython\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-25 09:53+0200\n"
-"PO-Revision-Date: 2018-07-21 20:31\n"
+"PO-Revision-Date: 2018-07-22 21:41\n"
 "Last-Translator: RicCo386 <richard.kellner@pycon.sk>\n"
 "Language-Team: Slovak\n"
 "MIME-Version: 1.0\n"
@@ -88,7 +88,7 @@ msgstr "Funkcia ``play`` plne skopíruje všetky údaje z každého políčka ``
 
 #: ../../audio.rst:59
 msgid "The ``audio`` module has an internal 64 sample buffer from which it reads samples. When reading reaches the start or the mid-point of the buffer, it triggers a callback to fetch the next ``AudioFrame`` which is then copied into the buffer. This means that a sound source has under 4ms to compute the next ``AudioFrame``, and for reliable operation needs to take less 2ms (which is 32000 cycles, so should be plenty)."
-msgstr ""
+msgstr "Modul ``audio`` má interný buffer na 64 vzoriek, z ktorého číta vzorky. Keď čítanie dosiahne začiatok alebo stred bufferu, spustí volanie na načítanie ďalšieho políčka ``AudioFrame``, ktoré je potom načítané do bufferu. To znamená, že zdroj zvuku má menej ako 4 ms vypočítať nasledujúci ``AudioFrame`` a na spoľahlivé fungovanie to musí stihnúť do 2 ms (to je približne 32000 cyklov, čo by malo stačiť)."
 
 #: ../../audio.rst:67
 msgid "Example"
