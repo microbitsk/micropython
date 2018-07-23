@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: bbc-microbit-micropython\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-25 09:53+0200\n"
-"PO-Revision-Date: 2018-07-21 19:01\n"
+"PO-Revision-Date: 2018-07-23 09:49\n"
 "Last-Translator: RicCo386 <richard.kellner@pycon.sk>\n"
 "Language-Team: Slovak\n"
 "MIME-Version: 1.0\n"
@@ -24,41 +24,41 @@ msgstr "Kompas"
 
 #: ../../compass.rst:6
 msgid "This module lets you access the built-in electronic compass. Before using, the compass should be calibrated, otherwise the readings may be wrong."
-msgstr ""
+msgstr "Tento modul umožňuje prístup k vstavanému elektronickému kompasu. Pred použitím by kompas mal byť kalibrovný, inak môžu byť namerané hodnoty nesprávne."
 
 #: ../../compass.rst:11
 msgid "Calibrating the compass will cause your program to pause until calibration is complete. Calibration consists of a little game to draw a circle on the LED display by rotating the device."
-msgstr ""
+msgstr "Kalibrácia kompasu spôsobí, že tvoj program sa pozastaví, až kým kalibrácia nebude dokončená. Kalibrácia sa skladá z malej hry, pri ktorej kreslíš kruhy na LED displeji otáčaním zariadenia."
 
 #: ../../compass.rst:17
 msgid "Functions"
-msgstr ""
+msgstr "Funkcie"
 
 #: ../../compass.rst:21
 msgid "Starts the calibration process. An instructive message will be scrolled to the user after which they will need to rotate the device in order to draw a circle on the LED display."
-msgstr ""
+msgstr "Spustí proces kalibrácie. Užívateľovi sa zobrazí oznam, po ktorom bude musieť otáčať zariadenie, pomocou čoho nakreslí kruh na LED displeji."
 
 #: ../../compass.rst:27
 msgid "Returns ``True`` if the compass has been successfully calibrated, and returns ``False`` otherwise."
-msgstr ""
+msgstr "Vráti ``True`` ak bol kompas úspešne skalibrovaný a ``False`` v opačnom prípade."
 
 #: ../../compass.rst:33
 msgid "Undoes the calibration, making the compass uncalibrated again."
-msgstr ""
+msgstr "Zruší kalibráciu, takže kompas je znova nekalibrovaný."
 
 #: ../../compass.rst:38 ../../compass.rst:45 ../../compass.rst:52
 msgid "Gives the reading of the magnetic force on the ``x`` axis, as a positive or negative integer, depending on the direction of the force."
-msgstr ""
+msgstr "Dáva hodnotu magneticke sily v smere osi ``x`` ako kladné alebo záporné číslo, podľa smeru sily."
 
 #: ../../compass.rst:59
 msgid "Gives the compass heading, calculated from the above readings, as an integer in the range from 0 to 360, representing the angle in degrees, clockwise, with north as 0."
-msgstr ""
+msgstr "Dáva azimut vypočítaný z vyššie uvedených meraní ako celé číslo v rozmedzí 0 až 360, čo predstavuje uhol v stupňoch, v smere hodinových ručičiek, kde 0 smeruje na sever."
 
 #: ../../compass.rst:66
 msgid "Returns an integer indication of the magnitude of the magnetic field around the device."
-msgstr ""
+msgstr "Vráti celé číslo predstavujúce veľkosť magnetického poľa v okolí zariadenia."
 
 #: ../../compass.rst:71
 msgid "Example"
-msgstr ""
+msgstr "Príklad"
 
