@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: bbc-microbit-micropython\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-25 09:53+0200\n"
-"PO-Revision-Date: 2018-07-21 20:21\n"
+"PO-Revision-Date: 2018-07-23 08:46\n"
 "Last-Translator: RicCo386 <richard.kellner@pycon.sk>\n"
 "Language-Team: Slovak\n"
 "MIME-Version: 1.0\n"
@@ -64,11 +64,11 @@ msgstr ""
 
 #: ../../i2c.rst:54
 msgid "Connecting"
-msgstr ""
+msgstr "Pripojenie"
 
 #: ../../i2c.rst:56
 msgid "You should connect the device's ``SCL`` pin to micro:bit pin 19, and the device's ``SDA`` pin to micro:bit pin 20. You also must connect the device's ground to the micro:bit ground (pin ``GND``). You may need to power the device using an external power supply or the micro:bit."
-msgstr ""
+msgstr "``SCL`` pin na zariadení by mal by pripojený k micro:bit pinu 19 a ``SDA`` pin k micro:bit 20. Taktiež musíš pripojiť zem (GND) k micro:bit GND. Možno budeš musieť napájať zariadenie pomocou externého zdroja alebo pomocou micro:bitu."
 
 #: ../../i2c.rst:61
 msgid "There are internal pull-up resistors on the I²C lines of the board, but with particularly long wires or large number of devices you may need to add additional pull-up resistors, to ensure noise-free communication."
