@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: bbc-microbit-micropython\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-25 09:53+0200\n"
-"PO-Revision-Date: 2018-08-01 09:01\n"
+"PO-Revision-Date: 2018-08-01 09:11\n"
 "Last-Translator: RicCo386 <richard.kellner@pycon.sk>\n"
 "Language-Team: Slovak\n"
 "MIME-Version: 1.0\n"
@@ -24,31 +24,31 @@ msgstr "Displej"
 
 #: ../../display.rst:6
 msgid "This module controls the 5×5 LED display on the front of your board. It can be used to display images, animations and even text."
-msgstr ""
+msgstr "Tento modul ovláda 5 × 5 LED displej na prednej strane vašej dosky. Je možné ho využiť na zobrazenie obrázkov, animácií a dokonca aj textu."
 
 #: ../../display.rst:12
 msgid "Functions"
-msgstr ""
+msgstr "Funkcie"
 
 #: ../../display.rst:16
 msgid "Return the brightness of the LED at column ``x`` and row ``y`` as an integer between 0 (off) and 9 (bright)."
-msgstr ""
+msgstr "Vráti jas LED diódy v stĺpci ``x`` a riadku ``y`` ako celé číslo medzi 0 (vypnuté) a 9 (najjasnejšie)."
 
 #: ../../display.rst:22
 msgid "Set the brightness of the LED at column ``x`` and row ``y`` to ``value``, which has to be an integer between 0 and 9."
-msgstr ""
+msgstr "Nastaví jas LED diódy v stĺpci ``x`` a riadku ``y`` na ``value`` (hodnotu), ktorá musí byť celé číslo medzi 0 a 9."
 
 #: ../../display.rst:28
 msgid "Set the brightness of all LEDs to 0 (off)."
-msgstr ""
+msgstr "Nastaví jas všetkých LED diód na 0 (vypnuté)."
 
 #: ../../display.rst:32
 msgid "Display the ``image``."
-msgstr ""
+msgstr "Zobrazí ``image`` (obrázok)."
 
 #: ../../display.rst:37
 msgid "Display images or letters from the ``iterable`` in sequence, with ``delay`` milliseconds between them."
-msgstr ""
+msgstr "Zobrazí obrázky alebo písmená zo sekvencie ``iterable`` s oneskorením ``delay`` milisekúnd medzi nimi."
 
 #: ../../display.rst:40 ../../display.rst:61
 msgid "If ``wait`` is ``True``, this function will block until the animation is finished, otherwise the animation will happen in the background."
