@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: bbc-microbit-micropython\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-25 09:53+0200\n"
-"PO-Revision-Date: 2019-08-12 16:43\n"
-"Last-Translator: RicCo386\n"
+"PO-Revision-Date: 2020-07-25 13:44\n"
+"Last-Translator: RicCo386 <richard.kellner@pycon.sk>\n"
 "Language-Team: Slovak\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -16,26 +16,28 @@ msgstr ""
 "X-Crowdin-Language: sk\n"
 "X-Crowdin-File: /master/docs/locale/sk/LC_MESSAGES/speech.po\n"
 "Language: sk_SK\n"
+"X-Crowdin-Project-ID: 304607\n"
+"X-Crowdin-File-ID: 65\n"
 
 #: ../../speech.rst:2
 msgid "Speech"
-msgstr ""
+msgstr "Reč"
 
 #: ../../speech.rst:6
 msgid "WARNING! THIS IS ALPHA CODE."
-msgstr ""
+msgstr "VAROVANIE! IDE O ALFA KÓD."
 
 #: ../../speech.rst:8
 msgid "We reserve the right to change this API as development continues."
-msgstr ""
+msgstr "Vyhradzujeme si právo tento API meniť, keďže vývoj stále pokračuje."
 
 #: ../../speech.rst:10
 msgid "The quality of the speech is not great, merely \"good enough\". Given the constraints of the device you may encounter memory errors and / or unexpected extra sounds during playback. It's early days and we're improving the code for the speech synthesiser all the time. Bug reports and pull requests are most welcome."
-msgstr ""
+msgstr "Kvalita reči nie je ktovieaká, skôr \"akurát dobrá\". Vzhľadom na obmedzenia zariadenia sa môžete počas prehrávania stretnúť s chybami pamäte a/alebo s neočakávanými prídavnými zvukmi. Všetko je ešte len na začiatku a celý čas zlepšujeme kód rečového syntetizátora. Veľmi vítame nahlasovanie chýb a požiadavky na opravy."
 
 #: ../../speech.rst:18
 msgid "This module makes microbit talk, sing and make other speech like sounds provided that you connect a speaker to your board as shown below:"
-msgstr ""
+msgstr "Tento modul vykonáva mikrobitový hovor, spev a vytvára ďalšie rečové efekty ako zvuky produkované, keď sa pripájate k reproduktoru na svojej doske tak, ako je to zobrazené nižšie:"
 
 #: ../../speech.rst:25
 msgid "This work is based upon the amazing reverse engineering efforts of Sebastian Macke based upon an old text-to-speech (TTS) program called SAM (Software Automated Mouth) originally released in 1982 for the Commodore 64. The result is a small C library that we have adopted and adapted for the micro:bit. You can find out more from `his homepage <http://simulationcorner.net/index.php?page=sam>`_. Much of the information in this document was gleaned from the original user's manual which can be found `here <http://www.apple-iigs.info/newdoc/sam.pdf>`_."
